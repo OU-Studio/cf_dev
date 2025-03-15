@@ -1,0 +1,69 @@
+@font-face{
+  font-family: 'norwester';
+  src: url('{{ "norwester.otf" | asset_url }}')
+}
+
+@font-face{
+  font-family: 'emperaRegular';
+  src: url('{{ "Empera-Regular.ttf" | asset_url }}')
+}
+
+
+//font-family: "adobe-garamond-pro";
+
+html{
+
+}
+
+body{
+  font-size: 16px;
+}
+
+//typography
+
+h1, .emperaLarge {
+  font-family: 'emperaRegular';
+  font-size: var(--empera-large-size);
+  line-height: var(--empera-large-line-height);
+  letter-spacing: var(--empera-large-letter-spacing);
+  font-weight: var(--empera-large-weight);
+  font-style: var(--empera-large-style);
+  color: var(--red)
+}
+
+h2, .garamondLarge {
+  font-family: "adobe-garamond-pro";
+  font-size: var(--garamond-large-size);
+  line-height: var(--garamond-large-line-height);
+  letter-spacing: var(--garamond-large-letter-spacing);
+  font-weight: var(--garamond-large-weight);
+  font-style: var(--garamond-large-style);
+}
+
+h3, .emperaSmall {
+  font-family: 'emperaRegular';
+  font-size: var(--empera-small-size);
+  line-height: var(--empera-small-line-height);
+  letter-spacing: var(--empera-small-letter-spacing);
+  font-weight: var(--empera-small-weight);
+  font-style: var(--empera-small-style);
+  color: var(--red)
+}
+
+body, p, .garamondSmall {
+  font-family: "adobe-garamond-pro";
+  font-size: var(--garamond-small-size);
+  line-height: var(--garamond-small-line-height);
+  letter-spacing: var(--garamond-small-letter-spacing);
+  font-weight: var(--garamond-small-weight);
+  font-style: var(--garamond-small-style);
+}
+
+small, .garamondTiny {
+  font-family: "adobe-garamond-pro";
+  font-size: var(--garamond-tiny-size);
+  line-height: var(--garamond-tiny-line-height);
+  letter-spacing: var(--garamond-tiny-letter-spacing);
+  font-weight: var(--garamond-tiny-weight);
+  font-style: var(--garamond-tiny-style);
+}
