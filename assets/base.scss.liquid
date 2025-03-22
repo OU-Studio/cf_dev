@@ -128,6 +128,7 @@ small, .garamondTiny {
   font-weight: var(--garamond-tiny-weight) !important;
   font-style: var(--garamond-tiny-style) !important;
   color: var(--grey) !important;
+  text-transform: uppercase !important;
 }
 
 .norwesterSmall {
@@ -138,6 +139,7 @@ small, .garamondTiny {
   font-weight: var(--garamond-tiny-weight) !important;
   font-style: var(--garamond-tiny-style) !important;
   color: var(--grey) !important;
+  text-transform: uppercase !important;
 }
 
 a:-webkit-any-link{
@@ -179,6 +181,10 @@ a:-webkit-any-link{
 
 //body
 
+body{
+  background-color: var(--offwhite)
+}
+
 #MainContent{
   padding: 10px;
   .page-width{
@@ -186,7 +192,62 @@ a:-webkit-any-link{
   }
 }
 
+//buttons
+.quick-add{
+  flex-grow: 1;
+  width: 100%;
+}
+.quick-add__submit{
+  display: flex;
+  padding: 4px !important;
+  border: none !important;
+  position: relative;
+  align-items: center;
+  .spacer{
+    display: block;
+    width: 100%;
+    padding-bottom: 19.0798552833%;
+  }
+  .buttonBorder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .buttonDetail-left{
+    width: 26px;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .buttonDetail-right{
+    width: 26px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  span{
+    line-height: 1em !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 //sections
+.banner--adapt{
+  img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .image-with-text__media-item--screenWidth{
   max-width: 100%;
   .image-with-text__media{
@@ -261,7 +322,8 @@ a:-webkit-any-link{
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 4px;
+  align-items: center;
 }
 
 .card__content .card__information{

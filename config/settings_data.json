@@ -1,5 +1,40 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-  "current": "Default",
+  "current": {
+    "logo": "shopify://shop_images/802009cc23244f917fc28142f1e1bbc7.png",
+    "logo_width": 60,
+    "norwester_large_size": 18,
+    "norwester_large_letter_spacing": 0.1,
+    "norwester_small_size": 14,
+    "norwester_small_letter_spacing": 0.1,
+    "empera_large_size": 28,
+    "empera_small_size": 20,
+    "garamond_large_size": 24,
+    "garamond_large_letter_spacing": 0.9,
+    "garamond_small_letter_spacing": 0.6,
+    "garamond_tiny_size": 14,
+    "garamond_tiny_letter_spacing": 0.5,
+    "type_header_font": "assistant_n4",
+    "heading_scale": 100,
+    "type_body_font": "assistant_n4",
+    "body_scale": 100,
+    "content_for_index": [],
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ffffff"
+        }
+      }
+    }
+  },
   "presets": {
     "Default": {
       "logo_width": 90,
