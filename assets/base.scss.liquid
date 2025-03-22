@@ -260,7 +260,7 @@ a:-webkit-any-link{
     max-width: 100px;
     margin: auto;
     display: block;
-    
+
   }
 }
 
@@ -430,6 +430,8 @@ body{
 
 /* Title styling */
 .card__heading {
+  max-width: 140px;
+  margin: auto;
   a{
     text-decoration: none;
   }
@@ -472,13 +474,13 @@ body{
   justify-content: center;
   list-style: none;
   padding: 0px !important;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .collection-list-wrapper .grid__item {
   width: calc(50% - 5px); /* 2 columns */
   max-width: 400px;
-  background-color: var(--offwhite);
+  background-color: var(--cream);
   .card__inner{
     .card__content{
       display: none;
@@ -531,4 +533,113 @@ padding-bottom: 20px !important;
   .card__media{
     padding-bottom: 145.562130178% !important;
   }
+}
+
+/* Slideshow container positioning and styling */
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Change according to your layout preferences */
+  max-width: 800px; /* Max width of the slideshow */
+  margin: 20px auto; /* Centering the slideshow */
+  overflow: hidden; /* Ensures that anything outside the container is not shown */
+}
+
+/* Individual slide styling */
+.slide {
+  position: relative;
+  width: 100%;
+  transition: transform 0.5s ease; /* Smooth transition for slide changes */
+  text-align: center;
+}
+
+/* Styling for each slide image */
+.slide img {
+  width: 100%; 
+  height: auto; /* Maintain aspect ratio */
+  max-width: 60px;
+  margin: auto;
+}
+
+.slick-list{
+  overflow: hidden;
+  padding: 0px !important;
+  width: calc(100% - 20px);
+  margin: auto;
+}
+
+
+.text p{
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.slick-next, .slick-next:hover, .slick-next:active{
+  right: 20px !important;
+  top: initial !important;
+  transform: none !important;
+  bottom: 0px !important;
+  width: 40px !important;
+  height: 20px !important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing.png?v=1742680749);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:before{
+    display: none;
+  }
+}
+
+.slick-prev, .slick-prev:hover, .slick-prev:active{
+  left: 20px !important;
+  top: initial !important;
+  transform: none !important;
+  bottom: 0px !important;
+  width: 40px !important;
+  height: 20px !important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing2.png?v=1742680749);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:before{
+    display: none;
+  }
+}
+
+.slick-slider{
+  margin-bottom: 0px !important;
+}
+
+.slick-dots{
+  bottom: 7px !important;
+  width: calc(100% - 100px);
+  margin: auto;
+  margin-left: 50px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  li{
+    margin: 0px 4px !important;
+    width: 6px !important;
+    height: 6px !important;
+    &.slick-active{
+      button{
+        background-color: var(--red)
+      }
+    }
+    button{
+      padding: 2px !important;
+      width: 6px !important;
+      height: 6px !important;
+      border: solid 1px var(--red);
+      border-radius: 100%;
+      &:before{
+        display: none !important;
+      }
+    }
+  }
+}
+
+.reviews.gradient.scheme-2{
+  background-color: var(--cream);
+  padding-bottom: 10px;
 }

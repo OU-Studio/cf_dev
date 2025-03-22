@@ -122,12 +122,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "reviews_mRy6dP": {
+      "type": "reviews",
+      "blocks": {
+        "slide_N9MmrB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "Joe Cory"
+          }
+        },
+        "slide_eGmnhV": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "Joe Cory"
+          }
+        },
+        "slide_t3MxiT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "Joe Cory"
+          }
+        },
+        "slide_UXY3zr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "Joe Cory"
+          }
+        }
+      },
+      "block_order": [
+        "slide_N9MmrB",
+        "slide_eGmnhV",
+        "slide_t3MxiT",
+        "slide_UXY3zr"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "collection_list_KgFHVp",
-    "collection_list_iLK9Kj"
+    "collection_list_iLK9Kj",
+    "reviews_mRy6dP"
   ]
 }

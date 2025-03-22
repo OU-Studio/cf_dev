@@ -9,6 +9,49 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/wlt3jps.css">
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+
+    <script>
+      $(window).on('load', function () {
+        if ($('.slideshow-container').length) {
+          console.log($('.slideshow-container'))
+          $('.slideshow-container').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            swipeToSlide: true,
+            infinite: true,
+            arrows: true,
+            dots: true,
+          });
+        }
+      });
+    </script>
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -39,7 +82,6 @@
 
     {{ content_for_header }}
 
-
     {{ 'base.scss.css' | asset_url | stylesheet_tag }}
 
     <style>
@@ -49,37 +91,37 @@
         --empera-large-letter-spacing: {{ settings.empera_large_letter_spacing }}px;
         --empera-large-weight: {{ settings.empera_large_weight }};
         --empera-large-style: {{ settings.empera_large_style }};
-      
+
         --garamond-large-size: {{ settings.garamond_large_size }}px;
         --garamond-large-line-height: {{ settings.garamond_large_line_height }}em;
         --garamond-large-letter-spacing: {{ settings.garamond_large_letter_spacing }}px;
         --garamond-large-weight: {{ settings.garamond_large_weight }};
         --garamond-large-style: {{ settings.garamond_large_style }};
-      
+
         --empera-small-size: {{ settings.empera_small_size }}px;
         --empera-small-line-height: {{ settings.empera_small_line_height }}em;
         --empera-small-letter-spacing: {{ settings.empera_small_letter_spacing }}px;
         --empera-small-weight: {{ settings.empera_small_weight }};
         --empera-small-style: {{ settings.empera_small_style }};
-      
+
         --garamond-small-size: {{ settings.garamond_small_size }}px;
         --garamond-small-line-height: {{ settings.garamond_small_line_height }}em;
         --garamond-small-letter-spacing: {{ settings.garamond_small_letter_spacing }}px;
         --garamond-small-weight: {{ settings.garamond_small_weight }};
         --garamond-small-style: {{ settings.garamond_small_style }};
-      
+
         --garamond-tiny-size: {{ settings.garamond_tiny_size }}px;
         --garamond-tiny-line-height: {{ settings.garamond_tiny_line_height }}em;
         --garamond-tiny-letter-spacing: {{ settings.garamond_tiny_letter_spacing }}px;
         --garamond-tiny-weight: {{ settings.garamond_tiny_weight }};
         --garamond-tiny-style: {{ settings.garamond_tiny_style }};
-      
+
         --norwester-large-size: {{ settings.norwester_large_size }}px;
         --norwester-large-line-height: {{ settings.norwester_large_line_height }}em;
         --norwester-large-letter-spacing: {{ settings.norwester_large_letter_spacing }}px;
         --norwester-large-weight: {{ settings.norwester_large_weight }};
         --norwester-large-style: {{ settings.norwester_large_style }};
-      
+
         --norwester-small-size: {{ settings.norwester_small_size }}px;
         --norwester-small-line-height: {{ settings.norwester_small_line_height }}em;
         --norwester-small-letter-spacing: {{ settings.norwester_small_letter_spacing }}px;
@@ -104,7 +146,6 @@
       {{ 'component-price.css' | asset_url | stylesheet_tag }}
       {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
-
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
@@ -132,7 +173,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-group' %} 
+    {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}

@@ -1,0 +1,65 @@
+
+<div class="reviews gradient {{ section.settings.color_scheme }}">
+<div class="slideshow-container">
+    {% for block in section.blocks %}
+    <div class="slide" >
+      <img src="{{ block.settings.image | img_url: '800x' }}" alt="">
+      <div class="text">
+        <blockquote>{{ block.settings.quote }}</blockquote>
+        <p>{{ block.settings.name }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+  
+  {% schema %}
+  {
+    "name": "Image Slideshow",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Slides"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "info": "t:sections.all.colors.has_cards_info",
+        "default": "scheme-1"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "quote",
+            "label": "Quote"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Default Slideshow",
+        "category": "Image"
+      }
+    ]
+  }
+  {% endschema %}
+  
+
+  
