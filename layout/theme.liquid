@@ -37,11 +37,6 @@
 
     {{ content_for_header }}
 
-    {%- liquid
-      assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-      assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
-      assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-    %}
 
     {{ 'base.scss.css' | asset_url | stylesheet_tag }}
 
@@ -76,6 +71,18 @@
         --garamond-tiny-letter-spacing: {{ settings.garamond_tiny_letter_spacing }}em;
         --garamond-tiny-weight: {{ settings.garamond_tiny_weight }};
         --garamond-tiny-style: {{ settings.garamond_tiny_style }};
+      
+        --norwester-large-size: {{ settings.norwester_large_size }}px;
+        --norwester-large-line-height: {{ settings.norwester_large_line_height }}em;
+        --norwester-large-letter-spacing: {{ settings.norwester_large_letter_spacing }}em;
+        --norwester-large-weight: {{ settings.norwester_large_weight }};
+        --norwester-large-style: {{ settings.norwester_large_style }};
+      
+        --norwester-small-size: {{ settings.norwester_small_size }}px;
+        --norwester-small-line-height: {{ settings.norwester_small_line_height }}em;
+        --norwester-small-letter-spacing: {{ settings.norwester_small_letter_spacing }}em;
+        --norwester-small-weight: {{ settings.norwester_small_weight }};
+        --norwester-small-style: {{ settings.norwester_small_style }};
 
         --red: #A30000;
         --black: #000000;
@@ -96,16 +103,6 @@
       {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
-    {%- unless settings.type_body_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
-    {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
-    {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
@@ -133,21 +130,7 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    <h1>
-    Heading
-    </h1>
-
-    <h2>
-Heading
-    </h2>
-
-    <h3>
-Heading
-    </h3>
-
-    <p>
-Body
-    </p>
+    {% sections 'header-group' %} 
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
