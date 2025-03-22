@@ -52,10 +52,82 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "collection_list_KgFHVp": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_q4dw7Q": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_LArHi8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_q4dw7Q",
+        "featured_collection_LArHi8"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "buttonText": "VIEW ALL COLLECTIONS",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "scheme-2",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_iLK9Kj": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_page_mfj7Mp": {
+          "type": "featured_page",
+          "settings": {
+            "page": "ricky-hall",
+            "collection_image": "shopify://shop_images/Mobile_Collab.jpg"
+          }
+        },
+        "featured_page_wfVfUa": {
+          "type": "featured_page",
+          "settings": {
+            "page": "john-petrucci",
+            "collection_image": "shopify://shop_images/Mobile_Collab2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_page_mfj7Mp",
+        "featured_page_wfVfUa"
+      ],
+      "settings": {
+        "title": "Collaboration to peruse",
+        "heading_size": "h1",
+        "buttonText": "VIEW ALL COLLABORATIONS",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "collection_list_KgFHVp",
+    "collection_list_iLK9Kj"
   ]
 }

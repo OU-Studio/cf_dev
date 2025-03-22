@@ -19,9 +19,12 @@
     "empera_small_size": 20,
     "garamond_large_size": 24,
     "garamond_large_letter_spacing": 0.9,
+    "garamond_large_weight": 300,
     "garamond_small_letter_spacing": 0.6,
+    "garamond_small_weight": 300,
     "garamond_tiny_size": 14,
     "garamond_tiny_letter_spacing": 0.5,
+    "garamond_tiny_weight": 300,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -31,6 +34,11 @@
       "scheme-1": {
         "settings": {
           "background": "#ffffff"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#FFFDF3"
         }
       }
     }
@@ -42,6 +50,11 @@
         "scheme-1": {
           "settings": {
             "background": "#FFFFFF"
+          }
+        },
+        "scheme-2": {
+          "settings": {
+            "background": "#FFFDF3"
           }
         }
       },
