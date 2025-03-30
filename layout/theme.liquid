@@ -43,6 +43,22 @@
             dots: true,
           });
         }
+        if($('.product__media-list').length){
+          $('.product__media-list').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            swipeToSlide: true,
+            infinite: true,
+            arrows: true,
+            dots: true,
+          });
+
+          $('<div class="qandb"></div>').insertBefore($('.product-form__input'))
+          $('.prodBuyButtons').prependTo($('.qandb'))
+          $('.product-form__input').prependTo($('.qandb'))
+        }
+
       });
     </script>
 
