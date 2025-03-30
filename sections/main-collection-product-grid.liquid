@@ -24,8 +24,7 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    
   }
 
   @media screen and (min-width: 750px) {
@@ -35,6 +34,102 @@
     }
   }
 {%- endstyle -%}
+
+<nav class="breadcrumb breadcrumb__desktop" role="navigation" aria-label="breadcrumbs">
+  <a href="{{ routes.root_url }}" title="Home">Home</a>
+  <div class="breadcrumb__delimiter">»</div>
+  <a href="{{ routes.collections_url }}">Collections</a>
+  <div class="breadcrumb__delimiter">»</div>
+  {% if product.collections[0] %}
+    <a href="{{ product.collections[0].url }}">{{ product.collections[0].title }}
+    </a>
+    <div class="breadcrumb__delimiter">»</div>
+    <span>{{ product.title }}</span>
+  {% endif %}
+  {% if collection %}
+    <a href="{{ collection.url }}">{{ collection.title }}</a>
+  {% endif %}
+</nav>
+
+
+<div class="customFilters">
+  <p class="cfToggle garamondSmall">Filters</p>
+  <hr>
+  <div class="priceFilter">
+    <p class="garamondSmall" style="display: none">PRICE</p>
+    <div id="price-slider" style="display: none"></div>
+    <p style="display: none"><span id="price-range-label"><span id="price-range-label-min"></span><span id="price-range-label-max"></span></span></p>
+  </div>
+</div>
+
+<script>
+  $(window).on('load', function () {
+    $('.priceFilter').slideToggle(0)
+    $('.priceFilter *').attr('style', '')
+    $('.cfToggle').click(function(){
+      $('.priceFilter').slideToggle(500)
+    })
+    const slider = document.getElementById('price-slider');
+    const labelMin = document.getElementById('price-range-label-min');
+    const labelMax = document.getElementById('price-range-label-max');
+
+    // Get min/max from Shopify's filters if available
+    const filterMin = parseInt(document.getElementById('Filter-Price-GTE')?.dataset.min || 0);
+    var filterMax = parseInt(0);
+
+    const maxFromShopify = document.getElementById('Filter-Price-LTE').getAttribute('data-max');
+
+    if (maxFromShopify) {
+      console.log(maxFromShopify);
+      filterMax = parseInt(maxFromShopify);
+    }
+
+    // Get current URL price filters (if any)
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentMin = parseInt(urlParams.get('filter.v.price.gte')) || filterMin;
+    const currentMax = parseInt(urlParams.get('filter.v.price.lte')) || filterMax;
+
+    // Initialize noUiSlider
+    noUiSlider.create(slider, {
+      start: [currentMin, currentMax],
+      connect: true,
+      step: 1,
+      range: {
+        min: filterMin,
+        max: filterMax,
+      },
+      format: {
+        to: (value) => Math.round(value),
+        from: (value) => Number(value),
+      },
+    });
+
+    slider.noUiSlider.on('update', (values) => {
+      labelMin.textContent = `£${values[0]}`;
+      labelMax.textContent = `£${values[1]}`;
+    });
+
+    slider.noUiSlider.on('change', (values) => {
+      const min = Math.round(values[0]);
+      const max = Math.round(values[1]);
+
+      const minInput = document.querySelector('input[name="filter.v.price.gte"]');
+      const maxInput = document.querySelector('input[name="filter.v.price.lte"]');
+
+      if (minInput && maxInput) {
+        minInput.value = min;
+        maxInput.value = max;
+
+        // Trigger input event on the form so Shopify's JS handles filtering
+        const form = minInput.closest('form');
+        if (form) {
+          const event = new Event('input', { bubbles: true });
+          form.dispatchEvent(event);
+        }
+      }
+    });
+  });
+</script>
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
@@ -233,7 +328,7 @@
           "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
         }
       ]
-    },    
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",

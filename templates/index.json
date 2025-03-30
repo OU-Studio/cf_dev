@@ -168,6 +168,39 @@
       "settings": {
         "color_scheme": "scheme-2"
       }
+    },
+    "rich_text_KTQMC8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bdyrUA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Instagram",
+            "heading_size": "h1",
+            "alignment": "center"
+          }
+        },
+        "emperaheading_a3T4rm": {
+          "type": "emperaheading",
+          "settings": {
+            "emperaheading": "will go here when live",
+            "heading_size": "h1",
+            "emperaalignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bdyrUA",
+        "emperaheading_a3T4rm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -175,6 +208,7 @@
     "featured_collection",
     "collection_list_KgFHVp",
     "collection_list_iLK9Kj",
-    "reviews_mRy6dP"
+    "reviews_mRy6dP",
+    "rich_text_KTQMC8"
   ]
 }
