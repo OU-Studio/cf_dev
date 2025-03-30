@@ -49,12 +49,19 @@
             "id": "background",
             "label": "Background Colour",
             "default": "#FFFFFF"
+          },
+          {
+            "type": "color_background",
+            "id": "colour_background",
+            "label": "Background Colour",
+            "default": "#FFFFFF"
           }
         ],
         "role": {
           "text": "background",
           "background": {
-            "solid": "background"
+            "solid": "background",
+            "gradient": "colour_background"
           },
           "links": "background",
           "icons": "background",
