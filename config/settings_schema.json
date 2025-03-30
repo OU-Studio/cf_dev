@@ -70,19 +70,16 @@
           }
         ],
         "role": {
-          "text": "background",
-          "background": {
-            "solid": "background",
-            "gradient": "colour_background"
-          },
-          "links": "background",
-          "icons": "background",
-          "primary_button": "background",
-          "on_primary_button": "background",
-          "primary_button_border": "background",
-          "secondary_button": "background",
-          "on_secondary_button": "background",
-          "secondary_button_border": "background"
+          "text": "text_color",
+          "background": "background_color",
+          "links": "link_color",
+          "icons": "text_color",
+          "primary_button": "button_color",
+          "on_primary_button": "text_color",
+          "primary_button_border": "button_color",
+          "secondary_button": "button_color",
+          "on_secondary_button": "text_color",
+          "secondary_button_border": "button_color"
         }
       }
     ]
