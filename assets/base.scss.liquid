@@ -81,16 +81,6 @@ p {
   color: var(--red) !important;
 }
 
-.garamondLarge {
-  font-family: "garamond-premier-pro-display" !important;
-  font-size: var(--garamond-large-size) !important;
-  line-height: var(--garamond-large-line-height) !important;
-  letter-spacing: var(--garamond-large-letter-spacing) !important;
-  font-weight: var(--garamond-large-weight) !important;
-  font-style: var(--garamond-large-style) !important;
-  color: var(--grey) !important;
-}
-
 .emperaSmall {
   font-family: "emperaRegular" !important;
   font-size: var(--empera-small-size) !important;
@@ -108,7 +98,7 @@ p {
   letter-spacing: var(--garamond-large-letter-spacing) !important;
   font-weight: var(--garamond-large-weight) !important;
   font-style: var(--garamond-large-style) !important;
-  color: var(--grey) !important;
+  color: var(--black) !important;
 }
 
 .garamondSmall {
@@ -118,7 +108,7 @@ p {
   letter-spacing: var(--garamond-small-letter-spacing) !important;
   font-weight: var(--garamond-small-weight) !important;
   font-style: var(--garamond-small-style) !important;
-  color: var(--grey) !important;
+  color: var(--black) !important;
 }
 
 small,
@@ -129,28 +119,28 @@ small,
   letter-spacing: var(--garamond-tiny-letter-spacing) !important;
   font-weight: var(--garamond-tiny-weight) !important;
   font-style: var(--garamond-tiny-style) !important;
-  color: var(--grey) !important;
+  color: var(--black) !important;
 }
 
 .norwesterLarge {
   font-family: "norwester" !important;
-  font-size: var(--garamond-tiny-size) !important;
-  line-height: var(--garamond-tiny-line-height) !important;
-  letter-spacing: var(--garamond-tiny-letter-spacing) !important;
-  font-weight: var(--garamond-tiny-weight) !important;
-  font-style: var(--garamond-tiny-style) !important;
-  color: var(--grey) !important;
+  font-size: var(--norwester-large-size) !important;
+  line-height: var(--norwester-large-line-height) !important;
+  letter-spacing: var(--norwester-large-letter-spacing) !important;
+  font-weight: var(--norwester-large-weight) !important;
+  font-style: var(--norwester-large-style) !important;
+  color: var(--black) !important;
   text-transform: uppercase !important;
 }
 
 .norwesterSmall {
   font-family: "norwester" !important;
-  font-size: var(--garamond-tiny-size) !important;
-  line-height: var(--garamond-tiny-line-height) !important;
-  letter-spacing: var(--garamond-tiny-letter-spacing) !important;
-  font-weight: var(--garamond-tiny-weight) !important;
-  font-style: var(--garamond-tiny-style) !important;
-  color: var(--grey) !important;
+  font-size: var(--norwester-small-size) !important;
+  line-height: var(--norwester-small-line-height) !important;
+  letter-spacing: var(--norwester-small-letter-spacing) !important;
+  font-weight: var(--norwester-small-weight) !important;
+  font-style: var(--norwester-small-style) !important;
+  color: var(--black) !important;
   text-transform: uppercase !important;
 }
 
@@ -275,6 +265,7 @@ a:-webkit-any-link {
 .footerTop {
   padding: 10px;
   background-color: var(--cream);
+  margin: 0px 20px 0px 20px !important;
   .footerPlane {
     width: 100%;
     padding-top: 48%;
@@ -296,6 +287,7 @@ a:-webkit-any-link {
     }
     &:last-of-type {
       margin-bottom: 0px !important;
+      font-style: italic;
     }
   }
   .registerform {
@@ -345,12 +337,13 @@ a:-webkit-any-link {
 }
 .necc {
   background-color: var(--red);
-  width: 100%;
+  width: calc(100% - 40px);
   padding-bottom: 16%;
   background-size: calc(100% - 10px);
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/necc.png?v=1743332699);
+  margin: 0px 20px 0px 20px !important;
 }
 
 .footerMiddle {
@@ -359,21 +352,24 @@ a:-webkit-any-link {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/paper_copy.jpg?v=1743333811);
+  margin: 0px 20px 20px 20px !important;
   hr {
     margin-top: 20px;
     border-color: var(--black);
   }
   .footerMuseum {
-    width: 100%;
-    padding-top: 77.5510204082%;
+    width: 80%;
+    margin: auto;
+    padding-top: 62.0408163266%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum-logo_simple-BROWN-OUTER-LINE.png?v=1743333810);
   }
   .footerExplore {
-    width: 100%;
-    padding-top: 72.3008595989%;
+    width: 80%;
+    margin: auto;
+    padding-top: 57.8406876791%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -464,6 +460,7 @@ a:-webkit-any-link {
       color: var(--white);
       text-transform: uppercase;
       text-decoration: none;
+      letter-spacing: 0.1em;
     }
     p {
       text-align: center;
@@ -471,6 +468,7 @@ a:-webkit-any-link {
       margin: 0px !important;
       text-transform: uppercase;
       text-decoration: none;
+      font-size: 14px;
     }
   }
 }
@@ -526,6 +524,9 @@ body {
     left: 8px;
     top: 50%;
     transform: translateY(-50%);
+    *{
+      fill: var(--red);
+    }
   }
   .buttonDetail-right {
     width: 26px;
@@ -533,6 +534,9 @@ body {
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
+    *{
+      fill: var(--red);
+    }
   }
   span {
     line-height: 1em !important;
@@ -540,6 +544,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    color: var(--red) !important;
   }
 }
 
@@ -711,7 +716,7 @@ body {
   border: none !important;
   position: relative;
   align-items: center;
-  max-width: 320px;
+  max-width: 360px;
   width: calc(100% - 40px);
   margin: auto;
   .spacer {
@@ -734,6 +739,7 @@ body {
     transform: translate(-50%, -50%);
     text-decoration: none;
     color: var(--black) !important;
+    white-space: nowrap;
   }
 }
 
@@ -907,6 +913,19 @@ body {
     > p:first-of-type {
       margin-top: 0px !important;
     }
+  }
+  #sortOptions {
+    appearance: none;           /* Removes default styles */
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='black' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 10px 7px;
   }
 }
 #price-range-label {
@@ -1137,6 +1156,10 @@ input[type="number"] {
   }
   .qWrapper{
     position: relative;
+
+    .quantity__button path{
+      fill: var(--red) !important;
+    }
     .spacer {
       display: block;
       width: 100%;
@@ -1223,6 +1246,26 @@ input[type="number"] {
     }
     .product-form, .product-form__submit{
       margin: 0px !important;
+    }
+  }
+}
+
+.accWrapper{
+  .collapsible-row{
+    path{
+      fill: var(--red) !important;
+    }
+    h2{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span{
+        width: 20px;
+        cursor: pointer;
+      }
+    }
+    .collapsible-content{
+
     }
   }
 }

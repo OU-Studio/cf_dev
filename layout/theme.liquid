@@ -31,6 +31,14 @@
 
     <script>
       $(window).on('load', function () {
+        if ($('.collapsible-row').length) {
+          $('.collapsible-row').each(function(){
+          $(this).find('.collapsible-content').slideToggle(0)
+          $(this).find('h2').click(function(){
+          $(this).next().slideToggle(500)
+          })
+        })
+        }
         if ($('.slideshow-container').length) {
           console.log($('.slideshow-container'))
           $('.slideshow-container').slick({
@@ -140,7 +148,7 @@
 
         --red: #A30000;
         --black: #000000;
-        --grey: #343434;
+        --grey: #000000;
         --cream: #FFFDF3;
         --offwhite: #FAF6EC;
         --white: #ffffff;
