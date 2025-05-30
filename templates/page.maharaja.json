@@ -1,0 +1,288 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_Da4aa4": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/BG.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "rich_text_DFj7aT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_WFPhJg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Jodhpur Company</p>"
+          }
+        },
+        "emperaheading_XQCmT3": {
+          "type": "emperaheading",
+          "settings": {
+            "emperaheading": "MAHARAJAH",
+            "heading_size": "h1",
+            "emperaalignment": "center"
+          }
+        },
+        "text_fyCA9a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Signature Series</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_WFPhJg",
+        "emperaheading_XQCmT3",
+        "text_fyCA9a"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_7Wy4ax": {
+      "type": "rich-text",
+      "blocks": {
+        "text_bkTiaP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Captain Fawcett’s collaboration with The Jodhpur Company has resulted in a most outstanding Signature Series fragrance. Conjuring up India’s princely opulence, ‘Maharajah’ is a magnificent evocation of ancient majesty tailored to suit the modern gentleman. <strong>All Hail the Hirsute.</strong></p>"
+          }
+        },
+        "text_kFfAU9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Jodhpur Company</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_bkTiaP",
+        "text_kFfAU9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product_qPytgn": {
+      "type": "featured-product",
+      "blocks": {
+        "title_rTRBfW": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_WFhL64": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_JhFTHW": {
+          "type": "text",
+          "settings": {
+            "text": "A tantalising, voluptuous fragrance redolent of ancient India’s princely opulence. The Captain’s Master Blender has woven heady rose with peppery spice, rich musk, beguiling cedar & leather studded with dazzling citrus top notes.",
+            "text_style": "body"
+          }
+        },
+        "buy_buttons_wUwFR3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_rTRBfW",
+        "price_WFhL64",
+        "text_JhFTHW",
+        "buy_buttons_wUwFR3"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "bianco-classico-moustache-wax",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_hG4cif": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wpj3nw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asset_Tutorials.png",
+            "title": "TOP NOTES",
+            "text": "<p>Heady rose, and peppery spice</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Rr9Ptr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asset_Tutorials.png",
+            "title": "MID NOTES",
+            "text": "<p>Heady rose, and peppery spice</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Tw9tAe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Asset_Tutorials.png",
+            "title": "BASE NOTES",
+            "text": "<p>Heady rose, and peppery spice</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wpj3nw",
+        "column_Rr9Ptr",
+        "column_Tw9tAe"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "The Maharajah  fragrance splashes",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_PYd6gN": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "frontpage",
+        "products_to_show": 6,
+        "title": "For your further Delectation",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_RnGD9J": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_gBxnXj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_Kq64hG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_gBxnXj",
+        "featured_collection_Kq64hG"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "More curious collaborations to peruse",
+        "heading_size": "h1",
+        "buttonText": "",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_Da4aa4",
+    "rich_text_DFj7aT",
+    "rich_text_7Wy4ax",
+    "featured_product_qPytgn",
+    "multicolumn_hG4cif",
+    "featured_collection_PYd6gN",
+    "collection_list_RnGD9J",
+    "main"
+  ]
+}
