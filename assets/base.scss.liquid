@@ -1431,112 +1431,247 @@ product-info {
 //signature series
 //Maharajah
 
-[data-template="page.maharaja"]{
-  .shopify-section-group-header-group{
+[data-template="page.maharaja"], [data-template="page.nebula"], [data-template="page.alessandro-manfredini"], [data-template="page.barberism"], [data-template="page.booze-and-baccy"], [data-template="page.triumphant"] {
+  .shopify-section-group-header-group {
     padding-bottom: 0px !important;
   }
-}
 
-#shopify-section-template--24867989586298__rich_text_DFj7aT {
-  background-color: var(--cream);
-  p {
-    text-align: center;
-  }
+  #MainContent .shopify-section:nth-of-type(2) {
+    position: relative;
 
-  p, h1, .rte{
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-
-  p {
-    font-family: "garamond-premier-pro-display";
-    font-size: var(--garamond-large-size);
-    line-height: var(--garamond-large-line-height);
-    letter-spacing: var(--garamond-large-letter-spacing);
-    font-weight: var(--garamond-large-weight);
-    font-style: var(--garamond-large-style);
-    color: var(--grey);
-  }
-
-  h1 {
-    font-size: 50px !important;
-    color: var(--black)
-  }
-}
-
-#shopify-section-template--24867989586298__rich_text_7Wy4ax{
-  background-color: var(--cream);
-  margin: 0px 20px;
-  padding: 10px;
-  *{
-    text-align: center !important;
-  }
-  .rte{
-    margin-top: 1rem !important;
-  }
-  .rich-text__blocks{
-    &:before{
+    &:before {
       content: '';
       display: block;
-      width: 100%;
-      height: 36px;
-      margin-bottom: 20px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/FlourishTop.png?v=1748601550);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      width: 30vw;
+      height: 30vw;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Page_background_floating_icon_4ebcb4d3-113f-4bb3-adb8-e6f0f12323d1.png?v=1750232243);
+      background-size: cover;
+      background-position: bottom;
+      opacity: 0.3;
     }
-    &:after{
-      content: '';
-      display: block;
-      width: 100%;
-      height: 36px;
-      margin-top: 20px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/FlourishBottom.png?v=1748601550);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+
+    .rich-text {
+      padding-bottom: 0px;
+    }
+
+    background-color: var(--cream);
+
+    p {
+      text-align: center;
+    }
+
+    p,
+    h1,
+    .rte {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    p {
+      font-family: "garamond-premier-pro-display";
+      font-size: var(--garamond-large-size);
+      line-height: var(--garamond-large-line-height);
+      letter-spacing: var(--garamond-large-letter-spacing);
+      font-weight: var(--garamond-large-weight);
+      font-style: var(--garamond-large-style);
+      color: var(--grey);
+    }
+
+    h1 {
+      font-size: 50px !important;
+      color: var(--black)
     }
   }
-}
 
-#shopify-section-template--24867989586298__featured_product_qPytgn{
-  button{
-    max-width: 200px !important;
-  }
-  .product__view-details{
-    display: none !important;
-  }
-}
+  #MainContent .shopify-section:nth-of-type(3) {
+    background-color: var(--cream);
+    margin: 0px 20px;
+    padding: 10px;
 
-#shopify-section-template--24867989586298__multicolumn_hG4cif{
-      *{
-        text-align: center; 
+    * {
+      text-align: center !important;
+    }
+
+    .rte {
+      margin-top: 1rem !important;
+    }
+
+    .rich-text__blocks {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 36px;
+        margin-bottom: 20px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/FlourishTop.png?v=1748601550);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
       }
-  .multicolumn-list{
-    display: flex;
-    gap: 5px;
-    list-style-type: none;
-    padding: 0px !important;
-    .multicolumn-card__image-wrapper{
-      margin: 0px !important;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 36px;
+        margin-top: 20px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/FlourishBottom.png?v=1748601550);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  #MainContent .shopify-section:nth-of-type(4) {
+    button {
+      max-width: 200px !important;
+    }
+
+    .product__view-details {
+      display: none !important;
+    }
+  }
+
+  .notesSlider {
+    width: 70% !important;
+
+    .slick-list {
+      overflow: visible !important;
+
+      li {
+        background-color: var(--cream) !important;
+        margin: 0px 4px !important;
+      }
+
+      .media {
+        max-width: 120px !important;
+        margin: auto;
+      }
+    }
+  }
+
+  #MainContent .shopify-section:nth-of-type(5) {
+    * {
+      text-align: center;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
       padding: 0px !important;
-      .media{
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px !important;
         padding: 0px !important;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% -10px)/3);
+        h3{
+          font-size: 1.8rem
+        }
+        p{
+          font-size: 1.5rem;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
       }
     }
-    .multicolumn-card__info{
-      padding: 10px !important;
+  }
+
+  #MainContent .shopify-section:nth-of-type(7) {
+    background-color: var(--cream);
+    margin: 0px 20px;
+    padding: 10px;
+
+    * {
+      text-align: center;
     }
-    li{
-      width: calc((100% -10px)/3);
-      
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px !important;
+        padding: 0px !important;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 5px)/2);
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
     }
-    img{
-      width: 100%;
-      height: auto;
-      object-fit: contain;
+
+    .buttonWrapper {
+      display: flex;
+      padding: 4px !important;
+      border: none !important;
+      position: relative;
+      align-items: center;
+      max-width: 360px;
+      width: calc(100% - 40px);
+      margin: auto;
+
+      .spacer {
+        display: block;
+        width: 100%;
+        padding-bottom: 22.8813352529%;
+      }
+
+      .buttonBorder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      a {
+        line-height: 1em !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        color: var(--black) !important;
+        white-space: nowrap;
+        margin: 0px !important;
+      }
     }
   }
 }
-

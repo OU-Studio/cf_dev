@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/BG.jpg",
+        "image": "shopify://shop_images/Barberism-Block-1-754x568px.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -32,13 +32,13 @@
         "text_WFPhJg": {
           "type": "text",
           "settings": {
-            "text": "<p>The Jodhpur Company</p>"
+            "text": "<p>Sid Sottung</p>"
           }
         },
         "emperaheading_XQCmT3": {
           "type": "emperaheading",
           "settings": {
-            "emperaheading": "MAHARAJAH",
+            "emperaheading": "BARBERISM",
             "heading_size": "h1",
             "emperaalignment": "center"
           }
@@ -71,13 +71,13 @@
         "text_bkTiaP": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett’s collaboration with The Jodhpur Company has resulted in a most outstanding Signature Series fragrance. Conjuring up India’s princely opulence, ‘Maharajah’ is a magnificent evocation of ancient majesty tailored to suit the modern gentleman. <strong>All Hail the Hirsute.</strong></p>"
+            "text": "<p>Captain Fawcett’s Barberism® collaboration with Sid Sottung has produced a simply superlative fragrance, evocative of New York’s old school Italian barber shops. Inspired by the classic masculine aromas of hair tonics, aftershaves and pomades, mingled with tobacco smoke and work weary, honest sweat; redolent memories of young Sid’s Brooklyn hair cutting apprenticeship. Way back when.</p>"
           }
         },
         "text_kFfAU9": {
           "type": "text",
           "settings": {
-            "text": "<p>The Jodhpur Company</p>"
+            "text": "<p>Sid Sottung</p>"
           }
         }
       },
@@ -186,7 +186,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "The Maharajah fragrance splashes",
+        "title": "The Barberism fragrance splashes",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",

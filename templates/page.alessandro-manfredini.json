@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/BG.jpg",
+        "image": "shopify://shop_images/10_Alessandro-Manfredini-main-image-412x447.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -32,13 +32,13 @@
         "text_WFPhJg": {
           "type": "text",
           "settings": {
-            "text": "<p>The Jodhpur Company</p>"
+            "text": "<p>Alessandro</p>"
           }
         },
         "emperaheading_XQCmT3": {
           "type": "emperaheading",
           "settings": {
-            "emperaheading": "MAHARAJAH",
+            "emperaheading": "Manfredini",
             "heading_size": "h1",
             "emperaalignment": "center"
           }
@@ -71,13 +71,13 @@
         "text_bkTiaP": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett’s collaboration with The Jodhpur Company has resulted in a most outstanding Signature Series fragrance. Conjuring up India’s princely opulence, ‘Maharajah’ is a magnificent evocation of ancient majesty tailored to suit the modern gentleman. <strong>All Hail the Hirsute.</strong></p>"
+            "text": "<p>Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons.</p><p>A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend.<strong>Evviva!</strong></p>"
           }
         },
         "text_kFfAU9": {
           "type": "text",
           "settings": {
-            "text": "<p>The Jodhpur Company</p>"
+            "text": "<p>Alessandro Manfredini</p>"
           }
         }
       },
@@ -186,7 +186,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "The Maharajah fragrance splashes",
+        "title": "The Alessandro Manfredini fragrance splashes",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
