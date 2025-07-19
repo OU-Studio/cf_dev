@@ -71,13 +71,13 @@
         "text_bkTiaP": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett’s collaboration with The Jodhpur Company has resulted in a most outstanding Signature Series fragrance. Conjuring up India’s princely opulence, ‘Maharajah’ is a magnificent evocation of ancient majesty tailored to suit the modern gentleman. <strong>All Hail the Hirsute.</strong></p>"
+            "text": "<p>Captain Fawcett’s collaboration with The Jodhpur Company is a magnificent tribute to the majesty of ancient India. Maharajah is the legend of brotherhood across the ages. A thousand years of memory, tailored for the modern gentleman.</p>"
           }
         },
         "text_kFfAU9": {
           "type": "text",
           "settings": {
-            "text": "<p>The Jodhpur Company</p>"
+            "text": "<p><em><strong>All Hail the Hirsute.</strong></em></p>"
           }
         }
       },
@@ -111,9 +111,13 @@
         "text_JhFTHW": {
           "type": "text",
           "settings": {
-            "text": "A tantalising, voluptuous fragrance redolent of ancient India’s princely opulence. The Captain’s Master Blender has woven heady rose with peppery spice, rich musk, beguiling cedar & leather studded with dazzling citrus top notes.",
+            "text": "A tantalising, voluptuous fragrance paying tribute to India’s princely splendour. The Captain’s Master Perfumer has woven heady Rose with aromatic Pepper and rich Musk, grounded in Cedarwood and Leather, lit from above by a flourish of dazzling Citrus. Shabash!",
             "text_style": "body"
           }
+        },
+        "quantity_selector_UtxH9N": {
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons_wUwFR3": {
           "type": "buy_buttons",
@@ -127,11 +131,12 @@
         "title_rTRBfW",
         "price_WFhL64",
         "text_JhFTHW",
+        "quantity_selector_UtxH9N",
         "buy_buttons_wUwFR3"
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "bianco-classico-moustache-wax",
+        "product": "maharajah-eau-de-parfum",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -202,11 +207,49 @@
         "padding_bottom": 36
       }
     },
+    "reviews_Ft3hbc": {
+      "type": "reviews",
+      "blocks": {
+        "slide_PVtjCH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Thumbs_Up_c93ba575-6204-47c7-bf73-d7b5c3bc62ed.png",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "JOE"
+          }
+        },
+        "slide_Hrzw3a": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/megaphone.png",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "JOE"
+          }
+        },
+        "slide_9UWB87": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/bulls_eye_098bdb65-53db-4de8-9241-c19e968ca78e.png",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "JOE"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PVtjCH",
+        "slide_Hrzw3a",
+        "slide_9UWB87"
+      ],
+      "name": "Default Slideshow",
+      "settings": {
+        "color_scheme": "scheme-2"
+      }
+    },
     "featured_collection_PYd6gN": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "frontpage",
+        "collection": "maharajah",
         "products_to_show": 6,
         "title": "For your further Delectation",
         "heading_size": "h1",
@@ -237,21 +280,21 @@
         "column_Rk9Xe8": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
+            "image": "shopify://shop_images/Nebula-688x1004px.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify://pages/nebula"
           }
         },
         "column_DfXaRL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
+            "image": "shopify://shop_images/Triumphant_688x1004px.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify://pages/triumphant"
           }
         }
       },
@@ -292,6 +335,7 @@
     "rich_text_7Wy4ax",
     "featured_product_qPytgn",
     "multicolumn_hG4cif",
+    "reviews_Ft3hbc",
     "featured_collection_PYd6gN",
     "multicolumn_pi76Kq",
     "main"

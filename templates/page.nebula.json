@@ -71,13 +71,13 @@
         "text_bkTiaP": {
           "type": "text",
           "settings": {
-            "text": "<p>The extraordinary<em>‘Nebula’ </em>Signature Series fragrance is nothing less than a tribute to the mysterious harmony of the universe. John Petrucci’s virtuoso composition with Captain Fawcett is quite simply...out of this world. A stellar range for all who rock.</p>"
+            "text": "<p>The extraordinary<em>‘Nebula’ </em>Signature Series is nothing less than a tribute to the mysterious harmony of the universe. John Petrucci’s virtuoso composition with Captain Fawcett is quite simply out of this world. A stellar range for all who rock.</p>"
           }
         },
         "text_kFfAU9": {
           "type": "text",
           "settings": {
-            "text": "<p>John Petrucci</p>"
+            "text": ""
           }
         }
       },
@@ -111,7 +111,7 @@
         "text_JhFTHW": {
           "type": "text",
           "settings": {
-            "text": "A tantalising, voluptuous fragrance redolent of ancient India’s princely opulence. The Captain’s Master Blender has woven heady rose with peppery spice, rich musk, beguiling cedar & leather studded with dazzling citrus top notes.",
+            "text": "A delightful fragrance reminiscent of riding a beloved motorcycle through England’s green & pleasant countryside on the balmy days of Spring. Heady top notes of Bergamot, Lime & Ylang race ahead, chased by juicy Blackcurrant, Clove & Galbanum, easing to a sunlit saunter through Sandalwood, Ambergris and Musk. ",
             "text_style": "body"
           }
         },
@@ -131,7 +131,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "bianco-classico-moustache-wax",
+        "product": "john-petrucci-nebula-beard-oil",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -143,6 +143,16 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "custom_liquid_QtPibh": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"video\">\n<h2>Indulge in some content</h2>\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/FmU1OmPsiTE?si=reMeGOuJEGEQUbmj\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "multicolumn_hG4cif": {
@@ -206,7 +216,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "frontpage",
+        "collection": "nebula",
         "products_to_show": 6,
         "title": "For your further Delectation",
         "heading_size": "h1",
@@ -238,7 +248,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -247,8 +257,8 @@
         "column_DfXaRL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
+            "image": "shopify://shop_images/Mobile_Collab_e539ef92-5866-470f-93c6-263fc492f7e5.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -291,6 +301,7 @@
     "rich_text_DFj7aT",
     "rich_text_7Wy4ax",
     "featured_product_qPytgn",
+    "custom_liquid_QtPibh",
     "multicolumn_hG4cif",
     "featured_collection_PYd6gN",
     "multicolumn_pi76Kq",

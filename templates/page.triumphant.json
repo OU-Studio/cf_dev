@@ -71,13 +71,13 @@
         "text_bkTiaP": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett’s <em>Triumphant</em> collaboration with actor and comedian Rufus Hound has resulted in a splendorous Signature Series fragrance inspired by riding his beloved motorcycle thru England’s green & pleasant countryside.</p><p>Redolent of the balmy days of Spring, in truth this is simply a delightful alchemic concoction and as such I would wager this to be one of Fawcett’s finest...<strong>Huzzah!</strong></p>"
+            "text": "<p>Captain Fawcett’s <em>Triumphant </em>collaboration with wit and raconteur Rufus Hound has resulted in a splendid Signature Series fragrance inspired by riding his beloved motorcycle through England’s green & pleasant countryside. Redolent of the balmy days of Spring, bright as a whistle, quick as a fox, with a wink that spells nothing but trouble.</p>"
           }
         },
         "text_kFfAU9": {
           "type": "text",
           "settings": {
-            "text": "<p>Rufus Hound</p>"
+            "text": "<p><strong>Huzzah!</strong></p>"
           }
         }
       },
@@ -111,7 +111,7 @@
         "text_JhFTHW": {
           "type": "text",
           "settings": {
-            "text": "A tantalising, voluptuous fragrance redolent of ancient India’s princely opulence. The Captain’s Master Blender has woven heady rose with peppery spice, rich musk, beguiling cedar & leather studded with dazzling citrus top notes.",
+            "text": "Fundamental kit for the contemporary beardsman. Captain Fawcett’s nourishing Beard Oil softens, smooths and subtly scents, restoring order to the most rebellious of whiskers.",
             "text_style": "body"
           }
         },
@@ -131,7 +131,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "bianco-classico-moustache-wax",
+        "product": "triumphant-eau-de-parfum-by-rufus-hound",
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "medium",
@@ -206,7 +206,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "frontpage",
+        "collection": "triumphant",
         "products_to_show": 6,
         "title": "For your further Delectation",
         "heading_size": "h1",
@@ -231,6 +231,54 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_VM6yFq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9Rx3BP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Heed the call of the rolling English road",
+            "heading_size": "h1"
+          }
+        },
+        "text_z6tFHk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I am simply delighted to announce that Captain Fawcett’s<em>'Triumphant'</em>collaboration with actor, comedian & all round good egg Rufus Hound has resulted in a rather splendid Signature Series Eau De Parfum. This delightful fragrance is reminiscent of the balmy days of Spring. Olfactory rural stimuli reaped by Rufus whilst riding his beloved motorcycle through England’s green & pleasant countryside. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_yMkAn6": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ THE ARTICLE",
+            "button_link": "/",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Rx3BP",
+        "text_z6tFHk",
+        "button_yMkAn6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/www.captainfawcett.com_rufus_hound_triumphant-132_low_res_large_4550f9c0-b767-4769-a8f0-44f553f6ad02.jpg",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_pi76Kq": {
       "type": "multicolumn",
       "blocks": {
@@ -238,7 +286,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -247,8 +295,8 @@
         "column_DfXaRL": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
+            "image": "shopify://shop_images/Mobile_Collab_e539ef92-5866-470f-93c6-263fc492f7e5.jpg",
+            "title": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -293,6 +341,7 @@
     "featured_product_qPytgn",
     "multicolumn_hG4cif",
     "featured_collection_PYd6gN",
+    "image_with_text_VM6yFq",
     "multicolumn_pi76Kq",
     "main"
   ]
