@@ -115,6 +115,10 @@
             "text_style": "body"
           }
         },
+        "quantity_selector_HqTRq4": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "buy_buttons_wUwFR3": {
           "type": "buy_buttons",
           "settings": {
@@ -127,6 +131,7 @@
         "title_rTRBfW",
         "price_WFhL64",
         "text_JhFTHW",
+        "quantity_selector_HqTRq4",
         "buy_buttons_wUwFR3"
       ],
       "name": "t:sections.featured-product.presets.name",
