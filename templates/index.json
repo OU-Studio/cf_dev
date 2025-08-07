@@ -12,7 +12,7 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2025-02-13_at_20.00.06_1.jpg",
+        "image": "shopify://shop_images/BG.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -30,7 +30,7 @@
       "settings": {
         "collection": "frontpage",
         "products_to_show": 6,
-        "title": "SELLING LIKE HOT CAKES!",
+        "title": "Selling Like Hot Cakes!",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -93,15 +93,15 @@
         "featured_page_mfj7Mp": {
           "type": "featured_page",
           "settings": {
-            "page": "ricky-hall",
-            "collection_image": "shopify://shop_images/Mobile_Collab.jpg"
+            "page": "maharajah",
+            "collection_image": "shopify://shop_images/Maharajah_688x1004px.jpg"
           }
         },
         "featured_page_wfVfUa": {
           "type": "featured_page",
           "settings": {
-            "page": "john-petrucci",
-            "collection_image": "shopify://shop_images/Mobile_Collab2.jpg"
+            "page": "nebula",
+            "collection_image": "shopify://shop_images/Nebula-688x1004px.jpg"
           }
         }
       },
@@ -110,7 +110,7 @@
         "featured_page_wfVfUa"
       ],
       "settings": {
-        "title": "Collaborations to peruse",
+        "title": "Collaborations To Peruse",
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLABORATIONS",
         "image_ratio": "adapt",
@@ -129,41 +129,32 @@
         "slide_N9MmrB": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "image": "shopify://shop_images/megaphone.png",
             "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
-            "name": "Joe Cory"
+            "name": "J.C LONDON"
           }
         },
-        "slide_eGmnhV": {
+        "slide_kRzVfm": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "image": "shopify://shop_images/Thumbs_Up_c93ba575-6204-47c7-bf73-d7b5c3bc62ed.png",
             "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
-            "name": "Joe Cory"
+            "name": "J.C LONDON"
           }
         },
-        "slide_t3MxiT": {
+        "slide_6XAhtq": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
+            "image": "shopify://shop_images/bulls_eye_098bdb65-53db-4de8-9241-c19e968ca78e.png",
             "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
-            "name": "Joe Cory"
-          }
-        },
-        "slide_UXY3zr": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/www.captainfawcett.com-low_res-5807.jpg",
-            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
-            "name": "Joe Cory"
+            "name": "J.C LONDON"
           }
         }
       },
       "block_order": [
         "slide_N9MmrB",
-        "slide_eGmnhV",
-        "slide_t3MxiT",
-        "slide_UXY3zr"
+        "slide_kRzVfm",
+        "slide_6XAhtq"
       ],
       "settings": {
         "color_scheme": "scheme-2"

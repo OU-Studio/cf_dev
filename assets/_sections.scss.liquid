@@ -203,7 +203,7 @@
 .collection-list-title {
   font-style: italic !important;
   text-align: center;
-  padding-bottom: 20px !important;
+  padding: 20px 0px !important;
 }
 
 .collection-list-view-all {
@@ -304,9 +304,9 @@ blockquote {
   bottom: 0px !important;
   width: 60px !important;
   height: 30px !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   z-index: 9;
 
   &:before {
@@ -316,12 +316,12 @@ blockquote {
 
 .slick-next {
   right: 20px !important;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing.png?v=1742680749);
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing.png?v=1742680749) !important;
 }
 
 .slick-prev {
   left: 20px !important;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing2.png?v=1742680749);
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing2.png?v=1742680749) !important;
 }
 
 .slick-slider {
@@ -367,4 +367,33 @@ blockquote {
 .reviews.gradient.scheme-2 {
   background-color: var(--cream);
   padding-bottom: 10px;
+}
+
+// ----------------------------
+// ⭐ Featured Collection
+// ----------------------------
+
+slider-component.page-width{
+padding: 0px 10px 10px 10px !important
+}
+
+.quick-add__submit{
+      display: flex
+;
+    width: 100%;
+    padding: 10px 20px !important;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--red);
+    -webkit-appearance: none;
+    appearance: none;
+    span{
+          line-height: 1em !important;
+    font-size: 18px !important;
+    color: var(--cream);
+    letter-spacing: .025em !important;
+    }
 }

@@ -12,7 +12,7 @@ product-info {
   // ---------- Product Media
   .product__media-wrapper {
     background-color: var(--cream);
-    margin: 0px 20px;
+    margin: 0px 10px;
   }
 
   .product__media-list {
@@ -46,9 +46,9 @@ product-info {
 
   // ---------- Product Info
   .product__info-wrapper {
-    padding: 20px;
+    padding: 10px;
     background-color: var(--cream);
-    margin: 0px 20px;
+    margin: 0px 10px;
   }
 
   .product__title {
@@ -62,7 +62,7 @@ product-info {
   }
 
   .priceWrapperMain {
-    margin-top: 5px !important;
+    margin: 5px 0px !important;
   }
 
   .price-item,
@@ -133,6 +133,7 @@ product-info {
   // ---------- Quantity Wrapper
   .qWrapper {
     position: relative;
+    width: 100%;
 
     .quantity__button path {
       fill: var(--red) !important;
@@ -208,4 +209,40 @@ product-info {
 .product__title {
   font-style: initial !important;
   margin-top: 10px !important;
+}
+
+.product__media-wrapper slider-component:not(.thumbnail-slider--no-slide){
+  margin: 0px !important;
+}
+
+.product .price .badge, .product .price__container{
+  margin: 0px !important;
+}
+
+.product__info-container>*+*{
+  margin: 10px 0px !important;
+}
+
+.product__info-container .product-form, .product__info-container .product__description, .product__info-container .icon-with-text{
+  margin: 10px 0px !important
+}
+
+.collapsible-row{
+  h2{
+    display: flex;
+    justify-content: space-between;
+  }
+  svg{
+    width: 20px;
+  }
+}
+
+//related products
+
+.related-products{
+  margin: 0px 20px;
+  .related-products__heading{
+    margin: 10px 0px !important;
+    text-align: center;
+  }
 }
