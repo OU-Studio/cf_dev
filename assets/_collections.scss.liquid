@@ -1,0 +1,242 @@
+// ============================================
+// 🧩 Collections & Filters
+// ============================================
+
+#FacetFiltersForm {
+  > * {
+    display: none !important;
+  }
+
+  > .product-count {
+    display: block !important;
+  }
+}
+
+.facets-container {
+  display: block !important;
+  padding-top: 0px !important;
+
+  > * {
+    display: none !important;
+  }
+
+  > .product-count {
+    display: block !important;
+    text-align: center !important;
+    margin-bottom: 10px;
+  }
+
+  #ProductCount {
+    text-transform: uppercase;
+  }
+}
+
+.customFilters {
+  background-color: var(--cream);
+  margin: 10px 10px 0px 10px;
+  padding: 10px;
+
+  .cfToggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    justify-content: center;
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/filterIcon.png?v=1743354360);
+    }
+  }
+
+  .priceFilter {
+    padding-top: 10px;
+
+    > p:first-of-type {
+      margin-top: 0px !important;
+    }
+  }
+
+  #sortOptions {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='black' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 10px 7px;
+  }
+}
+
+// ----------------------------
+// 💲 Price Slider Styles
+// ----------------------------
+
+#price-range-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#price-slider {
+  padding-top: 10px !important;
+  background-color: transparent !important;
+}
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+
+.slider-track {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #e0e0e0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+// ----------------------------
+// noUi Slider (custom plugin)
+// ----------------------------
+
+.noUi-connect {
+  background: black;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.noUi-base,
+.noUi-target {
+  background: black;
+  height: 1px;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-handle {
+  width: 12px !important;
+  height: 12px !important;
+  background: black;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  top: -6px !important;
+  cursor: grab;
+
+  &:before,
+  &:after {
+    display: none !important;
+  }
+}
+
+.noUi-handle-lower {
+  right: -12px !important;
+}
+
+.noUi-handle-upper {
+  right: 0px !important;
+}
+
+.noUi-handle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.noUi-tooltip {
+  display: none;
+}
+
+// ----------------------------
+// 🧭 Breadcrumb
+// ----------------------------
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 5px;
+  background-color: var(--cream);
+
+  a {
+    text-decoration: none;
+
+    &:last-of-type {
+      color: var(--black);
+    }
+  }
+
+  .breadcrumb__delimiter {
+    color: var(--red);
+    font-size: 20px;
+  }
+}
+
+// ----------------------------
+// 🌟 Featured-product price
+// ----------------------------
+
+body .featured-product .product__info-container > * + * {
+  margin: 0px !important;
+}
+
+.price * {
+  color: var(--red) !important;
+}
+
+body .featured-product .product__info-container {
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 80px;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/PORTER_red_bags.webp?v=1753869122);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 22px;
+    right: 0px;
+  }
+}
+
+// ----------------------------
+// 🧱 Miscellaneous
+// ----------------------------
+
+.multicolumn-card__info > :nth-child(2) {
+  margin-top: 0.5rem !important;
+}

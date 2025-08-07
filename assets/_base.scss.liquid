@@ -1,0 +1,31 @@
+// ============================================
+// 🔧 Base / Resets
+// ============================================
+
+html {
+  .visually-hidden,
+  .hidden,
+  [aria-hidden="true"] {
+    display: none;
+  }
+}
+
+body {
+  font-size: 16px;
+  margin: 0px;
+  background-color: var(--offwhite);
+}
+
+a:-webkit-any-link {
+  color: inherit;
+}
+
+// Shopify specific background fix
+.color-scheme-2.gradient {
+  background-color: var(--cream);
+}
+
+// Remove section padding on .gradient > div
+.gradient > div {
+  padding: 0px !important;
+}
