@@ -130,7 +130,7 @@
         "heading_fQiJJm": {
           "type": "heading",
           "settings": {
-            "heading": "Issue No. 10",
+            "heading": "Issue No.10",
             "heading_size": "h1"
           }
         },
@@ -175,18 +175,18 @@
     "image_banner_chjqj7": {
       "type": "image-banner",
       "blocks": {
-        "heading_yryVMf": {
-          "type": "heading",
-          "settings": {
-            "heading": "IN OUR MUSEUM",
-            "heading_size": "h1"
-          }
-        },
         "text_wRnJT4": {
           "type": "text",
           "settings": {
             "text": "A Place Of Wondrous Idea And Invention",
             "text_style": "body"
+          }
+        },
+        "heading_yryVMf": {
+          "type": "heading",
+          "settings": {
+            "heading": "IN OUR MUSEUM",
+            "heading_size": "h1"
           }
         },
         "buttons_Cm4FFN": {
@@ -202,8 +202,8 @@
         }
       },
       "block_order": [
-        "heading_yryVMf",
         "text_wRnJT4",
+        "heading_yryVMf",
         "buttons_Cm4FFN"
       ],
       "name": "t:sections.image-banner.presets.name",
@@ -286,8 +286,15 @@
         "heading_VHcnmF": {
           "type": "heading",
           "settings": {
-            "heading": "The captain Shall be attending..",
-            "heading_size": "h1"
+            "heading": "THE CAPTAIN",
+            "heading_size": "h0"
+          }
+        },
+        "text_6rkENj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shall Be Attending</p>",
+            "text_style": "body"
           }
         },
         "text_imNKwh": {
@@ -300,6 +307,7 @@
       },
       "block_order": [
         "heading_VHcnmF",
+        "text_6rkENj",
         "text_imNKwh"
       ],
       "name": "t:sections.image-with-text.presets.name",
