@@ -1,0 +1,78 @@
+[data-template="page.explore"] {
+  .shopify-section-group-header-group {
+    padding-bottom: 0px !important;
+  }
+
+  #MainContent .shopify-section:nth-of-type(2) {
+    position: relative;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 40px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 40px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(180deg);
+    }
+
+    .rich-text {
+      padding-bottom: 0px;
+    }
+
+
+    p {
+      text-align: center;
+    }
+
+    p,
+    h1,
+    .rte {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+
+    p {
+      font-family: "garamond-premier-pro-display";
+      font-size: var(--garamond-large-size);
+      line-height: var(--garamond-large-line-height);
+      letter-spacing: var(--garamond-large-letter-spacing);
+      font-weight: var(--garamond-large-weight);
+      font-style: var(--garamond-large-style);
+      color: var(--grey);
+    }
+
+    h1 {
+      font-size: 50px !important;
+      color: var(--black)
+    }
+  }
+
+  #MainContent .shopify-section:nth-of-type(3) {
+.rich-text{
+  padding-bottom: 0px !important;
+  h2{font-feature-settings: 'swsh' on;}
+}
+  }
+
+  #MainContent .shopify-section:nth-of-type(4) {
+    padding: 0px 10px;
+  }
+
+  
+}

@@ -19,10 +19,38 @@
     },
     "image_banner_y4LJne": {
       "type": "image-banner",
+      "blocks": {
+        "text_kEGQRn": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome To",
+            "text_style": "body"
+          }
+        },
+        "heading_pmypdC": {
+          "type": "heading",
+          "settings": {
+            "heading": "CAPTAIN FAWCETT'S",
+            "heading_size": "h1"
+          }
+        },
+        "text_KwQrwa": {
+          "type": "text",
+          "settings": {
+            "text": "Emporium",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_kEGQRn",
+        "heading_pmypdC",
+        "text_KwQrwa"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/exploreBanner.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 30,
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -60,6 +88,31 @@
       "block_order": [
         "heading_czMn4k",
         "button_NJKr9f"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_t8tPek": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kXBzjy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Read The Fawcett Times",
+            "heading_size": "h1",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kXBzjy"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -271,6 +324,7 @@
     "main",
     "image_banner_y4LJne",
     "rich_text_Yg98QR",
+    "rich_text_t8tPek",
     "image_with_text_98cEtm",
     "image_banner_chjqj7",
     "image_with_text_eC6RNt",

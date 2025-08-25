@@ -129,6 +129,7 @@
 {{ '_sections.scss.css' | asset_url | stylesheet_tag }}
 {{ '_products.scss.css' | asset_url | stylesheet_tag }}
 {{ '_collections.scss.css' | asset_url | stylesheet_tag }}
+{{ '_template-explore.scss.css' | asset_url | stylesheet_tag }}
 {{ '_template-maharaja.scss.css' | asset_url | stylesheet_tag }}
 {{ '_template-nebula.scss.css' | asset_url | stylesheet_tag }}
 {{ '_template-barberism.scss.css' | asset_url | stylesheet_tag }}
@@ -142,6 +143,8 @@
         --empera-large-letter-spacing: {{ settings.empera_large_letter_spacing }}px;
         --empera-large-weight: {{ settings.empera_large_weight }};
         --empera-large-style: {{ settings.empera_large_style }};
+
+  //font-feature-settings: 'swsh' on;
 
         --garamond-large-size: {{ settings.garamond_large_size }}px;
         --garamond-large-line-height: {{ settings.garamond_large_line_height }}em;
