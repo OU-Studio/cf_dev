@@ -1,0 +1,280 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_y4LJne": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/exploreBanner.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_Yg98QR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_czMn4k": {
+          "type": "heading",
+          "settings": {
+            "heading": "Welcome to Captain Fawcett's Emporium...",
+            "heading_size": "h1",
+            "alignment": "center"
+          }
+        },
+        "button_NJKr9f": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ MORE",
+            "button_link": "/",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_czMn4k",
+        "button_NJKr9f"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_98cEtm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fQiJJm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Issue No. 10",
+            "heading_size": "h1"
+          }
+        },
+        "text_njCrfK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Spring 2025</p>",
+            "text_style": "body"
+          }
+        },
+        "button_6tkC6E": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW ALL EDITIONS",
+            "button_link": "/",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fQiJJm",
+        "text_njCrfK",
+        "button_6tkC6E"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ftPlaceholder.png",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_chjqj7": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_yryVMf": {
+          "type": "heading",
+          "settings": {
+            "heading": "IN OUR MUSEUM",
+            "heading_size": "h1"
+          }
+        },
+        "text_wRnJT4": {
+          "type": "text",
+          "settings": {
+            "text": "A Place Of Wondrous Idea And Invention",
+            "text_style": "body"
+          }
+        },
+        "buttons_Cm4FFN": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "ENTER THE MUSEUM",
+            "button_link_1": "/",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_yryVMf",
+        "text_wRnJT4",
+        "buttons_Cm4FFN"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Group_2896.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_with_text_eC6RNt": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/journalWrite4_1.png",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_jNEAHh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_e8JzhR": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Gentleman’s Guide to Summer Beard Survivalartwork by  Stuart Barrie",
+            "heading_size": "h1"
+          }
+        },
+        "button_X3T86C": {
+          "type": "button",
+          "settings": {
+            "button_label": "VIEW ALL NEWS",
+            "button_link": "/",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_e8JzhR",
+        "button_X3T86C"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Summer_of_the_Beard_no_background_3e55dee3-e1b2-4b34-9b8d-3051d4f9cc59_large_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_bzatN3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VHcnmF": {
+          "type": "heading",
+          "settings": {
+            "heading": "The captain Shall be attending..",
+            "heading_size": "h1"
+          }
+        },
+        "text_imNKwh": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>V’s Barbershop Summit, Phoenix</h4><p>10th may 2024</p><h4>V’s Barbershop Summit, Phoenix</h4><p>10th may 2024</p><h4>V’s Barbershop Summit, Phoenix</h4><p>10th may 2024</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VHcnmF",
+        "text_imNKwh"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Image_6e346bbe-2db1-47df-8fbf-82db29262627.jpg",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_y4LJne",
+    "rich_text_Yg98QR",
+    "image_with_text_98cEtm",
+    "image_banner_chjqj7",
+    "image_with_text_eC6RNt",
+    "image_with_text_jNEAHh",
+    "image_with_text_bzatN3"
+  ]
+}
