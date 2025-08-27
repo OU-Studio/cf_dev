@@ -1,0 +1,87 @@
+[data-template="page.fawcett-times"] {
+  .shopify-section-group-header-group {
+    padding-bottom: 0px !important;
+  }
+
+  #MainContent .shopify-section:nth-of-type(2) {
+    padding: 0px 10px;
+      h2{
+        font-style: normal !important;
+      }
+    .image-with-text__text{
+      margin: 0px !important;
+      p{
+        color: var(--red) !important;
+      }
+    }
+  }
+
+  #MainContent .shopify-section:nth-of-type(3), #MainContent .shopify-section:nth-of-type(4), #MainContent .shopify-section:nth-of-type(5), #MainContent .shopify-section:nth-of-type(6) {
+    padding: 0px 10px;
+    * {
+      text-align: center; 
+    }
+
+    .multicolumn-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px 5px;
+      list-style-type: none;
+      padding: 0px !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px !important;
+        padding: 0px !important;
+
+        .media {
+          padding: 0px !important;
+          position: relative;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+        padding-top: 0px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/2);
+        h3{
+      font-family: "garamond-premier-pro-display";
+      font-size: var(--garamond-large-size);
+      line-height: var(--garamond-large-line-height);
+      letter-spacing: var(--garamond-large-letter-spacing);
+      font-weight: var(--garamond-large-weight);
+      font-style: var(--garamond-large-style);
+      color: var(--black);
+      font-style: normal !important;
+        }
+        .rte{
+          margin-top: 0px !important;
+        }
+        p{
+      font-family: "garamond-premier-pro-display";
+      font-size: var(--garamond-small-size);
+      line-height: var(--garamond-large-line-height);
+      letter-spacing: var(--garamond-large-letter-spacing);
+      font-weight: var(--garamond-large-weight);
+      font-style: var(--garamond-large-style);
+      color: var(--red);
+      font-style: normal !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none !important;
+      }
+    }
+  }
+  
+}

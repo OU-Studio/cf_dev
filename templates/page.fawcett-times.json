@@ -160,12 +160,219 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_7LWk6w": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DNj66T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fDgqYU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ieeNVc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3xFadg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DNj66T",
+        "column_fDgqYU",
+        "column_ieeNVc",
+        "column_3xFadg"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_3cha3E": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FEhz4d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_n4thnV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RpBrxD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_anen3G": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FEhz4d",
+        "column_n4thnV",
+        "column_RpBrxD",
+        "column_anen3G"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_bj7Cjp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_j8Kaww": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_j96aMz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_NGNLNK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GbEGwM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_j8Kaww",
+        "column_j96aMz",
+        "column_NGNLNK",
+        "column_GbEGwM"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_8caTpY",
     "image_with_text_YXj4Mx",
-    "multicolumn_rWyKy3"
+    "multicolumn_rWyKy3",
+    "multicolumn_7LWk6w",
+    "multicolumn_3cha3E",
+    "multicolumn_bj7Cjp"
   ]
 }
