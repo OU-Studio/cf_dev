@@ -589,6 +589,10 @@ body .featured-product .product__info-container:after {
   display: none;
 }
 
+.banner--mobile-bottom .banner__box {
+  padding: 40px 20px !important;
+}
+
 .template-search .title-wrapper-with-link {
   display: none !important;
 }
@@ -1187,7 +1191,8 @@ product-info {
   margin: 0px !important;
 }
 
-.product .price .badge, .product .price__container {
+.product .price .badge,
+.product .price__container {
   margin: 0px !important;
 }
 
@@ -1195,7 +1200,9 @@ product-info {
   margin: 10px 0px !important;
 }
 
-.product__info-container .product-form, .product__info-container .product__description, .product__info-container .icon-with-text {
+.product__info-container .product-form,
+.product__info-container .product__description,
+.product__info-container .icon-with-text {
   margin: 10px 0px !important;
 }
 
@@ -1706,35 +1713,59 @@ slider-component.page-width {
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) .image-with-text__text p {
   color: var(--red) !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3), [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4), [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5), [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3),
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4),
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5),
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) {
   padding: 0px 10px;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) *, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) *, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) *, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) * {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) *,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) *,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) *,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) * {
   text-align: center;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 5px;
   list-style-type: none;
   padding: 0px !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px !important;
   padding: 0px !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper .media, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper .media, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper .media, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper .media {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper .media,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper .media,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper .media,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper .media {
   padding: 0px !important;
   position: relative;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__info, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__info, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__info, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__info {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__info,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__info,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__info,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__info {
   padding: 10px !important;
   padding-top: 0px !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li {
   width: calc((100% - 10px) / 2);
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li h3, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li h3, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li h3 {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li h3,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li h3,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li h3 {
   font-family: "garamond-premier-pro-display";
   font-size: var(--garamond-large-size);
   line-height: var(--garamond-large-line-height);
@@ -1744,10 +1775,16 @@ slider-component.page-width {
   color: var(--black);
   font-style: normal !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li .rte, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li .rte, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li .rte {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li .rte,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li .rte,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li .rte {
   margin-top: 0px !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li p, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li p, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li p {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li p,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li p,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li p {
   font-family: "garamond-premier-pro-display";
   font-size: var(--garamond-small-size);
   line-height: var(--garamond-large-line-height);
@@ -1757,7 +1794,10 @@ slider-component.page-width {
   color: var(--red);
   font-style: normal !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list img, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list img, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list img, [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list img {
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list img,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list img,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list img,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
@@ -2091,4 +2131,142 @@ small,
   font-style: var(--norwester-small-style) !important;
   color: var(--black) !important;
   text-transform: uppercase !important;
+}
+
+[data-url="/blogs/captains-journal"] .title--primary {
+  display: none !important;
+}
+[data-url="/blogs/captains-journal"] .blog-articles {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+[data-url="/blogs/captains-journal"] .card__inner .card__content {
+  display: none !important;
+}
+[data-url="/blogs/captains-journal"] .card__information {
+  padding: 10px !important;
+}
+[data-url="/blogs/captains-journal"] .card__heading, [data-url="/blogs/captains-journal"] .article-card__info {
+  max-width: none !important;
+}
+[data-url="/blogs/captains-journal"] .article-card__excerpt {
+  margin: 0px !important;
+}
+[data-url="/blogs/captains-journal"] .article {
+  background-color: var(--cream);
+}
+[data-url="/blogs/captains-journal"] .button {
+  display: flex;
+  padding: 4px !important;
+  border: none !important;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 150px;
+}
+[data-url="/blogs/captains-journal"] .button .spacer {
+  display: block;
+  width: 100%;
+  padding-bottom: 19.0798552833%;
+}
+[data-url="/blogs/captains-journal"] .button .buttonBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+[data-url="/blogs/captains-journal"] .button .buttonDetail-left {
+  width: 26px;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[data-url="/blogs/captains-journal"] .button .buttonDetail-left * {
+  fill: var(--black);
+}
+[data-url="/blogs/captains-journal"] .button .buttonDetail-right {
+  width: 26px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[data-url="/blogs/captains-journal"] .button .buttonDetail-right * {
+  fill: var(--black);
+}
+[data-url="/blogs/captains-journal"] .button span {
+  line-height: 1em !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--black) !important;
+  width: 100%;
+  text-align: Center;
+}
+
+[data-template="article.captains-journal"] .page-width {
+  margin: 10px 10px !important;
+}
+[data-template="article.captains-journal"] .article-template__title {
+  display: none !important;
+}
+[data-template="article.captains-journal"] h2 {
+  margin-bottom: 0px !important;
+}
+[data-template="article.captains-journal"] .button {
+  margin: auto;
+  display: flex;
+  padding: 4px !important;
+  border: none !important;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
+}
+[data-template="article.captains-journal"] .button .spacer {
+  display: block;
+  width: 100%;
+  padding-bottom: 19.0798552833%;
+}
+[data-template="article.captains-journal"] .button .buttonBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+[data-template="article.captains-journal"] .button .buttonDetail-left {
+  width: 26px;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[data-template="article.captains-journal"] .button .buttonDetail-left * {
+  fill: var(--black);
+}
+[data-template="article.captains-journal"] .button .buttonDetail-right {
+  width: 26px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[data-template="article.captains-journal"] .button .buttonDetail-right * {
+  fill: var(--black);
+}
+[data-template="article.captains-journal"] .button span {
+  line-height: 1em !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--black) !important;
+  width: 100%;
+  text-align: Center;
 }

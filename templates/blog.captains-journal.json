@@ -9,13 +9,50 @@
  */
 {
   "sections": {
+    "image_banner_H8nVrT": {
+      "type": "image-banner",
+      "blocks": {
+        "text_KPMeMc": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome To The",
+            "text_style": "body"
+          }
+        },
+        "heading_eq6HYq": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAWCETT TIMES",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "text_KPMeMc",
+        "heading_eq6HYq"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Summer_of_the_Beard_no_background_3e55dee3-e1b2-4b34-9b8d-3051d4f9cc59_large_1.jpg",
+        "image_overlay_opacity": 30,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
         "layout": "collage",
         "show_image": true,
         "image_height": "medium",
-        "show_date": true,
+        "show_date": false,
         "show_author": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -23,6 +60,7 @@
     }
   },
   "order": [
+    "image_banner_H8nVrT",
     "main"
   ]
 }
