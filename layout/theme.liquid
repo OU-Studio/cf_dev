@@ -117,25 +117,9 @@
 
     {{ content_for_header }}
 
-    {{ 'base.scss.css' | asset_url | stylesheet_tag }}
-    {{ '_header.scss.css' | asset_url | stylesheet_tag }}
-    {{ '_mixins.scss.css' | asset_url | stylesheet_tag }}
-{{ '_variables.scss.css' | asset_url | stylesheet_tag }}
-{{ '_fonts.scss.css' | asset_url | stylesheet_tag }}
-{{ '_base.scss.css' | asset_url | stylesheet_tag }}
-{{ '_typography.scss.css' | asset_url | stylesheet_tag }}
-{{ '_footer.scss.css' | asset_url | stylesheet_tag }}
-{{ '_buttons.scss.css' | asset_url | stylesheet_tag }}
-{{ '_sections.scss.css' | asset_url | stylesheet_tag }}
-{{ '_products.scss.css' | asset_url | stylesheet_tag }}
-{{ '_collections.scss.css' | asset_url | stylesheet_tag }}
-{{ '_template-explore.scss.css' | asset_url | stylesheet_tag }}
-{{ '_template-maharaja.scss.css' | asset_url | stylesheet_tag }}
-{{ '_template-nebula.scss.css' | asset_url | stylesheet_tag }}
-{{ '_template-barberism.scss.css' | asset_url | stylesheet_tag }}
-{{ '_template-triumphant.scss.css' | asset_url | stylesheet_tag }}
-{{ '_overrides.scss.css' | asset_url | stylesheet_tag }}
-{{ '_template-ft.scss.css' | asset_url | stylesheet_tag }}
+
+    <link rel="stylesheet" href="{{ 'base.css' | asset_url }}?t={{ 'now' | date: '%s' }}">
+
 
     <style>
       :root {
@@ -145,7 +129,7 @@
         --empera-large-weight: {{ settings.empera_large_weight }};
         --empera-large-style: {{ settings.empera_large_style }};
 
-  //font-feature-settings: 'swsh' on;
+  /*font-feature-settings: 'swsh' on;*/
 
         --garamond-large-size: {{ settings.garamond_large_size }}px;
         --garamond-large-line-height: {{ settings.garamond_large_line_height }}em;
@@ -186,6 +170,7 @@
         --red: #A30000;
         --black: #000000;
         --grey: #000000;
+      
         /*
             --cream:rgb(43, 206, 218);
         --offwhite:rgb(91, 129, 40);            
