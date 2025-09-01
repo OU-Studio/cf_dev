@@ -590,7 +590,8 @@ body .featured-product .product__info-container:after {
 }
 
 .banner--mobile-bottom .banner__box {
-  padding: 40px 20px !important;
+  padding: 40px 40px !important;
+  box-sizing: border-box;
 }
 
 .template-search .title-wrapper-with-link {
@@ -931,6 +932,22 @@ body .featured-product .product__info-container:after {
   text-align: center;
 }
 
+.rich-text__image {
+  margin: 20px 0px 20px 0px !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.rich-text__image img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: var(--image-max-width, 800px) !important;
+  margin: auto !important;
+  position: relative !important;
+  top: initial !important;
+  left: initial !important;
+}
+
 .banner__buttons {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
@@ -1230,7 +1247,7 @@ product-info {
   max-width: 140px;
   margin: auto;
   display: block;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/FlourishWhite.png?v=1756720163);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1571,243 +1588,6 @@ slider-component.page-width {
   letter-spacing: 0.025em !important;
 }
 
-[data-template="page.explore"] .shopify-section-group-header-group {
-  padding-bottom: 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) {
-  position: relative;
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2):before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 40px;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2):after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 40px;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transform: rotate(180deg);
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) .rich-text {
-  padding-bottom: 0px;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) p {
-  text-align: center;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) p,
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) h1,
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) .rte {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) p {
-  font-family: "garamond-premier-pro-display";
-  font-size: var(--garamond-large-size);
-  line-height: var(--garamond-large-line-height);
-  letter-spacing: var(--garamond-large-letter-spacing);
-  font-weight: var(--garamond-large-weight);
-  font-style: var(--garamond-large-style);
-  color: var(--grey);
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) h1 {
-  font-size: 50px !important;
-  color: var(--black);
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(3) .rich-text {
-  padding-bottom: 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(3) .rich-text h2 {
-  font-feature-settings: "swsh" on;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) {
-  padding: 0px 10px;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) h2 {
-  font-style: normal !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) .image-with-text__text {
-  margin: 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) .image-with-text__text p {
-  color: var(--red) !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(5) > .banner .media:before {
-  padding-bottom: 150% !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(6) {
-  padding: 0px 20px;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) {
-  padding: 0px 10px;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) > div {
-  background-color: var(--cream);
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) h2 {
-  font-size: var(--garamond-small-size);
-  text-align: center;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) .image-with-text__content {
-  align-items: center !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) .image-with-text__content .button {
-  text-align: center;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .image-with-text__text-item {
-  padding: 10px 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) h2 {
-  font-family: "emperaRegular" !important;
-  font-size: 50px;
-  line-height: 0.8em;
-  letter-spacing: var(--empera-large-letter-spacing);
-  font-weight: var(--empera-large-weight);
-  font-style: var(--empera-large-style);
-  margin: 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .image-with-text__text:nth-of-type(1) {
-  margin-top: 0px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .image-with-text__text:nth-of-type(1) p {
-  margin: 0px !important;
-  font-size: var(--garamond-large-size);
-  font-feature-settings: "swsh" on;
-  font-style: italic;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .image-with-text__text:nth-of-type(2) {
-  margin-top: 5px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .image-with-text__text:nth-of-type(2) p {
-  font-size: var(--garamond-tiny-size);
-  margin-bottom: 5px !important;
-}
-[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .image-with-text__text:nth-of-type(2) h4 {
-  margin: 0px !important;
-  font-weight: var(--garamond-large-weight);
-}
-
-[data-template="page.fawcett-times"] .shopify-section-group-header-group {
-  padding-bottom: 0px !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) {
-  padding: 0px 10px;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) h2 {
-  font-style: normal !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) .image-with-text__text {
-  margin: 0px !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) .image-with-text__text p {
-  color: var(--red) !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3),
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4),
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5),
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) {
-  padding: 0px 10px;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) *,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) *,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) *,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) * {
-  text-align: center;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px 5px;
-  list-style-type: none;
-  padding: 0px !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper {
-  margin: 0px !important;
-  padding: 0px !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper .media,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper .media,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper .media,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper .media {
-  padding: 0px !important;
-  position: relative;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__info,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__info,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__info,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__info {
-  padding: 10px !important;
-  padding-top: 0px !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li {
-  width: calc((100% - 10px) / 2);
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li h3,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li h3,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li h3 {
-  font-family: "garamond-premier-pro-display";
-  font-size: var(--garamond-large-size);
-  line-height: var(--garamond-large-line-height);
-  letter-spacing: var(--garamond-large-letter-spacing);
-  font-weight: var(--garamond-large-weight);
-  font-style: var(--garamond-large-style);
-  color: var(--black);
-  font-style: normal !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li .rte,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li .rte,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li .rte {
-  margin-top: 0px !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li p,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li p,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li p {
-  font-family: "garamond-premier-pro-display";
-  font-size: var(--garamond-small-size);
-  line-height: var(--garamond-large-line-height);
-  letter-spacing: var(--garamond-large-letter-spacing);
-  font-weight: var(--garamond-large-weight);
-  font-style: var(--garamond-large-style);
-  color: var(--red);
-  font-style: normal !important;
-}
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list img,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list img,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list img,
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  position: relative;
-  top: 0;
-  left: 0;
-  transform: none !important;
-}
-
 [data-template="page.maharaja"] .shopify-section-group-header-group {
   padding-bottom: 0px !important;
 }
@@ -1895,22 +1675,6 @@ slider-component.page-width {
 }
 [data-template="page.maharaja"] #MainContent .shopify-section:nth-of-type(4) .product__view-details {
   display: none !important;
-}
-[data-template="page.maharaja"] .notesSlider {
-  width: 70% !important;
-}
-[data-template="page.maharaja"] .notesSlider .slick-list {
-  overflow: visible !important;
-}
-[data-template="page.maharaja"] .notesSlider .slick-list li {
-  background-color: var(--cream) !important;
-  margin: 0px 4px !important;
-}
-[data-template="page.maharaja"] .notesSlider .slick-list .media {
-  max-width: 120px !important;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 [data-template="page.maharaja"] #shopify-section-template--25011248628090__reviews_Ft3hbc {
   background-color: var(--cream);
@@ -2016,6 +1780,23 @@ slider-component.page-width {
   color: var(--black) !important;
   white-space: nowrap;
   margin: 0px !important;
+}
+
+.notesSlider {
+  width: 70% !important;
+}
+.notesSlider .slick-list {
+  overflow: visible !important;
+}
+.notesSlider .slick-list li {
+  background-color: var(--cream) !important;
+  margin: 0px 4px !important;
+}
+.notesSlider .slick-list .media {
+  max-width: 120px !important;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -2131,6 +1912,258 @@ small,
   font-style: var(--norwester-small-style) !important;
   color: var(--black) !important;
   text-transform: uppercase !important;
+}
+
+[data-template="page.explore"] .shopify-section-group-header-group {
+  padding-bottom: 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) {
+  position: relative;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2):before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2):after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) .rich-text {
+  padding-bottom: 0px;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) p {
+  text-align: center;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) p,
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) h1,
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) .rte {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) p {
+  font-family: "garamond-premier-pro-display";
+  font-size: var(--garamond-large-size);
+  line-height: var(--garamond-large-line-height);
+  letter-spacing: var(--garamond-large-letter-spacing);
+  font-weight: var(--garamond-large-weight);
+  font-style: var(--garamond-large-style);
+  color: var(--grey);
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(2) h1 {
+  font-size: 50px !important;
+  color: var(--black);
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(3) .rich-text {
+  padding-bottom: 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(3) .rich-text h2 {
+  font-feature-settings: "swsh" on;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) {
+  padding: 0px 10px;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) h2 {
+  font-style: normal !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) .image-with-text__text {
+  margin: 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(4) .image-with-text__text p {
+  color: var(--red) !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(5) > .banner .media:before {
+  padding-bottom: 150% !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(6) {
+  padding: 0px 20px;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(6) .gradient {
+  padding: 10px 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) {
+  padding: 0px 10px;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) > div {
+  background-color: var(--cream);
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) h2 {
+  font-size: var(--garamond-small-size);
+  text-align: center;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) .image-with-text__content {
+  align-items: center !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(7) .image-with-text__content .button {
+  text-align: center;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) .image-with-text__text-item {
+  padding: 10px 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) h2 {
+  font-family: "emperaRegular" !important;
+  font-size: 50px;
+  line-height: 0.8em;
+  letter-spacing: var(--empera-large-letter-spacing);
+  font-weight: var(--empera-large-weight);
+  font-style: var(--empera-large-style);
+  margin: 0px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) .image-with-text__text:nth-of-type(1) {
+  margin-top: 10px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) .image-with-text__text:nth-of-type(1) p {
+  margin: 0px !important;
+  font-size: var(--garamond-large-size);
+  font-feature-settings: "swsh" on;
+  font-style: italic;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) .image-with-text__text:nth-of-type(2) {
+  margin-top: 5px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) .image-with-text__text:nth-of-type(2) p {
+  font-size: var(--garamond-tiny-size);
+  margin-bottom: 5px !important;
+}
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(9) .image-with-text__text:nth-of-type(2) h4 {
+  margin: 0px !important;
+  font-weight: var(--garamond-large-weight);
+}
+[data-template="page.explore"] #shopify-section-template--25175190110586__image_banner_R3Lrbr .banner__media {
+  max-width: 200px;
+  margin: 20px auto;
+}
+[data-template="page.explore"] #shopify-section-template--25175190110586__image_banner_R3Lrbr .banner__media:before {
+  background-color: transparent !important;
+  padding-bottom: 76.1666666667% !important;
+}
+[data-template="page.explore"] #shopify-section-template--25175190110586__image_banner_R3Lrbr .banner__media img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+[data-template="page.fawcett-times"] .shopify-section-group-header-group {
+  padding-bottom: 0px !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) {
+  padding: 0px 10px;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) h2 {
+  font-style: normal !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) .image-with-text__text {
+  margin: 0px !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(2) .image-with-text__text p {
+  color: var(--red) !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3),
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4),
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5),
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) {
+  padding: 0px 10px;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) *,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) *,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) *,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) * {
+  text-align: center;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 5px;
+  list-style-type: none;
+  padding: 0px !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper .media,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__image-wrapper .media,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__image-wrapper .media,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__image-wrapper .media {
+  padding: 0px !important;
+  position: relative;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__info,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list .multicolumn-card__info,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list .multicolumn-card__info,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list .multicolumn-card__info {
+  padding: 10px !important;
+  padding-top: 0px !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li {
+  width: calc((100% - 10px) / 2);
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li h3,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li h3,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li h3 {
+  font-family: "garamond-premier-pro-display";
+  font-size: var(--garamond-large-size);
+  line-height: var(--garamond-large-line-height);
+  letter-spacing: var(--garamond-large-letter-spacing);
+  font-weight: var(--garamond-large-weight);
+  font-style: var(--garamond-large-style);
+  color: var(--black);
+  font-style: normal !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li .rte,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li .rte,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li .rte {
+  margin-top: 0px !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li p,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list li p,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list li p {
+  font-family: "garamond-premier-pro-display";
+  font-size: var(--garamond-small-size);
+  line-height: var(--garamond-large-line-height);
+  letter-spacing: var(--garamond-large-letter-spacing);
+  font-weight: var(--garamond-large-weight);
+  font-style: var(--garamond-large-style);
+  color: var(--red);
+  font-style: normal !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list img,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list img,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(5) .multicolumn-list img,
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(6) .multicolumn-list img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none !important;
 }
 
 [data-url="/blogs/captains-journal"] .title--primary {
@@ -2269,4 +2302,165 @@ small,
   color: var(--black) !important;
   width: 100%;
   text-align: Center;
+}
+
+[data-url="/pages/museum"] .shopify-section-group-header-group {
+  padding-bottom: 0px !important;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) {
+  position: relative;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2):before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2):after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) .rich-text {
+  padding-bottom: 0px;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) p {
+  text-align: center;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) p,
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) h1,
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) .rte {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px 20px;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) p {
+  font-family: "garamond-premier-pro-display";
+  font-size: var(--garamond-small-size);
+  line-height: var(--garamond-small-line-height);
+  letter-spacing: var(--garamond-small-letter-spacing);
+  font-weight: var(--garamond-small-weight);
+  font-style: var(--garamond-small-style);
+  color: var(--grey);
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) h1 {
+  font-size: 50px !important;
+  color: var(--black);
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) .rich-text__buttons .button {
+  max-width: 240px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz {
+  padding: 10px 5px;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn__title {
+  padding: 0px 10px;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn__title h2 {
+  font-feature-settings: "swsh" on;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .notesSlider .slick-list .media {
+  max-width: none !important;
+  margin: 0px 0px 10px 0px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz * {
+  text-align: center;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .notesSlider {
+  width: 90% !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 5px;
+  list-style-type: none;
+  padding: 0px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list .multicolumn-card__image-wrapper {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list .multicolumn-card__image-wrapper .media {
+  padding: 0px !important;
+  position: relative;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list .multicolumn-card__info {
+  padding: 10px !important;
+  padding-top: 0px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li {
+  width: calc((100% - 10px) / 2);
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li * {
+  text-align: left !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li h3 {
+  font-family: "empera";
+  font-size: var(--empera-large-size);
+  line-height: var(--empera-large-line-height);
+  letter-spacing: var(--empera-large-letter-spacing);
+  font-weight: var(--empera-large-weight);
+  font-style: var(--empera-large-style);
+  color: var(--red);
+  text-transform: uppercase;
+  margin: 0px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li h3:nth-of-type(2) {
+  color: var(--black);
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li .rte {
+  margin-top: 10px !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li p {
+  font-family: "garamond-premier-pro-display";
+  font-size: var(--garamond-small-size);
+  line-height: var(--garamond-small-line-height);
+  letter-spacing: var(--garamond-small-letter-spacing);
+  font-weight: var(--garamond-small-weight);
+  font-style: var(--garamond-small-style);
+  color: var(--black);
+  font-style: normal !important;
+}
+[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none !important;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(4) > .banner .media:before {
+  padding-bottom: 150% !important;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(4) p {
+  margin-top: 20px !important;
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: var(--garamond-small-size) !important;
+  line-height: var(--garamond-small-line-height) !important;
+  letter-spacing: var(--garamond-small-letter-spacing) !important;
+  font-weight: var(--garamond-small-weight) !important;
+  font-style: var(--garamond-small-style) !important;
+  color: var(--white) !important;
+  font-style: normal !important;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(4) .banner--mobile-bottom .banner__box {
+  box-sizing: border-box;
+}
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(4) .banner__buttons .button {
+  max-width: 270px !important;
+  min-width: 0px !important;
 }

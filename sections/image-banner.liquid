@@ -130,6 +130,30 @@
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
+              {%- when 'image' -%}
+  {%- if block.settings.image != blank -%}
+    {%- liquid
+      assign alt_text = block.settings.alt
+      if alt_text == blank and block.settings.image != blank
+        assign alt_text = block.settings.image.alt
+      endif
+      assign widths = '375, 550, 750, 1100, 1500, 2000'
+      assign sizes  = '(min-width: 750px) 800px, 90vw'
+      assign maxw   = block.settings.max_width | default: 800
+      assign anim_order = forloop.index
+    -%}
+    <div
+      class="rich-text__image {% if block.settings.alignment == 'center' %}rich-text__image--center{% elsif block.settings.alignment == 'right' %}rich-text__image--right{% else %}rich-text__image--left{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      {{ block.shopify_attributes }}
+      style="--image-max-width: {{ maxw }}px;{% if settings.animations_reveal_on_scroll %} --animation-order: {{ anim_order }};{% endif %}"
+    >
+      {{
+        block.settings.image
+        | image_url: width: 2000
+        | image_tag: loading: 'lazy', sizes: sizes, widths: widths, alt: alt_text
+      }}
+    </div>
+  {%- endif -%}
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
@@ -437,6 +461,44 @@
         }
       ]
     },
+    {
+  "type": "image",
+  "name": "Image",
+  "limit": 6,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt text (optional)"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 100,
+      "max": 2000,
+      "step": 100,
+      "unit": "px",
+      "label": "Max width",
+      "default": 800
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    }
+  ]
+},
     {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",

@@ -33,11 +33,19 @@
             "heading": "FAWCETT TIMES",
             "heading_size": "h1"
           }
+        },
+        "text_3D3D3N": {
+          "type": "text",
+          "settings": {
+            "text": "Distributed around the globe to Gentlemen’s Outfitters, Barbershops, High Class Stores, Hatters, Tattooists & Apothecaries to the Nobility",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "text_4HJiXm",
-        "heading_zPPEVQ"
+        "heading_zPPEVQ",
+        "text_3D3D3N"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -101,6 +109,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -111,6 +120,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -121,6 +131,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -131,6 +142,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -169,6 +181,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -179,6 +192,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -189,6 +203,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -199,6 +214,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -237,6 +253,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -247,6 +264,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -257,6 +275,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -267,6 +286,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -305,6 +325,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -315,6 +336,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -325,6 +347,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -335,6 +358,7 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
+            "subtitle": "Column",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""

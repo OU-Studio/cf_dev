@@ -122,6 +122,9 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
+                {%- if block.settings.subtitle != blank -%}
+                  <h3 class="inline-richtext">{{ block.settings.subtitle }}</h3>
+                {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
@@ -427,6 +430,12 @@
         {
           "type": "inline_richtext",
           "id": "title",
+          "default": "t:sections.multicolumn.blocks.column.settings.title.default",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subtitle",
           "default": "t:sections.multicolumn.blocks.column.settings.title.default",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },

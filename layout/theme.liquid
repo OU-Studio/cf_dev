@@ -33,20 +33,32 @@
       $(window).on('load', function () {
         if($('.inline-richtext').length){
           $('.inline-richtext').each(function(){
-          if($(this).text() == 'TOP NOTES'){
-            $(this).parents('ul').addClass('notesSlider')
-            $('.notesSlider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: false,
-            swipeToSlide: true,
-            infinite: false,
-            arrows: false,
-            dots: false,
-          });
-        }
+            console.log($(this).text())
+            if($(this).text() == 'TOP NOTES'){
+              $(this).parents('ul').addClass('notesSlider')
+              $('.notesSlider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+                swipeToSlide: true,
+                infinite: false,
+                arrows: false,
+                dots: false,
+              });
+            }
+            if($(this).text() == 'Expedition Mug'){
+              $(this).parents('ul').addClass('notesSlider')
+              $('.notesSlider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+                swipeToSlide: true,
+                infinite: false,
+                arrows: false,
+                dots: false,
+              });
+            }
           })
-        
         }
         if ($('.collapsible-row').length) {
           $('.collapsible-row').each(function(){
