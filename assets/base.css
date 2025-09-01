@@ -589,6 +589,10 @@ body .featured-product .product__info-container:after {
   display: none;
 }
 
+.banner__media {
+  position: relative !important;
+}
+
 .banner--mobile-bottom .banner__box {
   padding: 40px 40px !important;
   box-sizing: border-box;
