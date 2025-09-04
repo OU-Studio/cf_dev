@@ -1684,7 +1684,7 @@ slider-component.page-width {
 [data-template="page.maharaja"] #MainContent .shopify-section:nth-of-type(4) .product__view-details {
   display: none !important;
 }
-[data-template="page.maharaja"] #shopify-section-template--25011248628090__reviews_Ft3hbc {
+[data-template="page.maharaja"] #MainContent .shopify-section:nth-of-type(6) {
   background-color: var(--cream);
   margin: 20px 10px;
   padding: 10px;
@@ -2051,15 +2051,15 @@ small,
   margin: 0px !important;
   font-weight: var(--garamond-large-weight);
 }
-[data-template="page.explore"] #shopify-section-template--25175190110586__image_banner_R3Lrbr .banner__media {
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .banner__media {
   max-width: 200px;
   margin: 20px auto;
 }
-[data-template="page.explore"] #shopify-section-template--25175190110586__image_banner_R3Lrbr .banner__media:before {
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .banner__media:before {
   background-color: transparent !important;
   padding-bottom: 76.1666666667% !important;
 }
-[data-template="page.explore"] #shopify-section-template--25175190110586__image_banner_R3Lrbr .banner__media img {
+[data-template="page.explore"] #MainContent .shopify-section:nth-of-type(8) .banner__media img {
   -o-object-fit: contain !important;
      object-fit: contain !important;
 }
@@ -2370,51 +2370,51 @@ small,
 [data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(2) .rich-text__buttons .button {
   max-width: 240px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) {
   padding: 10px 5px;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn__title {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn__title {
   padding: 0px 10px;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn__title h2 {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn__title h2 {
   font-feature-settings: "swsh" on;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .notesSlider .slick-list .media {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .notesSlider .slick-list .media {
   max-width: none !important;
   margin: 0px 0px 10px 0px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz * {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) * {
   text-align: center;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .notesSlider {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .notesSlider {
   width: 90% !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 5px;
   list-style-type: none;
   padding: 0px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list .multicolumn-card__image-wrapper {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px !important;
   padding: 0px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list .multicolumn-card__image-wrapper .media {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper .media {
   padding: 0px !important;
   position: relative;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list .multicolumn-card__info {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__info {
   padding: 10px !important;
   padding-top: 0px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li {
   width: calc((100% - 10px) / 2);
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li * {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li * {
   text-align: left !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li h3 {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3 {
   font-family: "empera";
   font-size: var(--empera-large-size);
   line-height: var(--empera-large-line-height);
@@ -2425,13 +2425,13 @@ small,
   text-transform: uppercase;
   margin: 0px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li h3:nth-of-type(2) {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3:nth-of-type(2) {
   color: var(--black);
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li .rte {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte {
   margin-top: 10px !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list li p {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-family: "garamond-premier-pro-display";
   font-size: var(--garamond-small-size);
   line-height: var(--garamond-small-line-height);
@@ -2441,7 +2441,7 @@ small,
   color: var(--black);
   font-style: normal !important;
 }
-[data-url="/pages/museum"] #shopify-section-template--25193124397434__multicolumn_bmCTVz .multicolumn-list img {
+[data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
