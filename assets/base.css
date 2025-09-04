@@ -2415,7 +2415,7 @@ small,
   text-align: left !important;
 }
 [data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3 {
-  font-family: "empera";
+  font-family: "empera" !important;
   font-size: var(--empera-large-size);
   line-height: var(--empera-large-line-height);
   letter-spacing: var(--empera-large-letter-spacing);
