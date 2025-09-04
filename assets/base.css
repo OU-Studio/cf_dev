@@ -315,6 +315,10 @@ body .featured-product .product__info-container:after {
   font-family: "emperaRegular";
   src: url("https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Empera-Regular.otf?v=1742038560");
 }
+@font-face {
+  font-family: "empera";
+  src: url("https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Empera-Regular.otf?v=1742038560");
+}
 #shopify-section-sections--24609899184506__footer {
   padding: 0px !important;
 }
