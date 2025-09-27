@@ -94,6 +94,19 @@
     </ul>
   </nav>
 
+  <button class="header__hamburger" aria-label="Open menu" aria-controls="MobileNav" aria-expanded="false">
+  <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231.92 155.26">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path d="M6.32,70.26c5.62,13.04,34.46,19.49,53.99,10.62,7.84-3.56,11.62-9.83,20.22-13.27,12.94-5.17,26.47-1.49,35.62,4.64,5.96-3.93,14.85-7.6,24.6-7.16,22.51,1.01,22.15,21.36,55.02,19.82,12.34-.58,27.34-6.84,30.15-13.7.92-2.24-4.15.14-5.54.28-13.25,1.35-19.5-11.16-4.4-12.49,17.98-1.58,17.92,10.03,13.43,16.82-11.55,17.46-52.89,22.23-82.36,20.34-12.55-.8-22.6-3.17-30.89-8.62-13.51,9.41-38.25,9.53-58.17,8.62-26.9-1.23-62.38-13.5-57.54-30.85,1.52-5.43,14.04-9,21.32-4.71,10.08,5.95-3.99,13.85-15.45,9.65Z"/>
+      <path d="M6.32,128.97c5.62,13.04,34.46,19.49,53.99,10.62,7.84-3.56,11.62-9.83,20.22-13.27,12.94-5.17,26.47-1.49,35.62,4.64,5.96-3.93,14.85-7.6,24.6-7.16,22.51,1.01,22.15,21.36,55.02,19.82,12.34-.58,27.34-6.84,30.15-13.7.92-2.24-4.15.14-5.54.28-13.25,1.35-19.5-11.16-4.4-12.49,17.98-1.58,17.92,10.03,13.43,16.82-11.55,17.46-52.89,22.23-82.36,20.34-12.55-.8-22.6-3.17-30.89-8.62-13.51,9.41-38.25,9.53-58.17,8.62-26.9-1.23-62.38-13.5-57.54-30.85,1.52-5.43,14.04-9,21.32-4.71,10.08,5.95-3.99,13.85-15.45,9.65Z"/>
+      <path d="M6.32,11.55c5.62,13.04,34.46,19.49,53.99,10.62,7.84-3.56,11.62-9.83,20.22-13.27,12.94-5.17,26.47-1.49,35.62,4.64,5.96-3.93,14.85-7.6,24.6-7.16,22.51,1.01,22.15,21.36,55.02,19.82,12.34-.58,27.34-6.84,30.15-13.7.92-2.24-4.15.14-5.54.28-13.25,1.35-19.5-11.16-4.4-12.49,17.98-1.58,17.92,10.03,13.43,16.82-11.55,17.46-52.89,22.23-82.36,20.34-12.55-.8-22.6-3.17-30.89-8.62-13.51,9.41-38.25,9.53-58.17,8.62C31.09,36.23-4.39,23.96.45,6.61,1.96,1.18,14.48-2.39,21.77,1.91c10.08,5.95-3.99,13.85-15.45,9.65Z"/>
+    </g>
+  </g>
+</svg>
+</button>
+
+
   <div class="header__actions">
     <a href="{{ routes.search_url }}" class="header__action header__action--search" aria-label="Search">
       <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,6 +139,100 @@
 
     </a>
   </div>
+
+  {%- assign main_menu = linklists['top-menu'] -%}
+<nav id="MobileNav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+  <div class="mobile-nav__overlay" data-close></div>
+
+  <div class="mobile-nav__sheet" role="dialog" aria-modal="true">
+    <!-- Header row inside the sheet -->
+    <div class="mobile-nav__top">
+  <div class="mobile-nav__crumbs">
+    <button class="mobile-nav__back" type="button" aria-label="Go back" disabled data-back>Back</button>
+    <span style="display: none;" class="mobile-nav__title" data-title>Menu</span>
+  </div>
+</div>
+
+    <!-- Sliding rail (100vw panels) -->
+    <div class="mobile-nav__rail" data-rail>
+      <!-- ROOT PANEL: top-level links -->
+      <section class="mobile-panel is-active" data-panel="root" aria-label="Top level">
+  <ul class="mobile-list">
+    {%- for top_link in main_menu.links -%}
+      <li>
+        {%- if top_link.links.size > 0 -%}
+          <button class="mobile-link has-children"
+                  data-target="top-{{ forloop.index }}"
+                  data-title="{{ top_link.title | escape }}">
+            <span>{{ top_link.title }}</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+        {%- else -%}
+          <a class="mobile-link" href="{{ top_link.url }}">{{ top_link.title }}</a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>
+
+
+      {%- comment -%}
+        CHILD PANELS: one per top link with children.
+        Each panel shows 2nd-level headings with their 3rd-level lists.
+      {%- endcomment -%}
+      {%- for top_link in main_menu.links -%}
+        {%- if top_link.links.size > 0 -%}
+          <section class="mobile-panel" data-panel="top-{{ forloop.index }}" aria-label="{{ top_link.title | escape }}">
+            <ul class="mobile-list mobile-list--sections">
+              {%- for second in top_link.links -%}
+                <li class="mobile-section">
+                  <h3 class="mobile-section__title">
+                    <a href="{{ second.url }}">{{ second.title }}</a>
+                  </h3>
+                  {%- if second.links.size > 0 -%}
+                    <ul class="mobile-sublist">
+                      {%- for third in second.links -%}
+                        <li><a class="mobile-sublink" href="{{ third.url }}">{{ third.title }}</a></li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+
+            {%- comment -%}
+              Optional: show your “mega menu content” block if mapped by index (same logic as desktop).
+            {%- endcomment -%}
+            {%- assign top_index = forloop.index -%}
+            {%- assign mega_block = nil -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'mega_menu_content' -%}
+                {%- assign selector_index = block.settings.menu_selector | plus: 0 -%}
+                {%- if selector_index == top_index -%}
+                  {%- assign mega_block = block -%}{% break %}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+
+            {%- if mega_block -%}
+              <a href="{{ mega_block.settings.link }}" class="mobile-mega-extra">
+                {%- if mega_block.settings.image -%}
+                  <img src="{{ mega_block.settings.image | img_url: '800x' }}" alt="">
+                {%- endif -%}
+                {%- if mega_block.settings.text -%}
+                  <span class="mobile-mega-extra__text">{{ mega_block.settings.text }}</span>
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+          </section>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</nav>
+
 </header>
 
 <style>
@@ -282,6 +389,183 @@ color: var(--red);
     font-size: 28px;
     text-align: center;
   }
+
+  /* MOBILE ONLY */
+  @media all and (max-width: 1120px) and (min-width: 700px){
+    .mobile-list{
+display: flex !important;
+flex-wrap: wrap;
+    }
+    .mobile-list li{
+      width: calc(50% - 10px)
+    }
+    .mobile-mega-extra{
+      width: calc(50% - 10px)
+    }
+  }
+@media (max-width: 1120px) {
+  .header{
+    padding: 20px;
+  }
+  .header__nav { display: none; }
+  .header__hamburger { 
+    order: -1;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    appearance: none;
+    border: none;
+    background: none;
+  }
+  .header__hamburger svg{
+    width: 44px;
+    height: 44px;
+  }
+  .header__hamburger .hamburger-box {
+    width: 20px; height: 2px; background: var(--black); position: relative; display: none;
+  }
+  .header__hamburger .hamburger-box::before,
+  .header__hamburger .hamburger-box::after {
+    content: ""; position: absolute; left: 0; width: 100%; height: 2px; background: var(--black);
+  }
+  .header__hamburger .hamburger-box::before { top: -6px; }
+  .header__hamburger .hamburger-box::after  { top:  6px; }
+}
+@media (min-width: 1121px) { .header__hamburger{ display:none; } }
+
+/* Mobile nav shell */
+.mobile-nav[hidden] { display: none !important; }
+.mobile-nav {
+  position: fixed; inset: 0; z-index: 2000;
+  top: 121px;
+}
+.mobile-nav__overlay {
+  position: absolute; inset: 0; background: rgba(0,0,0,.3);
+  opacity: 0; transition: opacity .25s ease;
+}
+.mobile-nav.open .mobile-nav__overlay { opacity: 1; }
+
+.mobile-nav__sheet {
+  position: absolute; top: 0; right: 0; bottom: 0; width: 100vw; max-width: 100%;
+  background: var(--offwhite); transform: translateX(100%); transition: transform .35s ease;
+  display: grid; grid-template-rows: auto 1fr;
+  border-left: 1px solid var(--black);
+}
+.mobile-nav.open .mobile-nav__sheet { transform: translateX(0); }
+
+/* Top bar */
+.mobile-nav__top {
+  display: flex; align-items: center; gap: 12px; padding: 20px 20px; border-bottom: 1px solid var(--black);
+}
+.mobile-nav__close {
+  background: transparent; border: 1px solid var(--black); width: 36px; height: 36px; border-radius: 8px; font-size: 22px; line-height: 1;
+
+    appearance: none;
+    border: none;
+    background: none;;
+}
+.mobile-nav__crumbs { display: flex; align-items: center; gap: 12px; }
+.mobile-nav__back {
+  background: transparent; border: 1px solid var(--black); border-radius: 8px; padding: 0px; opacity: 1;
+
+    appearance: none;
+    border: none;
+    background: none;;
+
+font-family: "garamond-premier-pro-display" !important;
+font-size: 16px;
+}
+.mobile-nav__back:not([disabled]) { opacity: 1; cursor: pointer; }
+.mobile-nav__title { font-family: "garamond-premier-pro-display"; font-style: italic;
+    font-feature-settings: 'swsh' on; }
+
+/* Sliding rail */
+.mobile-nav__rail {
+  position: relative; height: 100%; overflow: hidden;
+}
+.mobile-nav__rail > .mobile-panel {
+  position: absolute; inset: 0; width: 100vw; padding: 20px 20px; overflow-y: auto; box-sizing: border-box;
+  transform: translateX(100%); transition: transform .35s ease;
+  display: block;
+}
+.mobile-panel[data-panel="root"] { transform: translateX(0); }
+.mobile-panel.is-left   { transform: translateX(-100%); }
+.mobile-panel.is-center { transform: translateX(0); }
+.mobile-panel.is-right  { transform: translateX(100%); }
+
+/* Lists */
+.mobile-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.mobile-link,
+.mobile-link.has-children {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 0px; border: 1px solid var(--black); border-radius: 10px; background: white; text-decoration: none; color: var(--black);
+  font-size: 24px;
+font-family: "garamond-premier-pro-display" !important;
+font-style: italic;
+    font-feature-settings: 'swsh' on;
+    appearance: none;
+    border: none;
+    background: none;;
+}
+.mobile-link:hover { color: var(--red); border-color: var(--red); }
+
+.mobile-list--sections { gap: 20px; }
+.mobile-section__title { margin: 0 0 5px 0; font-size: 16px; font-weight: 400; }
+.mobile-section__title a { text-decoration: none; color: var(--black); }
+.mobile-sublist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.mobile-sublink { display: block; padding: 10px 10px; border: 1px dashed var(--black); border-radius: 8px; text-decoration: none; color: var(--black); }
+.mobile-sublink:hover { color: var(--red); border-color: var(--red); }
+
+/* Optional extra block (image + text) */
+.mobile-mega-extra {
+  position: relative; display: block; margin-top: 20px; border-radius: 0px; overflow: hidden; background: var(--black);
+}
+.mobile-mega-extra img { display: block; width: 100%; height: auto; opacity: .6; }
+.mobile-mega-extra__text {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  color: var(--white); text-align: center; width: 80%;
+  font-family: 'Empera'; font-size: 22px;
+}
+
+.mobile-section__title{
+font-family: "garamond-premier-pro-display" !important;
+font-size: 24px;
+font-style: italic;
+    font-feature-settings: 'swsh' on;
+    font-weight:400;
+}
+
+.mobile-sublink{
+font-family: "garamond-premier-pro-display" !important;
+font-size: 20px;
+border: none;
+padding: 0px;
+    font-weight:400;
+
+}
+
+@media (max-width: 1120px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  /* three equal columns */
+  .header__hamburger,
+  .header__logo,
+  .header__actions {
+    flex: 0 0 33.333%;
+  }
+
+  /* put hamburger on the left, logo centered, actions on the right */
+  .header__hamburger { order: 0; justify-content: flex-start; }
+  .header__logo      { order: 1; text-align: center; }
+  .header__actions   { order: 2; display: flex; justify-content: flex-end; align-items: center; }
+
+  /* center the logo nicely */
+  .header__logo-link { display: inline-block; margin: 0 auto; }
+}
+
+
 </style>
 
 <script>
@@ -337,6 +621,175 @@ color: var(--red);
   });
 </script>
 
+<script>
+ (function () {
+  const body     = document.documentElement;
+  const burger   = document.querySelector('.header__hamburger');
+  const mobile   = document.getElementById('MobileNav');
+  const overlay  = mobile?.querySelector('.mobile-nav__overlay');
+  const backBtn  = mobile?.querySelector('[data-back]');
+  const titleEl  = mobile?.querySelector('[data-title]');
+  const rail     = mobile?.querySelector('[data-rail]');
+  const panels   = Array.from(rail?.querySelectorAll('.mobile-panel') || []);
+  if (!burger || !mobile || !rail) return;
+
+  const stack = ['root'];
+  let animating = false;
+  const DURATION = 350; // keep in sync with CSS
+
+  function currentPanelId() { return stack[stack.length - 1]; }
+  function panelById(id)    { return panels.find(p => p.dataset.panel === id); }
+
+  function afterFrame(fn){ requestAnimationFrame(() => requestAnimationFrame(fn)); }
+
+  function resetToRoot() {
+  // make root the only item on the stack
+  stack.length = 0;
+  stack.push('root');
+
+  // put panels in their default positions
+  panels.forEach(p => {
+    if (p.dataset.panel === 'root') {
+      p.classList.remove('is-left','is-right');
+      p.classList.add('is-center');
+      p.setAttribute('aria-hidden','false');
+    } else {
+      p.classList.remove('is-left','is-center');
+      p.classList.add('is-right');
+      p.setAttribute('aria-hidden','true');
+    }
+  });
+
+  // reset chrome
+  backBtn.disabled = true;
+  if (titleEl) {
+    titleEl.textContent = panelById('root')?.getAttribute('aria-label') || 'Menu';
+  }
+}
+
+
+  function updateChrome() {
+    const id = currentPanelId();
+    backBtn.disabled = stack.length <= 1;
+    titleEl && (titleEl.textContent = panelById(id)?.getAttribute('aria-label') || 'Menu');
+  }
+
+  function setAria(open) {
+    burger.setAttribute('aria-expanded', String(open));
+    if (open) {
+      mobile.removeAttribute('hidden');
+      // ensure closed state paints before opening
+      requestAnimationFrame(() => mobile.classList.add('open'));
+      body.style.overflow = 'hidden';
+    } else {
+      mobile.classList.remove('open');
+      setTimeout(() => mobile.setAttribute('hidden',''), DURATION);
+      body.style.overflow = '';
+    }
+  }
+
+  function openMenu(){ setAria(true); updateChrome(); }
+  function closeMenu(){ setAria(false); while (stack.length > 1) stack.pop(); updateChrome(); 
+  resetToRoot();   }
+
+  // --- NEW: staged transitions for panel nav ---
+  function goForward(targetId, label){
+    if (animating) return;
+    const fromId = currentPanelId();
+    const fromEl = panelById(fromId);
+    const toEl   = panelById(targetId);
+    if (!toEl) return;
+
+    // 1) Stage the entering panel offscreen right
+    toEl.classList.remove('is-left','is-center');
+    toEl.classList.add('is-right');
+    toEl.setAttribute('aria-hidden','true');
+
+    // 2) Next frame: push stack, move from->left and to->center (animates)
+    animating = true;
+    afterFrame(() => {
+      stack.push(targetId);
+      if (label) toEl.setAttribute('aria-label', label);
+
+      fromEl?.classList.remove('is-center','is-right');
+      fromEl?.classList.add('is-left');
+      fromEl?.setAttribute('aria-hidden','true');
+
+      toEl.classList.remove('is-left','is-right');
+      toEl.classList.add('is-center');
+      toEl.setAttribute('aria-hidden','false');
+
+      updateChrome();
+      setTimeout(()=> animating = false, DURATION);
+    });
+  }
+
+  function goBack(){
+    if (animating || stack.length <= 1) return;
+    const fromId = stack[stack.length - 1];
+    const toId   = stack[stack.length - 2];
+    const fromEl = panelById(fromId);
+    const toEl   = panelById(toId);
+    if (!toEl) return;
+
+    // 1) Stage the target panel offscreen left so it can slide to center
+    toEl.classList.remove('is-right','is-center');
+    toEl.classList.add('is-left');
+    toEl.setAttribute('aria-hidden','true');
+
+    // 2) Next frame: pop stack, move from->right and to->center (animates)
+    animating = true;
+    afterFrame(() => {
+      stack.pop();
+
+      fromEl?.classList.remove('is-left','is-center');
+      fromEl?.classList.add('is-right');
+      fromEl?.setAttribute('aria-hidden','true');
+
+      toEl.classList.remove('is-left','is-right');
+      toEl.classList.add('is-center');
+      toEl.setAttribute('aria-hidden','false');
+
+      updateChrome();
+      setTimeout(()=> animating = false, DURATION);
+    });
+  }
+
+  // Toggle on hamburger
+  burger.addEventListener('click', () => {
+    if (mobile.classList.contains('open')) closeMenu();
+    else openMenu();
+  });
+
+  overlay?.addEventListener('click', closeMenu);
+  backBtn?.addEventListener('click', goBack);
+
+  // Forward nav (second layer)
+  rail.addEventListener('click', (e) => {
+    const btn = e.target.closest('.mobile-link.has-children');
+    if (!btn || animating) return;
+    const targetId = btn.getAttribute('data-target');
+    const label = btn.getAttribute('data-title') || 'Menu';
+    goForward(targetId, label);
+  });
+
+  // ESC to close or step back
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobile.classList.contains('open')) {
+      if (stack.length > 1) goBack();
+      else closeMenu();
+    }
+  });
+
+  // Close if breakpoint flips to desktop
+  const mql = window.matchMedia('(min-width: 901px)');
+  mql.addEventListener('change', (ev) => { if (ev.matches) closeMenu(); });
+})();
+
+</script>
+
+
+
 
 {% schema %}
 {
@@ -388,6 +841,10 @@ color: var(--red);
   ]
 }
 {% endschema %}
+
+
+
+
 
 
 
