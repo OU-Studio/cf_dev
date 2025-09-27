@@ -38,21 +38,22 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "mega_menu_content_HtbRfV": {
+          "type": "mega_menu_content",
+          "settings": {
+            "image": "shopify://shop_images/Image_6e346bbe-2db1-47df-8fbf-82db29262627.jpg",
+            "text": "SHOP NOW",
+            "link": "shopify://pages/alessandro-manfredini",
+            "menu_selector": 1
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_content_HtbRfV"
+      ],
       "settings": {
-        "logo_position": "middle-center",
-        "mobile_logo_position": "center",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "",
-        "enable_country_selector": false,
-        "enable_language_selector": false,
-        "enable_customer_avatar": true,
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "logo_position": "middle-center"
       }
     }
   },

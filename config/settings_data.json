@@ -9,7 +9,10 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Captain_Fawcett_white_monogram_mobile_logo.png",
+    "logo": "shopify://shop_images/CF_logo_1.png",
+    "type_header_font": "assistant_n4",
+    "type_body_font": "assistant_n4",
+    "body_scale": 100,
     "logo_width": 80,
     "norwester_large_size": 18,
     "norwester_large_letter_spacing": 0,
@@ -28,26 +31,63 @@
     "garamond_tiny_size": 16,
     "garamond_tiny_letter_spacing": 0.5,
     "garamond_tiny_weight": 400,
-    "type_header_font": "assistant_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
-    "body_scale": 100,
     "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background_color": "#ffffff",
-          "text_color": "#000000",
-          "link_color": "#007bff",
-          "button_color": "#28a745"
+          "colors_text": "#282828",
+          "colors_secondary_text": "#696969",
+          "colors_text_title": "#282828",
+          "colors_background_1": "#F9F9F9",
+          "colors_background_2": "#F4F4F4",
+          "background_gradient": "",
+          "colors_solid_button_labels": "#F9F9F9",
+          "colors_solid_button_labels_hover": "#F9F9F9",
+          "colors_solid_button_background": "#282828",
+          "colors_solid_button_background_hover": "#353535",
+          "colors_secondary_button_labels": "#282828",
+          "colors_secondary_button_labels_hover": "#282828",
+          "colors_outline_button_labels": "#F9F9F9",
+          "colors_outline_button_labels_hover": "#F2F2F2",
+          "colors_tertiary_button_labels": "#282828",
+          "colors_tertiary_button_labels_hover": "#F9F9F9",
+          "colors_tertiary_button_background": "#282828",
+          "colors_tertiary_button_background_hover": "#282828",
+          "colors_input_background": "#F4F4F4",
+          "colors_input_border": "#E5E5E5",
+          "colors_input_hover_border": "#E5E5E5",
+          "colors_input_hover_background": "#E5E5E5",
+          "colors_background_overlay": "#000000",
+          "color_border": "#E5E5E5"
         }
       },
       "scheme-2": {
         "settings": {
-          "background_color": "#ffffff",
-          "text_color": "#000000",
-          "link_color": "#007bff",
-          "button_color": "#28a745"
+          "colors_text": "#282828",
+          "colors_secondary_text": "#696969",
+          "colors_text_title": "#282828",
+          "colors_background_1": "#F9F9F9",
+          "colors_background_2": "#F4F4F4",
+          "background_gradient": "",
+          "colors_solid_button_labels": "#F9F9F9",
+          "colors_solid_button_labels_hover": "#F9F9F9",
+          "colors_solid_button_background": "#282828",
+          "colors_solid_button_background_hover": "#353535",
+          "colors_secondary_button_labels": "#282828",
+          "colors_secondary_button_labels_hover": "#282828",
+          "colors_outline_button_labels": "#F9F9F9",
+          "colors_outline_button_labels_hover": "#F2F2F2",
+          "colors_tertiary_button_labels": "#282828",
+          "colors_tertiary_button_labels_hover": "#F9F9F9",
+          "colors_tertiary_button_background": "#282828",
+          "colors_tertiary_button_background_hover": "#282828",
+          "colors_input_background": "#F4F4F4",
+          "colors_input_border": "#E5E5E5",
+          "colors_input_hover_border": "#E5E5E5",
+          "colors_input_hover_background": "#E5E5E5",
+          "colors_background_overlay": "#000000",
+          "color_border": "#E5E5E5"
         }
       }
     }
