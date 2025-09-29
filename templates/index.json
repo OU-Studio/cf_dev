@@ -9,6 +9,62 @@
  */
 {
   "sections": {
+    "slideshow_VwgX37": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_HJdyRA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Triumphant-Block-1-main-image-754x568px.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_M4QfB8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Triumphant-Block-1-main-image-754x568px.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_HJdyRA",
+        "slide_M4QfB8"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "settings": {
@@ -255,6 +311,7 @@
     }
   },
   "order": [
+    "slideshow_VwgX37",
     "image_banner",
     "featured_collection",
     "collection_list_KgFHVp",
