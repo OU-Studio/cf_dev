@@ -561,7 +561,10 @@ body .featured-product .product__info-container {
 
 .shopify-section-group-footer-group.custom{
   max-width: 1240px !important;
-  background-color: transparent !important
+  background-color: transparent !important;
+  @media all and (max-width: 900px){
+display: none !important;
+  }
 }
 
 .footerTop {
@@ -2020,7 +2023,7 @@ product-info {
 
 @media (max-width: 900px) {
   .collection-list-wrapper ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .collection-list-wrapper .grid__item {
 display: none !important

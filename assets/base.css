@@ -485,6 +485,11 @@ body .featured-product .product__info-container:after {
   max-width: 1240px !important;
   background-color: transparent !important;
 }
+@media all and (max-width: 900px) {
+  .shopify-section-group-footer-group.custom {
+    display: none !important;
+  }
+}
 
 .footerTop {
   padding: 10px;
@@ -1738,7 +1743,7 @@ product-info {
 }
 @media (max-width: 900px) {
   .collection-list-wrapper ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .collection-list-wrapper .grid__item {
     display: none !important;
