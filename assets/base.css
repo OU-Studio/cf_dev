@@ -1,3 +1,160 @@
+h1 {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 3.8rem !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--black) !important;
+  font-feature-settings: "swsh" on !important;
+}
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+h2 {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 3rem !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--black) !important;
+  font-feature-settings: "swsh" on !important;
+}
+@media all and (max-width: 900px) {
+  h2 {
+    font-size: 2.4rem !important;
+  }
+}
+
+h3 {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 2.5rem !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--black) !important;
+  font-feature-settings: "swsh" on !important;
+}
+@media all and (max-width: 900px) {
+  h3 {
+    font-size: 2rem !important;
+  }
+}
+
+h4 {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 1.9rem !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--black) !important;
+  font-feature-settings: "swsh" on !important;
+}
+@media all and (max-width: 900px) {
+  h4 {
+    font-size: 1.7rem !important;
+  }
+}
+
+h5 {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 1.5rem !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: var(--black) !important;
+  font-feature-settings: "swsh" on !important;
+}
+@media all and (max-width: 900px) {
+  h5 {
+    font-size: 1.4rem !important;
+  }
+}
+
+h6 {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 1.25rem !important;
+  line-height: 1em !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 400 !important;
+  font-style: initial !important;
+  color: var(--black) !important;
+}
+@media all and (max-width: 900px) {
+  h6 {
+    font-size: 1.2rem !important;
+  }
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none !important;
+}
+
+body,
+p, .price {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 16px !important;
+  line-height: 1.2em !important;
+  letter-spacing: 0em !important;
+  font-weight: 400 !important;
+  font-style: initial !important;
+  color: var(--black) !important;
+}
+
+.emperaLarge {
+  font-family: "emperaRegular" !important;
+  font-size: 28px !important;
+  line-height: 1em !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 400 !important;
+  font-style: initial !important;
+  color: var(--red) !important;
+}
+
+.emperaSmall {
+  font-family: "emperaRegular" !important;
+  font-size: 18px !important;
+  line-height: 1em !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 400 !important;
+  font-style: initial !important;
+  color: var(--red) !important;
+}
+
+small,
+.garamondTiny {
+  font-size: 0.8rem;
+}
+
+.norwesterLarge {
+  font-family: "norwester" !important;
+  font-size: 18px !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: initial !important;
+  color: var(--black) !important;
+  text-transform: uppercase !important;
+}
+
+.norwesterSmall {
+  font-family: "norwester" !important;
+  font-size: 18px !important;
+  line-height: 1em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: initial !important;
+  color: var(--black) !important;
+  text-transform: uppercase !important;
+}
+
 html .visually-hidden,
 html .hidden,
 html [aria-hidden=true] {
@@ -15,7 +172,7 @@ a:-webkit-any-link {
 }
 
 .color-scheme-2.gradient {
-  background-color: var(--cream);
+  background-color: var(--offwhite);
 }
 
 .gradient > div {
@@ -278,10 +435,6 @@ body .featured-product .product__info-container > * + * {
   margin: 0px !important;
 }
 
-.price * {
-  color: var(--red) !important;
-}
-
 body .featured-product .product__info-container {
   position: relative;
 }
@@ -323,18 +476,57 @@ body .featured-product .product__info-container:after {
   padding: 0px !important;
 }
 
+.shopify-section-group-footer-group {
+  max-width: none !important;
+  background-color: var(--cream);
+}
+
+#shopify-section-sections--25295689056634__custom_liquid_6NAThe {
+  max-width: 1240px !important;
+  background-color: transparent !important;
+}
+
 .footerTop {
   padding: 10px;
   background-color: var(--cream);
   margin: 0px 20px !important;
+  position: relative;
+}
+@media all and (min-width: 901px) {
+  .footerTop {
+    padding-right: 500px;
+    padding: 20px 40px;
+  }
+  .footerTop .footerPlane {
+    max-width: 400px;
+    order: 99;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footerTop * {
+    text-align: left !important;
+  }
+  .footerTop input, .footerTop .buttonWrapper {
+    max-width: 400px !important;
+    box-sizing: border-box;
+  }
+  .footerTop h2 {
+    margin-top: 0px !important;
+  }
 }
 .footerTop .footerPlane {
   width: 100%;
-  padding-top: 48%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Asset_Plane.png?v=1743331115);
+}
+.footerTop .footerPlane:before {
+  content: "";
+  display: block;
+  padding-top: 48%;
 }
 .footerTop h2 {
   text-align: center;
@@ -401,6 +593,11 @@ body .featured-product .product__info-container:after {
   background-color: var(--cream);
   margin: 0px 20px 20px 20px !important;
 }
+@media all and (min-width: 901px) {
+  .footerMiddle {
+    display: none !important;
+  }
+}
 .footerMiddle hr {
   margin-top: 20px;
   border-color: var(--black);
@@ -450,6 +647,26 @@ body .featured-product .product__info-container:after {
   padding: 20px 10px;
   background-color: var(--black);
 }
+@media all and (min-width: 1400px) {
+  .footerBottom {
+    padding: 20px 40px;
+    display: flex;
+    gap: 40px;
+  }
+  .footerBottom .footerLinks {
+    flex-direction: row !important;
+    gap: 20px !important;
+    margin-left: auto;
+  }
+  .footerBottom .cfl {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: 0px !important;
+  }
+  .footerBottom .socials {
+    order: 99;
+  }
+}
 .footerBottom .socials {
   display: flex;
   gap: 10px;
@@ -482,12 +699,19 @@ body .featured-product .product__info-container:after {
 .footerBottom .cfl {
   display: block;
   width: 100%;
-  padding-top: 17.1428571429%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/cflLogo.png?v=1743334373);
   margin: 10px 0px;
+  max-width: 420px;
+  margin: auto;
+}
+.footerBottom .cfl:before {
+  content: "";
+  width: 100%;
+  display: block;
+  padding-top: 17.1428571429%;
 }
 .footerBottom .footerLinks {
   display: flex;
@@ -506,7 +730,7 @@ body .featured-product .product__info-container:after {
 }
 .footerBottom .footerLinks p {
   text-align: center;
-  color: var(--white);
+  color: var(--white) !important;
   margin: 0px !important;
   text-transform: uppercase;
   text-decoration: none;
@@ -781,6 +1005,21 @@ main {
   opacity: 0.1;
 }
 
+.shopify-section {
+  max-width: 1240px;
+  margin: auto;
+}
+.shopify-section:not(:first-of-type) {
+  margin-top: 40px !important;
+}
+.shopify-section.full-bleed {
+  max-width: none;
+}
+@media all and (min-width: 901px) {
+  .shopify-section > .banner:before {
+    padding-bottom: 40vw !important;
+  }
+}
 .shopify-section > .banner .media {
   height: auto !important;
 }
@@ -791,6 +1030,11 @@ main {
 .shopify-section > .banner .media:before {
   padding-bottom: 100% !important;
   background-color: #000000 !important;
+}
+@media all and (min-width: 901px) {
+  .shopify-section > .banner .media:before {
+    padding-bottom: 40vw !important;
+  }
 }
 .shopify-section > .banner .banner__content {
   padding: 0px !important;
@@ -1304,21 +1548,26 @@ product-info {
 }
 
 .collection ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  justify-content: center;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  justify-items: center; /* centers items in their cells */
 }
 
 .collection .grid__item {
-  width: calc(50% - 5px);
+  width: 100%;
   max-width: 400px;
   background-color: var(--cream);
 }
 
+@media (max-width: 900px) {
+  .collection ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .product-card-wrapper {
   display: flex;
   flex-direction: column;
@@ -1341,6 +1590,22 @@ product-info {
   overflow: hidden;
   width: 100%;
   padding-bottom: 100%;
+}
+
+.collection-list__item .card .card__inner .card__media {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 58.0323112106%;
+}
+
+.collection-list__item .card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .card .card__inner .card__media img {
@@ -1373,7 +1638,7 @@ product-info {
 }
 
 .card__heading {
-  max-width: 140px;
+  max-width: 180px;
   margin: auto;
 }
 .card__heading a {
@@ -1406,26 +1671,85 @@ product-info {
   display: none !important;
 }
 
-.collection-list-wrapper ul {
-  display: flex;
-  flex-wrap: wrap;
+.collection-list-wrapper .grid--7-col-desktop {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  justify-content: center;
   list-style: none;
-  padding: 0px !important;
-  margin: 0px 10px;
+  padding: 0 !important;
+  margin: 0 10px;
+  justify-items: center; /* centers grid items in their cells */
+}
+
+.collection-list-wrapper .grid--6-col-desktop {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 10px;
+  justify-items: center; /* centers grid items in their cells */
+}
+
+.collection-list-wrapper .grid--5-col-desktop {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 10px;
+  justify-items: center; /* centers grid items in their cells */
+}
+
+.collection-list-wrapper .grid--4-col-desktop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 10px;
+  justify-items: center; /* centers grid items in their cells */
+}
+
+.collection-list-wrapper .grid--3-col-desktop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 10px;
+  justify-items: center; /* centers grid items in their cells */
 }
 
 .collection-list-wrapper .grid__item {
-  width: calc(50% - 5px);
-  max-width: 400px;
+  width: 100%;
   background-color: var(--cream);
 }
+
 .collection-list-wrapper .grid__item .card__inner .card__content,
 .collection-list-wrapper .grid__item .icon-wrap {
   display: none;
 }
 
+@media (min-width: 901px) {
+  .collection-list-view-all {
+    display: none !important;
+  }
+}
+@media (max-width: 900px) {
+  .collection-list-wrapper ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .collection-list-wrapper .grid__item {
+    display: none !important;
+  }
+  .collection-list-wrapper .grid__item:nth-of-type(1) {
+    display: block !important;
+  }
+  .collection-list-wrapper .grid__item:nth-of-type(2) {
+    display: block !important;
+  }
+}
 .collection-list-title {
   font-style: italic !important;
   text-align: center;
@@ -1573,6 +1897,10 @@ blockquote {
 .reviews.gradient.scheme-2 {
   background-color: var(--cream);
   padding-bottom: 10px;
+}
+
+.reviews p {
+  font-size: 20px !important;
 }
 
 slider-component.page-width {
@@ -1809,121 +2137,6 @@ slider-component.page-width {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 10px;
-}
-
-h1 {
-  font-family: "emperaRegular";
-  font-size: var(--empera-large-size);
-  line-height: var(--empera-large-line-height);
-  letter-spacing: var(--empera-large-letter-spacing);
-  font-weight: var(--empera-large-weight);
-  font-style: var(--empera-large-style);
-  color: var(--red);
-}
-
-h2 {
-  font-family: "garamond-premier-pro-display";
-  font-size: var(--garamond-large-size);
-  line-height: var(--garamond-large-line-height);
-  letter-spacing: var(--garamond-large-letter-spacing);
-  font-weight: var(--garamond-large-weight);
-  font-style: var(--garamond-large-style);
-  color: var(--grey);
-}
-
-h3 {
-  font-family: "emperaRegular";
-  font-size: var(--empera-small-size);
-  line-height: var(--empera-small-line-height);
-  letter-spacing: var(--empera-small-letter-spacing);
-  font-weight: var(--empera-small-weight);
-  font-style: var(--empera-small-style);
-  color: var(--red);
-}
-
-body,
-p {
-  font-family: "garamond-premier-pro-display";
-  font-size: var(--garamond-small-size);
-  line-height: var(--garamond-small-line-height);
-  letter-spacing: var(--garamond-small-letter-spacing);
-  font-weight: var(--garamond-small-weight);
-  font-style: var(--garamond-small-style);
-  color: var(--grey);
-}
-
-.emperaLarge {
-  font-family: "emperaRegular" !important;
-  font-size: var(--empera-large-size) !important;
-  line-height: var(--empera-large-line-height) !important;
-  letter-spacing: var(--empera-large-letter-spacing) !important;
-  font-weight: var(--empera-large-weight) !important;
-  font-style: var(--empera-large-style) !important;
-  color: var(--red) !important;
-}
-
-.emperaSmall {
-  font-family: "emperaRegular" !important;
-  font-size: var(--empera-small-size) !important;
-  line-height: var(--empera-small-line-height) !important;
-  letter-spacing: var(--empera-small-letter-spacing) !important;
-  font-weight: var(--empera-small-weight) !important;
-  font-style: var(--empera-small-style) !important;
-  color: var(--red) !important;
-}
-
-.garamondLarge {
-  font-family: "garamond-premier-pro-display" !important;
-  font-size: var(--garamond-large-size) !important;
-  line-height: var(--garamond-large-line-height) !important;
-  letter-spacing: var(--garamond-large-letter-spacing) !important;
-  font-weight: var(--garamond-large-weight) !important;
-  font-style: var(--garamond-large-style) !important;
-  color: var(--black) !important;
-  font-feature-settings: "swsh" on;
-}
-
-.garamondSmall {
-  font-family: "garamond-premier-pro-display" !important;
-  font-size: var(--garamond-small-size) !important;
-  line-height: var(--garamond-small-line-height) !important;
-  letter-spacing: var(--garamond-small-letter-spacing) !important;
-  font-weight: var(--garamond-small-weight) !important;
-  font-style: var(--garamond-small-style) !important;
-  color: var(--black) !important;
-}
-
-small,
-.garamondTiny {
-  font-family: "garamond-premier-pro-display" !important;
-  font-size: var(--garamond-tiny-size) !important;
-  line-height: var(--garamond-tiny-line-height) !important;
-  letter-spacing: var(--garamond-tiny-letter-spacing) !important;
-  font-weight: var(--garamond-tiny-weight) !important;
-  font-style: var(--garamond-tiny-style) !important;
-  color: var(--black) !important;
-}
-
-.norwesterLarge {
-  font-family: "norwester" !important;
-  font-size: var(--norwester-large-size) !important;
-  line-height: var(--norwester-large-line-height) !important;
-  letter-spacing: var(--norwester-large-letter-spacing) !important;
-  font-weight: var(--norwester-large-weight) !important;
-  font-style: var(--norwester-large-style) !important;
-  color: var(--black) !important;
-  text-transform: uppercase !important;
-}
-
-.norwesterSmall {
-  font-family: "norwester" !important;
-  font-size: var(--norwester-small-size) !important;
-  line-height: var(--norwester-small-line-height) !important;
-  letter-spacing: var(--norwester-small-letter-spacing) !important;
-  font-weight: var(--norwester-small-weight) !important;
-  font-style: var(--norwester-small-style) !important;
-  color: var(--black) !important;
-  text-transform: uppercase !important;
 }
 
 [data-template="page.explore"] .shopify-section-group-header-group {

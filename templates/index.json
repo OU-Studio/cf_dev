@@ -29,7 +29,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "frontpage",
-        "products_to_show": 6,
+        "products_to_show": 4,
         "title": "Selling Like Hot Cakes!",
         "heading_size": "h2",
         "description": "",
@@ -67,21 +67,49 @@
           "settings": {
             "collection": "frontpage"
           }
+        },
+        "featured_collection_fTq4pq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_39gUA7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_9UBe6w": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_nQmzAV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
         }
       },
       "block_order": [
         "featured_collection_q4dw7Q",
-        "featured_collection_LArHi8"
+        "featured_collection_LArHi8",
+        "featured_collection_fTq4pq",
+        "featured_collection_39gUA7",
+        "featured_collection_9UBe6w",
+        "featured_collection_nQmzAV"
       ],
       "settings": {
         "title": "Collections",
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLECTIONS",
         "image_ratio": "square",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "color_scheme": "scheme-2",
         "show_view_all": true,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -103,18 +131,50 @@
             "page": "nebula",
             "collection_image": "shopify://shop_images/Nebula-688x1004px.jpg"
           }
+        },
+        "featured_page_yiRMUx": {
+          "type": "featured_page",
+          "settings": {
+            "page": "booze-baccy",
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px.jpg"
+          }
+        },
+        "featured_page_6KVY98": {
+          "type": "featured_page",
+          "settings": {
+            "page": "alessandro-manfredini",
+            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px.jpg"
+          }
+        },
+        "featured_page_BybQPi": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Barberism_688x1004px2.jpg"
+          }
+        },
+        "featured_page_CrEtFk": {
+          "type": "featured_page",
+          "settings": {
+            "page": "triumphant",
+            "collection_image": "shopify://shop_images/Triumphant_688x1004px.jpg"
+          }
         }
       },
       "block_order": [
         "featured_page_mfj7Mp",
-        "featured_page_wfVfUa"
+        "featured_page_wfVfUa",
+        "featured_page_yiRMUx",
+        "featured_page_6KVY98",
+        "featured_page_BybQPi",
+        "featured_page_CrEtFk"
       ],
       "settings": {
         "title": "Collaborations To Peruse",
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLABORATIONS",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
+        "columns_desktop": 6,
         "color_scheme": "",
         "show_view_all": true,
         "columns_mobile": "2",

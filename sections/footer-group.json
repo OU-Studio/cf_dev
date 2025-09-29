@@ -11,12 +11,23 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_6NAThe": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"custom-image-links\">\n  <a href=\"/pages/page-one\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Cigarette_Cards_CTAs.png?v=1759150419\" alt=\"Image 1\">\n  </a>\n  <a href=\"/pages/page-two\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Cigarette_Cards_CTAs.png?v=1759150419\" alt=\"Image 2\">\n  </a>\n  <a href=\"/pages/page-three\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Cigarette_Cards_CTAs.png?v=1759150419\" alt=\"Image 3\">\n  </a>\n</div>\n\n<style>\n  .custom-image-links {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 10px;\n  }\n  .custom-image-links a {\n    display: block;\n  }\n  .custom-image-links img {\n    display: block;\n    width: 100%;\n    height: auto;\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "footer": {
       "type": "footer",
       "settings": {}
     }
   },
   "order": [
+    "custom_liquid_6NAThe",
     "footer"
   ]
 }
