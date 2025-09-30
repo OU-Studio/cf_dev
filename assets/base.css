@@ -2707,3 +2707,7 @@ slider-component.page-width {
   max-width: none !important;
   margin: auto !important;
 }
+
+.shopify-section-group-header-group {
+  max-width: none !important;
+}
