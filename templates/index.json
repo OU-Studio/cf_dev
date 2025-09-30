@@ -222,7 +222,7 @@
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLABORATIONS",
         "image_ratio": "adapt",
-        "columns_desktop": 6,
+        "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": true,
         "columns_mobile": "2",
@@ -306,8 +306,8 @@
     "banner_slideshow_BkbBe7",
     "image_banner",
     "featured_collection",
-    "collection_list_KgFHVp",
     "collection_list_iLK9Kj",
+    "collection_list_KgFHVp",
     "reviews_mRy6dP",
     "rich_text_KTQMC8"
   ]
