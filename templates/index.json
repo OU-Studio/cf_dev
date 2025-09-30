@@ -80,6 +80,7 @@
         "heading_AFCUz7",
         "heading_3YQNt7"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
