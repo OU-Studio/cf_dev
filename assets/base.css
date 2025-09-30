@@ -1,7 +1,3 @@
-
-
-
-
 h1 {
   font-family: "garamond-premier-pro-display" !important;
   font-size: 3.8rem !important;
@@ -2697,4 +2693,17 @@ slider-component.page-width {
 [data-url="/pages/museum"] #MainContent .shopify-section:nth-of-type(4) .banner__buttons .button {
   max-width: 270px !important;
   min-width: 0px !important;
+}
+
+.full-bleed .slideshow-container {
+  max-width: none !important;
+  margin: 0px !important;
+}
+.full-bleed .slick-list {
+  width: 100% !important;
+  max-width: none !important;
+}
+.full-bleed .slick-list img {
+  max-width: none !important;
+  margin: auto !important;
 }

@@ -68,18 +68,38 @@
           })
         })
         }
-        if ($('.slideshow-container').length) {
-          console.log($('.slideshow-container'))
-          $('.slideshow-container').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            swipeToSlide: true,
-            infinite: true,
-            arrows: true,
-            dots: true,
-          });
-        }
+        // Non full-bleed sections
+       // Non full-bleed sections
+if ($('.section:not(.full-bleed) .slideshow-container').length) {
+  console.log($('.section:not(.full-bleed) .slideshow-container'));
+  $('.section:not(.full-bleed) .slideshow-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    swipeToSlide: true,
+    infinite: true,
+    arrows: true,
+    dots: true,
+  });
+}
+
+// Full-bleed sections (auto scroll every 5s)
+if ($('.full-bleed .slideshow-container').length) {
+  console.log($('.full-bleed .slideshow-container'));
+  $('.full-bleed .slideshow-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    swipeToSlide: true,
+    infinite: true,
+    arrows: false,
+    dots: true,
+    autoplay: true,       // enable auto scrolling
+    autoplaySpeed: 5000,  // 5 seconds
+  });
+}
+
+
         if($('.product__media-list').length){
           $('.product__media-list').slick({
             slidesToShow: 1,

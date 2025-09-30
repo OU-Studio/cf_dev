@@ -9,65 +9,56 @@
  */
 {
   "sections": {
-    "slideshow_VwgX37": {
-      "type": "slideshow",
+    "banner_slideshow_BkbBe7": {
+      "type": "banner-slideshow",
       "blocks": {
-        "slide_HJdyRA": {
+        "slide_B6zTU4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Triumphant-Block-1-main-image-754x568px.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "image": "shopify://shop_images/Fawcett_Times_Free_with_Orders.jpg",
+            "quote": "",
+            "name": ""
           }
         },
-        "slide_M4QfB8": {
+        "slide_X8Pqxj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Nebula-Block-1-754-x-568px.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "image": "shopify://shop_images/Bianco_Classico_Winner.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
+        "slide_QYcwGg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/EDC_NEW.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
+        "slide_URAeKX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/USA_Store_Open.jpg",
+            "quote": "",
+            "name": ""
           }
         }
       },
       "block_order": [
-        "slide_HJdyRA",
-        "slide_M4QfB8"
+        "slide_B6zTU4",
+        "slide_X8Pqxj",
+        "slide_QYcwGg",
+        "slide_URAeKX"
       ],
-      "disabled": true,
-      "name": "t:sections.slideshow.presets.name",
+      "name": "Banner Slideshow",
       "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": ""
+        "color_scheme": ""
       }
     },
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Fawcett_Times_Free_with_Orders.jpg",
         "image_overlay_opacity": 0,
@@ -312,7 +303,7 @@
     }
   },
   "order": [
-    "slideshow_VwgX37",
+    "banner_slideshow_BkbBe7",
     "image_banner",
     "featured_collection",
     "collection_list_KgFHVp",

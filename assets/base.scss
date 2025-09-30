@@ -3130,3 +3130,18 @@ slider-component.page-width {
     }
   }
 }
+
+.full-bleed{
+  .slideshow-container{
+    max-width: none !important;
+    margin: 0px !important;
+  }
+  .slick-list{
+    width: 100% !important;
+    max-width: none !important;
+    img{
+    max-width: none !important;
+    margin: auto !important
+    }
+  }
+}
