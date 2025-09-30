@@ -739,7 +739,7 @@ body .featured-product .product__info-container:after {
   margin: 0px !important;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 #shopify-section-sections--24609899315578__header {
@@ -2710,4 +2710,44 @@ slider-component.page-width {
 
 .shopify-section-group-header-group {
   max-width: none !important;
+}
+
+.flip-card {
+  perspective: 1000px;
+  display: block;
+  padding-bottom: 160%;
+  text-decoration: none;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-front img,
+.flip-back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
 }
