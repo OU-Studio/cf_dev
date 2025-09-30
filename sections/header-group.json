@@ -43,7 +43,7 @@
           "type": "mega_menu_content",
           "settings": {
             "image": "shopify://shop_images/www.captainfawcett.com_waxintins-3.jpg",
-            "text": "SPECIAL OFFER",
+            "text": "SPECIAL OFFER\nONE DAY ONLY\n10% OFF",
             "link": "shopify://pages/alessandro-manfredini",
             "menu_selector": 1
           }
