@@ -84,8 +84,22 @@ if ($('.section:not(.full-bleed) .slideshow-container').length) {
 }
 
 // Full-bleed sections (auto scroll every 5s)
+const DOT_SVG = `
+  <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 39.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="cls-1" d="M120,24.64c-12.46,8.69-31.41,12.42-50.39,14.02-25.57,2.16-47.86,3.36-64.38-10.05C.31,24.61-.88,19.28.59,14.89c2.16-6.46,13.04-12.46,18.45-4.49-5.22-1.74-11.9-1.18-12.37,3.22-.68,6.43,6.56,10.33,15.43,10.63,9.61.33,18.74-5.23,27.24-10.34C69.95,1.51,94.03-4.4,120,3.76c25.97-8.15,50.04-2.25,70.66,10.15,8.5,5.12,17.63,10.67,27.24,10.34,8.87-.31,16.11-4.2,15.43-10.63-.46-4.4-7.14-4.96-12.37-3.22,5.41-7.97,16.28-1.97,18.45,4.49,1.47,4.39.28,9.72-4.65,13.72-16.52,13.41-38.8,12.21-64.37,10.05-18.98-1.6-37.93-5.33-50.39-14.02"/>
+  </g>
+</svg>
+`;
+
 if ($('.full-bleed .slideshow-container').length) {
-  console.log($('.full-bleed .slideshow-container'));
   $('.full-bleed .slideshow-container').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -94,8 +108,18 @@ if ($('.full-bleed .slideshow-container').length) {
     infinite: true,
     arrows: false,
     dots: true,
-    autoplay: true,       // enable auto scrolling
-    autoplaySpeed: 5000,  // 5 seconds
+    autoplay: true,
+    autoplaySpeed: 5000,
+
+    // custom dots
+    dotsClass: 'slick-dots ou-dots',
+    customPaging: function (slick, i) {
+      return `
+        <button type="button" class="ou-dot" aria-label="Go to slide ${i + 1}">
+          ${DOT_SVG}
+        </button>
+      `;
+    }
   });
 }
 

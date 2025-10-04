@@ -1,9 +1,14 @@
 <div class="footerTop">
-  <div class="footerPlane"></div>
-  <h2>Newsletter Sign Up</h2>
+    <div class="flipbook-slick">
+    <div><img src="https://cdn.shopify.com/s/files/1/0907/4104/7674/files/plane_and_moving_propelar_copy.jpg?v=1759564675" alt=""></div>
+    <div><img src="https://cdn.shopify.com/s/files/1/0907/4104/7674/files/plane_and_moving_propelar_2_copy.jpg?v=1759564675" alt=""></div>
+    <div><img src="https://cdn.shopify.com/s/files/1/0907/4104/7674/files/plane_and_moving_propelar_3_copy.jpg?v=1759564675" alt=""></div>
+    <div><img src="https://cdn.shopify.com/s/files/1/0907/4104/7674/files/plane_and_moving_propelar_4_copy.jpg?v=1759564675" alt=""></div>
+  </div>
+  <div>
+<h2>Newsletter Sign Up</h2>
   <p>
-    Sign up to receive telegrams from the Captain...<br>
-    Huzzah!
+    Sign up to receive telegrams from the Captain... Huzzah!
   </p>
 
   {% form 'customer' %}
@@ -47,6 +52,8 @@
     * Please read our riveting Privacy Policy. Spoiler alert... your personal information is safe & sound and will not
     be shared.
   </p>
+  </div>
+  
 </div>
 <div class="necc"></div>
 <div class="footerMiddle">
@@ -74,6 +81,45 @@
     <a href="#">Privacy Policy</a>
     <a href="#">Terms & Conditions</a>
     <a href="#">WHOLESALE</a>
-    <p>Copyright © 2024 Captain Fawcett Limited</p>
+    <p>Copyright © 2025 Captain Fawcett Limited</p>
   </div>
 </div>
+
+<script>
+(function($){
+  var $fb = $('.flipbook-slick');
+  var timer = null;
+
+  $fb.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: false,        // manual control
+    speed: 0,               // instant flip
+    cssEase: 'linear',
+    swipe: false, draggable: false, touchMove: false,
+    accessibility: false, adaptiveHeight: false, waitForAnimate: false
+  });
+
+  function startFlip(el){
+    if (timer) return;
+    timer = setInterval(function(){
+      $(el).slick('slickNext');
+    }, 100); // 0.1s per frame
+  }
+  function stopFlip(){ clearInterval(timer); timer = null; }
+
+  // Hover triggers
+  $fb.on('mouseenter touchstart', function(){ startFlip(this); });
+  $fb.on('mouseleave touchend touchcancel', function(){ stopFlip(); });
+
+  // Footer email focus triggers
+  var $email = $('.shopify-section-group-footer-group [type="email"]');
+  $email.on('focus', function(){ startFlip($fb); });
+  $email.on('blur', function(){ stopFlip(); });
+
+})(jQuery);
+
+</script>

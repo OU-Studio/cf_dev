@@ -12,6 +12,14 @@
     "banner_slideshow_BkbBe7": {
       "type": "banner-slideshow",
       "blocks": {
+        "slide_GcaYfB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Home-Page-Letterbox.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
         "slide_B6zTU4": {
           "type": "slide",
           "settings": {
@@ -46,6 +54,7 @@
         }
       },
       "block_order": [
+        "slide_GcaYfB",
         "slide_B6zTU4",
         "slide_X8Pqxj",
         "slide_QYcwGg",
@@ -54,41 +63,6 @@
       "name": "Banner Slideshow",
       "settings": {
         "color_scheme": ""
-      }
-    },
-    "rich_text_kqG8mC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_AFCUz7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1",
-            "alignment": "center"
-          }
-        },
-        "heading_3YQNt7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Something here again",
-            "heading_size": "h1",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AFCUz7",
-        "heading_3YQNt7"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "image_banner": {
@@ -143,42 +117,49 @@
           "type": "featured_page",
           "settings": {
             "page": "maharajah",
-            "collection_image": "shopify://shop_images/Maharajah_688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg"
           }
         },
         "featured_page_wfVfUa": {
           "type": "featured_page",
           "settings": {
             "page": "nebula",
-            "collection_image": "shopify://shop_images/Nebula-688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg"
           }
         },
         "featured_page_yiRMUx": {
           "type": "featured_page",
           "settings": {
             "page": "booze-baccy",
-            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg"
           }
         },
         "featured_page_6KVY98": {
           "type": "featured_page",
           "settings": {
             "page": "alessandro-manfredini",
-            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg"
           }
         },
         "featured_page_BybQPi": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Barberism_688x1004px2.jpg"
+            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg"
           }
         },
         "featured_page_CrEtFk": {
           "type": "featured_page",
           "settings": {
             "page": "triumphant",
-            "collection_image": "shopify://shop_images/Triumphant_688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg"
+          }
+        },
+        "featured_page_iptTP7": {
+          "type": "featured_page",
+          "settings": {
+            "page": "explore",
+            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_f49f8c84-386c-42fd-ab85-b725938c8694.jpg"
           }
         }
       },
@@ -188,18 +169,20 @@
         "featured_page_yiRMUx",
         "featured_page_6KVY98",
         "featured_page_BybQPi",
-        "featured_page_CrEtFk"
+        "featured_page_CrEtFk",
+        "featured_page_iptTP7"
       ],
       "settings": {
         "title": "Collaborations To Peruse",
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLABORATIONS",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "borders": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -210,37 +193,37 @@
         "featured_collection_q4dw7Q": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "beard-moustache"
           }
         },
         "featured_collection_LArHi8": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "shaving"
           }
         },
         "featured_collection_fTq4pq": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "hair-body"
           }
         },
         "featured_collection_39gUA7": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "parfum"
           }
         },
         "featured_collection_9UBe6w": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "barbershop"
           }
         },
         "featured_collection_nQmzAV": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "gifts-accessories"
           }
         }
       },
@@ -262,6 +245,7 @@
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "borders": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -339,7 +323,6 @@
   },
   "order": [
     "banner_slideshow_BkbBe7",
-    "rich_text_kqG8mC",
     "image_banner",
     "featured_collection",
     "collection_list_iLK9Kj",
