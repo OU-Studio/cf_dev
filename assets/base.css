@@ -82,7 +82,7 @@ h6 {
   font-family: "garamond-premier-pro-display" !important;
   font-size: 1.25rem !important;
   line-height: 1em !important;
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.05em !important;
   font-weight: 400 !important;
   font-style: initial !important;
   color: var(--black) !important;
@@ -108,11 +108,15 @@ p, .price {
   color: var(--black) !important;
 }
 
+.price {
+  font-size: 20px !important;
+}
+
 .emperaLarge {
   font-family: "emperaRegular" !important;
   font-size: 28px !important;
   line-height: 1em !important;
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.05em !important;
   font-weight: 400 !important;
   font-style: initial !important;
   color: var(--red) !important;
@@ -122,7 +126,7 @@ p, .price {
   font-family: "emperaRegular" !important;
   font-size: 18px !important;
   line-height: 1em !important;
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.05em !important;
   font-weight: 400 !important;
   font-style: initial !important;
   color: var(--red) !important;
@@ -504,11 +508,6 @@ body .featured-product .product__info-container:after {
   }
   .footerTop .footerPlane {
     max-width: 400px;
-    order: 99;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
   }
   .footerTop * {
     text-align: left !important;
@@ -526,7 +525,6 @@ body .featured-product .product__info-container:after {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Asset_Plane.png?v=1743331115);
 }
 .footerTop .footerPlane:before {
   content: "";
@@ -652,19 +650,20 @@ body .featured-product .product__info-container:after {
   padding: 20px 10px;
   background-color: var(--black);
 }
-@media all and (min-width: 1400px) {
+@media all and (min-width: 1300px) {
   .footerBottom {
     padding: 20px 40px;
     display: flex;
     gap: 40px;
+    align-items: center !important;
   }
   .footerBottom .footerLinks {
     flex-direction: row !important;
-    gap: 20px !important;
+    gap: 10px !important;
     margin-left: auto;
   }
   .footerBottom .cfl {
-    max-width: 400px;
+    max-width: 300px !important;
     margin-right: auto;
     margin-left: 0px !important;
   }
@@ -730,8 +729,9 @@ body .featured-product .product__info-container:after {
   color: var(--white);
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em !important;
   font-size: 12px;
+  line-height: 1em !important;
 }
 .footerBottom .footerLinks p {
   text-align: center;
@@ -740,6 +740,8 @@ body .featured-product .product__info-container:after {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 12px !important;
+  letter-spacing: 0.1em !important;
+  line-height: 1em !important;
 }
 
 #shopify-section-sections--24609899315578__header {
@@ -1015,7 +1017,7 @@ main {
   margin: auto;
 }
 .shopify-section:not(:first-of-type) {
-  margin-top: 40px !important;
+  margin-top: 30px !important;
 }
 .shopify-section.full-bleed {
   max-width: none;
@@ -1616,7 +1618,7 @@ product-info {
 .card .card__inner .card__media img {
   width: 100%;
   display: block;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease !important;
 }
 
 .card .card__inner .card__media img:nth-child(2) {
@@ -1634,7 +1636,7 @@ product-info {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 4px;
+  padding: 10px 4px;
   align-items: center;
 }
 
@@ -1643,7 +1645,7 @@ product-info {
 }
 
 .card__heading {
-  max-width: 180px;
+  max-width: 320px;
   margin: auto;
 }
 .card__heading a {
@@ -1708,12 +1710,21 @@ product-info {
 
 .collection-list-wrapper .grid--4-col-desktop {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-flow: row dense; /* helps if items are missing */
   gap: 10px;
   list-style: none;
   padding: 0 !important;
   margin: 0 10px;
   justify-items: center; /* centers grid items in their cells */
+}
+
+.collection-list-wrapper .grid--4-col-desktop .grid__item {
+  grid-column: span 1;
+}
+
+.collection-list-wrapper .grid--4-col-desktop > div {
+  grid-column: span 2;
 }
 
 .collection-list-wrapper .grid--3-col-desktop {
@@ -1871,7 +1882,7 @@ blockquote {
   margin-bottom: 0px !important;
 }
 
-.slick-dots {
+.section:not(.full-bleed) .slick-dots {
   bottom: 7px !important;
   width: calc(100% - 100px);
   margin: auto;
@@ -1880,22 +1891,22 @@ blockquote {
   align-items: center;
   justify-content: center;
 }
-.slick-dots li {
+.section:not(.full-bleed) .slick-dots li {
   margin: 0px 4px !important;
   width: 6px !important;
   height: 6px !important;
 }
-.slick-dots li.slick-active button {
+.section:not(.full-bleed) .slick-dots li.slick-active button {
   background-color: var(--red);
 }
-.slick-dots li button {
+.section:not(.full-bleed) .slick-dots li button {
   padding: 2px !important;
   width: 6px !important;
   height: 6px !important;
   border: solid 1px var(--red);
   border-radius: 100%;
 }
-.slick-dots li button:before {
+.section:not(.full-bleed) .slick-dots li button:before {
   display: none !important;
 }
 
@@ -2750,4 +2761,161 @@ slider-component.page-width {
 
 .flip-back {
   transform: rotateY(180deg);
+}
+
+/* 1) kill Slick's default dot pseudo everywhere */
+.slick-dots li button:before {
+  display: none !important;
+  content: none !important;
+}
+
+/* 2) dot container */
+.section.full-bleed .ou-dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  bottom: 5px !important;
+}
+
+/* 3) each dot li */
+.section.full-bleed .ou-dots li {
+  margin: 0;
+  width: 40px;
+  height: 15px;
+  line-height: 0; /* bigger click target without affecting layout */
+}
+
+/* 4) the button itself */
+.section.full-bleed .ou-dots .ou-dot {
+  width: 40px;
+  height: 15px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* in case a theme sets this and hides children */
+  text-indent: 0;
+  overflow: visible;
+  color: inherit;
+}
+
+/* 5) your SVG sizing */
+.section.full-bleed .ou-dots .ou-dot svg {
+  display: block;
+  width: 40px;
+  height: 15px;
+}
+
+/* 6) color the actual geometry, not just <svg> */
+.section.full-bleed .ou-dots .ou-dot svg *,
+.section.full-bleed .ou-dots .ou-dot svg path,
+.section.full-bleed .ou-dots .ou-dot svg .cls-1 {
+  fill: #000; /* inactive */
+}
+
+/* 7) active state */
+.section.full-bleed .ou-dots li.slick-active .ou-dot svg *,
+.section.full-bleed .ou-dots li.slick-active .ou-dot svg path,
+.section.full-bleed .ou-dots li.slick-active .ou-dot svg .cls-1 {
+  fill: var(--red);
+}
+
+.section-collection-list > .borders li {
+  position: relative;
+}
+.section-collection-list > .borders li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/double_white_black_keyline_for_panel_1.png?v=1759328643);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.flipbook-slick {
+  width: 400px; /* set your size */
+  height: 240px; /* or use aspect-ratio if you prefer */
+  overflow: hidden;
+}
+
+.flipbook-slick img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; /* or 'contain' if needed */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.footerTop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.title, .collection-list-title {
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+}
+
+#shopify-section-template--25295706587514__rich_text_AciNKb {
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb h6 {
+  font-size: 24px !important;
+  line-height: 1.2em !important;
+  margin: 20px auto !important;
+  max-width: 800px;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb h2 {
+  font-size: 30px !important;
+  margin-bottom: 20px !important;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb * {
+  text-align: center !important;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb .rte {
+  margin-top: 0rem !important;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb .rte p {
+  margin: 0.5rem auto !important;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb .rich-text__blocks:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#shopify-section-template--25295706587514__rich_text_AciNKb .rich-text__blocks:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 0px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
 }

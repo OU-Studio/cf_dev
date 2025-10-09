@@ -65,6 +65,38 @@
         "color_scheme": ""
       }
     },
+    "rich_text_AciNKb": {
+      "type": "rich-text",
+      "blocks": {
+        "text_XmxdJn": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>Captain Fawcett’s collaboration with The Jodhpur Company has resulted in a most outstanding Signature Series fragrance. Conjuring up India’s princely opulence, ‘Maharajah’ is a magnificent evocation of ancient majesty tailored to suit the modern gentleman. All Hail the Hirsute.</h6>"
+          }
+        },
+        "heading_NkyXYB": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Jodhpur Company",
+            "heading_size": "h2",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_XmxdJn",
+        "heading_NkyXYB"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "disabled": true,
@@ -161,6 +193,13 @@
             "page": "explore",
             "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_f49f8c84-386c-42fd-ab85-b725938c8694.jpg"
           }
+        },
+        "featured_page_qy46CA": {
+          "type": "featured_page",
+          "settings": {
+            "page": "explore",
+            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg"
+          }
         }
       },
       "block_order": [
@@ -170,7 +209,8 @@
         "featured_page_6KVY98",
         "featured_page_BybQPi",
         "featured_page_CrEtFk",
-        "featured_page_iptTP7"
+        "featured_page_iptTP7",
+        "featured_page_qy46CA"
       ],
       "settings": {
         "title": "Collaborations To Peruse",
@@ -323,6 +363,7 @@
   },
   "order": [
     "banner_slideshow_BkbBe7",
+    "rich_text_AciNKb",
     "image_banner",
     "featured_collection",
     "collection_list_iLK9Kj",
