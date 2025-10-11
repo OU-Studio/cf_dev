@@ -36,6 +36,7 @@
             console.log($(this).text())
             if($(this).text() == 'TOP NOTES'){
               $(this).parents('ul').addClass('notesSlider')
+              if($(window).width() < 900){
               $('.notesSlider').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -45,6 +46,7 @@
                 arrows: false,
                 dots: false,
               });
+}
             }
             if($(this).text() == 'Expedition Mug'){
               $(this).parents('ul').addClass('notesSlider')

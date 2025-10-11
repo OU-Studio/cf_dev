@@ -11,66 +11,75 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_y4t4A9": {
+      "type": "multicolumn",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
+        "column_XBM4fw": {
+          "type": "column",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "image": "shopify://shop_images/11_top_note_top_hat_2x_aa6ff194-e552-46da-8f3c-533e6fd3ff85.png",
+            "title": "TOP NOTES",
+            "subtitle": "",
+            "text": "<p>{{ product.metafields.custom.top_notes.value }}</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "column_pWAETd": {
+          "type": "column",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "image": "shopify://shop_images/11_top_note_top_hat_2x_copy.png",
+            "title": "MID NOTES",
+            "subtitle": "",
+            "text": "<p>{{ product.metafields.custom.mid_notes.value }}</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
+        "column_dK3ttL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11_top_note_top_hat_2x_copy_2.png",
+            "title": "BASE NOTES",
+            "subtitle": "",
+            "text": "<p>{{ product.metafields.custom.base_notes.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description"
+        "column_XBM4fw",
+        "column_pWAETd",
+        "column_dK3ttL"
       ],
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "enable_sticky_info": true,
+        "title": "Fragrance Splashes",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
         "color_scheme": "",
-        "media_size": "large",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": true,
-        "enable_video_looping": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 12
+        "padding_bottom": 36
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Selling Like Hot Cakes!",
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
@@ -88,6 +97,7 @@
   },
   "order": [
     "main",
+    "multicolumn_y4t4A9",
     "related-products"
   ]
 }

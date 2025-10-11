@@ -2919,3 +2919,187 @@ slider-component.page-width {
   background-position: center;
   transform: rotate(180deg);
 }
+
+.cf-product .cf-breadcrumbs {
+  margin: 10px 0px;
+  color: var(--red);
+}
+.cf-product .cf-breadcrumbs a {
+  font-size: 16px !important;
+  color: var(--black) !important;
+  opacity: 0.5;
+}
+.cf-product .cf-breadcrumbs [aria-current=page] {
+  font-size: 16px !important;
+  color: var(--black) !important;
+}
+.cf-product .cf-grid {
+  padding: 20px;
+  background-color: var(--cream);
+}
+.cf-product .cf-title {
+  font-size: 30px !important;
+  font-style: initial !important;
+  margin: 0px !important;
+}
+.cf-product .price-item {
+  font-size: 30px !important;
+  font-style: initial !important;
+}
+.cf-product .cf-size {
+  font-size: 22px !important;
+  font-style: initial !important;
+}
+.cf-product .cf-desc {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cf-product .cf-desc p {
+  margin-block-start: 0.4em;
+  margin-block-end: 0.4em;
+  font-size: 18px !important;
+  line-height: 1.2em !important;
+}
+.cf-product .product-form__quantity {
+  padding-top: 10px;
+  background-color: var(--cream);
+  border-radius: 8px;
+}
+.cf-product .product-form__quantity path {
+  fill: var(--red) !important;
+}
+.cf-product .product-form__quantity input {
+  font-family: "garamond-premier-pro-display" !important;
+  font-size: 24px !important;
+}
+.cf-product .cf-form-row form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.cf-product hr {
+  border-top: solid 1px var(--red) !important;
+  margin-bottom: 20px;
+}
+.cf-product .cf-rows h3 {
+  font-size: 25px !important;
+}
+.cf-product .cf-rows p {
+  font-size: 18px !important;
+}
+.cf-product .cf-rows .fragrance .cf-ph {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/fragrance.png?v=1760178595);
+}
+.cf-product .cf-rows .superb .cf-ph {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/superb.png?v=1760178593);
+}
+.cf-product .cf-rows .benefits .cf-ph {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/benefits.png?v=1760178594);
+}
+.cf-product .cf-form-row {
+  position: relative;
+}
+.cf-product .cf-form-row:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 80px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/PORTER_red_bags.webp?v=1753869122);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+}
+.cf-product .cf-ph {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cf-product .quantity {
+  background-color: var(--offwhite);
+}
+.cf-product .cf-slider-for .slick-list {
+  width: 100% !important;
+}
+.cf-product .cf-slider-nav {
+  margin-top: 10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.cf-product .cf-slider-nav .slick-list {
+  width: 100% !important;
+}
+.cf-product .cf-slider-nav .slick-track {
+  transform: none !important;
+}
+.cf-product .cf-slider-nav .thumb {
+  padding: 0px 5px !important;
+  position: relative;
+  transform: none !important;
+  background: none;
+  border-radius: 0px;
+}
+.cf-product .cf-slider-nav .thumb:before {
+  content: "";
+  display: block;
+  padding-top: 100% !important;
+}
+.cf-product .cf-slider-nav .thumb img {
+  position: absolute;
+  inset: 0;
+  left: 5px;
+  right: 5px;
+  width: auto !important;
+}
+.cf-product .slick-next, .cf-product .slick-prev {
+  bottom: 10px !important;
+}
+
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) * {
+  text-align: center;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .page-width {
+  max-width: 1200px !important;
+  margin: auto;
+  padding: 20px !important;
+  background-color: var(--cream);
+  box-sizing: border-box;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list {
+  display: flex;
+  gap: 5px;
+  list-style-type: none;
+  padding: 0px !important;
+  width: 100% !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list .multicolumn-card__image-wrapper {
+  margin: 0px auto !important;
+  padding: 0px !important;
+  max-width: 150px;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list .multicolumn-card__image-wrapper .media {
+  padding: 0px !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list .multicolumn-card__info {
+  padding: 10px !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list li {
+  width: calc((100% - 10px) / 3);
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list li h3 {
+  font-size: 1.8rem !important;
+  font-family: "empera" !important;
+  font-style: initial !important;
+  color: var(--red) !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list li p {
+  font-size: 18px !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(2) .multicolumn-list img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
