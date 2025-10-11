@@ -227,6 +227,17 @@
         "padding_bottom": 36
       }
     },
+    "featured_product_Jkqz8U": {
+      "type": "featured-product",
+      "name": "Featured product",
+      "settings": {
+        "product": "bianco-classico-moustache-wax",
+        "show_breadcrumbs": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_list_KgFHVp": {
       "type": "collection-list",
       "blocks": {
@@ -367,6 +378,7 @@
     "image_banner",
     "featured_collection",
     "collection_list_iLK9Kj",
+    "featured_product_Jkqz8U",
     "collection_list_KgFHVp",
     "reviews_mRy6dP",
     "rich_text_KTQMC8"
