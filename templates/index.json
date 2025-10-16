@@ -170,14 +170,16 @@
           "type": "featured_page",
           "settings": {
             "page": "alessandro-manfredini",
-            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg"
+            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg",
+            "collection_image_2": "shopify://shop_images/Alessandro_Manfredini_Product_688x1004px.jpg"
           }
         },
         "featured_page_BybQPi": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Barberism_Product_688x1004px.jpg"
           }
         },
         "featured_page_CrEtFk": {

@@ -93,8 +93,14 @@
                     role="region"
                     aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                   >
-                    {{ block.settings.row_content }}
-                    {{ block.settings.page.content }}
+                    {%- if block.settings.row_content_liquid != blank -%}
+  {{ block.settings.row_content_liquid }}
+{%- elsif block.settings.row_content != blank -%}
+  {{ block.settings.row_content }}
+{%- else -%}
+  {{ block.settings.page.content }}
+{%- endif -%}
+
                   </div>
                 </details>
               </div>
@@ -481,6 +487,12 @@
           "default": "check_mark",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.label"
         },
+        {
+  "type": "liquid",
+  "id": "row_content_liquid",
+  "label": "Row content (Liquid or dynamic source)",
+  "info": "Bind a metafield or write Liquid. Use filters like `| metafield_tag` (rich text) or `| newline_to_br` (multi-line)."
+},
         {
           "type": "richtext",
           "id": "row_content",

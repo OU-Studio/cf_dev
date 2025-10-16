@@ -3,14 +3,14 @@
 
   Accepts:
   - card_collection: {Object} Collection Liquid object
-  - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+  - media_aspect_ratio: {String} "square" | "portrait" | "adapt" (optional; default "square")
   - columns: {Number}
   - extend_height: {Boolean} Card height extends to available container space. Default: false (optional)
   - wrapper_class: {String} Wrapper class for card (optional)
   - placeholder_image: {String} Placeholder image when collection is empty (optional)
-
-  Usage:
-  {% render 'card-collection' %}
+  - card_type: {String} "featured_collection" | "featured_page" (optional)
+  - card_image: {Image} Image object used for featured_page type (optional)
+  - card_image_hover: {Image} Optional hover image (used for either type)
 {% endcomment %}
 
 {%- liquid
@@ -23,15 +23,17 @@
   if ratio == 0 or ratio == null
     assign ratio = 1
   endif
+
   assign card_color_scheme = settings.card_color_scheme
   assign card_style = settings.card_style
   if wrapper_class == null or wrapper_class == 'none'
     assign card_color_scheme = settings.collection_card_color_scheme
     assign card_style = settings.collection_card_style
   endif
+
   assign type = 'featured_collection'
   if card_type == 'featured_page'
-  assign type='featured_page'
+    assign type = 'featured_page'
   endif
 -%}
 
@@ -56,32 +58,60 @@
       {%- if card_collection.featured_image -%}
         <div class="card__media">
           <div class="media media--transparent media--hover-effect">
+            {%- assign _base = card_collection.featured_image -%}
             <img
               srcset="
-                {%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 535 -%}{{ card_collection.featured_image | image_url: width: 535 }} 535w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 750 -%}{{ card_collection.featured_image | image_url: width: 750 }} 750w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                {%- if card_collection.featured_image.width >= 3000 -%}{{ card_collection.featured_image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width }}w
+                {%- if _base.width >= 165 -%}{{ _base | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if _base.width >= 330 -%}{{ _base | image_url: width: 330 }} 330w,{%- endif -%}
+                {%- if _base.width >= 535 -%}{{ _base | image_url: width: 535 }} 535w,{%- endif -%}
+                {%- if _base.width >= 750 -%}{{ _base | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if _base.width >= 1000 -%}{{ _base | image_url: width: 1000 }} 1000w,{%- endif -%}
+                {%- if _base.width >= 1500 -%}{{ _base | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if _base.width >= 3000 -%}{{ _base | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {{ _base | image_url }} {{ _base.width }}w
               "
-              src="{{ card_collection.featured_image | image_url: width: 1500 }}"
+              src="{{ _base | image_url: width: 1500 }}"
               sizes="
                 (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
                 (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
                 calc(100vw - 3rem)
               "
-              alt="{{ card_collection.featured_image.alt | escape }}"
-              height="{{ card_collection.featured_image.height }}"
-              width="{{ card_collection.featured_image.width }}"
+              alt="{{ _base.alt | escape }}"
+              height="{{ _base.height }}"
+              width="{{ _base.width }}"
               loading="lazy"
               class="motion-reduce"
             >
+            {%- if card_image_hover -%}
+              {%- assign _hover = card_image_hover -%}
+              <img
+                srcset="
+                  {%- if _hover.width >= 165 -%}{{ _hover | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if _hover.width >= 330 -%}{{ _hover | image_url: width: 330 }} 330w,{%- endif -%}
+                  {%- if _hover.width >= 535 -%}{{ _hover | image_url: width: 535 }} 535w,{%- endif -%}
+                  {%- if _hover.width >= 750 -%}{{ _hover | image_url: width: 750 }} 750w,{%- endif -%}
+                  {%- if _hover.width >= 1000 -%}{{ _hover | image_url: width: 1000 }} 1000w,{%- endif -%}
+                  {%- if _hover.width >= 1500 -%}{{ _hover | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {%- if _hover.width >= 3000 -%}{{ _hover | image_url: width: 3000 }} 3000w,{%- endif -%}
+                  {{ _hover | image_url }} {{ _hover.width }}w
+                "
+                src="{{ _hover | image_url: width: 1500 }}"
+                sizes="
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                  (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                  calc(100vw - 3rem)
+                "
+                alt="{{ _hover.alt | default: _base.alt | escape }}"
+                height="{{ _hover.height }}"
+                width="{{ _hover.width }}"
+                loading="lazy"
+                class="motion-reduce hover-image"
+              >
+            {%- endif -%}
           </div>
         </div>
       {%- endif -%}
+
       {%- if card_collection == blank -%}
         <div class="card__media">
           {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
@@ -91,11 +121,7 @@
           <div class="card__information">
             <h3 class="card__heading">
               <a
-                {% if card_collection == blank %}
-                  role="link" aria-disabled="true"
-                {% else %}
-                  href="{{ card_collection.url }}"
-                {% endif %}
+                {% if card_collection == blank %}role="link" aria-disabled="true"{% else %}href="{{ card_collection.url }}"{% endif %}
                 class="full-unstyled-link"
               >
                 {%- if card_collection.title != blank -%}
@@ -104,68 +130,53 @@
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
                 {%- if card_collection.description == blank -%}
-                  <span class="icon-wrap">
-                    {{- 'icon-arrow.svg' | inline_asset_content -}}
-                  </span>
+                  <span class="icon-wrap">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
                 {%- endif %}
               </a>
             </h3>
             {%- if card_collection.description != blank -%}
               <p class="card__caption">
                 {{- card_collection.description | strip_html | truncatewords: 12 -}}
-                <span class="icon-wrap">
-                  {{- 'icon-arrow.svg' | inline_asset_content -}}
-                </span>
+                <span class="icon-wrap">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
               </p>
             {%- endif -%}
           </div>
         </div>
       {%- endif -%}
     </div>
+
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading">
-            <a
-              {% if card_collection == blank %}
-                role="link" aria-disabled="true"
-              {% else %}
-                href="{{ card_collection.url }}"
-              {% endif %}
-              class="full-unstyled-link"
-            >
+            <a {% if card_collection == blank %}role="link" aria-disabled="true"{% else %}href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
               {%- if card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">
-                  {{- 'icon-arrow.svg' | inline_asset_content -}}
-                </span>
+                <span class="icon-wrap">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
               {%- endif %}
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
             <p class="card__caption">
               {{- card_collection.description | strip_html | truncatewords: 12 -}}
-              <span class="icon-wrap">
-                {{- 'icon-arrow.svg' | inline_asset_content -}}
-              </span>
+              <span class="icon-wrap">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
             </p>
           {%- endif -%}
         </div>
       </div>
     {%- endif -%}
+
     {%- if card_collection == blank -%}
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
               {{ 'onboarding.collection_title' | t }}
-              <span class="icon-wrap">
-                {{- 'icon-arrow.svg' | inline_asset_content -}}
-              </span>
+              <span class="icon-wrap">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
             </a>
           </h3>
         </div>
@@ -176,75 +187,99 @@
 
 {% else %}
 
-  <div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %} featured_page">
+<div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %} featured_page">
+  <div
+    class="
+      card
+      card--{{ card_style }}
+      {% if card_image %} card--media{% else %} card--text{% endif %}
+      {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
+      {% if extend_height %} card--extend-height{% endif %}
+      {% if card_image == nil and card_style == 'card' %} ratio{% endif %}
+    "
+    style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
+  >
     <div
-      class="
-        card
-        card--{{ card_style }}
-        {% if card_image %} card--media{% else %} card--text{% endif %}
-        {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
-        {% if extend_height %} card--extend-height{% endif %}
-        {% if card_image == nil and card_style == 'card' %} ratio{% endif %}
-      "
+      class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_image or card_style == 'standard' %} ratio{% endif %}"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      <div
-        class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_image or card_style == 'standard' %} ratio{% endif %}"
-        style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
-      >
-        {%- if card_image -%}
-          <div class="card__media">
-            <div class="media media--transparent media--hover-effect">
+      {%- if card_image -%}
+        <div class="card__media">
+          <div class="media media--transparent media--hover-effect">
+            {%- assign _base = card_image -%}
+            <img
+              srcset="
+                {%- if _base.width >= 165 -%}{{ _base | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if _base.width >= 330 -%}{{ _base | image_url: width: 330 }} 330w,{%- endif -%}
+                {%- if _base.width >= 535 -%}{{ _base | image_url: width: 535 }} 535w,{%- endif -%}
+                {%- if _base.width >= 750 -%}{{ _base | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if _base.width >= 1000 -%}{{ _base | image_url: width: 1000 }} 1000w,{%- endif -%}
+                {%- if _base.width >= 1500 -%}{{ _base | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if _base.width >= 3000 -%}{{ _base | image_url: width: 3000 }} 3000w,{%- endif -%}
+                {{ _base | image_url }} {{ _base.width }}w
+              "
+              src="{{ _base | image_url: width: 1500 }}"
+              sizes="
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
+                calc(100vw - 3rem)
+              "
+              alt="{{ _base.alt | escape }}"
+              height="{{ _base.height }}"
+              width="{{ _base.width }}"
+              loading="lazy"
+              class="motion-reduce"
+            >
+            {%- if card_image_hover -%}
+              {%- assign _hover = card_image_hover -%}
               <img
                 srcset="
-                  {%- if card_image.width >= 165 -%}{{ card_image | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if card_image.width >= 330 -%}{{ card_image | image_url: width: 330 }} 330w,{%- endif -%}
-                  {%- if card_image.width >= 535 -%}{{ card_image | image_url: width: 535 }} 535w,{%- endif -%}
-                  {%- if card_image.width >= 750 -%}{{ card_image | image_url: width: 750 }} 750w,{%- endif -%}
-                  {%- if card_image.width >= 1000 -%}{{ card_image | image_url: width: 1000 }} 1000w,{%- endif -%}
-                  {%- if card_image.width >= 1500 -%}{{ card_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-                  {%- if card_image.width >= 3000 -%}{{ card_image | image_url: width: 3000 }} 3000w,{%- endif -%}
-                  {{ card_image | image_url }} {{ card_image.width }}w
+                  {%- if _hover.width >= 165 -%}{{ _hover | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if _hover.width >= 330 -%}{{ _hover | image_url: width: 330 }} 330w,{%- endif -%}
+                  {%- if _hover.width >= 535 -%}{{ _hover | image_url: width: 535 }} 535w,{%- endif -%}
+                  {%- if _hover.width >= 750 -%}{{ _hover | image_url: width: 750 }} 750w,{%- endif -%}
+                  {%- if _hover.width >= 1000 -%}{{ _hover | image_url: width: 1000 }} 1000w,{%- endif -%}
+                  {%- if _hover.width >= 1500 -%}{{ _hover | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {%- if _hover.width >= 3000 -%}{{ _hover | image_url: width: 3000 }} 3000w,{%- endif -%}
+                  {{ _hover | image_url }} {{ _hover.width }}w
                 "
-                src="{{ card_image | image_url: width: 1500 }}"
+                src="{{ _hover | image_url: width: 1500 }}"
                 sizes="
                   (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
                   (min-width: 750px) {% if columns > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
                   calc(100vw - 3rem)
                 "
-                alt="{{ card_image.alt | escape }}"
-                height="{{ card_image.height }}"
-                width="{{ card_image.width }}"
+                alt="{{ _hover.alt | default: _base.alt | escape }}"
+                height="{{ _hover.height }}"
+                width="{{ _hover.width }}"
                 loading="lazy"
-                class="motion-reduce"
+                class="motion-reduce hover-image"
               >
-            </div>
-          </div>
-        {%- endif -%}
-        {%- if card_collection == blank -%}
-          <div class="card__media">
-            {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
-          </div>
-        {%- else -%}
-        {%- endif -%}
-      </div>
-      {%- if card_collection != blank and card_style == 'card' or card_image -%}
-      {%- endif -%}
-      {%- if card_collection == blank -%}
-        <div class="card__content">
-          <div class="card__information">
-            <h3 class="card__heading card__heading--placeholder">
-              <a role="link" aria-disabled="true" class="full-unstyled-link">
-                {{ 'onboarding.collection_title' | t }}
-                <span class="icon-wrap">
-                  {{- 'icon-arrow.svg' | inline_asset_content -}}
-                </span>
-              </a>
-            </h3>
+            {%- endif -%}
           </div>
         </div>
       {%- endif -%}
+
+      {%- if card_collection == blank -%}
+        <div class="card__media">
+          {{ placeholder_image | placeholder_svg_tag: 'placeholder-svg' }}
+        </div>
+      {%- endif -%}
     </div>
+
+    {%- if card_collection == blank -%}
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading card__heading--placeholder">
+            <a role="link" aria-disabled="true" class="full-unstyled-link">
+              {{ 'onboarding.collection_title' | t }}
+              <span class="icon-wrap">{{- 'icon-arrow.svg' | inline_asset_content -}}</span>
+            </a>
+          </h3>
+        </div>
+      </div>
+    {%- endif -%}
   </div>
+</div>
 
 {% endif %}

@@ -79,11 +79,13 @@
               {% render 'card-collection',
                 card_type: block.type,
                 card_image: block.settings.collection_image,
+                card_image_hover: block.settings.collection_image_2,
                 card_collection: block.settings.page,
                 media_aspect_ratio: section.settings.image_ratio,
                 columns: columns,
                 placeholder_image: placeholder_image
               %}
+              <a class="norwesterSmall quick-add__submit button button--full-width button--secondary" href="{{block.settings.page.url}}">BUY ME</a>
             </li>
           {% else %}
           <li
@@ -351,6 +353,11 @@
           "type": "image_picker",  // Add image picker type here
           "id": "collection_image", // ID to reference the image later
           "label": "Collection Image" // Label for the image picker
+        },
+        {
+          "type": "image_picker",  // Add image picker type here
+          "id": "collection_image_2", // ID to reference the image later
+          "label": "Collection Image Hover" // Label for the image picker
         }
       ]
     }

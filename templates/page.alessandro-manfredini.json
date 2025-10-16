@@ -11,9 +11,37 @@
   "sections": {
     "image_banner_Da4aa4": {
       "type": "image-banner",
+      "blocks": {
+        "text_LcGFCJ": {
+          "type": "text",
+          "settings": {
+            "text": "Alessandro",
+            "text_style": "body"
+          }
+        },
+        "heading_rLaPUQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Manfredini",
+            "heading_size": "h1"
+          }
+        },
+        "text_imAfpk": {
+          "type": "text",
+          "settings": {
+            "text": "Signature Series",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_LcGFCJ",
+        "heading_rLaPUQ",
+        "text_imAfpk"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/10_Alessandro-Manfredini-main-image-412x447.jpg",
+        "image": "shopify://shop_images/Alessandro_Portrait_squares.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -26,58 +54,19 @@
         "show_text_below": false
       }
     },
-    "rich_text_DFj7aT": {
-      "type": "rich-text",
-      "blocks": {
-        "text_WFPhJg": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Alessandro</p>"
-          }
-        },
-        "emperaheading_XQCmT3": {
-          "type": "emperaheading",
-          "settings": {
-            "emperaheading": "Manfredini",
-            "heading_size": "h1",
-            "emperaalignment": "center"
-          }
-        },
-        "text_fyCA9a": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Signature Series</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_WFPhJg",
-        "emperaheading_XQCmT3",
-        "text_fyCA9a"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "rich_text_7Wy4ax": {
       "type": "rich-text",
       "blocks": {
         "text_bkTiaP": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons.</p><p>A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend.<strong>Evviva!</strong></p>"
+            "text": "<h6>Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons. A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend.<strong>Evviva!</strong></h6>"
           }
         },
         "text_kFfAU9": {
           "type": "text",
           "settings": {
-            "text": "<p>Alessandro Manfredini</p>"
+            "text": "<h2>Alessandro Manfredini</h2>"
           }
         }
       },
@@ -97,57 +86,30 @@
     },
     "featured_product_qPytgn": {
       "type": "featured-product",
-      "blocks": {
-        "title_rTRBfW": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_WFhL64": {
-          "type": "price",
-          "settings": {}
-        },
-        "text_JhFTHW": {
-          "type": "text",
-          "settings": {
-            "text": "A tantalising, voluptuous fragrance redolent of ancient India’s princely opulence. The Captain’s Master Blender has woven heady rose with peppery spice, rich musk, beguiling cedar & leather studded with dazzling citrus top notes.",
-            "text_style": "body"
-          }
-        },
-        "quantity_selector_znFQzG": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_wUwFR3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        }
-      },
-      "block_order": [
-        "title_rTRBfW",
-        "price_WFhL64",
-        "text_JhFTHW",
-        "quantity_selector_znFQzG",
-        "buy_buttons_wUwFR3"
-      ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "bianco-classico-moustache-wax",
+        "show_breadcrumbs": false,
         "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "image_banner_RV8e7a": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Alessandro_background_image_2000px.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
       }
     },
     "multicolumn_hG4cif": {
@@ -158,6 +120,7 @@
           "settings": {
             "image": "shopify://shop_images/11_top_note_top_hat_2x_aa6ff194-e552-46da-8f3c-533e6fd3ff85.png",
             "title": "TOP NOTES",
+            "subtitle": "",
             "text": "<p>Heady rose, and peppery spice</p>",
             "link_label": "",
             "link": ""
@@ -168,6 +131,7 @@
           "settings": {
             "image": "shopify://shop_images/11_top_note_top_hat_2x_copy.png",
             "title": "MID NOTES",
+            "subtitle": "",
             "text": "<p>Heady rose, and peppery spice</p>",
             "link_label": "",
             "link": ""
@@ -178,6 +142,7 @@
           "settings": {
             "image": "shopify://shop_images/11_top_note_top_hat_2x_copy_2.png",
             "title": "BASE NOTES",
+            "subtitle": "",
             "text": "<p>Heady rose, and peppery spice</p>",
             "link_label": "",
             "link": ""
@@ -207,13 +172,13 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_PYd6gN": {
+    "featured_collection_anmzN6": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "frontpage",
-        "products_to_show": 6,
-        "title": "For your further Delectation",
+        "products_to_show": 4,
+        "title": "Selling Like Hot Cakes!",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -236,48 +201,80 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_pi76Kq": {
-      "type": "multicolumn",
+    "collection_list_cGiwqQ": {
+      "type": "collection-list",
       "blocks": {
-        "column_Rk9Xe8": {
-          "type": "column",
+        "featured_page_BV8niE": {
+          "type": "featured_page",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg"
           }
         },
-        "column_DfXaRL": {
-          "type": "column",
+        "featured_page_dMaL6P": {
+          "type": "featured_page",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg"
+          }
+        },
+        "featured_page_3JcbJq": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_f49f8c84-386c-42fd-ab85-b725938c8694.jpg"
+          }
+        },
+        "featured_page_UkV366": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg"
+          }
+        },
+        "featured_page_7tJdcE": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg"
+          }
+        },
+        "featured_page_gxkwKL": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg"
+          }
+        },
+        "featured_page_nJHcxJ": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg"
           }
         }
       },
       "block_order": [
-        "column_Rk9Xe8",
-        "column_DfXaRL"
+        "featured_page_BV8niE",
+        "featured_page_dMaL6P",
+        "featured_page_3JcbJq",
+        "featured_page_UkV366",
+        "featured_page_7tJdcE",
+        "featured_page_gxkwKL",
+        "featured_page_nJHcxJ"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "More Curious Collaborations To Peruse",
+        "title": "<em>Collaborations To Peruse</em>",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "VIEW ALL COLLABORATIONS",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
+        "buttonText": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 7,
         "color_scheme": "",
+        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "borders": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -293,12 +290,12 @@
   },
   "order": [
     "image_banner_Da4aa4",
-    "rich_text_DFj7aT",
     "rich_text_7Wy4ax",
     "featured_product_qPytgn",
+    "image_banner_RV8e7a",
     "multicolumn_hG4cif",
-    "featured_collection_PYd6gN",
-    "multicolumn_pi76Kq",
+    "featured_collection_anmzN6",
+    "collection_list_cGiwqQ",
     "main"
   ]
 }
