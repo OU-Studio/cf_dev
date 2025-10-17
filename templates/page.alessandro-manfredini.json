@@ -39,9 +39,9 @@
         "heading_rLaPUQ",
         "text_imAfpk"
       ],
-      "name": "t:sections.image-banner.presets.name",
+      "name": "Banner",
       "settings": {
-        "image": "shopify://shop_images/Alessandro_Portrait_squares.jpg",
+        "image": "shopify://shop_images/Alessandro_Collab_product_pic_2000x1500px.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -54,62 +54,42 @@
         "show_text_below": false
       }
     },
-    "rich_text_7Wy4ax": {
-      "type": "rich-text",
+    "image_banner_UQ8kri": {
+      "type": "image-banner",
       "blocks": {
-        "text_bkTiaP": {
+        "text_9Ac4Db": {
           "type": "text",
           "settings": {
-            "text": "<h6>Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons. A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend.<strong>Evviva!</strong></h6>"
+            "text": "Alessandro Manfredini",
+            "text_style": "body"
           }
         },
-        "text_kFfAU9": {
+        "text_ThgUJr": {
           "type": "text",
           "settings": {
-            "text": "<h2>Alessandro Manfredini</h2>"
+            "text": "Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons. A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend.<strong>Evviva!</strong>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "text_bkTiaP",
-        "text_kFfAU9"
+        "text_9Ac4Db",
+        "text_ThgUJr"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "Intro",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "featured_product_qPytgn": {
-      "type": "featured-product",
-      "name": "t:sections.featured-product.presets.name",
-      "settings": {
-        "product": "bianco-classico-moustache-wax",
-        "show_breadcrumbs": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_banner_RV8e7a": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Alessandro_background_image_2000px.jpg",
+        "image": "shopify://shop_images/Alessandro_Portrait_square.jpg",
+        "image_2": "shopify://shop_images/Alessandro_collaboration_2000x1000px_backgrounds.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
-        "show_text_box": true,
+        "show_text_box": false,
         "color_scheme": "",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "multicolumn_hG4cif": {
@@ -154,9 +134,9 @@
         "column_Rr9Ptr",
         "column_Tw9tAe"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Fragrance",
       "settings": {
-        "title": "The Alessandro Manfredini fragrance splashes",
+        "title": "Fragrance Splashes",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -174,11 +154,11 @@
     },
     "featured_collection_anmzN6": {
       "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
+      "name": "Products",
       "settings": {
-        "collection": "frontpage",
-        "products_to_show": 4,
-        "title": "Selling Like Hot Cakes!",
+        "collection": "alessandro",
+        "products_to_show": 24,
+        "title": "Alessandro Manfredini Range",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -204,77 +184,105 @@
     "collection_list_cGiwqQ": {
       "type": "collection-list",
       "blocks": {
-        "featured_page_BV8niE": {
+        "featured_page_UkV366": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg"
+            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg",
+            "collection_image_2": "shopify://shop_images/Maharajah_Product_688x1004px.jpg"
           }
         },
         "featured_page_dMaL6P": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg"
-          }
-        },
-        "featured_page_3JcbJq": {
-          "type": "featured_page",
-          "settings": {
-            "page": "barberism",
-            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_f49f8c84-386c-42fd-ab85-b725938c8694.jpg"
-          }
-        },
-        "featured_page_UkV366": {
-          "type": "featured_page",
-          "settings": {
-            "page": "barberism",
-            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg"
+            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Nebula_Product_688x1004px.jpg"
           }
         },
         "featured_page_7tJdcE": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg"
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg",
+            "collection_image_2": "shopify://shop_images/Booze_and_Baccy_Product_688x1004px.jpg"
           }
         },
-        "featured_page_gxkwKL": {
+        "featured_page_8wr3qd": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg"
+            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg",
+            "collection_image_2": "shopify://shop_images/Alessandro_Manfredini_Product_688x1004px_1.jpg"
+          }
+        },
+        "featured_page_BV8niE": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Barberism_Product_688x1004px_1.jpg"
           }
         },
         "featured_page_nJHcxJ": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg"
+            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg",
+            "collection_image_2": "shopify://shop_images/Triumphant_Product_688x1004px3.jpg"
+          }
+        },
+        "featured_page_3JcbJq": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg",
+            "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_gxkwKL": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg",
+            "collection_image_2": "shopify://shop_images/Scapicchio_Product_688x1004px2.jpg"
           }
         }
       },
       "block_order": [
-        "featured_page_BV8niE",
-        "featured_page_dMaL6P",
-        "featured_page_3JcbJq",
         "featured_page_UkV366",
+        "featured_page_dMaL6P",
         "featured_page_7tJdcE",
-        "featured_page_gxkwKL",
-        "featured_page_nJHcxJ"
+        "featured_page_8wr3qd",
+        "featured_page_BV8niE",
+        "featured_page_nJHcxJ",
+        "featured_page_3JcbJq",
+        "featured_page_gxkwKL"
       ],
-      "name": "t:sections.collection-list.presets.name",
+      "name": "Collabs",
       "settings": {
-        "title": "<em>Collaborations To Peruse</em>",
+        "title": "COLLABORATION FAVOURITES",
         "heading_size": "h1",
         "buttonText": "",
         "image_ratio": "adapt",
-        "columns_desktop": 7,
+        "columns_desktop": 4,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "borders": false,
+        "borders": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_qPytgn": {
+      "type": "featured-product",
+      "disabled": true,
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "bianco-classico-moustache-wax",
+        "show_breadcrumbs": false,
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -290,12 +298,11 @@
   },
   "order": [
     "image_banner_Da4aa4",
-    "rich_text_7Wy4ax",
-    "featured_product_qPytgn",
-    "image_banner_RV8e7a",
+    "image_banner_UQ8kri",
     "multicolumn_hG4cif",
     "featured_collection_anmzN6",
     "collection_list_cGiwqQ",
+    "featured_product_qPytgn",
     "main"
   ]
 }
