@@ -38,11 +38,22 @@
             "row_content": "",
             "page": ""
           }
+        },
+        "collapsible_row_PkbeGD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "REVIEWS",
+            "icon": "check_mark",
+            "row_content_liquid": "<!-- Target container: control selection via data-* -->\n<div id=\"ou-reviews\"\n     class=\"ou-reviews\"\n     data-indices=\"1,2,3,4\"      <!-- optional; 1-based -->\n     data-count=\"4\"              <!-- used when no indices -->\n     data-random=\"true\"          <!-- used when no indices -->\n     data-min-rating=\"0\">        <!-- 0–5 -->\n</div>\n\n<!-- Raw JSON from shop metafield -->\n<script type=\"application/json\" id=\"shop-reviews-data\">\n  {{ shop.metafields.custom.reviews.value | json }}\n</script>",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_bw6zBR",
-        "collapsible_row_dHGadJ"
+        "collapsible_row_dHGadJ",
+        "collapsible_row_PkbeGD"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
