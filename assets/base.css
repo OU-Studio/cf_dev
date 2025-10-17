@@ -1640,6 +1640,7 @@ product-info {
   box-sizing: border-box;
   padding: 10px 4px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .card__content .card__information {
