@@ -92,7 +92,7 @@ p, .price {
   font-family: "garamond-premier-pro-display" !important;
   font-size: 18px !important;
   line-height: 1.2em !important;
-  letter-spacing: 0em !important;
+  letter-spacing: 0.03em !important;
   font-weight: 400 !important;
   font-style: initial !important;
   color: var(--black) !important;
@@ -574,7 +574,8 @@ display: none !important;
 .footerTop {
   padding: 10px;
   background-color: var(--cream);
-  margin: 0px 20px !important;
+  margin: 0px auto !important;
+  max-width: 1240px;
   position: relative;
   @media all and (min-width: 901px){
     padding-right: 500px;
@@ -623,6 +624,7 @@ display: none !important;
     &:last-of-type {
       margin-bottom: 0px !important;
       font-style: italic;
+      max-width: 400px;
     }
   }
 
@@ -2529,6 +2531,9 @@ slider-component.page-width {
 }
 
 [data-template="page.alessandro-manfredini"] {
+  .sigelm{
+    display: block !important;
+  }
   .shopify-section:nth-of-type(1){
   .banner .media:before{
     padding-bottom: 33vw !important;
@@ -2596,6 +2601,7 @@ slider-component.page-width {
   }
 }
   .shopify-section:nth-of-type(2){
+    margin-top: 15px !important;
   .banner .media:before{
     padding-bottom: 100% !important;
   }
@@ -2678,7 +2684,7 @@ slider-component.page-width {
       }
       .banner__text:nth-of-type(2){
       p{
-        font-size: 20px !important;
+        font-size: 24px !important;
       }
       }
     }
@@ -2728,7 +2734,7 @@ slider-component.page-width {
         }
 
         p {
-          font-size: 18px !important;
+          font-size: 24px !important;
         }
 
       }
@@ -3542,8 +3548,8 @@ margin-bottom: 30px !important;
 } 
 
 .flipbook-slick {
-  width: 400px;   /* set your size */
-  height: 240px;  /* or use aspect-ratio if you prefer */
+  width: 500px;   /* set your size */
+  height: 260px;  /* or use aspect-ratio if you prefer */
   overflow: hidden;
 }
 .flipbook-slick img {
@@ -3664,7 +3670,7 @@ margin-bottom: 30px !important;
 
   .cf-desc{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     p{
           margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -3961,6 +3967,20 @@ margin-bottom: 30px !important;
   }
 }
 
+.sigelm{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 0.05;
+  display: none !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_beetle_992x992px.png?v=1760704345);
+    width: 200vw;
+    height: 100vh;
+    left: -100vw;
+    top: 180vh;
+}
+
 body:not([data-template="index"]){
   .bgelm{
     display: none !important;
@@ -4032,4 +4052,42 @@ body .section-header.shopify-section{
 
 .price{
   color: var(--red) !important;
+}
+
+.announcement-bar-section.shopify-section{
+  margin: 0px !important;
+  background-color: var(--black);
+  padding: 10px 20px !important;
+  *{
+    text-align: center;
+    color: var(--cream) !important;
+    font-size: 16px !important;
+        font-style: normal !important;
+    font-variant: all-small-caps !important;
+    letter-spacing: .03em !important;
+  }
+  p{
+    margin: 0px !important;
+  }
+}
+
+.paymentIcons{
+  background-color: var(--black);
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: solid 1px var(--cream);
+  p{
+    color: var(--cream) !important;
+    font-size: 16px !important;
+        font-style: normal !important;
+    font-variant: all-small-caps !important;
+    text-align: center;
+    max-width: 800px;
+  }
+  img{
+    max-width: 400px;
+  }
 }
