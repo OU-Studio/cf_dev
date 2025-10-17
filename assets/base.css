@@ -3565,3 +3565,8 @@ body .section-header.shopify-section {
 .paymentIcons img {
   max-width: 400px;
 }
+
+.related-products > h2 {
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+}
