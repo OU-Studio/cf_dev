@@ -52,6 +52,17 @@
 
           {%- comment -%} show the mega menu if it has children OR a matching content block {%- endcomment -%}
           {% if top_link.links.size > 0 or mega_block %}
+            {% if top_link.title == "Signature Series" %}
+              <div class="header__mega-menu" aria-label="Submenu for {{ top_link.title }}">
+                <div class="header__mega-menu-columns">
+                {% for second_level_link in top_link.links %}
+                <div class="header__mega-menu-column">
+                  <a href="{{ second_level_link.url }}" class="header__mega-menu-column-title" data-menu="{{ second_level_link.title }}"></a>
+                </div>
+                {% endfor %}
+                </div>
+              </div>
+              {% else %}
             <div class="header__mega-menu" aria-label="Submenu for {{ top_link.title }}">
               {% if top_link.links.size > 0 %}
                 <div class="header__mega-menu-columns">
@@ -88,6 +99,7 @@
 
               
             </div>
+            {% endif %}
           {% endif %}
         </li>
       {% endfor %}
