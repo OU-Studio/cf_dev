@@ -3551,6 +3551,9 @@ body .section-header.shopify-section {
 .announcement-bar-section.shopify-section p {
   margin: 0px !important;
 }
+.announcement-bar-section.shopify-section svg {
+  width: 40px;
+}
 
 .paymentIcons {
   background-color: var(--black);
