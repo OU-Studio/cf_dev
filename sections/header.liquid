@@ -57,7 +57,7 @@
                 <div class="header__mega-menu-columns">
                   {% for second_level_link in top_link.links %}
                     <div class="header__mega-menu-column">
-                      <p class="header__mega-menu-column-title">{{ second_level_link.title }}</p>
+                      <a href="{{ second_level_link.url }}" class="header__mega-menu-column-title">{{ second_level_link.title }}</a>
                       <ul class="header__mega-menu-column-list">
                         {% for third_level_link in second_level_link.links %}
                           <li class="header__mega-menu-item">
