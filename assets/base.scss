@@ -4190,10 +4190,14 @@ body .section-header.shopify-section{
     min-width: 0px !important;
     > a{
       position: relative;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  transition: background-size 0.3s ease;
+  &:hover{
+  background-size: 105%;
+  }
       &:before{
         content: '';
         display: block;

@@ -3675,10 +3675,14 @@ body .section-header.shopify-section {
 }
 [aria-label="Submenu for Signature Series"] > div > div > a {
   position: relative;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
+  transition: background-size 0.3s ease;
+}
+[aria-label="Submenu for Signature Series"] > div > div > a:hover {
+  background-size: 105%;
 }
 [aria-label="Submenu for Signature Series"] > div > div > a:before {
   content: "";
