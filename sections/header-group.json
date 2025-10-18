@@ -40,6 +40,7 @@
       "blocks": {
         "mega_menu_content_HtbRfV": {
           "type": "mega_menu_content",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/www.captainfawcett.com_waxintins-2.jpg",
             "text": "10% OFF\nTODAY ONLY!",

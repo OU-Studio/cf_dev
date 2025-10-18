@@ -64,7 +64,7 @@
         "layout": "section",
         "container_color_scheme": "scheme-1",
         "color_scheme": "",
-        "open_first_collapsible_row": true,
+        "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
@@ -164,7 +164,7 @@
       ],
       "name": "How To Apply",
       "settings": {
-        "image": "shopify://shop_images/Masterclass_Moustache_Wax.jpg",
+        "image": "shopify://shop_images/Moustache_Wax2.jpg",
         "height": "adapt",
         "desktop_image_width": "screenWidth",
         "layout": "image_first",

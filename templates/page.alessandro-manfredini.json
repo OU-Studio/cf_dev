@@ -67,7 +67,7 @@
         "text_ThgUJr": {
           "type": "text",
           "settings": {
-            "text": "Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons. A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend.<strong>Evviva!</strong>",
+            "text": "Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons. A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend... <em>Evviva!</em>",
             "text_style": "body"
           }
         }
@@ -158,7 +158,7 @@
       "settings": {
         "collection": "alessandro",
         "products_to_show": 24,
-        "title": "Alessandro Manfredini Range",
+        "title": "The Alessandro Manfredini Range",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -184,30 +184,6 @@
     "collection_list_cGiwqQ": {
       "type": "collection-list",
       "blocks": {
-        "featured_page_UkV366": {
-          "type": "featured_page",
-          "settings": {
-            "page": "barberism",
-            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg",
-            "collection_image_2": "shopify://shop_images/Maharajah_Product_688x1004px.jpg"
-          }
-        },
-        "featured_page_dMaL6P": {
-          "type": "featured_page",
-          "settings": {
-            "page": "barberism",
-            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg",
-            "collection_image_2": "shopify://shop_images/Nebula_Product_688x1004px.jpg"
-          }
-        },
-        "featured_page_7tJdcE": {
-          "type": "featured_page",
-          "settings": {
-            "page": "barberism",
-            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg",
-            "collection_image_2": "shopify://shop_images/Booze_and_Baccy_Product_688x1004px.jpg"
-          }
-        },
         "featured_page_8wr3qd": {
           "type": "featured_page",
           "settings": {
@@ -224,12 +200,12 @@
             "collection_image_2": "shopify://shop_images/Barberism_688x1004px2_da48e872-27fd-47c3-b7a0-98e3f721b8b0.jpg"
           }
         },
-        "featured_page_nJHcxJ": {
+        "featured_page_7tJdcE": {
           "type": "featured_page",
           "settings": {
             "page": "barberism",
-            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg",
-            "collection_image_2": "shopify://shop_images/Triumphant_Product_688x1004px3.jpg"
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg",
+            "collection_image_2": "shopify://shop_images/Booze_and_Baccy_Product_688x1004px.jpg"
           }
         },
         "featured_page_3JcbJq": {
@@ -240,6 +216,22 @@
             "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
           }
         },
+        "featured_page_UkV366": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg",
+            "collection_image_2": "shopify://shop_images/Maharajah_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_dMaL6P": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Nebula_Product_688x1004px.jpg"
+          }
+        },
         "featured_page_gxkwKL": {
           "type": "featured_page",
           "settings": {
@@ -247,21 +239,29 @@
             "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg",
             "collection_image_2": "shopify://shop_images/Scapicchio_Product_688x1004px2.jpg"
           }
+        },
+        "featured_page_nJHcxJ": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg",
+            "collection_image_2": "shopify://shop_images/Triumphant_Product_688x1004px3.jpg"
+          }
         }
       },
       "block_order": [
-        "featured_page_UkV366",
-        "featured_page_dMaL6P",
-        "featured_page_7tJdcE",
         "featured_page_8wr3qd",
         "featured_page_BV8niE",
-        "featured_page_nJHcxJ",
+        "featured_page_7tJdcE",
         "featured_page_3JcbJq",
-        "featured_page_gxkwKL"
+        "featured_page_UkV366",
+        "featured_page_dMaL6P",
+        "featured_page_gxkwKL",
+        "featured_page_nJHcxJ"
       ],
       "name": "Collabs",
       "settings": {
-        "title": "MORE COLLABORATIONS",
+        "title": "THE SIGNATURE SERIES",
         "heading_size": "h1",
         "buttonText": "",
         "image_ratio": "adapt",
@@ -280,6 +280,7 @@
       "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
+        "title": "Collections",
         "product": "bianco-classico-moustache-wax",
         "show_breadcrumbs": false,
         "color_scheme": "",
