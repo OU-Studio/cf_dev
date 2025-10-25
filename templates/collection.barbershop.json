@@ -1,0 +1,109 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "image_banner_tyjFcD": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Barbershop_letterbox_header.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_aFTbLc": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LrLT6b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Captain Fawcett is delighted to make available to his skilled tonsorial artist chums his rather splendid range of simply ‘First Class Gentlemen’s Grooming Requisite’s’ here you will find everything you could possibly need to equip your esteemed Barbershop… Moustache Waxes, Beard Oils, Beard Balms, Hair Pomades, Hair Tonics, Sea Salt Sprays, Pre Shave Oil, Shaving Creams & Soaps, Razors, Post Shave Balm, Mirrors, Capes, Towels, Brushes & Combs, Eau de Parfum and Cologne et al…</p>"
+          }
+        },
+        "heading_BriE6b": {
+          "type": "heading",
+          "settings": {
+            "heading": "Captain Fawcett",
+            "heading_size": "h2",
+            "alignment": "center"
+          }
+        },
+        "button_qTAgYt": {
+          "type": "button",
+          "settings": {
+            "button_label": "WHOLESALE ENQUIRIES",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_LrLT6b",
+        "heading_BriE6b",
+        "button_qTAgYt"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 36,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "image_banner_tyjFcD",
+    "rich_text_aFTbLc",
+    "product-grid"
+  ]
+}

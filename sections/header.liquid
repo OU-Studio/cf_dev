@@ -52,12 +52,23 @@
 
           {%- comment -%} show the mega menu if it has children OR a matching content block {%- endcomment -%}
           {% if top_link.links.size > 0 or mega_block %}
+            {% if top_link.title == "Signature Series" %}
+              <div class="header__mega-menu" aria-label="Submenu for {{ top_link.title }}">
+                <div class="header__mega-menu-columns">
+                {% for second_level_link in top_link.links %}
+                <div class="header__mega-menu-column">
+                  <a href="{{ second_level_link.url }}" class="header__mega-menu-column-title" data-menu="{{ second_level_link.title }}"></a>
+                </div>
+                {% endfor %}
+                </div>
+              </div>
+              {% else %}
             <div class="header__mega-menu" aria-label="Submenu for {{ top_link.title }}">
               {% if top_link.links.size > 0 %}
                 <div class="header__mega-menu-columns">
                   {% for second_level_link in top_link.links %}
                     <div class="header__mega-menu-column">
-                      <p class="header__mega-menu-column-title">{{ second_level_link.title }}</p>
+                      <a href="{{ second_level_link.url }}" class="header__mega-menu-column-title">{{ second_level_link.title }}</a>
                       <ul class="header__mega-menu-column-list">
                         {% for third_level_link in second_level_link.links %}
                           <li class="header__mega-menu-item">
@@ -88,6 +99,7 @@
 
               
             </div>
+            {% endif %}
           {% endif %}
         </li>
       {% endfor %}
@@ -331,13 +343,21 @@ color: var(--red);
 
   .header__mega-menu-column {
     min-width: 150px;
+      text-align: center !important;
+    *{
+      text-align: center !important
+    }
   }
 
   .header__mega-menu-column-title {
     font-family: "garamond-premier-pro-display" !important;
-    font-style: italic !important;
-    font-feature-settings: 'swsh' on;
-    font-size: 22px !important;
+      text-align: center !important;
+      text-decoration: none !important;
+      border: none !important;
+      color: var(--red) !important;
+  
+font-variant: all-small-caps !important;
+    font-size: 24px !important;
     letter-spacing: 0.05em !important;
     color: var(--black);
     margin: 0px 0px 10px 0px;

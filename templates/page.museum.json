@@ -9,36 +9,187 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
-    "image_banner_EM7AQe": {
+    "image_banner_Da4aa4": {
       "type": "image-banner",
       "blocks": {
-        "heading_KTY3jD": {
+        "text_LcGFCJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Alessandro",
+            "text_style": "body"
+          }
+        },
+        "heading_rLaPUQ": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "MUSEUM",
             "heading_size": "h1"
           }
         },
-        "text_qEdp4d": {
+        "text_imAfpk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Our museum is a place of wondrous idea and inventions",
+            "text_style": "body"
+          }
+        },
+        "image_exDpRB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_1_b1e66430-6d7e-4f88-add6-264ebd7af44d.png",
+            "alt": "",
+            "max_width": 800,
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_LcGFCJ",
+        "heading_rLaPUQ",
+        "text_imAfpk",
+        "image_exDpRB"
+      ],
+      "name": "Banner",
+      "settings": {
+        "image": "shopify://shop_images/museum_interior.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "image_banner_UQ8kri": {
+      "type": "image-banner",
+      "blocks": {
+        "text_9Ac4Db": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Alessandro Manfredini",
+            "text_style": "body"
+          }
+        },
+        "text_ThgUJr": {
           "type": "text",
           "settings": {
-            "text": "<em>Our Museum Is A Place Of Wonderous Idea And Inventions</em>",
+            "text": "In advance of your hoped for esteemed personal visit to HQ in King’s Lynn, Norfolk, England, Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium. For thanks to the wonders of 21st century technology, this wonderous collection of Mantiques is now open to all.",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_KTY3jD",
-        "text_qEdp4d"
+        "text_9Ac4Db",
+        "text_ThgUJr"
       ],
+      "name": "Intro",
+      "settings": {
+        "image": "shopify://shop_images/museum_interior2.jpg",
+        "image_2": "shopify://shop_images/Museum_wallpaper.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "custom_liquid_XJ8Q9b": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<h2 class=\"liquidTitle\">Captain Fawcett’s world of Magnificent Curiosities</h2>\n<div class=\"custom-image-links\">\n  <a href=\"#\" class=\"flip-card\">\n  <div class=\"flip-inner\">\n    <div class=\"flip-front\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_1_1.jpg?v=1761152002&width=2000\" alt=\"Front 1\">\n    </div>\n    <div class=\"flip-back\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_12.jpg?v=1761127020&width=2000\" alt=\"Back 1\">\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"flip-card\">\n  <div class=\"flip-inner\">\n    <div class=\"flip-front\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_2_1.jpg?v=1761152002&width=2000\" alt=\"Front 1\">\n    </div>\n    <div class=\"flip-back\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_22.jpg?v=1761127020&width=2000\" alt=\"Back 1\">\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"flip-card\">\n  <div class=\"flip-inner\">\n    <div class=\"flip-front\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_3_1.jpg?v=1761152002&width=2000\" alt=\"Front 1\">\n    </div>\n    <div class=\"flip-back\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_32.jpg?v=1761127021&width=2000\" alt=\"Back 1\">\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"flip-card\">\n  <div class=\"flip-inner\">\n    <div class=\"flip-front\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_4_1.jpg?v=1761152003&width=2000\" alt=\"Front 1\">\n    </div>\n    <div class=\"flip-back\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_42.jpg?v=1761127020&width=2000\" alt=\"Back 1\">\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"flip-card\">\n  <div class=\"flip-inner\">\n    <div class=\"flip-front\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_5_1.jpg?v=1761152003&width=2000\" alt=\"Front 1\">\n    </div>\n    <div class=\"flip-back\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_52.jpg?v=1761127020&width=2000\" alt=\"Back 1\">\n    </div>\n  </div>\n</a>\n  <a href=\"#\" class=\"flip-card\">\n  <div class=\"flip-inner\">\n    <div class=\"flip-front\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_6_1.jpg?v=1761152002&width=2000\" alt=\"Front 1\">\n    </div>\n    <div class=\"flip-back\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_Card_62.jpg?v=1761127021&width=2000\" alt=\"Back 1\">\n    </div>\n  </div>\n</a>\n\n</div>\n\n<style>\n  .custom-image-links {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 60px;\nmax-width: 900px;\nmargin: auto;\n  }\n  .custom-image-links a {\n    display: block;\n  }\n  .custom-image-links img {\n    display: block;\n    width: 100%;\n    height: auto;\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_rCrziY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hMDwHJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Virtual Visit",
+            "heading_size": "h1"
+          }
+        },
+        "text_wnPmF3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hMDwHJ",
+        "text_wnPmF3"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Stroll_around_the_Museum_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_i6zKbN": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_AghPRR": {
+          "type": "heading",
+          "settings": {
+            "heading": "VIRTUAL VISIT",
+            "heading_size": "h1"
+          }
+        },
+        "text_ArMbEU": {
+          "type": "text",
+          "settings": {
+            "text": "Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium.",
+            "text_style": "body"
+          }
+        },
+        "buttons_QaGxdK": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "TAKE THE VIRTUAL TOUR",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AghPRR",
+        "text_ArMbEU",
+        "buttons_QaGxdK"
+      ],
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Video.jpg",
@@ -47,183 +198,106 @@
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
+        "show_text_box": false,
+        "color_scheme": "scheme-2",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
       }
     },
-    "rich_text_U8wNBa": {
-      "type": "rich-text",
+    "collapsible_content_KhztKf": {
+      "type": "collapsible-content",
       "blocks": {
-        "text_gDyGdw": {
-          "type": "text",
+        "collapsible_row_bFrWrW": {
+          "type": "collapsible_row",
           "settings": {
-            "text": "<p>In advance of your hoped for esteemed personal visit to HQ in King’s Lynn, Norfolk, England, Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium. For thanks to the wonders of 21st century technology, this wonderous collection of Mantiques is now open to all.</p>"
+            "heading": "Reviews",
+            "icon": "check_mark",
+            "row_content_liquid": "<!-- Target container: control selection via data-* -->\n<div id=\"ou-reviews\"\n     class=\"ou-reviews\"\n     data-indices=\"1,2,3,4\"      <!-- optional; 1-based -->\n     data-count=\"4\"              <!-- used when no indices -->\n     data-random=\"true\"          <!-- used when no indices -->\n     data-min-rating=\"0\">        <!-- 0–5 -->\n</div>\n\n<!-- Raw JSON from shop metafield -->\n<script type=\"application/json\" id=\"shop-reviews-data\">\n  {{ shop.metafields.custom.reviews.value | json }}\n</script>",
+            "row_content": "",
+            "page": ""
           }
         },
-        "image_FKe6Lx": {
-          "type": "image",
+        "collapsible_row_UngV43": {
+          "type": "collapsible_row",
           "settings": {
-            "image": "shopify://shop_images/trip.png",
-            "alt": "",
-            "max_width": 200,
-            "alignment": "center"
+            "heading": "Opening Times",
+            "icon": "check_mark",
+            "row_content_liquid": "",
+            "row_content": "",
+            "page": ""
           }
         },
-        "button_b9MKtr": {
-          "type": "button",
+        "collapsible_row_WfCRYW": {
+          "type": "collapsible_row",
           "settings": {
-            "button_label": "BOOK YOUR VISIT HERE",
-            "button_link": "/",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "Directions",
+            "icon": "check_mark",
+            "row_content_liquid": "",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_h8fhN8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Accessibility",
+            "icon": "check_mark",
+            "row_content_liquid": "",
+            "row_content": "",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "text_gDyGdw",
-        "image_FKe6Lx",
-        "button_b9MKtr"
+        "collapsible_row_bFrWrW",
+        "collapsible_row_UngV43",
+        "collapsible_row_WfCRYW",
+        "collapsible_row_h8fhN8"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multicolumn_bmCTVz": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_LMf7Kp": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Image_dcfd9d99-fbe2-4eb0-a76b-68aa51655428.jpg",
-            "title": "Expedition Mug",
-            "subtitle": "1924",
-            "text": "<p>Officially opened by King George V at Wembley on St George’s Day 1924, the Exhibition’s opening ceremony was broadcast by BBC Radio. As the first such broadcast by a British monarch, the historic moment featured in Downton Abbey (as does Captain Fawcett, albeit by way of the Hair and Make-up Department!). Intended to stimulate trade and get to know ‘Sister States and Daughters’, the Exhibition was the largest ever staged and cost £12million. We trust these souvenir mugs were considerably cheaper. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_mbNDnD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Image_dcfd9d99-fbe2-4eb0-a76b-68aa51655428.jpg",
-            "title": "Expedition Mug",
-            "subtitle": "1924",
-            "text": "<p>Officially opened by King George V at Wembley on St George’s Day 1924, the Exhibition’s opening ceremony was broadcast by BBC Radio. As the first such broadcast by a British monarch, the historic moment featured in Downton Abbey (as does Captain Fawcett, albeit by way of the Hair and Make-up Department!). Intended to stimulate trade and get to know ‘Sister States and Daughters’, the Exhibition was the largest ever staged and cost £12million. We trust these souvenir mugs were considerably cheaper. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RV3wmb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Image_dcfd9d99-fbe2-4eb0-a76b-68aa51655428.jpg",
-            "title": "Expedition Mug",
-            "subtitle": "1924",
-            "text": "<p>Officially opened by King George V at Wembley on St George’s Day 1924, the Exhibition’s opening ceremony was broadcast by BBC Radio. As the first such broadcast by a British monarch, the historic moment featured in Downton Abbey (as does Captain Fawcett, albeit by way of the Hair and Make-up Department!). Intended to stimulate trade and get to know ‘Sister States and Daughters’, the Exhibition was the largest ever staged and cost £12million. We trust these souvenir mugs were considerably cheaper. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_LMf7Kp",
-        "column_mbNDnD",
-        "column_RV3wmb"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "Captain Fawcett’s World of Magnificent Curiosities",
+        "caption": "",
+        "heading": "",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "image_banner_zUhzEt": {
-      "type": "image-banner",
-      "blocks": {
-        "image_w3Jg7k": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Museum_Virtual_Visit_White.png",
-            "alt": "",
-            "max_width": 100,
-            "alignment": "center"
-          }
-        },
-        "heading_dBMUrj": {
-          "type": "heading",
-          "settings": {
-            "heading": "Virtual Visit",
-            "heading_size": "h1"
-          }
-        },
-        "text_LAUFAL": {
-          "type": "text",
-          "settings": {
-            "text": "Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium.",
-            "text_style": "body"
-          }
-        },
-        "buttons_jV4xtW": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "take the virtual tour",
-            "button_link_1": "/",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "image_w3Jg7k",
-        "heading_dBMUrj",
-        "text_LAUFAL",
-        "buttons_jV4xtW"
-      ],
-      "name": "t:sections.image-banner.presets.name",
+    "custom_liquid_dnBPFX": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "image": "shopify://shop_images/in_our_museum.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
+        "custom_liquid": "<div style=\"display: flex;\"><img src=\"https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_a4d4704c-5c19-426f-bce0-9a723fe88cb5.png?v=1761145585\" style=\"max-width: 200px; margin: auto;\"></div>",
         "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     }
   },
   "order": [
-    "main",
-    "image_banner_EM7AQe",
-    "rich_text_U8wNBa",
-    "multicolumn_bmCTVz",
-    "image_banner_zUhzEt"
+    "image_banner_Da4aa4",
+    "image_banner_UQ8kri",
+    "custom_liquid_XJ8Q9b",
+    "image_with_text_rCrziY",
+    "image_banner_i6zKbN",
+    "collapsible_content_KhztKf",
+    "custom_liquid_dnBPFX",
+    "main"
   ]
 }

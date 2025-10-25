@@ -13,27 +13,14 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0"
-      ],
-      "disabled": true,
       "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "color_scheme": "",
-        "show_line_separator": true,
-        "show_social": false,
-        "enable_country_selector": false,
-        "enable_language_selector": false
+        "text": "Welcome to Captain Fawcett's Emporium, home to a simply delectable range of first class gentlemen's grooming requisites.",
+        "speed": 20,
+        "direction": "left",
+        "gap": 3,
+        "pause_on_hover": false,
+        "color_scheme": "scheme-1",
+        "show_line_separator": false
       }
     },
     "header": {
@@ -41,6 +28,7 @@
       "blocks": {
         "mega_menu_content_HtbRfV": {
           "type": "mega_menu_content",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/www.captainfawcett.com_waxintins-2.jpg",
             "text": "10% OFF\nTODAY ONLY!",

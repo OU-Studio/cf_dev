@@ -14,6 +14,7 @@
       "blocks": {
         "slide_GcaYfB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Home-Page-Letterbox.jpg",
             "quote": "",
@@ -145,6 +146,38 @@
     "collection_list_iLK9Kj": {
       "type": "collection-list",
       "blocks": {
+        "featured_page_6KVY98": {
+          "type": "featured_page",
+          "settings": {
+            "page": "alessandro-manfredini",
+            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg",
+            "collection_image_2": "shopify://shop_images/Alessandro_Manfredini_Product_688x1004px_1.jpg"
+          }
+        },
+        "featured_page_BybQPi": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Barberism_688x1004px2_da48e872-27fd-47c3-b7a0-98e3f721b8b0.jpg"
+          }
+        },
+        "featured_page_yiRMUx": {
+          "type": "featured_page",
+          "settings": {
+            "page": "booze-baccy",
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg",
+            "collection_image_2": "shopify://shop_images/Booze_and_Baccy_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_iptTP7": {
+          "type": "featured_page",
+          "settings": {
+            "page": "explore",
+            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg",
+            "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
+          }
+        },
         "featured_page_mfj7Mp": {
           "type": "featured_page",
           "settings": {
@@ -161,28 +194,12 @@
             "collection_image_2": "shopify://shop_images/Nebula_Product_688x1004px.jpg"
           }
         },
-        "featured_page_yiRMUx": {
+        "featured_page_qy46CA": {
           "type": "featured_page",
           "settings": {
-            "page": "booze-baccy",
-            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg",
-            "collection_image_2": "shopify://shop_images/Booze_and_Baccy_Product_688x1004px.jpg"
-          }
-        },
-        "featured_page_6KVY98": {
-          "type": "featured_page",
-          "settings": {
-            "page": "alessandro-manfredini",
-            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg",
-            "collection_image_2": "shopify://shop_images/Alessandro_Manfredini_Product_688x1004px_1.jpg"
-          }
-        },
-        "featured_page_BybQPi": {
-          "type": "featured_page",
-          "settings": {
-            "page": "barberism",
-            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg",
-            "collection_image_2": "shopify://shop_images/Barberism_Product_688x1004px_1.jpg"
+            "page": "explore",
+            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg",
+            "collection_image_2": "shopify://shop_images/Scapicchio_Product_688x1004px2.jpg"
           }
         },
         "featured_page_CrEtFk": {
@@ -192,36 +209,20 @@
             "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg",
             "collection_image_2": "shopify://shop_images/Triumphant_Product_688x1004px3.jpg"
           }
-        },
-        "featured_page_iptTP7": {
-          "type": "featured_page",
-          "settings": {
-            "page": "explore",
-            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg",
-            "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
-          }
-        },
-        "featured_page_qy46CA": {
-          "type": "featured_page",
-          "settings": {
-            "page": "explore",
-            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg",
-            "collection_image_2": "shopify://shop_images/Scapicchio_Product_688x1004px2.jpg"
-          }
         }
       },
       "block_order": [
-        "featured_page_mfj7Mp",
-        "featured_page_wfVfUa",
-        "featured_page_yiRMUx",
         "featured_page_6KVY98",
         "featured_page_BybQPi",
-        "featured_page_CrEtFk",
+        "featured_page_yiRMUx",
         "featured_page_iptTP7",
-        "featured_page_qy46CA"
+        "featured_page_mfj7Mp",
+        "featured_page_wfVfUa",
+        "featured_page_qy46CA",
+        "featured_page_CrEtFk"
       ],
       "settings": {
-        "title": "COLLABORATION FAVOURITES",
+        "title": "THE SIGNATURE SERIES",
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLABORATIONS",
         "image_ratio": "adapt",
@@ -239,6 +240,7 @@
       "type": "featured-product",
       "name": "Featured product",
       "settings": {
+        "title": "OFFER OF THE WEEK",
         "product": "bianco-classico-moustache-wax",
         "show_breadcrumbs": false,
         "color_scheme": "",
@@ -275,12 +277,14 @@
         },
         "featured_collection_9UBe6w": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "barbershop"
           }
         },
         "featured_collection_nQmzAV": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "gifts-accessories"
           }
@@ -299,7 +303,7 @@
         "heading_size": "h1",
         "buttonText": "VIEW ALL COLLECTIONS",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "color_scheme": "scheme-2",
         "show_view_all": true,
         "columns_mobile": "2",

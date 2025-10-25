@@ -49,6 +49,16 @@
   {%- endstyle -%}
 
   <div class="page-width cf-product product">
+    {%- unless section.settings.title == blank -%}
+      <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+        <h2
+          id="SectionHeading-{{ section.id }}"
+          class="collection-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} garamondLarge"
+        >
+          {{ section.settings.title }}
+        </h2>
+      </div>
+    {%- endunless -%}
     {% if section.settings.show_breadcrumbs %}
       <nav class="cf-breadcrumbs" aria-label="Breadcrumb">
         <a href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t | default: 'Home' }}</a>
@@ -88,13 +98,13 @@
 
         <!-- RIGHT: Title → Price → Size → Description → Qty+ATC → HR → rows -->
         <div class="cf-right">
-          <h2 class="cf-title">{{ fp.title | escape }}</h2>
+          <h2 class="cf-title"><a href="{{ fp.url }}">{{ fp.title | escape }}</a></h2>
 
           <div class="cf-price" id="price-{{ section.id }}" role="status">
             {%- render 'price',
               product: fp,
               use_variant: true,
-              show_badges: true,
+              show_badges: false,
               price_class: 'price--large'
             -%}
           </div>
@@ -268,6 +278,12 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "t:sections.collection-list.settings.title.default",
+      "label": "t:sections.collection-list.settings.title.label"
+    },
     { "type": "product", "id": "product", "label": "Product" },
     { "type": "checkbox", "id": "show_breadcrumbs", "label": "Show breadcrumbs", "default": true },
     { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },

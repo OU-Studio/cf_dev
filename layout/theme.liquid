@@ -276,9 +276,13 @@ if ($('.full-bleed .slideshow-container').length) {
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}" data-url="{{ request.path }}" data-template="{{ template }}">
+    <div class="bgelms">
     <div class="bgelm compass"></div>
     <div class="bgelm octopus"></div>
     <div class="bgelm boat"></div>
+    <div class="sigelm"></div>
+    </div>
+
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
@@ -348,5 +352,85 @@ if ($('.full-bleed .slideshow-container').length) {
     {%- endif -%}
 
     {% sections 'footer-group' %}
+
+    <script>
+(() => {
+  const container = document.getElementById('ou-reviews');
+  const jsonEl = document.getElementById('shop-reviews-data');
+  if (!container || !jsonEl) return;
+
+  let reviews = [];
+  try {
+    reviews = JSON.parse(jsonEl.textContent || '[]') || [];
+  } catch(e) {
+    console.warn('Invalid shop reviews JSON', e);
+    return;
+  }
+
+  // Read controls
+  const indicesStr = (container.dataset.indices || '').replace(/\s+/g, '');
+  const count = parseInt(container.dataset.count || '4', 10);
+  const random = (container.dataset.random || 'true') === 'true';
+  const minRating = parseInt(container.dataset.minRating || '0', 10);
+
+  // Filter by rating
+  const eligible = reviews
+    .map((r, i) => ({...r, _i: i}))
+    .filter(r => (parseInt(r.rating || 0, 10) >= minRating));
+
+  // Pick indexes
+  let picked = [];
+  if (indicesStr) {
+    // explicit 1-based → 0-based
+    const wanted = indicesStr.split(',').map(n => parseInt(n, 10) - 1);
+    picked = wanted
+      .filter(i => i >= 0 && i < reviews.length)
+      .map(i => ({...reviews[i], _i: i}));
+  } else {
+    let pool = [...eligible];
+    if (random) {
+      for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+      }
+    }
+    picked = pool.slice(0, Math.max(0, count));
+  }
+
+  if (!picked.length) {
+    container.innerHTML = '<p>No reviews matched.</p>';
+    return;
+  }
+
+  // Render
+  const starHTML = (n) => {
+    const rating = Math.max(0, Math.min(5, parseInt(n || 0, 10)));
+    let s = '';
+    for (let i = 1; i <= 5; i++) s += `<span class="ou-star${i <= rating ? ' is-filled' : ''}" ><svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.5906 14.0532L19.4195 22.7302L12 17.3874L4.67114 22.7603L7.45973 14.0632L0 8.69035H9.19127L12 0.0234375L14.8087 8.71044H24L16.5906 14.0532Z" fill="#A30000"/>
+</svg>
+</span>`;
+    return `<div class="ou-review__stars" aria-label="${rating} out of 5">${s}</div>`;
+  };
+
+  const escapeHTML = (str) => String(str || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+
+  container.innerHTML = picked.map(r => `
+    <article class="ou-review" itemscope itemtype="https://schema.org/Review">
+      ${r.rating ? `<div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <meta itemprop="worstRating" content="1"><meta itemprop="bestRating" content="5">
+          <meta itemprop="ratingValue" content="${parseInt(r.rating,10)}">
+          ${starHTML(r.rating)}
+        </div>` : ''}
+      ${r.text ? `<blockquote class="ou-review__text" itemprop="reviewBody">${escapeHTML(r.text)}</blockquote>` : ''}
+      ${r.author ? `<p class="ou-review__meta"><span itemprop="author">${escapeHTML(r.author)}</span></p>` : ''}
+    </article>
+  `).join('');
+})();
+</script>
+
   </body>
 </html>
+
+

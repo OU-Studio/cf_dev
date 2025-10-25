@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-family: "garamond-premier-pro-display" !important;
-  font-size: 2.5rem !important;
+  font-size: 30px !important;
   line-height: 1em !important;
   letter-spacing: 0.05em !important;
   font-weight: 400 !important;
@@ -92,7 +92,7 @@ p, .price {
   font-family: "garamond-premier-pro-display" !important;
   font-size: 18px !important;
   line-height: 1.2em !important;
-  letter-spacing: 0em !important;
+  letter-spacing: 0.03em !important;
   font-weight: 400 !important;
   font-style: initial !important;
   color: var(--black) !important;
@@ -574,7 +574,8 @@ display: none !important;
 .footerTop {
   padding: 10px;
   background-color: var(--cream);
-  margin: 0px 20px !important;
+  margin: 0px auto !important;
+  max-width: 1240px;
   position: relative;
   @media all and (min-width: 901px){
     padding-right: 500px;
@@ -623,6 +624,7 @@ display: none !important;
     &:last-of-type {
       margin-bottom: 0px !important;
       font-style: italic;
+      max-width: 400px;
     }
   }
 
@@ -1824,7 +1826,7 @@ product-info {
 .collection ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1912,6 +1914,7 @@ product-info {
   box-sizing: border-box;
   padding: 10px 4px;
   align-items: center;
+      justify-content: space-between;
 }
 
 .card__content .card__information {
@@ -1961,7 +1964,7 @@ product-info {
 .collection-list-wrapper .grid--7-col-desktop {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0 !important;
   margin: 0 10px;
@@ -1971,7 +1974,7 @@ product-info {
 .collection-list-wrapper .grid--6-col-desktop {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0 !important;
   margin: 0 10px;
@@ -1981,7 +1984,7 @@ product-info {
 .collection-list-wrapper .grid--5-col-desktop {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0 !important;
   margin: 0 10px;
@@ -1992,7 +1995,7 @@ product-info {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-flow: row dense;/* helps if items are missing */
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0 !important;
   margin: 0 10px;
@@ -2009,7 +2012,7 @@ product-info {
 .collection-list-wrapper .grid--3-col-desktop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
   list-style: none;
   padding: 0 !important;
   margin: 0 10px;
@@ -2050,7 +2053,7 @@ display: block !important
 .collection-list-title {
   font-style: italic !important;
   text-align: center;
-  padding: 20px 0px !important;
+  margin: 10px 0px 10px 0px !important;
 }
 
 .collection-list-view-all {
@@ -2262,7 +2265,7 @@ blockquote {
 // ----------------------------
 
 slider-component.page-width {
-  padding: 0px 10px 10px 10px !important
+  padding: 0px 10px 0px 10px !important
 }
 
 .quick-add__submit {
@@ -2529,6 +2532,9 @@ slider-component.page-width {
 }
 
 [data-template="page.alessandro-manfredini"] {
+  .sigelm{
+    display: block !important;
+  }
   .shopify-section:nth-of-type(1){
   .banner .media:before{
     padding-bottom: 33vw !important;
@@ -2596,6 +2602,7 @@ slider-component.page-width {
   }
 }
   .shopify-section:nth-of-type(2){
+    margin-top: 15px !important;
   .banner .media:before{
     padding-bottom: 100% !important;
   }
@@ -2678,7 +2685,7 @@ slider-component.page-width {
       }
       .banner__text:nth-of-type(2){
       p{
-        font-size: 20px !important;
+        font-size: 24px !important;
       }
       }
     }
@@ -2728,7 +2735,7 @@ slider-component.page-width {
         }
 
         p {
-          font-size: 18px !important;
+          font-size: 24px !important;
         }
 
       }
@@ -2740,11 +2747,29 @@ slider-component.page-width {
       }
     }
   }
-  .shopify-section:nth-of-type(5) {
-margin-bottom: 30px !important;
-  }
+  .shopify-section:nth-of-type(6){
+      margin: 0px auto;
+      > div{
+        padding: 0px 20px;
+      }
+      h3:before{
+        content: '';
+        display: block;
+        width: 180px;
+        height: 180px;
+        margin: 0px auto 20px auto;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+      }
+    }
   
   
+}
+
+.section-header{
+  z-index: 99 !important;
 }
 
 
@@ -3209,194 +3234,6 @@ margin-bottom: 30px !important;
   }
 }
 
-[data-url="/pages/museum"]{
-  .shopify-section-group-header-group {
-    padding-bottom: 0px !important;
-  }
-
-  #MainContent .shopify-section:nth-of-type(2) {
-    position: relative;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-
-    &:before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 40px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-
-    &:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 40px;
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      transform: rotate(180deg);
-    }
-
-    .rich-text {
-      padding-bottom: 0px;
-    }
-
-
-    p {
-      text-align: center;
-    }
-
-    p,
-    h1,
-    .rte {
-      margin-top: 0px !important;
-      margin-bottom: 0px !important;
-      padding: 0px 20px;
-    }
-
-    p {
-      font-family: "garamond-premier-pro-display";
-      font-size: var(--garamond-small-size);
-      line-height: var(--garamond-small-line-height);
-      letter-spacing: var(--garamond-small-letter-spacing);
-      font-weight: var(--garamond-small-weight);
-      font-style: var(--garamond-small-style);
-      color: var(--grey);
-    }
-
-    h1 {
-      font-size: 50px !important;
-      color: var(--black)
-    }
-
-    .rich-text__buttons .button{
-      max-width: 240px !important
-    }
-  }
-
-  #MainContent .shopify-section:nth-of-type(3) {
-    padding: 10px 5px;
-    .multicolumn__title{
-      padding: 0px 10px;
-      h2{
-        font-feature-settings: 'swsh' on;
-      }
-    }
-
-    .notesSlider .slick-list .media{
-      max-width: none !important;
-      margin: 0px 0px 10px 0px !important
-    }
-
-    * {
-      text-align: center;
-    }
-
-    .notesSlider{
-      width: 90% !important
-    }
-
-    .multicolumn-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px 5px;
-      list-style-type: none;
-      padding: 0px !important;
-
-      .multicolumn-card__image-wrapper {
-        margin: 0px !important;
-        padding: 0px !important;
-
-        .media {
-          padding: 0px !important;
-          position: relative;
-        }
-      }
-
-      .multicolumn-card__info {
-        padding: 10px !important;
-        padding-top: 0px !important;
-      }
-
-      li {
-        width: calc((100% - 10px)/2);
-        *{
-          text-align: left !important;
-        }
-
-        h3 {
-          font-family: "empera" !important;
-          font-size: var(--empera-large-size);
-          line-height: var(--empera-large-line-height);
-          letter-spacing: var(--empera-large-letter-spacing);
-          font-weight: var(--empera-large-weight);
-          font-style: var(--empera-large-style);
-          color: var(--red);
-          text-transform: uppercase;
-          margin: 0px !important;
-          &:nth-of-type(2){
-            color: var(--black)
-          }
-        }
-
-        .rte {
-          margin-top: 10px !important;
-        }
-
-        p {
-          font-family: "garamond-premier-pro-display";
-          font-size: var(--garamond-small-size);
-          line-height: var(--garamond-small-line-height);
-          letter-spacing: var(--garamond-small-letter-spacing);
-          font-weight: var(--garamond-small-weight);
-          font-style: var(--garamond-small-style);
-          color: var(--black);
-          font-style: normal !important;
-        }
-
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none !important;
-      }
-    }
-  
-  }
-  #MainContent .shopify-section:nth-of-type(4) {
-    >.banner .media:before {
-      padding-bottom: 150% !important;
-    }
-    p{
-      margin-top: 20px !important;
-          font-family: "garamond-premier-pro-display" !important;
-          font-size: var(--garamond-small-size) !important;
-          line-height: var(--garamond-small-line-height) !important;
-          letter-spacing: var(--garamond-small-letter-spacing) !important;
-          font-weight: var(--garamond-small-weight) !important;
-          font-style: var(--garamond-small-style) !important;
-          color: var(--white) !important;
-          font-style: normal !important;
-    }
-    .banner--mobile-bottom .banner__box{
-      box-sizing: border-box;
-    }
-    .banner__buttons .button{
-      max-width: 270px !important;
-      min-width: 0px !important;
-    }
-  }
-}
 
 .full-bleed{
   .slideshow-container{
@@ -3542,8 +3379,8 @@ margin-bottom: 30px !important;
 } 
 
 .flipbook-slick {
-  width: 400px;   /* set your size */
-  height: 240px;  /* or use aspect-ratio if you prefer */
+  width: 500px;   /* set your size */
+  height: 260px;  /* or use aspect-ratio if you prefer */
   overflow: hidden;
 }
 .flipbook-slick img {
@@ -3567,7 +3404,7 @@ margin-bottom: 30px !important;
   letter-spacing: 0.03em !important;
 }
 
-#shopify-section-template--25209185665402__rich_text_AciNKb{
+#shopify-section-template--25209185665402__rich_text_AciNKb, #shopify-section-template--25295706587514__rich_text_AciNKb{
   margin: auto !important;
   .rich-text{
     padding: 20px 0px 0px 0px !important;
@@ -3586,7 +3423,7 @@ margin-bottom: 30px !important;
     padding: 0px 10px;
 
     * {
-      text-align: center !important; 
+      text-align: center !important;  
     }
 
     .rte {
@@ -3627,6 +3464,7 @@ margin-bottom: 30px !important;
 
 //product page
 .cf-product{
+  margin-top: 20px !important;
   .cf-breadcrumbs{
     margin: 10px 0px;
     color: var(--red);
@@ -3664,7 +3502,7 @@ margin-bottom: 30px !important;
 
   .cf-desc{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     p{
           margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -3841,7 +3679,7 @@ margin-bottom: 30px !important;
         }
 
         p {
-          font-size: 18px !important;
+          font-size: 24px !important;
         }
 
       }
@@ -3961,6 +3799,20 @@ margin-bottom: 30px !important;
   }
 }
 
+.sigelm{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  opacity: 0.05;
+  display: none !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_beetle_992x992px.png?v=1760704345);
+    width: 200vw;
+    height: 100vh;
+    left: -100vw;
+    top: 180vh;
+}
+
 body:not([data-template="index"]){
   .bgelm{
     display: none !important;
@@ -3996,6 +3848,9 @@ body .section-header.shopify-section{
   #plus{
     width: 20px;
     height: 20px;
+      path{
+        fill: var(--red) !important;
+      }
   }
   .svg-wrapper{
     display: none !important
@@ -4032,4 +3887,489 @@ body .section-header.shopify-section{
 
 .price{
   color: var(--red) !important;
+}
+
+.announcement-bar-section.shopify-section{
+  margin: 0px !important;
+  background-color: var(--black);
+  padding: 10px 20px !important;
+  *{
+    text-align: center;
+    color: var(--cream) !important;
+    font-size: 16px !important;
+        font-style: normal !important;
+    font-variant: all-small-caps !important;
+    letter-spacing: .05em !important;
+  }
+  p{
+    margin: 0px !important;
+  }
+  svg{
+    width: 60px;
+  }
+}
+
+.paymentIcons{
+  background-color: var(--black);
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: solid 1px var(--cream);
+  p{
+    color: var(--cream) !important;
+    font-size: 16px !important;
+        font-style: normal !important;
+        letter-spacing: 0.05em !important;
+    text-align: center;
+    max-width: 800px;
+  }
+  img{
+    max-width: 400px;
+  }
+}
+
+.related-products > h2{
+        font-style: normal !important;
+    font-variant: all-small-caps !important;
+}
+
+.ou-reviews { 
+  display: flex; gap: 20px;
+  .ou-review{
+    flex-grow: 1;
+    background-color: var(--offwhite);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+ }
+.ou-review__stars { 
+  font-size: 1rem; line-height: 1; letter-spacing: .05em;
+  margin: 10px 0px;
+ }
+.ou-star { 
+  opacity: .35;
+ }
+.ou-star.is-filled { 
+  opacity: 1;
+ }
+.ou-review__text { 
+  margin: 0px !important;
+  text-align: center;
+  font-size: 18px !important;
+ }
+.ou-review__meta { 
+  text-align: center;
+  order: -1;
+  font-size: 24px !important;
+  margin: 0px !important;
+    font-variant: all-small-caps !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:before{
+      content: '';
+      display: block;
+      width: 120px;
+      height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+    }
+ } 
+
+ .ou-review:nth-of-type(1) .ou-review__meta:before{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Thumbs_Up_c93ba575-6204-47c7-bf73-d7b5c3bc62ed.png?v=1752925456);
+ }
+
+ .ou-review:nth-of-type(2) .ou-review__meta:before{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/bulls_eye_098bdb65-53db-4de8-9241-c19e968ca78e.png?v=1752925486);
+ }
+
+ .ou-review:nth-of-type(3) .ou-review__meta:before{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/megaphone.png?v=1752924828);
+ }
+
+ .ou-review:nth-of-type(4) .ou-review__meta:before{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_08fb0bb8-04d0-4f58-80e2-c2e53fe11ab9.png?v=1761149273);
+ }
+
+ .ou-review__stars{
+  display: flex;
+  justify-content: center;
+ }
+
+ .content-container, product-recommendations{
+  padding: 0px !important;
+ }
+
+ .shopify-section-group-footer-group.custom{
+  margin-top: 30px !important;
+ }
+
+ [aria-label="Submenu for Signature Series"] > div{
+  display: grid !important;
+  grid-template-columns: repeat(8, 1fr); /* 4 equal columns */
+  gap: 0px 10px !important; /* space between items */
+  margin: auto;
+  padding-bottom: 20px;
+  > div{
+    min-width: 0px !important;
+    > a{
+      position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  transition: background-size 0.3s ease;
+  &:hover{
+  background-size: 105%;
+  }
+      &:before{
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: 146% !important;
+      }
+    }
+    [data-menu="Maharajah"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg?v=1759563664);
+    }
+    [data-menu="Nebula"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_688x1004px.jpg?v=1759563664);
+    }
+    [data-menu="Booze & Baccy"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg?v=1759563664);
+    }
+    [data-menu="Alessandro Manfredini"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg?v=1759563664);
+    }
+    [data-menu="Barberism"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barberism_688x1004px.jpg?v=1759563664);
+    }
+    [data-menu="Triumphant"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg?v=1759563663);
+    }
+    [data-menu="Expedition Reserve"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg?v=1760689510);
+    }
+    [data-menu="Accademia Scapicchio"]{
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Scapicchio_688x1004px_1.jpg?v=1760034185);
+    }
+  }
+ }
+
+ .price .price-item{
+  margin: 0px 0.2em 0px 0px !important
+ }
+
+ .collection-list__item:hover{
+  h3{
+    color: var(--red) !important;
+  }
+ }
+
+ [data-template="page.museum"] {
+  .sigelm{
+    display: none !important;
+  }
+  .shopify-section:nth-of-type(1){
+  .banner .media:before{
+    padding-bottom: 33vw !important;
+  }
+  .banner{
+    display: flex;
+    > div{
+      position :relative !important;
+      width: 50% !important;
+      height: auto !important;
+    }
+    .banner__content{
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -20%;
+        left: -20%;
+        right: -30%;
+        top: -20%;
+        pointer-events: none;
+        z-index: 2;
+        //background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_scent_woodcuts.png?v=1760621265);
+        background-size: contain;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+      }
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: -20%;
+        right: -20%;
+        left: 0%;
+        bottom: 0%;
+        pointer-events: none;
+        z-index: 2;
+        //background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_scent_woodcuts2.png?v=1760621268);
+        background-size: contain;
+        background-position: top right;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+      }
+      > *{
+        width: 80%;
+        min-width: 0px !important;
+        max-width: none !important;
+        position: relative;
+        z-index: 3;
+      }
+      h2{
+        font-style: initial !important;
+        font-size: 6rem !important;
+      }
+      p{
+        font-size: 3rem !important;
+        font-style: italic !important;
+        font-feature-settings: 'swsh' on;
+      }
+    }
+  }
+}
+  .shopify-section:nth-of-type(2){
+    margin-top: 15px !important;
+  .banner .media:before{
+    padding-bottom: 100% !important;
+  }
+  .banner{
+    display: flex;
+    padding: 100px;
+    gap: 100px;
+    &:before, &:after{
+      display: none !important
+    }
+    > div{
+      position :relative !important;
+      width: 50% !important;
+      height: auto !important;
+    }
+    .banner__media{
+      &:nth-of-type(2){
+        position:absolute !important;
+        inset: 0;;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        &:before{
+          display: none !important;
+        }
+      }
+      &:nth-of-type(1){
+        z-index: 4;
+        border: solid 15px var(--cream);
+      box-sizing: border-box;
+
+      }
+    }
+    .banner__content{
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background-color: var(--cream);
+      padding: 60px !important;
+      box-sizing: border-box;
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Museum_ticket_on_cream.jpg?v=1761145771);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg)
+      }
+      > *{
+        width: 100%;
+        min-width: 0px !important; 
+        max-width: none !important;
+        position: relative;
+        z-index: 3;
+        padding: 20px 0px !important;
+      }
+      .banner__text:nth-of-type(1){
+      p{
+        font-size: 24px !important;
+      }
+      }
+    }
+  }
+  }
+  .shopify-section:nth-of-type(4){
+      margin: 0px auto;
+      > div{
+        padding: 0px 20px;
+      }
+      h3{
+
+      }
+      h3:before{
+        content: '';
+        display: block;
+        width: 180px;
+        height: 180px;
+        margin: 0px auto 20px auto;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_e462fd40-201d-4a01-bb0c-72d29033d26b.png?v=1761145600);
+      }
+    }
+    .custom-image-links{
+      max-width: 1240px !important;
+      gap: 30px !important;
+    }
+}
+
+.liquidTitle{
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+  text-align: center !important;
+}
+
+[data-template="collection.barbershop"]{
+  main .shopify-section:nth-of-type(2) {
+  margin: auto !important;
+  .rich-text{
+    padding: 20px 0px 0px 0px !important;
+  }
+  p{
+    font-size: 24px !important;
+    line-height: 1.2em !important;
+    margin: 20px auto !important;
+    max-width: 800px;
+  }
+  h2{
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  margin: 0px 10px;
+    padding: 0px 10px;
+
+    * {
+      text-align: center !important;  
+    }
+
+    .rte {
+      margin-top: 0rem !important;
+
+      p {
+        margin: 0.5rem auto !important;
+      }
+    }
+
+    .rich-text__blocks {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg)
+      }
+    }
+  }
+  .breadcrumb, .customFilters{
+    display: none !important;
+  }
+
+  .bgelm.compass{
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barbershop_woodcuts2.png?v=1761151691) !important;
+    width: 140vw !important;
+    top: 55vw !important;
+  }
+
+  .bgelm.octopus{
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barbershop_woodcuts.png?v=1761151688) !important;
+    width: 100vw !important;
+    height: 170vh !important;
+    left: -30vw !important;
+    top: calc(45vw + 70vh) !important;
+  }
+}
+
+body{
+  position: relative;
+  .bgelms{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;;
+  }
+}
+
+.collapsible-content > div{
+  padding: 0px !important;
+}
+
+.rich-text{
+  .button{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px !important;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--red);
+    appearance: none;
+
+    span {
+      line-height: 1em !important;
+      font-size: 18px !important;
+      color: var(--cream) !important;
+      letter-spacing: 0.025em !important;
+      position: relative !important;
+      top: initial !important;
+      left: initial !important;
+      transform: none !important;
+    }
+  }
 }
