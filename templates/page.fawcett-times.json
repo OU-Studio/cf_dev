@@ -19,38 +19,10 @@
     },
     "image_banner_8caTpY": {
       "type": "image-banner",
-      "blocks": {
-        "text_4HJiXm": {
-          "type": "text",
-          "settings": {
-            "text": "Welcome To The",
-            "text_style": "body"
-          }
-        },
-        "heading_zPPEVQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "FAWCETT TIMES",
-            "heading_size": "h1"
-          }
-        },
-        "text_3D3D3N": {
-          "type": "text",
-          "settings": {
-            "text": "Distributed around the globe to Gentlemen’s Outfitters, Barbershops, High Class Stores, Hatters, Tattooists & Apothecaries to the Nobility",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "text_4HJiXm",
-        "heading_zPPEVQ",
-        "text_3D3D3N"
-      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Summer_of_the_Beard_no_background_3e55dee3-e1b2-4b34-9b8d-3051d4f9cc59_large_1.jpg",
-        "image_overlay_opacity": 30,
+        "image": "shopify://shop_images/Fawcett_Times_masthead.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
@@ -62,45 +34,6 @@
         "show_text_below": true
       }
     },
-    "image_with_text_YXj4Mx": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_68bkTk": {
-          "type": "heading",
-          "settings": {
-            "heading": "Issue No.10",
-            "heading_size": "h1"
-          }
-        },
-        "text_yXVt8G": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Spring 2025</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_68bkTk",
-        "text_yXVt8G"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/ftPlaceholder.png",
-        "height": "adapt",
-        "desktop_image_width": "screenWidth",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "mobile_content_alignment": "center",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_rWyKy3": {
       "type": "multicolumn",
       "blocks": {
@@ -109,40 +42,51 @@
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_ErCrJF": {
+        "column_Bqmep7": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_hyJkTV": {
+        "column_NjQcPz": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_AaCQtg": {
+        "column_xinLXf": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_q66Ckt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -151,12 +95,14 @@
       },
       "block_order": [
         "column_TjDgBN",
-        "column_ErCrJF",
-        "column_hyJkTV",
-        "column_AaCQtg"
+        "column_Bqmep7",
+        "column_NjQcPz",
+        "column_xinLXf",
+        "column_q66Ckt"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
+        "custom_id": "default-id",
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
@@ -167,54 +113,87 @@
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "multicolumn_7LWk6w": {
+    "multicolumn_yFCLpQ": {
       "type": "multicolumn",
       "blocks": {
-        "column_DNj66T": {
+        "column_jeejHC": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_fDgqYU": {
+        "column_nGFwDX": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_ieeNVc": {
+        "column_bDCC3U": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_3xFadg": {
+        "column_T6bPxP": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "Column",
+            "subtitle": "",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jUCcYm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "subtitle": "",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AwGNVx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "subtitle": "",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gY87Q8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "subtitle": "",
             "text": "<p>Spring 2024</p>",
             "link_label": "",
             "link": ""
@@ -222,13 +201,17 @@
         }
       },
       "block_order": [
-        "column_DNj66T",
-        "column_fDgqYU",
-        "column_ieeNVc",
-        "column_3xFadg"
+        "column_jeejHC",
+        "column_nGFwDX",
+        "column_bDCC3U",
+        "column_T6bPxP",
+        "column_jUCcYm",
+        "column_AwGNVx",
+        "column_gY87Q8"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
+        "custom_id": "default-id",
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
@@ -239,151 +222,7 @@
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_3cha3E": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_FEhz4d": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_n4thnV": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_RpBrxD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_anen3G": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_FEhz4d",
-        "column_n4thnV",
-        "column_RpBrxD",
-        "column_anen3G"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_bj7Cjp": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_j8Kaww": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_j96aMz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NGNLNK": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_GbEGwM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "Column",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_j8Kaww",
-        "column_j96aMz",
-        "column_NGNLNK",
-        "column_GbEGwM"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -393,10 +232,7 @@
   "order": [
     "main",
     "image_banner_8caTpY",
-    "image_with_text_YXj4Mx",
     "multicolumn_rWyKy3",
-    "multicolumn_7LWk6w",
-    "multicolumn_3cha3E",
-    "multicolumn_bj7Cjp"
+    "multicolumn_yFCLpQ"
   ]
 }

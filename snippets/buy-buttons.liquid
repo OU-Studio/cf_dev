@@ -92,6 +92,12 @@
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
+      <div class="loading__spinner hidden" aria-hidden="true">
+        <!-- keep any spinner SVG your theme uses -->
+        <svg viewBox="0 0 24 24" class="spinner" role="img" aria-label="Loading">
+          <circle cx="12" cy="12" r="10" />
+        </svg>
+      </div>
 
 
           </button>

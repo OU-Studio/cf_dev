@@ -90,6 +90,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "custom_id": "home-intro",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -375,6 +376,7 @@
         "emperaheading_a3T4rm"
       ],
       "settings": {
+        "custom_id": "default-id",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
