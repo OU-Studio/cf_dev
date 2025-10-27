@@ -5003,7 +5003,7 @@ cart-drawer.active .drawer__inner {
   transform: translateX(0);
 }
 
-cart-drawer, [data-template="cart"] main{
+cart-drawer{
   .price-item,
   .price-item.garamondSmall {
     font-family: "garamond-premier-pro-display" !important;
@@ -5349,4 +5349,172 @@ font-size: 15px !important;
       margin-bottom: 0px !important;
     }
   }
+}
+
+/* ===== Cart PAGE styles (mirror drawer look) ===== */
+
+/* Base */
+cart-items {
+  background: var(--cream);
+  color: var(--black);
+}
+
+/* Table -> row cards */
+cart-items .cart-items {
+  width: 100%;
+  border-collapse: collapse;
+}
+cart-items .cart-items thead { color: var(--black); }
+cart-items .cart-items th,
+cart-items .cart-items td {
+  padding: .5rem !important;
+  vertical-align: top;
+}
+cart-items .cart-item {
+  border-bottom: 1px solid var(--black);
+}
+
+/* Product media */
+cart-items .cart-item__image-container {
+  background: transparent;
+}
+
+/* Names, options, prices */
+cart-items .cart-item__name { color: var(--black); text-decoration: none; }
+cart-items .cart-item__name:hover { text-decoration: underline; }
+
+cart-items .product-option,
+cart-items .cart-item__final-price,
+cart-items .cart-item__old-price,
+cart-items .discounts__discount,
+cart-items .caption-with-letter-spacing.light {
+  color: var(--black);
+}
+
+/* Price emphasis + red totals to match drawer */
+cart-items .price { font-variant-numeric: tabular-nums; }
+cart-items .totals__total-value { color: var(--red) !important; }
+
+/* Small-caps headings like drawer */
+cart-items .totals__total,
+cart-items .title--primary {
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Remove button -> link-only, red on hover */
+cart-items cart-remove-button a.button--tertiary,
+cart-items .cart-remove-button {
+  border: none !important;
+  background: transparent !important;
+  color: var(--black) !important;
+  padding: 0 !important;
+}
+cart-items cart-remove-button a.button--tertiary:hover,
+cart-items .cart-remove-button:hover {
+  color: var(--red) !important;
+}
+
+/* Quantity (match drawer look) */
+cart-items .quantity__label { display: none !important; }
+
+cart-items quantity-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6px;
+}
+cart-items quantity-input input {
+  width: 20px;
+  text-align: center;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px !important;
+}
+cart-items quantity-input input[type="number"]::-webkit-outer-spin-button,
+cart-items quantity-input input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; margin: 0;
+}
+cart-items quantity-input input[type="number"] { -moz-appearance: textfield; }
+
+cart-items quantity-input button {
+  width: 30px;
+  height: 40px;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+cart-items quantity-input button .svg-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+cart-items quantity-input button svg { width: 14px; }
+
+/* Red icons for +/- */
+cart-items .quantity__button path { fill: var(--red) !important; }
+
+/* Quantity/volume popover accents */
+cart-items .quantity-popover__info-button { color: var(--red); }
+cart-items .quantity-popover__info {
+  background: var(--offwhite);
+  border: 1px solid var(--black);
+  color: var(--red);
+}
+
+/* Discounts list bullets/icon alignment */
+cart-items .discounts__discount svg { vertical-align: middle; }
+
+/* Totals block */
+cart-items .tax-note { color: var(--black); }
+
+/* CTAs (Checkout button mirrors drawer’s #CartDrawer-Checkout) */
+cart-items .cart__ctas { display: grid; gap: .5rem; }
+
+cart-items .cart__checkout-button {
+  display: flex;
+  width: 100%;
+  max-width: 140px;
+  padding: 10px 20px !important;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--red) !important;
+  line-height: 1em !important;
+  font-size: 18px !important;
+  color: var(--white) !important;
+  letter-spacing: 0.025em !important;
+  text-transform: uppercase !important;
+  font-family: empera !important;
+}
+cart-items .cart__checkout-button[disabled] {
+  opacity: .4; cursor: not-allowed;
+}
+
+/* Loading spinners: remove shadow “flash” */
+cart-items .loading-overlay__spinner,
+cart-items .loading__spinner {
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+/* Optional: unify link color accents in cart */
+cart-items a { color: var(--black); }
+cart-items a:hover { color: var(--red); }
+
+/* Optional: hide vendor if using your minimal look */
+cart-items .cart-item__details .caption-with-letter-spacing { color: var(--black); }
+
+/* Optional: make totals grid tidy (safe if footer section is present) */
+cart-items .totals {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }

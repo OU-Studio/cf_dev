@@ -4297,8 +4297,7 @@ cart-drawer.active .drawer__inner {
 }
 
 cart-drawer .price-item,
-cart-drawer .price-item.garamondSmall, [data-template=cart] main .price-item,
-[data-template=cart] main .price-item.garamondSmall {
+cart-drawer .price-item.garamondSmall {
   font-family: "garamond-premier-pro-display" !important;
   font-size: var(--garamond-large-size) !important;
   line-height: var(--garamond-large-line-height) !important;
@@ -4307,16 +4306,16 @@ cart-drawer .price-item.garamondSmall, [data-template=cart] main .price-item,
   font-style: initial !important;
   color: var(--red) !important;
 }
-cart-drawer .quantity__label, [data-template=cart] main .quantity__label {
+cart-drawer .quantity__label {
   display: none !important;
 }
-cart-drawer quantity-input, [data-template=cart] main quantity-input {
+cart-drawer quantity-input {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: -6px;
 }
-cart-drawer quantity-input input, [data-template=cart] main quantity-input input {
+cart-drawer quantity-input input {
   width: 20px;
   text-align: center;
   -webkit-appearance: none;
@@ -4327,15 +4326,14 @@ cart-drawer quantity-input input, [data-template=cart] main quantity-input input
   font-size: 16px !important;
 }
 cart-drawer quantity-input input[type=number]::-webkit-outer-spin-button,
-cart-drawer quantity-input input[type=number]::-webkit-inner-spin-button, [data-template=cart] main quantity-input input[type=number]::-webkit-outer-spin-button,
-[data-template=cart] main quantity-input input[type=number]::-webkit-inner-spin-button {
+cart-drawer quantity-input input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-cart-drawer quantity-input input[type=number], [data-template=cart] main quantity-input input[type=number] {
+cart-drawer quantity-input input[type=number] {
   -moz-appearance: textfield;
 }
-cart-drawer quantity-input button, [data-template=cart] main quantity-input button {
+cart-drawer quantity-input button {
   width: 30px;
   height: 40px;
   -webkit-appearance: none;
@@ -4347,42 +4345,42 @@ cart-drawer quantity-input button, [data-template=cart] main quantity-input butt
   align-items: center;
   justify-content: center;
 }
-cart-drawer quantity-input button .svg-wrapper, [data-template=cart] main quantity-input button .svg-wrapper {
+cart-drawer quantity-input button .svg-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   pointer-events: none;
 }
-cart-drawer quantity-input button svg, [data-template=cart] main quantity-input button svg {
+cart-drawer quantity-input button svg {
   width: 14px;
 }
-cart-drawer .qWrapper, [data-template=cart] main .qWrapper {
+cart-drawer .qWrapper {
   position: relative;
   width: 100%;
 }
-cart-drawer .qWrapper .quantity__button path, [data-template=cart] main .qWrapper .quantity__button path {
+cart-drawer .qWrapper .quantity__button path {
   fill: var(--red) !important;
 }
-cart-drawer .qWrapper .spacer, [data-template=cart] main .qWrapper .spacer {
+cart-drawer .qWrapper .spacer {
   display: block;
   width: 100%;
   padding-bottom: 19.0798552833%;
 }
-cart-drawer .qWrapper .buttonBorder, [data-template=cart] main .qWrapper .buttonBorder {
+cart-drawer .qWrapper .buttonBorder {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-cart-drawer .qWrapper quantity-input, [data-template=cart] main .qWrapper quantity-input {
+cart-drawer .qWrapper quantity-input {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-cart-drawer .product-form__submit, [data-template=cart] main .product-form__submit {
+cart-drawer .product-form__submit {
   display: flex;
   width: 100%;
   padding: 10px 20px !important;
@@ -4396,28 +4394,28 @@ cart-drawer .product-form__submit, [data-template=cart] main .product-form__subm
      -moz-appearance: none;
           appearance: none;
 }
-cart-drawer .product-form__submit span, [data-template=cart] main .product-form__submit span {
+cart-drawer .product-form__submit span {
   line-height: 1em !important;
   font-size: 18px !important;
   color: var(--cream);
   letter-spacing: 0.025em !important;
 }
-cart-drawer .shopify-payment-button, [data-template=cart] main .shopify-payment-button {
+cart-drawer .shopify-payment-button {
   display: none !important;
 }
-cart-drawer .cart-remove-button, [data-template=cart] main .cart-remove-button {
+cart-drawer .cart-remove-button {
   border: none !important;
   padding: 0px !important;
 }
-cart-drawer .product-option, [data-template=cart] main .product-option {
+cart-drawer .product-option {
   color: var(--red);
 }
-cart-drawer .drawer__heading, cart-drawer .totals__total, [data-template=cart] main .drawer__heading, [data-template=cart] main .totals__total {
+cart-drawer .drawer__heading, cart-drawer .totals__total {
   font-style: normal !important;
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
 }
-cart-drawer #CartDrawer-Checkout, [data-template=cart] main #CartDrawer-Checkout {
+cart-drawer #CartDrawer-Checkout {
   display: flex;
   width: 100%;
   max-width: 140px !important;
@@ -4443,13 +4441,13 @@ cart-drawer #CartDrawer-Checkout, [data-template=cart] main #CartDrawer-Checkout
   font-family: empera !important;
   text-transform: uppercase !important;
 }
-cart-drawer .totals__total-value, [data-template=cart] main .totals__total-value {
+cart-drawer .totals__total-value {
   color: var(--red) !important;
 }
-cart-drawer .cart-drawer .tax-note, [data-template=cart] main .cart-drawer .tax-note {
+cart-drawer .cart-drawer .tax-note {
   margin: 10px auto !important;
 }
-cart-drawer .drawer__footer, [data-template=cart] main .drawer__footer {
+cart-drawer .drawer__footer {
   padding-bottom: 10px !important;
 }
 
@@ -4633,4 +4631,225 @@ cart-drawer .drawer__footer, [data-template=cart] main .drawer__footer {
 }
 [data-template="page.contact"] main .postal p:first-of-type {
   margin-bottom: 10px !important;
+}
+
+/* ===== Cart PAGE styles (mirror drawer look) ===== */
+/* Base */
+cart-items {
+  background: var(--cream);
+  color: var(--black);
+}
+
+/* Table -> row cards */
+cart-items .cart-items {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+cart-items .cart-items thead {
+  color: var(--black);
+}
+
+cart-items .cart-items th,
+cart-items .cart-items td {
+  padding: 0.5rem !important;
+  vertical-align: top;
+}
+
+cart-items .cart-item {
+  border-bottom: 1px solid var(--black);
+}
+
+/* Product media */
+cart-items .cart-item__image-container {
+  background: transparent;
+}
+
+/* Names, options, prices */
+cart-items .cart-item__name {
+  color: var(--black);
+  text-decoration: none;
+}
+
+cart-items .cart-item__name:hover {
+  text-decoration: underline;
+}
+
+cart-items .product-option,
+cart-items .cart-item__final-price,
+cart-items .cart-item__old-price,
+cart-items .discounts__discount,
+cart-items .caption-with-letter-spacing.light {
+  color: var(--black);
+}
+
+/* Price emphasis + red totals to match drawer */
+cart-items .price {
+  font-variant-numeric: tabular-nums;
+}
+
+cart-items .totals__total-value {
+  color: var(--red) !important;
+}
+
+/* Small-caps headings like drawer */
+cart-items .totals__total,
+cart-items .title--primary {
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Remove button -> link-only, red on hover */
+cart-items cart-remove-button a.button--tertiary,
+cart-items .cart-remove-button {
+  border: none !important;
+  background: transparent !important;
+  color: var(--black) !important;
+  padding: 0 !important;
+}
+
+cart-items cart-remove-button a.button--tertiary:hover,
+cart-items .cart-remove-button:hover {
+  color: var(--red) !important;
+}
+
+/* Quantity (match drawer look) */
+cart-items .quantity__label {
+  display: none !important;
+}
+
+cart-items quantity-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6px;
+}
+
+cart-items quantity-input input {
+  width: 20px;
+  text-align: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px !important;
+}
+
+cart-items quantity-input input[type=number]::-webkit-outer-spin-button,
+cart-items quantity-input input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+cart-items quantity-input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+cart-items quantity-input button {
+  width: 30px;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+cart-items quantity-input button .svg-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+cart-items quantity-input button svg {
+  width: 14px;
+}
+
+/* Red icons for +/- */
+cart-items .quantity__button path {
+  fill: var(--red) !important;
+}
+
+/* Quantity/volume popover accents */
+cart-items .quantity-popover__info-button {
+  color: var(--red);
+}
+
+cart-items .quantity-popover__info {
+  background: var(--offwhite);
+  border: 1px solid var(--black);
+  color: var(--red);
+}
+
+/* Discounts list bullets/icon alignment */
+cart-items .discounts__discount svg {
+  vertical-align: middle;
+}
+
+/* Totals block */
+cart-items .tax-note {
+  color: var(--black);
+}
+
+/* CTAs (Checkout button mirrors drawer’s #CartDrawer-Checkout) */
+cart-items .cart__ctas {
+  display: grid;
+  gap: 0.5rem;
+}
+
+cart-items .cart__checkout-button {
+  display: flex;
+  width: 100%;
+  max-width: 140px;
+  padding: 10px 20px !important;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--red) !important;
+  line-height: 1em !important;
+  font-size: 18px !important;
+  color: var(--white) !important;
+  letter-spacing: 0.025em !important;
+  text-transform: uppercase !important;
+  font-family: empera !important;
+}
+
+cart-items .cart__checkout-button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Loading spinners: remove shadow “flash” */
+cart-items .loading-overlay__spinner,
+cart-items .loading__spinner {
+  filter: drop-shadow(0 0 0 transparent);
+}
+
+/* Optional: unify link color accents in cart */
+cart-items a {
+  color: var(--black);
+}
+
+cart-items a:hover {
+  color: var(--red);
+}
+
+/* Optional: hide vendor if using your minimal look */
+cart-items .cart-item__details .caption-with-letter-spacing {
+  color: var(--black);
+}
+
+/* Optional: make totals grid tidy (safe if footer section is present) */
+cart-items .totals {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
