@@ -5003,7 +5003,7 @@ cart-drawer.active .drawer__inner {
   transform: translateX(0);
 }
 
-cart-drawer, [data-template="cart"]{
+cart-drawer, [data-template="cart"] main{
   .price-item,
   .price-item.garamondSmall {
     font-family: "garamond-premier-pro-display" !important;
