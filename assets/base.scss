@@ -5196,7 +5196,7 @@ font-size: 15px !important;
     }
 }
 
-[data-template="page.contact"], [data-template="page.wholesale-contact"]{
+[data-template="page.contact"], [data-template="page.contact-wholesale"]{
   main .ten p, main .postal p{
     display: block;
     max-width: 400px;
@@ -5227,10 +5227,13 @@ font-size: 15px !important;
     font-variant: all-small-caps !important;
     letter-spacing: 0.03em !important;
       }
-      #contact_form{
+      #contact_form, #wholesale-form{
         justify-content: center !important;
         padding-bottom: 500px;
         align-items: center;
+      }
+      #wholesale-form{
+        padding-bottom: 600px;
       }
       form{
         margin: auto;
@@ -5313,40 +5316,6 @@ font-size: 15px !important;
     }
   }
       }
-    }
-  }
-  main .postal{
-    padding-top: 20px !important;
-    display: flex;
-    width: 100%;
-    .left{
-      width: 50%;
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/pigeon.png?v=1761557729);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: calc(100% - 40px) top;
-    }
-    .right{
-      width: 50%; 
-    }
-    h2{
-      text-align: left !important; 
-      padding-top: 0px !important;
-      margin-top: 0px !important;
-         font-style: normal !important;
-    font-variant: all-small-caps !important;
-    letter-spacing: 0.03em !important;
-    }
-    p{
-      max-width: 300px !important;
-      margin-left: 0px !important;
-      display: block;
-      &:first-of-type{
-        margin-bottom: 10px !important;
-      }
-      text-align: left !important; 
-      color: var(--black) !important;
-      margin-bottom: 0px !important;
     }
   }
 
@@ -5465,6 +5434,10 @@ font-size: 15px !important;
       }
     }
   }
+}
+
+[data-template="page.contact-wholesale"] main .ten.columns{
+  padding-top: 220px !important;
 }
 
 /* ===== Cart PAGE styles (mirror drawer look) ===== */
