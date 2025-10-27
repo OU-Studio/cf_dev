@@ -4698,6 +4698,225 @@ cart-drawer .drawer__footer {
   margin-top: 10px !important;
 }
 
+[data-template="page.stockists"] main .ten p, [data-template="page.stockists"] main .postal p {
+  display: block;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  color: var(--black) !important;
+  margin-bottom: 20px;
+}
+[data-template="page.stockists"] main .ten h2, [data-template="page.stockists"] main .postal h2 {
+  text-align: center;
+  padding-top: 20px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  border: none;
+}
+[data-template="page.stockists"] main .ten h2:after, [data-template="page.stockists"] main .postal h2:after {
+  display: none;
+}
+[data-template="page.stockists"] main .ten.columns {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/typewriter.png?v=1761557245);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 230px;
+}
+[data-template="page.stockists"] main .ten.columns h2 {
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+}
+[data-template="page.stockists"] main .ten.columns #stockist-form {
+  justify-content: center !important;
+  padding-bottom: 480px;
+  align-items: center;
+}
+[data-template="page.stockists"] main .ten.columns form {
+  margin: auto;
+  flex-direction: column !important;
+  display: flex !important;
+}
+[data-template="page.stockists"] main .ten.columns form > * {
+  margin-bottom: 10px;
+}
+[data-template="page.stockists"] main .ten.columns form .inputrow {
+  border: none !important;
+  margin-bottom: 20px !important;
+}
+[data-template="page.stockists"] main .ten.columns form label {
+  display: none !important;
+}
+[data-template="page.stockists"] main .ten.columns form .selectreplace {
+  width: 300px !important;
+  border: solid 1px var(--black) !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  background-color: var(--white) !important;
+  box-sizing: border-box;
+  color: var(--black) !important;
+}
+[data-template="page.stockists"] main .ten.columns form .selectreplace::-moz-placeholder {
+  font-style: initial !important;
+}
+[data-template="page.stockists"] main .ten.columns form .selectreplace::placeholder {
+  font-style: initial !important;
+}
+[data-template="page.stockists"] main .ten.columns form .selectreplace .selectpicker {
+  padding: 0px 0px 0px 5px;
+  text-transform: uppercase;
+  color: var(--black) !important;
+}
+[data-template="page.stockists"] main .ten.columns form .selectreplace .arr {
+  margin-top: -6px !important;
+}
+[data-template="page.stockists"] main .ten.columns form input, [data-template="page.stockists"] main .ten.columns form textarea, [data-template="page.stockists"] main .ten.columns form select {
+  width: 300px !important;
+  border: solid 1px var(--black) !important;
+  border-radius: 0px !important;
+  outline: none !important;
+  background-color: var(--white) !important;
+  box-sizing: border-box;
+  color: var(--black) !important;
+}
+[data-template="page.stockists"] main .ten.columns form input::-moz-placeholder, [data-template="page.stockists"] main .ten.columns form textarea::-moz-placeholder, [data-template="page.stockists"] main .ten.columns form select::-moz-placeholder {
+  font-style: initial !important;
+}
+[data-template="page.stockists"] main .ten.columns form input::placeholder, [data-template="page.stockists"] main .ten.columns form textarea::placeholder, [data-template="page.stockists"] main .ten.columns form select::placeholder {
+  font-style: initial !important;
+}
+[data-template="page.stockists"] main .ten.columns form textarea {
+  min-height: 100px;
+}
+[data-template="page.stockists"] main .ten.columns form li:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+[data-template="page.stockists"] main .ten.columns form .button {
+  display: flex;
+  width: 100%;
+  max-width: 120px;
+  padding: 10px 20px !important;
+  position: relative !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--red) !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+[data-template="page.stockists"] main .ten.columns form .button span {
+  line-height: 1em !important;
+  font-size: 18px !important;
+  color: var(--cream) !important;
+  letter-spacing: 0.025em !important;
+  position: relative !important;
+  top: initial !important;
+  left: initial !important;
+  transform: none !important;
+  color: var(--white) !important;
+  font-family: empera !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) {
+  margin-top: 15px !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .media:before {
+  padding-bottom: 100% !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner {
+  display: flex;
+  padding: 100px;
+  gap: 100px;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner:before, [data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner:after {
+  display: none !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner > div {
+  position: relative !important;
+  width: 50% !important;
+  height: auto !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__media:before {
+  display: none !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(2) {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(2):before {
+  display: none !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(1) {
+  z-index: 4;
+  border: solid 15px var(--cream);
+  background-color: var(--offwhite);
+  box-sizing: border-box;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(1) img {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--cream);
+  padding: 60px !important;
+  box-sizing: border-box;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 0px;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content > * {
+  width: 100%;
+  min-width: 0px !important;
+  max-width: none !important;
+  position: relative;
+  z-index: 3;
+  padding: 20px 0px !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content .banner__text:nth-of-type(1) {
+  margin-bottom: 10px !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content .banner__text:nth-of-type(1) p {
+  font-size: 30px !important;
+  font-style: italic !important;
+  font-feature-settings: "swsh" on;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content .banner__text:nth-of-type(2) p {
+  font-size: 24px !important;
+}
+[data-template="page.stockists"] .shopify-section:nth-of-type(2) .banner .banner__content .banner__text:nth-of-type(2) p:nth-of-type(3) {
+  margin-top: 10px !important;
+}
+
 [data-template="page.contact-wholesale"] main .ten.columns {
   padding-top: 220px !important;
 }
