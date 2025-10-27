@@ -4867,7 +4867,6 @@ cart-remove-button .button {
 #main-cart-footer {
   background: var(--cream);
   color: var(--black);
-  border-top: 1px solid var(--black);
 }
 
 /* Subtotal / discounts */
@@ -4984,4 +4983,16 @@ cart-remove-button .button {
 
 .cart__items {
   padding-bottom: 0px !important;
+}
+
+cart-items {
+  padding: 0px !important;
+}
+
+.cart__footer {
+  padding: 10px !important;
+}
+
+cart-items .totals__total, cart-items .title--primary {
+  margin: 0px !important;
 }
