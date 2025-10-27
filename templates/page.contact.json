@@ -11,24 +11,25 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "form": {
-      "type": "contact-form",
+    "custom_liquid_adkfMr": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "custom_liquid": "<div class=\"ten columns\">\n    <h2>\n      CONTACT THE CAPTAIN\n  </h2>\n    <p>\n      Captain Fawcett thoroughly enjoys receiving correspondence from his dear chums. You can write to him using this clever email thingy-ma-jig below... <em>Huzzah!</em>\n  </p>\n    <form method=\"POST\" action=\"https://submit-form.com/sGEakiR5T\" id=\"contact_form\" data-dashlane-rid=\"1d2ec61ca074ce86\" data-dashlane-classification=\"contact\" data-dashlane-captcha=\"true\">\n\n            <input type=\"text\" data-fieldname=\"Your name\" class=\"required\" id=\"contact_name\" name=\"Name\" placeholder=\"Name\" required=\"\" data-dashlane-rid=\"c497a9dcd6df7908\" data-dashlane-classification=\"name\" data-kwimpalastatus=\"alive\" data-kwimpalaid=\"1761554874639-0\">\n\n            <input type=\"email\" data-fieldname=\"Your email\" class=\"required\" id=\"contact_email\" name=\"Email\" placeholder=\"Email\" required=\"\" data-dashlane-rid=\"e22015574fc5c4f7\" data-dashlane-classification=\"email\" data-kwimpalastatus=\"alive\" data-kwimpalaid=\"1761554874639-1\">\n\n            <textarea id=\"message\" data-fieldname=\"Your message\" class=\"required\" name=\"Message\" placeholder=\"Message\" required=\"\" data-dashlane-rid=\"6d36658fe4f2c483\" data-dashlane-classification=\"other\"></textarea>\n\n      <input type=\"hidden\" name=\"_redirect\" value=\"https://www.captainfawcett.com/\">\n\n      <div class=\"g-recaptcha\" data-sitekey=\"6LfsEh0pAAAAACFExc6R07hW8QbY0sBJLEka7dUU\" data-callback=\"callback\"><div style=\"width: 304px; height: 78px;\"><div><iframe title=\"reCAPTCHA\" width=\"304\" height=\"78\" role=\"presentation\" name=\"a-2o8sdxpaqta\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation\" src=\"https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfsEh0pAAAAACFExc6R07hW8QbY0sBJLEka7dUU&amp;co=aHR0cHM6Ly93d3cuY2FwdGFpbmZhd2NldHQuY29tOjQ0Mw..&amp;hl=en&amp;v=-PgDGgfmUF0ySmnjMTJjzqak&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=28dm0bpibqt0\" data-dashlane-rid=\"0e71d05fa8c35723\" data-dashlane-classification=\"other\" data-dashlane-frameid=\"39\"></iframe></div><textarea id=\"g-recaptcha-response\" name=\"g-recaptcha-response\" class=\"g-recaptcha-response\" style=\"width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;\"></textarea></div><iframe style=\"display: none;\"></iframe></div>\n      \n\n          <button type=\"submit\" class=\"button altcolor\" id=\"submit-button\" disabled=\"\" data-dashlane-label=\"true\" data-dashlane-rid=\"a67e5081bf531b03\" data-dashlane-classification=\"action\"><span>SEND</span></button>\n\n    </form>\n  <script type=\"text/javascript\">\n      function callback() {\n        const submitButton = document.getElementById(\"submit-button\");\n        submitButton.removeAttribute(\"disabled\");\n      }\n    </script>\n</div>\n<section class=\"postal\">\n  <div class=\"left\">\n  </div>\n  <div class=\"right\">\n    <h2>VIA POSTAL SERVICE</h2>\n    <p>Or on the other hand, you may wish to correspond by putting pen to paper, please address your envelope as follows and pop it in the post:</p>\n    <p>Captain Fawcett Limited</p>\n    <p>Friesian Way</p>\n    <p>Kings Lynn</p>\n    <p>Norfolk</p>\n    <p>PE30 4JQ</p>\n    <p>United Kingdom</p>\n    <p><a href=\"tel:++441553833001\">Tel: 01553 833001</a></p>\n  </div>\n</section>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "custom_liquid_adkfMr"
   ]
 }
