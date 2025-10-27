@@ -5349,6 +5349,122 @@ font-size: 15px !important;
       margin-bottom: 0px !important;
     }
   }
+
+  .shopify-section:nth-of-type(3) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:before{
+          display: none !important;
+        }
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          background-color: var(--offwhite);
+          box-sizing: border-box;
+          img{
+            object-fit: contain !important;
+            
+          }
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on; 
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+            &:nth-of-type(3){
+              margin-top: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* ===== Cart PAGE styles (mirror drawer look) ===== */
