@@ -4853,3 +4853,123 @@ cart-items .totals {
   grid-template-columns: 1fr auto;
   align-items: center;
 }
+
+cart-remove-button .button {
+  min-width: 20px !important;
+  min-height: 20px !important;
+}
+
+.cart-item cart-remove-button {
+  align-items: center;
+}
+
+/* ===== Cart FOOTER styles (scoped to #main-cart-footer) ===== */
+#main-cart-footer {
+  background: var(--cream);
+  color: var(--black);
+  border-top: 1px solid var(--black);
+}
+
+/* Subtotal / discounts */
+#main-cart-footer .discounts__discount {
+  color: var(--black);
+}
+
+#main-cart-footer .discounts__discount svg {
+  vertical-align: middle;
+}
+
+/* Totals */
+#main-cart-footer .totals {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+#main-cart-footer .totals__total {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--black);
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+}
+
+#main-cart-footer .totals__total-value {
+  margin: 0;
+  font-weight: 700;
+  color: var(--red) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tax note */
+#main-cart-footer .tax-note {
+  color: var(--black);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* CTAs */
+#main-cart-footer .cart__ctas {
+  display: grid;
+  gap: 0.5rem;
+}
+
+#main-cart-footer .cart__checkout-button {
+  display: flex;
+  width: 100%;
+  max-width: 140px;
+  padding: 10px 20px !important;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--red) !important;
+  line-height: 1em !important;
+  font-size: 18px !important;
+  color: var(--white) !important;
+  letter-spacing: 0.025em !important;
+  text-transform: uppercase !important;
+  font-family: empera !important;
+}
+
+#main-cart-footer .cart__checkout-button[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Dynamic checkout buttons (Apple Pay, etc.) */
+#main-cart-footer .additional-checkout-buttons {
+  margin-top: 0.25rem;
+}
+
+/* If you want to hide dynamic buttons (to match the drawer):
+#main-cart-footer .additional-checkout-buttons,
+#main-cart-footer .shopify-payment-button { display: none !important; }
+*/
+/* Inputs (cart note) */
+#main-cart-footer .field label {
+  color: var(--black);
+}
+
+#main-cart-footer .field__input,
+#main-cart-footer .text-area {
+  background: var(--offwhite);
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+/* Links and hover accents */
+#main-cart-footer a {
+  color: var(--black);
+}
+
+#main-cart-footer a:hover {
+  color: var(--red);
+}
+
+/* Errors */
+#main-cart-footer #cart-errors {
+  color: var(--red);
+}
