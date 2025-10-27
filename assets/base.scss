@@ -5196,7 +5196,7 @@ font-size: 15px !important;
     }
 }
 
-[data-template="page.contact"]{
+[data-template="page.contact"], [data-template="page.wholesale-contact"]{
   main .ten p, main .postal p{
     display: block;
     max-width: 400px;
