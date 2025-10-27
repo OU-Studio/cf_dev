@@ -4994,5 +4994,9 @@ cart-items {
 }
 
 cart-items .totals__total, cart-items .title--primary {
-  margin: 0px !important;
+  margin: 20px 10px !important;
+}
+
+.cart__footer > * {
+  width: auto !important;
 }
