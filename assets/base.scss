@@ -5622,3 +5622,19 @@ cart-remove-button .button{
 
 /* Errors */
 #main-cart-footer #cart-errors { color: var(--red); }
+
+[data-template="cart"]{
+  #MainContent{
+    > div{
+      margin-top: 0px !important;
+    }
+  }
+}
+
+#main-cart-footer .cart__ctas{
+  justify-content: flex-end;;
+}
+
+.cart__items{
+  padding-bottom: 0px !important;
+}
