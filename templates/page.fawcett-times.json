@@ -41,64 +41,27 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "title": "",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         },
-        "column_Bqmep7": {
+        "column_fgz74N": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
             "title": "Issue No.9",
-            "subtitle": "",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NjQcPz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_xinLXf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_q66Ckt": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
-            "subtitle": "",
-            "text": "<p>Spring 2024</p>",
-            "link_label": "",
-            "link": ""
+            "subtitle": "Spring 2024",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "READ ARTICLE",
+            "link": "shopify://pages/fawcett-times"
           }
         }
       },
       "block_order": [
         "column_TjDgBN",
-        "column_Bqmep7",
-        "column_NjQcPz",
-        "column_xinLXf",
-        "column_q66Ckt"
+        "column_fgz74N"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -198,6 +161,17 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_tfWTPK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ftPlaceholder.png",
+            "title": "Issue No.9",
+            "subtitle": "",
+            "text": "<p>Spring 2024</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -207,7 +181,8 @@
         "column_T6bPxP",
         "column_jUCcYm",
         "column_AwGNVx",
-        "column_gY87Q8"
+        "column_gY87Q8",
+        "column_tfWTPK"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {

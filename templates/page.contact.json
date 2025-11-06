@@ -19,6 +19,7 @@
     },
     "image_banner_8RLjd3": {
       "type": "image-banner",
+      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/USA_Store_Open.jpg",
@@ -69,7 +70,7 @@
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/pigeon.png",
-        "image_2": "shopify://shop_images/Alessandro_collaboration_2000x1000px_backgrounds.jpg",
+        "image_2": "shopify://shop_images/Contact_by_mail_wallpaper.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",

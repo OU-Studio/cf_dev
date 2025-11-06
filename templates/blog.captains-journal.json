@@ -26,6 +26,30 @@
         "show_text_below": true
       }
     },
+    "rich_text_CcxErA": {
+      "type": "rich-text",
+      "blocks": {
+        "text_japcxY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Captain Fawcett is delighted to make available to his skilled tonsorial artist chums his rather splendid range of simply ‘First Class Gentlemen’s Grooming Requisite’s’ here you will find everything you could possibly need to equip your esteemed Barbershop… Moustache Waxes, Beard Oils, Beard Balms, Hair Pomades, Hair Tonics, Sea Salt Sprays, Pre Shave Oil, Shaving Creams & Soaps, Razors, Post Shave Balm, Mirrors, Capes, Towels, Brushes & Combs, Eau de Parfum and Cologne et al…</p><h2>Captain Fawcett</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "text_japcxY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_id": "default-id",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -41,6 +65,7 @@
   },
   "order": [
     "image_banner_H8nVrT",
+    "rich_text_CcxErA",
     "main"
   ]
 }

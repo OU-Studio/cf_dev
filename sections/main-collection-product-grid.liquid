@@ -67,7 +67,7 @@
       id="sortOptions"
       style="display: none"
     >
-      <option value="best-selling" selected="selected">Best selling</option>
+      <option value="best-selling" selected="selected">Best-selling</option>
       <option value="title-ascending">Alphabetically, A-Z</option>
       <option value="title-descending">Alphabetically, Z-A</option>
       <option value="price-ascending">Price, low to high</option>
@@ -196,7 +196,7 @@
           </div>
 
           <div class="product-count-vertical light" role="status">
-            <h2 class="product-count__text text-body">
+            <h3 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if collection.results_count -%}
                   {{
@@ -212,7 +212,7 @@
                   }}
                 {%- endif -%}
               </span>
-            </h2>
+            </h3>
             {%- render 'loading-spinner' -%}
           </div>
         </form>
@@ -250,14 +250,14 @@
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
             <div class="title-wrapper center">
-              <h2 class="title title--primary">
+              <h3 class="title title--primary">
                 {{ 'sections.collection_template.empty' | t -}}
                 <br>
                 {{
                   'sections.collection_template.use_fewer_filters_html'
                   | t: link: collection.url, class: 'underlined-link link'
                 }}
-              </h2>
+              </h3>
             </div>
           </div>
         {%- else -%}

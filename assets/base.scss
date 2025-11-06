@@ -372,6 +372,10 @@ a:-webkit-any-link {
     background-repeat: no-repeat;
     background-position: right 0.5rem center;
     background-size: 10px 7px;
+    font-family: garamond-premier-pro-display !important;
+    option{
+      font-family: garamond-premier-pro-display !important;
+    }
   }
 }
 
@@ -3155,7 +3159,7 @@ slider-component.page-width {
 
     .multicolumn-list {
       display: grid;
-      grid-template-columns: 53% 23.5% 23.5%;
+      grid-template-columns: 50% 50%;
       grid-auto-rows: 1fr;
       /* equal row heights in each group */
       grid-auto-flow: row dense;
@@ -3174,14 +3178,9 @@ slider-component.page-width {
         grid-row: span 2;
       }
 
-      li:nth-child(2n + 2) {
-        /* 4, 9, 14, ... */
+      li:last-of-type {
         grid-column: 2;
-      }
-
-      li:nth-child(2n + 3) {
-        /* 5, 10, 15, ... */
-        grid-column: 3;
+        grid-row: span 2;
       }
 
       .multicolumn-card__image-wrapper {
@@ -3194,10 +3193,47 @@ slider-component.page-width {
         }
       }
 
+      li:last-of-type{
+        .multicolumn-card.content-container{
+          display: flex;
+          align-items: center;
+        }
+
       .multicolumn-card__info {
-        padding: 10px !important;
+        padding: 40px !important;
         padding-top: 0px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 10px 10px !important;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 0px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin-top: 0px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: rotate(180deg)
+    }
       }
+    }
 
       li {
         width: 100%;
@@ -3214,7 +3250,16 @@ slider-component.page-width {
         }
 
         .rte {
-          margin-top: 0px !important;
+          margin-top: 20px !important;
+        }
+
+        .inline-richtext:first-of-type{
+          margin-top: 20px !important;
+        }
+
+        .inline-richtext:nth-of-type(2){
+          margin-top: 5px !important;
+          font-size: 22px !important
         }
 
         p {
@@ -3229,6 +3274,35 @@ slider-component.page-width {
         }
 
       }
+
+    .link {
+    display: block;
+    width: 100%;
+    max-width: 140px;
+    padding: 10px 20px !important;
+    position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background-color: var(--red) !important;
+    appearance: none;
+    text-align: center;
+.svg-wrapper{
+  display: none !important
+}
+      line-height: 1em !important;
+      font-size: 18px !important;
+      color: var(--cream) !important;
+      letter-spacing: 0.025em !important;
+      position: relative !important;
+      top: initial !important;
+      left: initial !important;
+      transform: none !important;
+      color: var(--white) !important;
+      font-family: empera !important;
+      margin-bottom: 20px !important;
+  }
 
       img {
         width: 100%;
@@ -3323,6 +3397,67 @@ slider-component.page-width {
 }
 
 [data-template="blog.captains-journal"] {
+  main .shopify-section:nth-of-type(2) {
+    margin: auto !important;
+
+    .rich-text {
+      padding: 20px 0px 0px 0px !important;
+    }
+
+    p {
+      font-size: 24px !important;
+      line-height: 1.2em !important;
+      margin: 20px auto !important;
+      max-width: 800px;
+    }
+
+    h2 {
+      font-size: 30px !important;
+      margin-bottom: 20px !important;
+    }
+
+    margin: 0px 10px;
+    padding: 0px 10px;
+
+    * {
+      text-align: center !important;
+    }
+
+    .rte {
+      margin-top: 0rem !important;
+
+      p {
+        margin: 0.5rem auto !important;
+      }
+    }
+
+    .rich-text__blocks {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg)
+      }
+    }
+  }
   .sigelm {
     display: none !important;
   }
@@ -3337,7 +3472,7 @@ slider-component.page-width {
   }
 
   main .shopify-section:nth-of-type(1){
-    padding: 20px;
+    padding: 20px 200px;
     background-color: var(--cream) !important;
   }
 
@@ -3357,7 +3492,7 @@ slider-component.page-width {
       display: none !important
     }
   }
-  main .shopify-section:nth-of-type(2) {
+  main .shopify-section:nth-of-type(3) {
     .title--primary {
     display: none !important;
   }
@@ -3412,7 +3547,7 @@ slider-component.page-width {
     border-radius: 8px !important;
     background-color: var(--red) !important;
     appearance: none;
-
+text-decoration: none !important;
     span {
       line-height: 1em !important;
       font-size: 18px !important;
@@ -3426,6 +3561,12 @@ slider-component.page-width {
     }
   }
   }
+}
+
+.footerTitle{
+  text-align: center;
+  font-variant: all-small-caps !important;
+  font-style: normal !important;
 }
 
 
@@ -4692,16 +4833,17 @@ product-recommendations {
   .bgelm.compass {
     display: block !important;
     background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barbershop_woodcuts2.png?v=1761151691) !important;
-    width: 140vw !important;
+    width: 50vw !important;
+    left: 55vw !important;
     top: 55vw !important;
   }
 
   .bgelm.octopus {
     display: block !important;
     background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barbershop_woodcuts.png?v=1761151688) !important;
-    width: 100vw !important;
+    width: 40vw !important;
     height: 170vh !important;
-    left: -30vw !important;
+    left: -10vw !important;
     top: calc(45vw + 70vh) !important;
   }
 }
@@ -4859,7 +5001,7 @@ cart-drawer.drawer { visibility: visible; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: .75rem;
+  gap: 0px .75rem;
   padding: 10px 0px !important;
   border-bottom: 1px solid var(--black);
 }
@@ -4901,11 +5043,29 @@ cart-drawer.drawer { visibility: visible; }
 .drawer__contents {
   height: 100%;
   overflow: auto;
-  padding: 10px;
+  padding: 0px 0px;
+}
+
+.cart-item__quantity {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0px !important;
+}
+
+.cart-drawer__footer{
+      border-bottom: 1px solid var(--black);
+      border-top: 1px solid var(--black);
+      .totals{
+        margin: 0px !important
+      }
 }
 
 #CartDrawer-ColumnQuantity, #CartDrawer-ColumnProductImage{
   display: none !important
+}
+
+.cart-item__media{
+  display: flex;
 }
 
 /* Table -> card layout */
@@ -4913,14 +5073,27 @@ cart-drawer.drawer { visibility: visible; }
   width: 100%;
   border-collapse: collapse;
 }
-.cart-items thead { color: var(--black); }
+.cart-items thead { color: var(--black);     border-bottom: 1px solid var(--black); margin: 0px !important }
 .cart-items th,
-.cart-items td { padding: .5rem !important; vertical-align: top; }
-.cart-item { border-bottom: 1px solid var(--black); }
+.cart-items td { padding: .5rem 0px !important; vertical-align: top; }
+.cart-item { border-bottom: 1px solid var(--black); gap: 0px 1rem !important;}
 
-/* Media image */
-.cart-item__media img {
-  
+.cart-drawer .cart-item__error, .cart-item__details>*+*{
+  margin: 0px !important;
+}
+
+.cart-remove-button{
+  margin: 0px !important;
+}
+
+.cart-item__details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item__name{
+  text-decoration: none !important;
 }
 
 /* Details */
@@ -5196,7 +5369,25 @@ font-size: 15px !important;
     }
 }
 
-[data-template="page.contact"], [data-template="page.contact-wholesale"]{
+[data-template="page.contact"]{
+
+
+  .bgelm.compass {
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    width: 50vw !important;
+    left: 74vw !important;
+    top: 15vw !important;
+  }
+
+  .bgelm.octopus {
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    width: 50vw !important;
+    left: -25vw !important;
+    top: 40vw !important;
+    height: 100vh !important;
+  }
   main .ten p, main .postal p{
     display: block;
     max-width: 400px;
@@ -5217,11 +5408,11 @@ font-size: 15px !important;
   }
   main{
     .ten.columns{
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/typewriter.png?v=1761557245);
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/contact_typewriters.png?v=1762450480);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center top;
-        padding-top: 170px;
+        padding-top: 210px;
       h2{
          font-style: normal !important;
     font-variant: all-small-caps !important;
@@ -5229,11 +5420,8 @@ font-size: 15px !important;
       }
       #contact_form, #wholesale-form{
         justify-content: center !important;
-        padding-bottom: 500px;
-        align-items: center;
-      }
-      #wholesale-form{
         padding-bottom: 600px;
+        align-items: center;
       }
       form{
         margin: auto;
@@ -5278,6 +5466,8 @@ font-size: 15px !important;
           background-color:var(--white) !important;
           box-sizing: border-box;
           color: var(--black) !important;
+          font-family: garamond-premier-pro-display !important;
+          padding: 2px 4px;
           &::placeholder{
             font-style: initial !important;
           }
@@ -5319,7 +5509,264 @@ font-size: 15px !important;
     }
   }
 
-  .shopify-section:nth-of-type(3) {
+ main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:before{
+          display: none !important;
+        }
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          background-color: var(--offwhite);
+          box-sizing: border-box;
+          img{
+            object-fit: contain !important;
+            
+          }
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on; 
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+            &:nth-of-type(3){
+              margin-top: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-template="page.contact-wholesale"]{
+
+
+  .bgelm.compass {
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    width: 50vw !important;
+    left: 74vw !important;
+    top: 15vw !important;
+  }
+
+  .bgelm.octopus {
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    width: 50vw !important;
+    left: -25vw !important;
+    top: 40vw !important;
+    height: 100vh !important;
+  }
+  main .ten p, main .postal p{
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    color: var(--black) !important;
+    margin-bottom: 20px;
+  }
+  main .ten h2, main .postal h2{
+    text-align: center;
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important; 
+    border: none;
+    &:after{
+      display: none;
+    }
+  }
+  main{
+    .ten.columns{
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/contact_typewriters3.png?v=1762450480);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top;
+        padding-top: 280px;
+      h2{
+         font-style: normal !important;
+    font-variant: all-small-caps !important;
+    letter-spacing: 0.03em !important;
+      }
+      #contact_form, #wholesale-form{
+        justify-content: center !important;
+        padding-bottom: 700px;
+        align-items: center;
+      }
+      form{
+        margin: auto;
+        flex-direction: column !important;
+    display: flex !important;
+    > *{
+      margin-bottom: 10px;
+    }
+        .inputrow{
+          border: none !important;
+          margin-bottom: 20px !important;
+        }
+
+        label{
+          display: none !important; 
+        }
+        .selectreplace{
+          width: 300px !important;
+          border: solid 1px var(--black) !important;
+          border-radius: 0px !important;
+          outline: none !important; 
+          background-color:var(--white) !important;
+          box-sizing: border-box;
+          color: var(--black) !important;
+          &::placeholder{
+            font-style: initial !important;
+          }
+          .selectpicker{
+            padding: 0px 0px 0px 5px;
+            text-transform: uppercase;
+          color: var(--black) !important;
+          }
+          .arr{
+            margin-top: -6px !important;
+          }
+        }
+        input, textarea, select{
+          width: 300px !important;
+          border: solid 1px var(--black) !important;
+          border-radius: 0px !important;
+          outline: none !important;
+          background-color:var(--white) !important;
+          box-sizing: border-box;
+          color: var(--black) !important;
+          font-family: garamond-premier-pro-display !important;
+          padding: 2px 4px;
+          &::placeholder{
+            font-style: initial !important;
+          }
+        }
+        textarea{
+          min-height: 100px;
+        }
+        li:last-of-type{
+          display: flex; 
+          justify-content: center;
+        }
+        .button {
+    display: flex;
+    width: 100%;
+    max-width: 120px;
+    padding: 10px 20px !important;
+    position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background-color: var(--red) !important;
+    appearance: none;
+
+    span {
+      line-height: 1em !important;
+      font-size: 18px !important;
+      color: var(--cream) !important;
+      letter-spacing: 0.025em !important;
+      position: relative !important;
+      top: initial !important;
+      left: initial !important;
+      transform: none !important;
+      color: var(--white) !important;
+      font-family: empera !important;
+    }
+  }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
 
     .banner .media:before {
@@ -5437,6 +5884,24 @@ font-size: 15px !important;
 }
 
 [data-template="page.stockists"]{
+
+
+  .bgelm.compass {
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    width: 50vw !important;
+    left: 74vw !important;
+    top: 15vw !important;
+  }
+
+  .bgelm.octopus {
+    display: block !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    width: 50vw !important;
+    left: -25vw !important;
+    top: 40vw !important;
+    height: 100vh !important;
+  }
   main .ten p, main .postal p{
     display: block;
     max-width: 400px;
@@ -5457,11 +5922,11 @@ font-size: 15px !important;
   }
   main{
     .ten.columns{
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/typewriter.png?v=1761557245);
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/contact_typewriters2.png?v=1762450481);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center top;
-        padding-top: 230px;
+        padding-top: 250px;
       h2{
          font-style: normal !important;
     font-variant: all-small-caps !important;
@@ -5469,7 +5934,7 @@ font-size: 15px !important;
       }
       #stockist-form{
         justify-content: center !important;
-        padding-bottom: 480px;
+        padding-bottom: 520px;
         align-items: center;
       }
       form{
@@ -5515,6 +5980,8 @@ font-size: 15px !important;
           background-color:var(--white) !important;
           box-sizing: border-box;
           color: var(--black) !important;
+          font-family: garamond-premier-pro-display !important;
+          padding: 2px 4px;
           &::placeholder{
             font-style: initial !important;
           }
@@ -5556,126 +6023,62 @@ font-size: 15px !important;
     }
   }
 
-  .shopify-section:nth-of-type(2) {
-    margin-top: 15px !important;
+  #MainContent .shopify-section:nth-of-type(1) {
+margin-top: 40px;
+*{
+  font-variant: all-small-caps !important;
+  font-style: normal !important;
+}
+  }
 
-    .banner .media:before {
-      padding-bottom: 100% !important;
+  #MainContent .shopify-section:nth-of-type(2) {
+    background-color: var(--offwhite);
+    margin: 0px auto;
+    max-width: 800px !important;
+    padding: 0px 10px;
+
+    * {
+      text-align: center !important;
     }
 
-    .banner {
-      display: flex;
-      padding: 100px;
-      gap: 100px;
+    .rte {
+      margin-top: 0rem !important;
 
-      &:before,
+      p {
+        margin: 0.5rem auto !important;
+      }
+    }
+
+    .rich-text__blocks {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
       &:after {
-        display: none !important
-      }
-
-      >div {
-        position: relative !important;
-        width: 50% !important;
-        height: auto !important;
-      }
-
-      .banner__media {
-        &:before{
-          display: none !important;
-        }
-        &:nth-of-type(2) {
-          position: absolute !important;
-          inset: 0;
-          ;
-          width: 100% !important;
-          height: 100% !important;
-          object-fit: cover;
-
-          &:before {
-            display: none !important;
-          }
-        }
-
-        &:nth-of-type(1) {
-          z-index: 4;
-          border: solid 15px var(--cream);
-          background-color: var(--offwhite);
-          box-sizing: border-box;
-          img{
-            object-fit: contain !important;
-            
-          }
-        }
-      }
-
-      .banner__content {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        background-color: var(--cream);
-        padding: 60px !important;
-        box-sizing: border-box;
-
-        &:before {
-          content: '';
-          display: block;
-          width: 100%;
-          height: 50px;
-          margin-bottom: 0px;
-          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-
-        &:after {
-          content: '';
-          display: block;
-          width: 100%;
-          height: 50px;
-          margin-top: 0px;
-          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-          transform: rotate(180deg)
-        }
-
-        >* {
-          width: 100%;
-          min-width: 0px !important;
-          max-width: none !important;
-          position: relative;
-          z-index: 3;
-          padding: 20px 0px !important;
-        }
-
-        .banner__text:nth-of-type(1) {
-          margin-bottom: 10px !important;
-
-          p {
-            font-size: 30px !important;
-            font-style: italic !important;
-            font-feature-settings: 'swsh' on; 
-          }
-        }
-
-        .banner__text:nth-of-type(2) {
-          p {
-            font-size: 24px !important;
-            &:nth-of-type(3){
-              margin-top: 10px !important;
-            }
-          }
-        }
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin-top: 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg)
       }
     }
   }
 }
 
-[data-template="page.contact-wholesale"] main .ten.columns{
-  padding-top: 220px !important;
-}
+
 
 /* ===== Cart PAGE styles (mirror drawer look) ===== */
 
