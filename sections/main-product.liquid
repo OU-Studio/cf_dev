@@ -105,53 +105,65 @@
         {%- endif -%}
 
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-        <div class="cf-form-row">
-          {%- form 'product', product, id: product_form_id, class: 'product-form' -%}
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-            <quantity-input class="quantity">
-                        <button class="quantity__button" name="minus" type="button">
-                          <span class="visually-hidden">
-                            {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
-                          </span>
-                          <span class="svg-wrapper">
-                            {{- 'icon-minus.svg' | inline_asset_content -}}
-                          </span>
-                        </button>
-                        <input
-                          class="quantity__input"
-                          type="number"
-                          name="quantity"
-                          id="Quantity-{{ section.id }}"
-                          data-cart-quantity="{{ cart_qty }}"
-                          data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          min="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          {% if product.selected_or_first_available_variant.quantity_rule.max != null %}
-                            data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                            max="{{ product.selected_or_first_available_variant.quantity_rule.max }}"
-                          {% endif %}
-                          step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}"
-                          value="{{ product.selected_or_first_available_variant.quantity_rule.min }}"
-                          form="{{ product_form_id }}"
-                        >
-                        <button class="quantity__button" name="plus" type="button">
-                          <span class="visually-hidden">
-                            {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
-                          </span>
-                          <span class="svg-wrapper">
-                            {{- 'icon-plus.svg' | inline_asset_content -}}
-                          </span>
-                        </button>
-                      </quantity-input>
-                        {% endform %}
+       {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-            {%- render 'buy-buttons',
-                  block: block,
-                  product: product,
-                  product_form_id: product_form_id,
-                  section_id: section.id,
-                  show_pickup_availability: true
-                -%}
+<div class="cf-form-row">
+  <product-form class="product-form" data-hide-errors="false">
+    {%- form 'product', product, id: product_form_id, class: 'form' -%}
+
+      {%- comment -%} --- VARIANT SELECTORS --- {%- endcomment -%}
+      {%- if product.variants.size > 1 and product.has_only_default_variant == false -%}
+        <div class="cf-options">
+          {%- for option in product.options_with_values -%}
+            <div class="cf-option">
+              <label class="cf-option__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+              <select
+                id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                class="cf-option__select"
+                name="options[{{ option.name | escape }}]"
+              >
+                {%- for value in option.values -%}
+                  <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+          {%- endfor -%}
         </div>
+      {%- endif -%}
+
+      {%- comment -%} Hidden variant id that our JS updates {%- endcomment -%}
+      <input
+        type="hidden"
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}"
+        id="SelectedVariantId-{{ section.id }}"
+      >
+
+      {%- comment -%} Variant JSON for the sync script {%- endcomment -%}
+      <script type="application/json" id="VariantData-{{ section.id }}">
+        {{ product.variants | json }}
+      </script>
+
+      {%- comment -%} Quantity {%- endcomment -%}
+      <quantity-input class="quantity"> <button class="quantity__button" name="minus" type="button"> <span class="visually-hidden"> {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}} </span> <span class="svg-wrapper"> {{- 'icon-minus.svg' | inline_asset_content -}} </span> </button> <input class="quantity__input" type="number" name="quantity" id="Quantity-{{ section.id }}" data-cart-quantity="{{ cart_qty }}" data-min="{{ product.selected_or_first_available_variant.quantity_rule.min }}" min="{{ product.selected_or_first_available_variant.quantity_rule.min }}" {% if product.selected_or_first_available_variant.quantity_rule.max != null %} data-max="{{ product.selected_or_first_available_variant.quantity_rule.max }}" max="{{ product.selected_or_first_available_variant.quantity_rule.max }}" {% endif %} step="{{ product.selected_or_first_available_variant.quantity_rule.increment }}" value="{{ product.selected_or_first_available_variant.quantity_rule.min }}" form="{{ product_form_id }}" > <button class="quantity__button" name="plus" type="button"> <span class="visually-hidden"> {{- 'products.product.quantity.increase' | t: product: product.title | escape -}} </span> <span class="svg-wrapper"> {{- 'icon-plus.svg' | inline_asset_content -}} </span> </button> </quantity-input>
+
+      {%- comment -%} Submit + dynamic checkout inside the SAME form {%- endcomment -%}
+      <div class="product-form__buttons">
+        <button type="submit" class="product-form__submit button  norwesterLarge ">
+          <span>{{ 'products.product.add_to_cart' | t }}</span>
+          <div class="loading__spinner hidden" aria-hidden="true"></div>
+        </button>
+
+        {{ form | payment_button }}
+      </div>
+
+    {%- endform -%}
+
+    <div class="product-form__error-message-wrapper" role="alert" hidden>
+      <span class="product-form__error-message"></span>
+    </div>
+  </product-form>
+</div>
 
         <hr class="cf-hr">
 
@@ -268,6 +280,203 @@
     })();
   </script>
 </product-info>
+
+<script>
+(() => {
+  const sectionId = "{{ section.id }}";
+  const variantJsonEl = document.getElementById("VariantData-" + sectionId);
+  if (!variantJsonEl) return;
+
+  const variants = JSON.parse(variantJsonEl.textContent || "[]");
+  const selects = [
+    document.getElementById(`Option-${sectionId}-0`),
+    document.getElementById(`Option-${sectionId}-1`),
+    document.getElementById(`Option-${sectionId}-2`)
+  ].filter(Boolean);
+
+  const hiddenInput = document.getElementById("SelectedVariantId-" + sectionId);
+  const priceWrap = document.getElementById("price-" + sectionId);
+
+  function findVariant(selected) {
+    return variants.find(v =>
+      selected[0] === v.option1 &&
+      (selected[1] === undefined || selected[1] === v.option2) &&
+      (selected[2] === undefined || selected[2] === v.option3)
+    ) || null;
+  }
+
+  function formatMoney(cents) {
+  const amount = (cents / 100).toLocaleString(undefined, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  });
+  return `{{ cart.currency.symbol }}${amount}`; // symbol first
+}
+
+  function updateUI(variant) {
+    if (!variant) return;
+    if (hiddenInput) hiddenInput.value = variant.id;
+
+  // Add/remove body class for sold out
+  document.body.classList.toggle('variant-soldout', !variant.available);
+
+  const addBtn = document.querySelector('.product-form__submit');
+const addBtnLabel = addBtn?.querySelector('span');
+
+if (addBtnLabel) {
+  addBtnLabel.textContent = variant.available
+    ? "{{ 'products.product.add_to_cart' | t }}"
+    : "{{ 'products.product.sold_out' | t }}";
+}
+
+    if (priceWrap) {
+      const compare = variant.compare_at_price;
+      const current = variant.price;
+      priceWrap.innerHTML = `
+        <div class="price price--large">
+          ${compare && compare > current ? `<span class="price__compare"><s>${formatMoney(compare)}</s></span>` : ``}
+          <span class="price__current">${formatMoney(current)}</span>
+          ${!variant.available ? `<span class="price__badge">{{ 'products.product.sold_out' | t }}</span>` : ``}
+        </div>
+      `;
+    }
+
+    const url = new URL(location.href);
+    url.searchParams.set("variant", variant.id);
+    history.replaceState({}, "", url.toString());
+  }
+
+  function refreshDisabled() {
+    if (selects.length < 2) return;
+    const current = selects.map(s => s.value);
+    selects.forEach((select, idx) => {
+      const snapshot = current.slice();
+      Array.from(select.options).forEach(opt => {
+        snapshot[idx] = opt.value;
+        const exists = variants.some(v =>
+          snapshot[0] === v.option1 &&
+          (snapshot[1] === undefined || snapshot[1] === v.option2) &&
+          (snapshot[2] === undefined || snapshot[2] === v.option3) &&
+          v.available
+        );
+        opt.disabled = !exists;
+      });
+    });
+  }
+
+  function onChange() {
+    const selected = selects.map(s => s.value);
+    const variant = findVariant(selected);
+    updateUI(variant);
+    refreshDisabled();
+  }
+
+  selects.forEach(s => s.addEventListener("change", onChange));
+  onChange(); // initial
+})();
+</script>
+
+<script>
+(() => {
+  const planeTpl = document.getElementById('paperplane');
+  if (!planeTpl) return console.warn('❌ No #paperplane SVG found');
+
+  const CART_ICON_SEL = 'a.header__action.header__action--cart';
+  const ADD_BTN_SEL   = '.product-form__submit';
+  const getCartIcon = () =>
+    document.querySelector(CART_ICON_SEL) ||
+    document.querySelector('#cart-icon-bubble') ||
+    document.querySelector('[data-open-cart]') ||
+    document.querySelector('.header__icon--cart') ||
+    document.querySelector('a[href="/cart"]');
+
+  let lastAddBtn = null;
+  let lastClickAt = 0;
+  let animTimeout = null;
+
+  document.addEventListener('click', e => {
+    const btn = e.target.closest(ADD_BTN_SEL);
+    if (btn) { lastAddBtn = btn; lastClickAt = Date.now(); }
+  });
+
+  function centerOf(el){
+    const r = el.getBoundingClientRect();
+    return { x: r.left + r.width/2, y: r.top + r.height/2 };
+  }
+
+  function animatePlane(fromEl, toEl){
+    if (!fromEl || !toEl) return;
+    const start = centerOf(fromEl);
+    const end   = centerOf(toEl);
+    const mid   = { x:(start.x+end.x)/2, y: Math.min(start.y,end.y) + 100 };
+
+    const clone = planeTpl.cloneNode(true);
+    clone.removeAttribute('id');
+    clone.classList.add('flying-plane');
+    clone.style.left = '0';
+    clone.style.top  = '0';
+    clone.style.width = '32px';
+    clone.style.height = '32px';
+    clone.style.transform = `translate(${start.x}px,${start.y}px) scale(1) rotate(-10deg)`;
+    clone.style.opacity = '1';
+    document.body.appendChild(clone);
+
+    const anim = clone.animate(
+      [
+        { transform:`translate(${start.x}px,${start.y}px) scale(1) rotate(-10deg)`, opacity:1 },
+        { transform:`translate(${mid.x}px,${mid.y}px) scale(1) rotate(-5deg)`, opacity:.95, offset:.6 },
+        { transform:`translate(${end.x}px,${end.y}px) scale(1) rotate(0deg)`, opacity:0 }
+      ],
+      { duration: 3500, easing: 'cubic-bezier(.25,.8,.25,1)', fill: 'forwards' }
+    );
+
+    anim.onfinish = () => {
+      clone.remove();
+      const cartIcon = getCartIcon();
+      if (cartIcon) {
+        cartIcon.classList.add('cart-bump');
+        setTimeout(() => cartIcon.classList.remove('cart-bump'), 400);
+      }
+    };
+  }
+
+  function triggerIfRecent(){
+    if (Date.now() - lastClickAt > 3000) return;
+    if (animTimeout) return; // debounce multiple fires
+    animTimeout = setTimeout(() => animTimeout = null, 500);
+
+    const from = lastAddBtn || document.querySelector(ADD_BTN_SEL);
+    const to = getCartIcon();
+    if (to) requestAnimationFrame(() => animatePlane(from, to));
+  }
+
+  // Patch fetch only once
+  if (!window.__planeFetchPatched) {
+    const origFetch = window.fetch;
+    window.fetch = async function(...args){
+      const [input] = args;
+      const url = typeof input === 'string' ? input : (input && input.url) || '';
+      const isCartAdd = url.includes('/cart/add');
+      const res = await origFetch.apply(this, args);
+      if (isCartAdd) {
+        const clone = res.clone();
+        const data = await clone.json().catch(()=>null);
+        const ok = res.ok && data && !data.status;
+        if (ok) triggerIfRecent();
+      }
+      return res;
+    };
+    window.__planeFetchPatched = true;
+    console.log('🪝 fetch patched (debounced plane)');
+  }
+})();
+
+
+
+</script>
+
+
+
 
 {% schema %}
 {

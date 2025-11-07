@@ -174,7 +174,7 @@
         "featured_page_iptTP7": {
           "type": "featured_page",
           "settings": {
-            "page": "explore",
+            "page": "expedition-reserve",
             "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg",
             "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
           }
@@ -198,7 +198,7 @@
         "featured_page_qy46CA": {
           "type": "featured_page",
           "settings": {
-            "page": "explore",
+            "page": "scapicchio",
             "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg",
             "collection_image_2": "shopify://shop_images/Scapicchio_Product_688x1004px2.jpg"
           }

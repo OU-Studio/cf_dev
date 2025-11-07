@@ -21,7 +21,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Fawcett_Times_masthead.jpg",
+        "image": "shopify://shop_images/Fawcett_Times_masthead_4d944e1b-c6ee-49d4-9c8c-3636c19cf33e.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -34,13 +34,37 @@
         "show_text_below": true
       }
     },
+    "rich_text_EUKda3": {
+      "type": "rich-text",
+      "blocks": {
+        "text_KnKEJQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Captain Fawcett is delighted to make available to his skilled tonsorial artist chums his rather splendid range of simply ‘First Class Gentlemen’s Grooming Requisite’s’ here you will find everything you could possibly need to equip your esteemed Barbershop… Moustache Waxes, Beard Oils, Beard Balms, Hair Pomades, Hair Tonics, Sea Salt Sprays, Pre Shave Oil, Shaving Creams & Soaps, Razors, Post Shave Balm, Mirrors, Capes, Towels, Brushes & Combs, Eau de Parfum and Cologne et al…</p><h2>Captain Fawcett</h2>"
+          }
+        }
+      },
+      "block_order": [
+        "text_KnKEJQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_id": "default-id",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "multicolumn_rWyKy3": {
       "type": "multicolumn",
       "blocks": {
         "column_TjDgBN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_010.jpg",
             "title": "",
             "subtitle": "",
             "text": "",
@@ -51,10 +75,10 @@
         "column_fgz74N": {
           "type": "column",
           "settings": {
-            "title": "Issue No.9",
-            "subtitle": "Spring 2024",
+            "title": "Issue No.10",
+            "subtitle": "Spring 2025",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "READ ARTICLE",
+            "link_label": "READ ISSUE No. 10",
             "link": "shopify://pages/fawcett-times"
           }
         }
@@ -88,7 +112,7 @@
         "column_jeejHC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_09.jpg",
             "title": "Issue No.9",
             "subtitle": "",
             "text": "<p>Spring 2024</p>",
@@ -99,10 +123,10 @@
         "column_nGFwDX": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_08.jpg",
+            "title": "Issue No.8",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Spring 2023</p>",
             "link_label": "",
             "link": ""
           }
@@ -110,10 +134,10 @@
         "column_bDCC3U": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_07.jpg",
+            "title": "Issue No.7",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Winter 2022</p>",
             "link_label": "",
             "link": ""
           }
@@ -121,10 +145,10 @@
         "column_T6bPxP": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_06.jpg",
+            "title": "Issue No.6",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Spring 2022</p>",
             "link_label": "",
             "link": ""
           }
@@ -132,10 +156,10 @@
         "column_jUCcYm": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_05.jpg",
+            "title": "Issue No.5",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Autumn 2021</p>",
             "link_label": "",
             "link": ""
           }
@@ -143,10 +167,10 @@
         "column_AwGNVx": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_04.jpg",
+            "title": "Issue No.4",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Spring 2021</p>",
             "link_label": "",
             "link": ""
           }
@@ -154,10 +178,10 @@
         "column_gY87Q8": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_03.jpg",
+            "title": "Issue No.3",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Autumn 2020</p>",
             "link_label": "",
             "link": ""
           }
@@ -165,10 +189,10 @@
         "column_tfWTPK": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ftPlaceholder.png",
-            "title": "Issue No.9",
+            "image": "shopify://shop_images/Fawcett_Times_Cover_02.jpg",
+            "title": "Issue No.2",
             "subtitle": "",
-            "text": "<p>Spring 2024</p>",
+            "text": "<p>Autumn 2019</p>",
             "link_label": "",
             "link": ""
           }
@@ -207,6 +231,7 @@
   "order": [
     "main",
     "image_banner_8caTpY",
+    "rich_text_EUKda3",
     "multicolumn_rWyKy3",
     "multicolumn_yFCLpQ"
   ]

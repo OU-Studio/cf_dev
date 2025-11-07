@@ -71,6 +71,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
+        "custom_id": "default-id",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
@@ -91,7 +92,7 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "standard",
+        "quick_add": "none",
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
