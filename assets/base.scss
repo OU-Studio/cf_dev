@@ -2942,7 +2942,7 @@ slider-component.page-width {
           top: -20%;
           pointer-events: none;
           z-index: 2;
-          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_scent_woodcuts.png?v=1760621265);
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Maharajah_Collaboration_woodcut_icons.png?v=1762516070);
           background-size: contain;
           background-position: bottom left;
           background-repeat: no-repeat;
@@ -2959,7 +2959,1609 @@ slider-component.page-width {
           bottom: 0%;
           pointer-events: none;
           z-index: 2;
-          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_scent_woodcuts2.png?v=1760621268);
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Maharajah_Collaboration_woodcut_icons2.png?v=1762516070);
+          background-size: contain;
+          background-position: top right;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+        }
+
+        h2 {
+          font-style: initial !important;
+          font-size: 6rem !important;
+        }
+
+        p {
+          font-size: 4rem !important;
+          font-style: italic !important;
+          font-feature-settings: 'swsh' on;
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          box-sizing: border-box;
+
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on;
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(3) {
+    * {
+      text-align: center;
+    }
+
+    .page-width {
+      max-width: 1200px !important;
+      margin: auto;
+      padding: 20px !important;
+      background-color: var(--cream);
+      box-sizing: border-box;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+      width: 100% !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px auto !important;
+        padding: 0px !important;
+        max-width: 150px;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/3);
+
+        h3 {
+          font-size: 1.8rem !important;
+          font-family: 'empera' !important;
+          font-style: initial !important;
+          color: var(--red) !important;
+        }
+
+        p {
+          font-size: 24px !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .shopify-section:nth-of-type(6) {
+    margin: 0px auto;
+
+    >div {
+      padding: 0px 20px;
+    }
+
+    h3:before {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0px auto 20px auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+  }
+
+
+}
+
+[data-template="page.nebula"] {
+  .sigelm {
+    display: block !important;
+  }
+
+  main .shopify-section:nth-of-type(1) {
+    .banner .media:before {
+      padding-bottom: 33vw !important;
+    }
+
+    .banner {
+      display: flex;
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: -20%;
+          right: -30%;
+          top: -20%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_Collaboration_woodcut_icons.png?v=1762516069);
+          background-size: contain;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          left: 0%;
+          bottom: 0%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_Collaboration_woodcut_icons2.png?v=1762516068);
+          background-size: contain;
+          background-position: top right;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+        }
+
+        h2 {
+          font-style: initial !important;
+          font-size: 6rem !important;
+        }
+
+        p {
+          font-size: 4rem !important;
+          font-style: italic !important;
+          font-feature-settings: 'swsh' on;
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          box-sizing: border-box;
+
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on;
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(3) {
+    * {
+      text-align: center;
+    }
+
+    .page-width {
+      max-width: 1200px !important;
+      margin: auto;
+      padding: 20px !important;
+      background-color: var(--cream);
+      box-sizing: border-box;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+      width: 100% !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px auto !important;
+        padding: 0px !important;
+        max-width: 150px;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/3);
+
+        h3 {
+          font-size: 1.8rem !important;
+          font-family: 'empera' !important;
+          font-style: initial !important;
+          color: var(--red) !important;
+        }
+
+        p {
+          font-size: 24px !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .shopify-section:nth-of-type(6) {
+    margin: 0px auto;
+
+    >div {
+      padding: 0px 20px;
+    }
+
+    h3:before {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0px auto 20px auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+  }
+
+
+}
+
+[data-template="page.booze-baccy"] {
+  .sigelm {
+    display: block !important;
+  }
+
+  main .shopify-section:nth-of-type(1) {
+    .banner .media:before {
+      padding-bottom: 33vw !important;
+    }
+
+    .banner {
+      display: flex;
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: -20%;
+          right: -30%;
+          top: -20%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Booze_and_baccy_woodcut_icons.png?v=1762516070);
+          background-size: contain;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          left: 0%;
+          bottom: 0%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Booze_and_baccy_woodcut_icons2.png?v=1762516070);
+          background-size: contain;
+          background-position: top right;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+        }
+
+        h2 {
+          font-style: initial !important;
+          font-size: 6rem !important;
+        }
+
+        p {
+          font-size: 4rem !important;
+          font-style: italic !important;
+          font-feature-settings: 'swsh' on;
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          box-sizing: border-box;
+
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on;
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(3) {
+    * {
+      text-align: center;
+    }
+
+    .page-width {
+      max-width: 1200px !important;
+      margin: auto;
+      padding: 20px !important;
+      background-color: var(--cream);
+      box-sizing: border-box;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+      width: 100% !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px auto !important;
+        padding: 0px !important;
+        max-width: 150px;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/3);
+
+        h3 {
+          font-size: 1.8rem !important;
+          font-family: 'empera' !important;
+          font-style: initial !important;
+          color: var(--red) !important;
+        }
+
+        p {
+          font-size: 24px !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .shopify-section:nth-of-type(6) {
+    margin: 0px auto;
+
+    >div {
+      padding: 0px 20px;
+    }
+
+    h3:before {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0px auto 20px auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+  }
+
+
+}
+
+[data-template="page.barberism"] {
+  .sigelm {
+    display: block !important;
+  }
+
+  main .shopify-section:nth-of-type(1) {
+    .banner .media:before {
+      padding-bottom: 33vw !important;
+    }
+
+    .banner {
+      display: flex;
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: -20%;
+          right: -30%;
+          top: -20%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barberism_woodcut_rose.png?v=1762516071);
+          background-size: contain;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          left: 0%;
+          bottom: 0%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barberism_Woodcut_lemon.png?v=1762516071);
+          background-size: contain;
+          background-position: top right;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+        }
+
+        h2 {
+          font-style: initial !important;
+          font-size: 6rem !important;
+        }
+
+        p {
+          font-size: 4rem !important;
+          font-style: italic !important;
+          font-feature-settings: 'swsh' on;
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          box-sizing: border-box;
+
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on;
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(3) {
+    * {
+      text-align: center;
+    }
+
+    .page-width {
+      max-width: 1200px !important;
+      margin: auto;
+      padding: 20px !important;
+      background-color: var(--cream);
+      box-sizing: border-box;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+      width: 100% !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px auto !important;
+        padding: 0px !important;
+        max-width: 150px;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/3);
+
+        h3 {
+          font-size: 1.8rem !important;
+          font-family: 'empera' !important;
+          font-style: initial !important;
+          color: var(--red) !important;
+        }
+
+        p {
+          font-size: 24px !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .shopify-section:nth-of-type(6) {
+    margin: 0px auto;
+
+    >div {
+      padding: 0px 20px;
+    }
+
+    h3:before {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0px auto 20px auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+  }
+
+
+}
+
+[data-template="page.triumphant"] {
+  .sigelm {
+    display: block !important;
+  }
+
+  main .shopify-section:nth-of-type(1) {
+    .banner .media:before {
+      padding-bottom: 33vw !important;
+    }
+
+    .banner {
+      display: flex;
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: -20%;
+          right: -30%;
+          top: -20%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Triumphant_Collaboration_woodcut_icons.png?v=1762516070);
+          background-size: contain;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          left: 0%;
+          bottom: 0%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Triumphant_Collaboration_woodcut_icons2.png?v=1762516071);
+          background-size: contain;
+          background-position: top right;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+        }
+
+        h2 {
+          font-style: initial !important;
+          font-size: 6rem !important;
+        }
+
+        p {
+          font-size: 4rem !important;
+          font-style: italic !important;
+          font-feature-settings: 'swsh' on;
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          box-sizing: border-box;
+
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on;
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(3) {
+    * {
+      text-align: center;
+    }
+
+    .page-width {
+      max-width: 1200px !important;
+      margin: auto;
+      padding: 20px !important;
+      background-color: var(--cream);
+      box-sizing: border-box;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+      width: 100% !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px auto !important;
+        padding: 0px !important;
+        max-width: 150px;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/3);
+
+        h3 {
+          font-size: 1.8rem !important;
+          font-family: 'empera' !important;
+          font-style: initial !important;
+          color: var(--red) !important;
+        }
+
+        p {
+          font-size: 24px !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .shopify-section:nth-of-type(6) {
+    margin: 0px auto;
+
+    >div {
+      padding: 0px 20px;
+    }
+
+    h3:before {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0px auto 20px auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+  }
+
+
+}
+
+[data-template="page.expedition-reserve"] {
+  .sigelm {
+    display: block !important;
+  }
+
+  main .shopify-section:nth-of-type(1) {
+    .banner .media:before {
+      padding-bottom: 33vw !important;
+    }
+
+    .banner {
+      display: flex;
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: -20%;
+          right: -30%;
+          top: -20%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Expedition_Reserve_Collaboration_woodcut_icons2.png?v=1762516071);
+          background-size: contain;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          left: 0%;
+          bottom: 0%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Expedition_Reserve_Collaboration_woodcut_icons.png?v=1762516070);
+          background-size: contain;
+          background-position: top right;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+        }
+
+        h2 {
+          font-style: initial !important;
+          font-size: 6rem !important;
+        }
+
+        p {
+          font-size: 4rem !important;
+          font-style: italic !important;
+          font-feature-settings: 'swsh' on;
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(2) {
+    margin-top: 15px !important;
+
+    .banner .media:before {
+      padding-bottom: 100% !important;
+    }
+
+    .banner {
+      display: flex;
+      padding: 100px;
+      gap: 100px;
+
+      &:before,
+      &:after {
+        display: none !important
+      }
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__media {
+        &:nth-of-type(2) {
+          position: absolute !important;
+          inset: 0;
+          ;
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:nth-of-type(1) {
+          z-index: 4;
+          border: solid 15px var(--cream);
+          box-sizing: border-box;
+
+        }
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: var(--cream);
+        padding: 60px !important;
+        box-sizing: border-box;
+
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 50px;
+          margin-top: 0px;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/top-filagree_red_website.png?v=1753867167);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          transform: rotate(180deg)
+        }
+
+        >* {
+          width: 100%;
+          min-width: 0px !important;
+          max-width: none !important;
+          position: relative;
+          z-index: 3;
+          padding: 20px 0px !important;
+        }
+
+        .banner__text:nth-of-type(1) {
+          margin-bottom: 10px !important;
+
+          p {
+            font-size: 30px !important;
+            font-style: italic !important;
+            font-feature-settings: 'swsh' on;
+          }
+        }
+
+        .banner__text:nth-of-type(2) {
+          p {
+            font-size: 24px !important;
+          }
+        }
+      }
+    }
+  }
+
+  main .shopify-section:nth-of-type(3) {
+    * {
+      text-align: center;
+    }
+
+    .page-width {
+      max-width: 1200px !important;
+      margin: auto;
+      padding: 20px !important;
+      background-color: var(--cream);
+      box-sizing: border-box;
+    }
+
+    .multicolumn-list {
+      display: flex;
+      gap: 5px;
+      list-style-type: none;
+      padding: 0px !important;
+      width: 100% !important;
+
+      .multicolumn-card__image-wrapper {
+        margin: 0px auto !important;
+        padding: 0px !important;
+        max-width: 150px;
+
+        .media {
+          padding: 0px !important;
+        }
+      }
+
+      .multicolumn-card__info {
+        padding: 10px !important;
+      }
+
+      li {
+        width: calc((100% - 10px)/3);
+
+        h3 {
+          font-size: 1.8rem !important;
+          font-family: 'empera' !important;
+          font-style: initial !important;
+          color: var(--red) !important;
+        }
+
+        p {
+          font-size: 24px !important;
+        }
+
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .shopify-section:nth-of-type(6) {
+    margin: 0px auto;
+
+    >div {
+      padding: 0px 20px;
+    }
+
+    h3:before {
+      content: '';
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0px auto 20px auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+  }
+
+
+}
+
+[data-template="page.scapicchio"] {
+  .sigelm {
+    display: block !important;
+  }
+
+  main .shopify-section:nth-of-type(1) {
+    .banner .media:before {
+      padding-bottom: 33vw !important;
+    }
+
+    .banner {
+      display: flex;
+
+      >div {
+        position: relative !important;
+        width: 50% !important;
+        height: auto !important;
+      }
+
+      .banner__content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: -20%;
+          left: -20%;
+          right: -30%;
+          top: -20%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Scapicchio_Collaboration_woodcut_icons2.png?v=1762516069);
+          background-size: contain;
+          background-position: bottom left;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -20%;
+          right: -20%;
+          left: 0%;
+          bottom: 0%;
+          pointer-events: none;
+          z-index: 2;
+          background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Scapicchio_Collaboration_woodcut_icons.png?v=1762516070);
           background-size: contain;
           background-position: top right;
           background-repeat: no-repeat;
