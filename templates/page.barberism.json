@@ -11,9 +11,38 @@
   "sections": {
     "image_banner_Da4aa4": {
       "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
+      "blocks": {
+        "text_LcGFCJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Alessandro",
+            "text_style": "body"
+          }
+        },
+        "heading_rLaPUQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Barberism",
+            "heading_size": "h1"
+          }
+        },
+        "text_imAfpk": {
+          "type": "text",
+          "settings": {
+            "text": "Signature Series",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "text_LcGFCJ",
+        "heading_rLaPUQ",
+        "text_imAfpk"
+      ],
+      "name": "Banner",
       "settings": {
-        "image": "shopify://shop_images/Barberism-Block-1-754x568px.jpg",
+        "image": "shopify://shop_images/Barberism_Collab_product_pic_2000x1500px.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -26,128 +55,42 @@
         "show_text_below": false
       }
     },
-    "rich_text_DFj7aT": {
-      "type": "rich-text",
+    "image_banner_UQ8kri": {
+      "type": "image-banner",
       "blocks": {
-        "text_WFPhJg": {
+        "text_9Ac4Db": {
           "type": "text",
           "settings": {
-            "text": "<p>Sid Sottung</p>"
-          }
-        },
-        "emperaheading_XQCmT3": {
-          "type": "emperaheading",
-          "settings": {
-            "emperaheading": "BARBERISM",
-            "heading_size": "h1",
-            "emperaalignment": "center"
-          }
-        },
-        "text_fyCA9a": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Signature Series</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_WFPhJg",
-        "emperaheading_XQCmT3",
-        "text_fyCA9a"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_7Wy4ax": {
-      "type": "rich-text",
-      "blocks": {
-        "text_bkTiaP": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Captain Fawcett’s Barberism® collaboration with Sid Sottung has produced a simply superlative fragrance, evocative of New York’s old school Italian barber shops. Inspired by the classic masculine aromas of hair tonics, aftershaves and pomades, mingled with tobacco smoke and work weary, honest sweat; redolent memories of young Sid’s Brooklyn hair cutting apprenticeship. Way back when.</p>"
-          }
-        },
-        "text_kFfAU9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sid Sottung</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_bkTiaP",
-        "text_kFfAU9"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "featured_product_qPytgn": {
-      "type": "featured-product",
-      "blocks": {
-        "title_rTRBfW": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_WFhL64": {
-          "type": "price",
-          "settings": {}
-        },
-        "text_JhFTHW": {
-          "type": "text",
-          "settings": {
-            "text": "A tantalising, voluptuous fragrance redolent of ancient India’s princely opulence. The Captain’s Master Blender has woven heady rose with peppery spice, rich musk, beguiling cedar & leather studded with dazzling citrus top notes.",
+            "text": "Alessandro Manfredini",
             "text_style": "body"
           }
         },
-        "quantity_selector_mBXY9C": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_wUwFR3": {
-          "type": "buy_buttons",
+        "text_ThgUJr": {
+          "type": "text",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "text": "Captain Fawcett’s collaboration with Alessandro Manfredini is rich with recalled memory. A most seductive Signature Series fragrance evocative of Italy’s capricious seasons. A gentleman artist of ageless elegance, Signor Manfredini manifests distinctive silver-bearded style. Alessandro is a survivor. The beetle is his talisman. The Captain is his friend... <em>Evviva!</em>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "title_rTRBfW",
-        "price_WFhL64",
-        "text_JhFTHW",
-        "quantity_selector_mBXY9C",
-        "buy_buttons_wUwFR3"
+        "text_9Ac4Db",
+        "text_ThgUJr"
       ],
-      "name": "t:sections.featured-product.presets.name",
+      "name": "Intro",
       "settings": {
-        "product": "bianco-classico-moustache-wax",
+        "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
+        "image_2": "shopify://shop_images/Barberism_collaboration_2000x1000px_backgrounds2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
       }
     },
     "multicolumn_hG4cif": {
@@ -158,6 +101,7 @@
           "settings": {
             "image": "shopify://shop_images/11_top_note_top_hat_2x_aa6ff194-e552-46da-8f3c-533e6fd3ff85.png",
             "title": "TOP NOTES",
+            "subtitle": "",
             "text": "<p>Heady rose, and peppery spice</p>",
             "link_label": "",
             "link": ""
@@ -168,6 +112,7 @@
           "settings": {
             "image": "shopify://shop_images/11_top_note_top_hat_2x_copy.png",
             "title": "MID NOTES",
+            "subtitle": "",
             "text": "<p>Heady rose, and peppery spice</p>",
             "link_label": "",
             "link": ""
@@ -178,6 +123,7 @@
           "settings": {
             "image": "shopify://shop_images/11_top_note_top_hat_2x_copy_2.png",
             "title": "BASE NOTES",
+            "subtitle": "",
             "text": "<p>Heady rose, and peppery spice</p>",
             "link_label": "",
             "link": ""
@@ -189,9 +135,10 @@
         "column_Rr9Ptr",
         "column_Tw9tAe"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Fragrance",
       "settings": {
-        "title": "The Barberism fragrance splashes",
+        "custom_id": "default-id",
+        "title": "Fragrance Splashes",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -207,13 +154,25 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_PYd6gN": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
+    "featured_product_qPytgn": {
+      "type": "featured-product",
+      "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "collection": "frontpage",
-        "products_to_show": 6,
-        "title": "For your further Delectation",
+        "title": "",
+        "product": "bianco-classico-moustache-wax",
+        "show_breadcrumbs": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_anmzN6": {
+      "type": "featured-collection",
+      "name": "Products",
+      "settings": {
+        "collection": "alessandro",
+        "products_to_show": 24,
+        "title": "The Alessandro Manfredini Range",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -236,48 +195,136 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_pi76Kq": {
-      "type": "multicolumn",
+    "image_with_text_HRQPDE": {
+      "type": "image-with-text",
       "blocks": {
-        "column_Rk9Xe8": {
-          "type": "column",
+        "heading_jhpV3P": {
+          "type": "heading",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "heading": "Image with text",
+            "heading_size": "h1"
           }
         },
-        "column_DfXaRL": {
-          "type": "column",
+        "text_UzydCM": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Mobile_Collab.png",
-            "title": "Collection",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "column_Rk9Xe8",
-        "column_DfXaRL"
+        "heading_jhpV3P",
+        "text_UzydCM"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "title": "More Curious Collaborations To Peruse",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "VIEW ALL COLLABORATIONS",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
+        "custom_id": "default-id",
+        "image": "shopify://shop_images/Moustache_Wax2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
         "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_cGiwqQ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_page_8wr3qd": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg",
+            "collection_image_2": "shopify://shop_images/Alessandro_Manfredini_Product_688x1004px_1.jpg"
+          }
+        },
+        "featured_page_BV8niE": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Barberism_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Barberism_688x1004px2_da48e872-27fd-47c3-b7a0-98e3f721b8b0.jpg"
+          }
+        },
+        "featured_page_7tJdcE": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg",
+            "collection_image_2": "shopify://shop_images/Booze_and_Baccy_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_3JcbJq": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg",
+            "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_UkV366": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg",
+            "collection_image_2": "shopify://shop_images/Maharajah_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_dMaL6P": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Nebula_688x1004px.jpg",
+            "collection_image_2": "shopify://shop_images/Nebula_Product_688x1004px.jpg"
+          }
+        },
+        "featured_page_gxkwKL": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Scapicchio_688x1004px_1.jpg",
+            "collection_image_2": "shopify://shop_images/Scapicchio_Product_688x1004px2.jpg"
+          }
+        },
+        "featured_page_nJHcxJ": {
+          "type": "featured_page",
+          "settings": {
+            "page": "barberism",
+            "collection_image": "shopify://shop_images/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg",
+            "collection_image_2": "shopify://shop_images/Triumphant_Product_688x1004px3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "featured_page_8wr3qd",
+        "featured_page_BV8niE",
+        "featured_page_7tJdcE",
+        "featured_page_3JcbJq",
+        "featured_page_UkV366",
+        "featured_page_dMaL6P",
+        "featured_page_gxkwKL",
+        "featured_page_nJHcxJ"
+      ],
+      "name": "Collabs",
+      "settings": {
+        "title": "THE SIGNATURE SERIES",
+        "heading_size": "h1",
+        "buttonText": "",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
+        "borders": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -293,12 +340,12 @@
   },
   "order": [
     "image_banner_Da4aa4",
-    "rich_text_DFj7aT",
-    "rich_text_7Wy4ax",
-    "featured_product_qPytgn",
+    "image_banner_UQ8kri",
     "multicolumn_hG4cif",
-    "featured_collection_PYd6gN",
-    "multicolumn_pi76Kq",
+    "featured_product_qPytgn",
+    "featured_collection_anmzN6",
+    "image_with_text_HRQPDE",
+    "collection_list_cGiwqQ",
     "main"
   ]
 }

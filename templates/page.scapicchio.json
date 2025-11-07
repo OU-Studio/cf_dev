@@ -14,16 +14,15 @@
       "blocks": {
         "text_LcGFCJ": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Alessandro",
+            "text": "Accademia",
             "text_style": "body"
           }
         },
         "heading_rLaPUQ": {
           "type": "heading",
           "settings": {
-            "heading": "Nubula",
+            "heading": "Scapicchio",
             "heading_size": "h1"
           }
         },
@@ -42,7 +41,7 @@
       ],
       "name": "Banner",
       "settings": {
-        "image": "shopify://shop_images/Nebula_Collab_product_pic_2000x1500px.jpg",
+        "image": "shopify://shop_images/Scapicchio_Collab_product_pic_2000x1500px.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -79,8 +78,8 @@
       ],
       "name": "Intro",
       "settings": {
-        "image": "shopify://shop_images/Nebula_Portrait_square.jpg",
-        "image_2": "shopify://shop_images/Nebula_collaboration_2000x1000px_backgrounds5.jpg",
+        "image": "shopify://shop_images/Scapicchio_Portrait_square.jpg",
+        "image_2": "shopify://shop_images/Scapicchio_collaboration_2000x1000px_backgrounds8.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",

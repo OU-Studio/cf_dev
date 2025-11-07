@@ -98,6 +98,41 @@
     }
   };
 
+  document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.shuffle');
+  if (!btn) return;
+
+  const container = btn.parentElement.querySelector('.custom-image-links');
+  if (!container) return;
+
+  const items = Array.from(container.children);
+  const original = [...items];
+  let shuffled = [];
+
+  // Derangement shuffle (no element stays in same position)
+  do {
+    shuffled = [...original];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+  } while (shuffled.some((item, i) => item === original[i]));
+
+  // Re-append in new order
+  shuffled.forEach(item => container.appendChild(item));
+
+  // Smooth scroll to #cardTop after short delay
+  const target = document.querySelector('#cardTop');
+  if (target) {
+    setTimeout(() => {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 150); // small delay to allow DOM update
+  }
+});
+
+
+
+
   // ---------- Notes sliders ----------
   const initNotesSliders = () => {
     const $labels = $('.inline-richtext');

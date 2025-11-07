@@ -23,7 +23,7 @@
         "heading_rLaPUQ": {
           "type": "heading",
           "settings": {
-            "heading": "Nubula",
+            "heading": "Booze & Baccy",
             "heading_size": "h1"
           }
         },
@@ -42,7 +42,7 @@
       ],
       "name": "Banner",
       "settings": {
-        "image": "shopify://shop_images/Nebula_Collab_product_pic_2000x1500px.jpg",
+        "image": "shopify://shop_images/Booze_and_Baccy_Collab_product_pic_2000x1500px.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
@@ -79,8 +79,8 @@
       ],
       "name": "Intro",
       "settings": {
-        "image": "shopify://shop_images/Nebula_Portrait_square.jpg",
-        "image_2": "shopify://shop_images/Nebula_collaboration_2000x1000px_backgrounds5.jpg",
+        "image": "shopify://shop_images/Booze_and_Baccy_Portrait_square.jpg",
+        "image_2": "shopify://shop_images/booze_and_baccy_collaboration_2000x1000px_backgrounds3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",
