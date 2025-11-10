@@ -41,7 +41,7 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "custom_id": "default-id",
+        "custom_id": "terms",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
