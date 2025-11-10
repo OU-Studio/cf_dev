@@ -4300,7 +4300,8 @@ slider-component.page-width {
 [data-template="blog.captains-journal"] .sigelm {
   display: none !important;
 }
-[data-template="blog.captains-journal"] .banner:after, [data-template="blog.captains-journal"] .banner__media:after {
+[data-template="blog.captains-journal"] .banner:after,
+[data-template="blog.captains-journal"] .banner__media:after {
   display: none !important;
 }
 [data-template="blog.captains-journal"] .shopify-section-group-header-group {
@@ -5586,10 +5587,11 @@ body .bgelms {
   --cf-ink: #f2ead6;
   --cf-ink-muted: #c7bead;
   --cf-border: #2a2a2a;
-  --cf-accent: #d1b06b; /* brass */
+  --cf-accent: #d1b06b;
+  /* brass */
   --cf-danger: #a53e3a;
   --cf-radius: 16px;
-  --cf-shadow: 0 30px 80px rgba(0,0,0,.6);
+  --cf-shadow: 0 30px 80px rgba(0, 0, 0, .6);
 }
 
 /* -- Drawer shell + transitions -- */
@@ -5629,7 +5631,8 @@ cart-drawer.active #CartDrawer-Overlay {
   transform: translateX(100%);
   transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.28s;
   border-left: 1px solid var(--black);
-  visibility: visible; /* ensure panel is visible when animated in */
+  visibility: visible;
+  /* ensure panel is visible when animated in */
 }
 
 /* Slide in when open */
@@ -5718,7 +5721,8 @@ cart-drawer.drawer {
   margin: 0px !important;
 }
 
-#CartDrawer-ColumnQuantity, #CartDrawer-ColumnProductImage {
+#CartDrawer-ColumnQuantity,
+#CartDrawer-ColumnProductImage {
   display: none !important;
 }
 
@@ -5749,7 +5753,8 @@ cart-drawer.drawer {
   gap: 0px 1rem !important;
 }
 
-.cart-drawer .cart-item__error, .cart-item__details > * + * {
+.cart-drawer .cart-item__error,
+.cart-item__details > * + * {
   margin: 0px !important;
 }
 
@@ -5777,7 +5782,9 @@ cart-drawer.drawer {
   text-decoration: underline;
 }
 
-.product-option, .cart-item__final-price, .cart-item__old-price {
+.product-option,
+.cart-item__final-price,
+.cart-item__old-price {
   color: var(--black);
 }
 
@@ -5864,10 +5871,12 @@ cart-drawer.drawer {
 
 /* Only interactive when actually open */
 cart-drawer.drawer {
-  position: fixed; /* already true, but explicit */
+  position: fixed;
+  /* already true, but explicit */
   inset: 0;
   z-index: 9999;
-  pointer-events: none; /* 👈 prevent blocking the page when closed */
+  pointer-events: none;
+  /* 👈 prevent blocking the page when closed */
 }
 
 /* Enable interactions only when open */
@@ -6011,7 +6020,8 @@ cart-drawer .cart-remove-button {
 cart-drawer .product-option {
   color: var(--red);
 }
-cart-drawer .drawer__heading, cart-drawer .totals__total {
+cart-drawer .drawer__heading,
+cart-drawer .totals__total {
   font-style: normal !important;
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
@@ -6092,7 +6102,8 @@ cart-drawer .drawer__footer {
   top: 40vw !important;
   height: 100vh !important;
 }
-[data-template="page.contact"] main .ten p, [data-template="page.contact"] main .postal p {
+[data-template="page.contact"] main .ten p,
+[data-template="page.contact"] main .postal p {
   display: block;
   max-width: 400px;
   margin: auto;
@@ -6100,14 +6111,16 @@ cart-drawer .drawer__footer {
   color: var(--black) !important;
   margin-bottom: 20px;
 }
-[data-template="page.contact"] main .ten h2, [data-template="page.contact"] main .postal h2 {
+[data-template="page.contact"] main .ten h2,
+[data-template="page.contact"] main .postal h2 {
   text-align: center;
   padding-top: 20px !important;
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
   border: none;
 }
-[data-template="page.contact"] main .ten h2:after, [data-template="page.contact"] main .postal h2:after {
+[data-template="page.contact"] main .ten h2:after,
+[data-template="page.contact"] main .postal h2:after {
   display: none;
 }
 [data-template="page.contact"] main .ten.columns {
@@ -6122,7 +6135,8 @@ cart-drawer .drawer__footer {
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
 }
-[data-template="page.contact"] main .ten.columns #contact_form, [data-template="page.contact"] main .ten.columns #wholesale-form {
+[data-template="page.contact"] main .ten.columns #contact_form,
+[data-template="page.contact"] main .ten.columns #wholesale-form {
   justify-content: center !important;
   padding-bottom: 600px;
   align-items: center;
@@ -6165,7 +6179,9 @@ cart-drawer .drawer__footer {
 [data-template="page.contact"] main .ten.columns form .selectreplace .arr {
   margin-top: -6px !important;
 }
-[data-template="page.contact"] main .ten.columns form input, [data-template="page.contact"] main .ten.columns form textarea, [data-template="page.contact"] main .ten.columns form select {
+[data-template="page.contact"] main .ten.columns form input,
+[data-template="page.contact"] main .ten.columns form textarea,
+[data-template="page.contact"] main .ten.columns form select {
   width: 300px !important;
   border: solid 1px var(--black) !important;
   border-radius: 0px !important;
@@ -6179,7 +6195,9 @@ cart-drawer .drawer__footer {
 [data-template="page.contact"] main .ten.columns form input::-moz-placeholder, [data-template="page.contact"] main .ten.columns form textarea::-moz-placeholder, [data-template="page.contact"] main .ten.columns form select::-moz-placeholder {
   font-style: initial !important;
 }
-[data-template="page.contact"] main .ten.columns form input::placeholder, [data-template="page.contact"] main .ten.columns form textarea::placeholder, [data-template="page.contact"] main .ten.columns form select::placeholder {
+[data-template="page.contact"] main .ten.columns form input::placeholder,
+[data-template="page.contact"] main .ten.columns form textarea::placeholder,
+[data-template="page.contact"] main .ten.columns form select::placeholder {
   font-style: initial !important;
 }
 [data-template="page.contact"] main .ten.columns form textarea {
@@ -6329,7 +6347,8 @@ cart-drawer .drawer__footer {
   top: 40vw !important;
   height: 40vh !important;
 }
-[data-template="page.contact-wholesale"] main .ten p, [data-template="page.contact-wholesale"] main .postal p {
+[data-template="page.contact-wholesale"] main .ten p,
+[data-template="page.contact-wholesale"] main .postal p {
   display: block;
   max-width: 400px;
   margin: auto;
@@ -6337,14 +6356,16 @@ cart-drawer .drawer__footer {
   color: var(--black) !important;
   margin-bottom: 20px;
 }
-[data-template="page.contact-wholesale"] main .ten h2, [data-template="page.contact-wholesale"] main .postal h2 {
+[data-template="page.contact-wholesale"] main .ten h2,
+[data-template="page.contact-wholesale"] main .postal h2 {
   text-align: center;
   padding-top: 20px !important;
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
   border: none;
 }
-[data-template="page.contact-wholesale"] main .ten h2:after, [data-template="page.contact-wholesale"] main .postal h2:after {
+[data-template="page.contact-wholesale"] main .ten h2:after,
+[data-template="page.contact-wholesale"] main .postal h2:after {
   display: none;
 }
 [data-template="page.contact-wholesale"] main .ten.columns {
@@ -6359,7 +6380,8 @@ cart-drawer .drawer__footer {
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
 }
-[data-template="page.contact-wholesale"] main .ten.columns #contact_form, [data-template="page.contact-wholesale"] main .ten.columns #wholesale-form {
+[data-template="page.contact-wholesale"] main .ten.columns #contact_form,
+[data-template="page.contact-wholesale"] main .ten.columns #wholesale-form {
   justify-content: center !important;
   padding-bottom: 700px;
   align-items: center;
@@ -6402,7 +6424,9 @@ cart-drawer .drawer__footer {
 [data-template="page.contact-wholesale"] main .ten.columns form .selectreplace .arr {
   margin-top: -6px !important;
 }
-[data-template="page.contact-wholesale"] main .ten.columns form input, [data-template="page.contact-wholesale"] main .ten.columns form textarea, [data-template="page.contact-wholesale"] main .ten.columns form select {
+[data-template="page.contact-wholesale"] main .ten.columns form input,
+[data-template="page.contact-wholesale"] main .ten.columns form textarea,
+[data-template="page.contact-wholesale"] main .ten.columns form select {
   width: 300px !important;
   border: solid 1px var(--black) !important;
   border-radius: 0px !important;
@@ -6416,7 +6440,9 @@ cart-drawer .drawer__footer {
 [data-template="page.contact-wholesale"] main .ten.columns form input::-moz-placeholder, [data-template="page.contact-wholesale"] main .ten.columns form textarea::-moz-placeholder, [data-template="page.contact-wholesale"] main .ten.columns form select::-moz-placeholder {
   font-style: initial !important;
 }
-[data-template="page.contact-wholesale"] main .ten.columns form input::placeholder, [data-template="page.contact-wholesale"] main .ten.columns form textarea::placeholder, [data-template="page.contact-wholesale"] main .ten.columns form select::placeholder {
+[data-template="page.contact-wholesale"] main .ten.columns form input::placeholder,
+[data-template="page.contact-wholesale"] main .ten.columns form textarea::placeholder,
+[data-template="page.contact-wholesale"] main .ten.columns form select::placeholder {
   font-style: initial !important;
 }
 [data-template="page.contact-wholesale"] main .ten.columns form textarea {
@@ -6565,7 +6591,8 @@ cart-drawer .drawer__footer {
   top: 40vw !important;
   height: 100vh !important;
 }
-[data-template="page.stockists"] main .ten p, [data-template="page.stockists"] main .postal p {
+[data-template="page.stockists"] main .ten p,
+[data-template="page.stockists"] main .postal p {
   display: block;
   max-width: 400px;
   margin: auto;
@@ -6573,14 +6600,16 @@ cart-drawer .drawer__footer {
   color: var(--black) !important;
   margin-bottom: 20px;
 }
-[data-template="page.stockists"] main .ten h2, [data-template="page.stockists"] main .postal h2 {
+[data-template="page.stockists"] main .ten h2,
+[data-template="page.stockists"] main .postal h2 {
   text-align: center;
   padding-top: 20px !important;
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
   border: none;
 }
-[data-template="page.stockists"] main .ten h2:after, [data-template="page.stockists"] main .postal h2:after {
+[data-template="page.stockists"] main .ten h2:after,
+[data-template="page.stockists"] main .postal h2:after {
   display: none;
 }
 [data-template="page.stockists"] main .ten.columns {
@@ -6638,7 +6667,9 @@ cart-drawer .drawer__footer {
 [data-template="page.stockists"] main .ten.columns form .selectreplace .arr {
   margin-top: -6px !important;
 }
-[data-template="page.stockists"] main .ten.columns form input, [data-template="page.stockists"] main .ten.columns form textarea, [data-template="page.stockists"] main .ten.columns form select {
+[data-template="page.stockists"] main .ten.columns form input,
+[data-template="page.stockists"] main .ten.columns form textarea,
+[data-template="page.stockists"] main .ten.columns form select {
   width: 300px !important;
   border: solid 1px var(--black) !important;
   border-radius: 0px !important;
@@ -6652,7 +6683,9 @@ cart-drawer .drawer__footer {
 [data-template="page.stockists"] main .ten.columns form input::-moz-placeholder, [data-template="page.stockists"] main .ten.columns form textarea::-moz-placeholder, [data-template="page.stockists"] main .ten.columns form select::-moz-placeholder {
   font-style: initial !important;
 }
-[data-template="page.stockists"] main .ten.columns form input::placeholder, [data-template="page.stockists"] main .ten.columns form textarea::placeholder, [data-template="page.stockists"] main .ten.columns form select::placeholder {
+[data-template="page.stockists"] main .ten.columns form input::placeholder,
+[data-template="page.stockists"] main .ten.columns form textarea::placeholder,
+[data-template="page.stockists"] main .ten.columns form select::placeholder {
   font-style: initial !important;
 }
 [data-template="page.stockists"] main .ten.columns form textarea {
@@ -7095,7 +7128,8 @@ cart-items {
   padding: 10px !important;
 }
 
-cart-items .totals__total, cart-items .title--primary {
+cart-items .totals__total,
+cart-items .title--primary {
   margin: 20px 10px !important;
 }
 
@@ -7117,7 +7151,12 @@ cart-items .totals__total, cart-items .title--primary {
 [data-url="/pages/museum"] main .custom-image-links a {
   display: none;
 }
-[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(1), [data-url="/pages/museum"] main .custom-image-links a:nth-of-type(2), [data-url="/pages/museum"] main .custom-image-links a:nth-of-type(3), [data-url="/pages/museum"] main .custom-image-links a:nth-of-type(4), [data-url="/pages/museum"] main .custom-image-links a:nth-of-type(5), [data-url="/pages/museum"] main .custom-image-links a:nth-of-type(6) {
+[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(1),
+[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(2),
+[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(3),
+[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(4),
+[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(5),
+[data-url="/pages/museum"] main .custom-image-links a:nth-of-type(6) {
   display: block !important;
 }
 
@@ -7136,7 +7175,8 @@ cart-items .totals__total, cart-items .title--primary {
 
 .flying-plane {
   position: fixed;
-  width: 24px; /* scale as you like */
+  width: 24px;
+  /* scale as you like */
   height: 24px;
   z-index: 9999;
   pointer-events: none;
@@ -7223,4 +7263,38 @@ cart-items .totals__total, cart-items .title--primary {
   text-align: center;
   font-variant: all-small-caps !important;
   font-style: normal !important;
+}
+
+[data-template="article.captains-journal"] #MainContent {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  align-items: flex-start;
+  overflow: visible !important;
+}
+[data-template="article.captains-journal"] #MainContent section:first-of-type {
+  width: 25%;
+  position: sticky;
+  margin: 0px !important;
+  top: 0px;
+}
+[data-template="article.captains-journal"] #MainContent section:first-of-type .image-with-text__grid {
+  flex-direction: column;
+}
+[data-template="article.captains-journal"] #MainContent section:first-of-type .image-with-text__grid > * {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+[data-template="article.captains-journal"] #MainContent section:first-of-type .image-with-text__grid .image-with-text__media-item img {
+  aspect-ratio: 1/1 !important;
+}
+[data-template="article.captains-journal"] #MainContent section:last-of-type {
+  width: 75%;
+  margin-top: 10px !important;
+}
+[data-template="article.captains-journal"] #MainContent section:last-of-type header {
+  display: none !important;
+}
+[data-template="article.captains-journal"] #MainContent section:last-of-type .article-template__content > :first-child {
+  margin-top: 0px !important;
 }
