@@ -82,11 +82,23 @@
             "heading_size": "h2",
             "alignment": "center"
           }
+        },
+        "button_8cA664": {
+          "type": "button",
+          "settings": {
+            "button_label": "READ THE FULL STORY",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "text_XmxdJn",
-        "heading_NkyXYB"
+        "heading_NkyXYB",
+        "button_8cA664"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -175,7 +187,7 @@
           "type": "featured_page",
           "settings": {
             "page": "expedition-reserve",
-            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg",
+            "collection_image": "shopify://shop_images/Expedition_Reserve_688x1004px2.jpg",
             "collection_image_2": "shopify://shop_images/Expedition_Reserve_Product_688x1004px.jpg"
           }
         },
@@ -241,7 +253,7 @@
       "type": "featured-product",
       "name": "Featured product",
       "settings": {
-        "title": "OFFER OF THE WEEK",
+        "title": "NEW RELEASE",
         "product": "bianco-classico-moustache-wax",
         "show_breadcrumbs": false,
         "color_scheme": "",
@@ -340,12 +352,21 @@
             "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
             "name": "J.C LONDON"
           }
+        },
+        "slide_TXqP6L": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_1_08fb0bb8-04d0-4f58-80e2-c2e53fe11ab9.png",
+            "quote": "“What an amazing product this is, it’s so amazing words cant describe it...”",
+            "name": "J.C LONDON"
+          }
         }
       },
       "block_order": [
         "slide_N9MmrB",
         "slide_kRzVfm",
-        "slide_6XAhtq"
+        "slide_6XAhtq",
+        "slide_TXqP6L"
       ],
       "settings": {
         "color_scheme": "scheme-2"

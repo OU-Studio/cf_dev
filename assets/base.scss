@@ -339,17 +339,6 @@ a:-webkit-any-link {
     cursor: pointer;
     letter-spacing: 0.05em !important;
     ;
-
-    &:after {
-      content: "";
-      width: 14px;
-      height: 14px;
-      display: block;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/filterIcon.png?v=1743354360);
-    }
   }
 
   .priceFilter {
@@ -2270,12 +2259,12 @@ blockquote {
 
 .slick-next {
   right: 20px !important;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing.png?v=1742680749) !important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/rightHand.png?v=1762803226) !important;
 }
 
 .slick-prev {
   left: 20px !important;
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Finger_Pointing2.png?v=1742680749) !important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/leftHand.png?v=1762803226) !important;
 }
 
 .slick-slider {
@@ -2351,7 +2340,7 @@ blockquote {
   }
 
   .slide img {
-    max-width: 240px !important;
+    max-width: 150px !important;
   }
 
   .slide {
@@ -4910,9 +4899,16 @@ slider-component.page-width {
       list-style: none;
       margin: 0;
       padding: 0;
+      width: 100%;
 
       li {
         list-style: none;
+        > div{
+          width: 100%;
+        > div{
+          width: 100%;
+        }
+        }
       }
 
       li:first-of-type {
@@ -4923,6 +4919,24 @@ slider-component.page-width {
       li:last-of-type {
         grid-column: 2;
         grid-row: span 2;
+        .rte{
+        }
+        .rte p:not(:last-of-type){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &:after{
+            content: '';
+            display: block;
+            width: 100px;
+            height: 10px;
+            background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Border_Flourish.png?v=1762799029);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 5px auto
+          }
+        }
       }
 
       .multicolumn-card__image-wrapper {
@@ -6311,7 +6325,7 @@ product-recommendations {
     }
 
     [data-menu="Expedition Reserve"] {
-      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Expedition_Reserve_688x1004px_7e917d3b-acb8-40be-b4aa-f5a46156c037.jpg?v=1760689510);
+      background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Expedition_Reserve_688x1004px2.jpg?v=1762802803);
     }
 
     [data-menu="Scapicchio"] {
@@ -7253,18 +7267,18 @@ cart-drawer {
 
   .bgelm.compass {
     display: block !important;
-    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/compass_1.png?v=1762802693) !important;
     width: 50vw !important;
-    left: 74vw !important;
-    top: 15vw !important;
+    left: 80vw !important;
+    top: 5vw !important;
   }
 
   .bgelm.octopus {
     display: block !important;
-    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Stockist-globe.png?v=1761582642) !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/compass_1.png?v=1762802693) !important;
     width: 50vw !important;
-    left: -25vw !important;
-    top: 40vw !important;
+    left: -35vw !important;
+    top: 30vw !important;
     height: 100vh !important;
   }
 
@@ -8413,12 +8427,40 @@ cart-items .title--primary {
   justify-content: center;
   cursor: pointer;
 
-  img {
-    width: 140px;
-  }
+ width: 150px;
+ height: 180px;
+ position: relative;
 
   margin-bottom: 40px;
   margin-top: 40px;
+
+  .shuff{
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0s ease;
+    &.active{
+      opacity: 1 !important;
+    }
+  }
+  .shuff:nth-of-type(1){
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_1.png?v=1762803697)
+  }
+  .shuff:nth-of-type(2){
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_2.png?v=1762803697)
+  }
+  .shuff:nth-of-type(3){
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_3.png?v=1762803697)
+  }
+  .shuff:nth-of-type(4){
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_4.png?v=1762803697)
+  }
+  .shuff:nth-of-type(5){
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_5.png?v=1762803697)
+  }
 }
 
 [data-url="/pages/museum"] {
@@ -8585,5 +8627,166 @@ section:last-of-type{
   .article-template__content > :first-child{
     margin-top: 0px !important;
   }
+}
+}
+  .addedbutton{
+    display: none !important;
+  }
+
+body.added .product-form__submit{
+  span{
+    display: none !important;
+  }
+  .addedbutton{
+    display: block !important; 
+  }
+}
+
+#MainContent .reviewImageOne{
+  padding-top: 25% !important;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+}
+
+#MainContent .reviewImageTwo{
+  padding-top: 25% !important;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+}
+
+[data-slide="1"]{
+  .reviewImageOne{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_EDP_award.jpg?v=1741782081);
+  }
+  .reviewImageTwo{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/CF_Pomade_Putty-2839.jpg?v=1741782295);
+  }
+}
+
+[data-slide="2"]{
+  .reviewImageOne{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/CF_Pomade_Putty-2839.jpg?v=1741782295);
+  }
+  .reviewImageTwo{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_EDP_award.jpg?v=1741782081);
+  }
+}
+
+[data-slide="3"]{
+  .reviewImageOne{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_EDP_award.jpg?v=1741782081);
+  }
+  .reviewImageTwo{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/CF_Pomade_Putty-2839.jpg?v=1741782295);
+  }
+}
+
+[data-slide="4"]{
+  .reviewImageOne{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/CF_Pomade_Putty-2839.jpg?v=1741782295);
+  }
+  .reviewImageTwo{
+    background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_EDP_award.jpg?v=1741782081);
+  }
+}
+
+.card .card__content{
+  .button.standard{
+      display: flex;
+      width: 100%;
+      max-width: 120px;
+      padding: 10px 20px !important;
+      position: relative !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: none !important;
+      border-radius: 8px !important;
+      background-color: var(--red) !important;
+      appearance: none;
+      text-decoration: none !important;
+      margin-top: 10px !important;
+
+      span {
+        line-height: 1em !important;
+        font-size: 18px !important;
+        color: var(--cream) !important;
+        letter-spacing: 0.025em !important;
+        position: relative !important;
+        top: initial !important;
+        left: initial !important;
+        transform: none !important;
+        color: var(--white) !important;
+      }
+  }
+}
+
+.is-hidden { display: none !important; }
+
+
+.multicolumn slider-component{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.multicolumn slider-component > .button{
+      display: flex;
+      width: 100%;
+      max-width: 120px;
+      padding: 10px 20px !important;
+      position: relative !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border: none !important;
+      border-radius: 8px !important;
+      background-color: var(--red) !important;
+      appearance: none;
+      text-decoration: none !important;
+      margin-top: 20px !important;
+
+      span {
+        line-height: 1em !important;
+        font-size: 18px !important;
+        color: var(--cream) !important;
+        letter-spacing: 0.025em !important;
+        position: relative !important;
+        top: initial !important;
+        left: initial !important;
+        transform: none !important;
+        color: var(--white) !important;
+      }
+}
+
+.main-blog{
+display: flex;
+flex-direction: column;
+align-items: center;
+> .button{
+  margin-top: 40px !important;
+}
+}
+
+[data-template="404"]{
+  #MainContent{
+    .media:before{
+      padding-bottom: 91.3541666667% !important
+    }
+  }
+}
+
+.centerme{
+display: flex;
+flex-direction: column;
+align-items: center;
+> *{
+  width: 100% !important;
+}
+.shuffle{
+  max-width: 180px;
+  margin: 40px auto 40px auto
 }
 }

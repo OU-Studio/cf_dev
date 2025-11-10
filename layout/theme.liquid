@@ -180,33 +180,57 @@
       });
   };
 
+  // Helper: wires events so the slider's PARENT gets data-slide / data-total
+function wireParentData($els, parentSelector) {
+  $els.on('init reInit afterChange', function (event, slick, currentSlide) {
+    const index = (typeof currentSlide === 'number') ? currentSlide : (slick?.currentSlide ?? 0);
+    const total = slick?.slideCount ?? $(this).children().length;
+    const $parent = parentSelector
+      ? $(this).closest(parentSelector)
+      : $(this).parent(); // default: immediate parent
+
+    $parent.attr({
+      'data-slide': index + 1,   // 1-based for humans
+      'data-total': total
+    });
+  });
+}
+
+
   // ---------- Slideshows ----------
   const initSlideshows = () => {
     if (!hasSlick) return;
 
-    // Non full-bleed
-    initSlickOnce($('.section:not(.full-bleed) .slideshow-container'), {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      swipeToSlide: true,
-      infinite: true,
-      arrows: true,
-      ...slickDots
-    });
+  const $nonFB   = $('.section:not(.full-bleed) .slideshow-container');
+  const $fullBleed = $('.full-bleed .slideshow-container');
 
-    // Full-bleed (autoplay, no arrows)
-    initSlickOnce($('.full-bleed .slideshow-container'), {
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      centerMode: true,
-      swipeToSlide: true,
-      infinite: true,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      ...slickDots
-    });
+  // Bind BEFORE init so we catch the 'init' event
+  wireParentData($nonFB);      // parent will be the immediate parent of .slideshow-container
+  wireParentData($fullBleed);  // same here; pass a selector if you want a specific ancestor
+
+  // Non full-bleed
+  initSlickOnce($nonFB, {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    swipeToSlide: true,
+    infinite: true,
+    arrows: true,
+    ...slickDots
+  });
+
+  // Full-bleed (autoplay, no arrows)
+  initSlickOnce($fullBleed, {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    swipeToSlide: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    ...slickDots
+  });
   };
 
   // ---------- Product media + buy block ----------
@@ -245,6 +269,156 @@
     initSlideshows();
     initProductMedia();
   });
+
+  // --- Config ---
+const ADDED_LABEL = 'ADDED!';
+const REVERT_LABEL = 'ADD TO CART';
+const ASSERT_MS = 600;   // keep re-applying for 0.6s to survive re-renders
+const REVERT_MS = 2000;  // time to show ADDED! before reverting
+
+// Prefer a stable card/section ancestor so if the button swaps, we can find the new one.
+function findCard(el) {
+  return el.closest('[data-product-id], .product-card, .card--product, .grid-product, .product-item, .product, .card');
+}
+
+// Current live button inside a card (handles PDP + quick add buttons)
+function findLiveButton(card) {
+  if (!card) return null;
+  return (
+    card.querySelector('.product-form__submit') ||
+    card.querySelector('.quick-add__submit') ||
+    card.querySelector('button[name="add"]') ||
+    card.querySelector('button[type="submit"]')
+  );
+}
+
+// Best-effort to find the visible label span/element inside the button
+function findButtonLabelEl(btn) {
+  if (!btn) return null;
+  return (
+    btn.querySelector('[data-add-to-cart-text]') ||
+    btn.querySelector('.button__text') ||
+    btn.querySelector('.text') ||
+    btn.querySelector('span:not(.loading-overlay__spinner)') ||
+    btn // fallback: set on the button
+  );
+}
+
+// Re-apply label repeatedly until deadline to beat DOM swaps
+function assertLabel(card, label, durationMs) {
+  const deadline = performance.now() + durationMs;
+
+  const tick = () => {
+    const btn = findLiveButton(card);
+    const target = findButtonLabelEl(btn);
+    if (target) target.textContent = label;
+    if (performance.now() < deadline) requestAnimationFrame(tick);
+  };
+  tick();
+}
+
+// Flash "ADDED!" then revert
+function flashAddedForCard(card) {
+  // Show ADDED! (survive swaps for ASSERT_MS)
+  assertLabel(card, ADDED_LABEL, ASSERT_MS);
+
+  // Then revert after REVERT_MS (also survive short swaps)
+  setTimeout(() => {
+    assertLabel(card, REVERT_LABEL, Math.min(ASSERT_MS, 300));
+  }, REVERT_MS);
+}
+
+// Delegated click handler for both PDP + grid cards
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.product-form__submit, .quick-add__submit, button[name="add"]');
+  if (!btn) return;
+
+  const card = findCard(btn) || document;
+  // Slight delay so we run after the theme toggles loading / swaps nodes
+  setTimeout(() => flashAddedForCard(card), 250);
+});
+
+(function () {
+  function initBlogLoadMore(scope) {
+    const container = (scope || document).querySelector('.main-blog');
+    if (!container) return;
+
+    const list = container.querySelector('.blog-articles');
+    const btn  = container.querySelector('#blog-load-more');
+    if (!list || !btn) return;
+
+    const BATCH = parseInt(btn.dataset.batch || '4', 10);
+    let nextURL = btn.dataset.nextUrl || '';
+    let queue = [];          // holds article elements waiting to be appended
+    let fetching = false;
+
+    // Append up to N articles from queue
+    function appendBatch(n) {
+      const frag = document.createDocumentFragment();
+      for (let i = 0; i < n && queue.length; i++) {
+        frag.appendChild(queue.shift());
+      }
+      if (frag.childNodes.length) list.appendChild(frag);
+    }
+
+    // Parse the next page HTML and extract articles + new nextURL
+    function extractFromHTML(html) {
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+      const nextBtn = doc.querySelector('#blog-load-more');
+      nextURL = nextBtn ? (nextBtn.getAttribute('data-next-url') || '') : '';
+      const nodes = Array.from(doc.querySelectorAll('.blog-articles .blog-articles__article'));
+      return nodes;
+    }
+
+    async function ensureQueueHasAtLeast(n) {
+      if (queue.length >= n || !nextURL || fetching) return;
+      fetching = true;
+      try {
+        const res = await fetch(nextURL, { credentials: 'same-origin' });
+        if (!res.ok) throw new Error('Fetch failed: ' + res.status);
+        const html = await res.text();
+        const newArticles = extractFromHTML(html);
+        queue = queue.concat(newArticles);
+      } catch (e) {
+        console.warn('Blog load-more fetch error:', e);
+      } finally {
+        fetching = false;
+      }
+    }
+
+    async function onClick() {
+      // If not enough in queue, fetch next page first
+      if (queue.length < BATCH && nextURL) {
+        await ensureQueueHasAtLeast(BATCH);
+      }
+      // Append up to BATCH articles
+      appendBatch(BATCH);
+
+      // If nothing left to fetch and queue empty, hide button
+      if (!nextURL && queue.length === 0) {
+        btn.style.display = 'none';
+      }
+    }
+
+    btn.addEventListener('click', onClick, { passive: true });
+  }
+
+  // Init on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => initBlogLoadMore());
+  } else {
+    initBlogLoadMore();
+  }
+
+  // Re-init inside Shopify theme editor
+  document.addEventListener('shopify:section:load', (e) => {
+    initBlogLoadMore(e.target);
+  });
+})();
+
+
+
+
 
 })(jQuery, window, document);
 
@@ -567,6 +741,50 @@
       ${r.author ? `<p class="ou-review__meta"><span itemprop="author">${escapeHTML(r.author)}</span></p>` : ''}
     </article>
   `).join('');
+})();
+
+(() => {
+  const INTERVAL_MS = 300;
+
+  document.querySelectorAll('.shuffle').forEach(initShuffle);
+
+  function initShuffle(container) {
+    // Ensure there's an active item; default to first child
+    if (!container.querySelector('.active') && container.firstElementChild) {
+      container.firstElementChild.classList.add('active');
+    }
+
+    // Store the timer id on the element so multiple shuffles can coexist
+    container._shuffleTimer = null;
+
+    container.addEventListener('mouseenter', () => start(container));
+    container.addEventListener('mouseleave', () => stop(container));
+  }
+
+  function start(container) {
+    if (container._shuffleTimer) return; // already running
+
+    // Advance immediately on hover-in, then start interval
+    step(container);
+    container._shuffleTimer = setInterval(() => step(container), INTERVAL_MS);
+  }
+
+  function stop(container) {
+    if (!container._shuffleTimer) return;
+    clearInterval(container._shuffleTimer);
+    container._shuffleTimer = null; // keep current active, just pause
+  }
+
+  function step(container) {
+    const items = Array.from(container.children);
+    if (!items.length) return;
+
+    let idx = items.findIndex(el => el.classList.contains('active'));
+    if (idx < 0) idx = 0; // fallback
+
+    items[idx].classList.remove('active');
+    items[(idx + 1) % items.length].classList.add('active');
+  }
 })();
 </script>
 

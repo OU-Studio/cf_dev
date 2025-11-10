@@ -16,7 +16,7 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
+{%- paginate blog.articles by 8 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {{ blog.title | escape }}
@@ -45,8 +45,15 @@
     </div>
 
     {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
+  <div
+    id="blog-load-more"
+    class="button norwesterLarge"
+    data-next-url="{{ paginate.next.url | default: '' }}"
+    data-batch="4"
+  >
+    <span>LOAD MORE</span>
+  </div>
+{%- endif -%}
   </div>
 {%- endpaginate -%}
 
