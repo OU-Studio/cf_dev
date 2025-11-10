@@ -7219,3 +7219,8 @@ cart-items .totals__total, cart-items .title--primary {
 #terms {
   margin-top: 40px !important;
 }
+#terms h2 {
+  text-align: center;
+  font-variant: all-small-caps !important;
+  font-style: normal !important;
+}
