@@ -7225,6 +7225,10 @@ cart-items .title--primary {
   display: block !important;
 }
 
+#IGPLACEHOLDER .card__content{
+  display: none !important;
+}
+
 .variant-soldout .product-form__submit {
   pointer-events: none !important;
 }
