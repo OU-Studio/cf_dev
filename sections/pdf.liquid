@@ -1,0 +1,212 @@
+{% comment %}
+  DearFlip Flipbook Section
+  - Upload your PDF in: Shopify Admin → Content → Files → Upload
+  - Copy the file URL and paste into the "PDF URL" setting below.
+{% endcomment %}
+
+<section id="dearflip-{{ section.id }}" class="dearflip-section">
+  <div class="df-wrapper">
+    <div id="df-container-{{ section.id }}" class="df-container" aria-live="polite"></div>
+
+    {% if section.settings.pdf_url == blank %}
+      <div class="df-empty" style="padding:16px; border:1px dashed rgba(0,0,0,.15); border-radius:8px; margin-top:12px;">
+        <strong>Flipbook not configured.</strong>
+        <div>Add a PDF URL in the section settings (Admin → Content → Files → Upload).</div>
+      </div>
+    {% endif %}
+
+    <noscript>
+      <p><a href="{{ section.settings.pdf_url | escape }}">View PDF</a></p>
+    </noscript>
+  </div>
+
+  <style>
+    /* Scoped styles for this section instance */
+    #dearflip-{{ section.id }} .df-wrapper {
+      --df-height: {{ section.settings.height | default: 600 | round }}px;
+      --df-bg: {{ section.settings.bg | default: "#ffffff" }};
+      --df-toolbar: {{ section.settings.toolbar | default: "#111827" }};
+      --df-radius: {{ section.settings.corner_radius | default: 12 }}px;
+      --df-shadow: 0 10px 30px rgba(0,0,0,.15);
+    }
+    #dearflip-{{ section.id }} .df-container {
+      min-height: var(--df-height);
+      background: var(--df-bg);
+      border-radius: var(--df-radius);
+      box-shadow: var(--df-shadow);
+      overflow: hidden;
+    }
+  </style>
+
+  <script>
+    (function() {
+      const pdfUrl = {{ section.settings.pdf_url | json }};
+      const containerId = "df-container-{{ section.id }}";
+      const pageMode = {{ section.settings.page_mode | json }};           // 'single' | 'double'
+      const autoHide = {{ section.settings.autohide | default: false | json }};
+      const heightPx = {{ section.settings.height | default: 600 | round | json }};
+      const bg = {{ section.settings.bg | default: "#ffffff" | json }};
+      const toolbar = {{ section.settings.toolbar | default: "#111827" | json }};
+
+      // If no PDF configured, skip init.
+      if (!pdfUrl) return;
+
+      // ---------- safe loaders (once per page) ----------
+      window.__dfLoad = window.__dfLoad || (function() {
+        const state = { css: null, jq: null, df: null };
+
+        function loadCSS(href) {
+          if (state.css) return state.css;
+          state.css = new Promise(function(resolve, reject) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = href;
+            link.onload = resolve;
+            link.onerror = reject;
+            document.head.appendChild(link);
+          });
+          return state.css;
+        }
+
+        function loadJS(src) {
+          return new Promise(function(resolve, reject) {
+            const s = document.createElement("script");
+            s.src = src;
+            s.async = true;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.head.appendChild(s);
+          });
+        }
+
+        function ensureJQ() {
+          if (window.jQuery) return Promise.resolve();
+          if (state.jq) return state.jq;
+          state.jq = loadJS("https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js");
+          return state.jq;
+        }
+
+        function ensureDearFlip() {
+          if (window.DFLIP || window.dflip || (window.jQuery && window.jQuery.fn && window.jQuery.fn.dearflip)) {
+            return Promise.resolve();
+          }
+          if (state.df) return state.df;
+
+          // Load CSS first, then JS
+          state.df = loadCSS("https://cdn.jsdelivr.net/npm/dearflip/dist/dearflip.css")
+            .then(() => loadJS("https://cdn.jsdelivr.net/npm/dearflip/dist/dearflip.min.js"));
+          return state.df;
+        }
+
+        return { ensureJQ, ensureDearFlip, loadCSS, loadJS };
+      })();
+
+      // ---------- initialize this instance ----------
+      function initFlip() {
+        // Guard: DearFlip expects jQuery plugin
+        if (!(window.jQuery && jQuery.fn && typeof jQuery.fn.dearflip === 'function')) return;
+
+        const $ = window.jQuery;
+        const $el = $("#" + containerId);
+        // Prevent double init
+        if ($el.data("df-initialized")) return;
+        $el.data("df-initialized", true);
+
+        $el.dearflip({
+          source: pdfUrl,              // PDF hosted on Shopify Files or theme asset URL
+          height: heightPx,            // explicit height; component is responsive inside
+          backgroundColor: bg,
+          pageMode: pageMode,          // 'single' or 'double'
+          // Tweak UI chrome
+          controlsProps: {
+            autoHide: autoHide,
+            color: toolbar
+          },
+          // Optional: fine-tune cover color via callback
+          propertiesCallback: function(props) {
+            // Subtle paper-like cover
+            props.cover = props.cover || {};
+            props.cover.color = bg;
+            return props;
+          }
+        });
+      }
+
+      // Load deps then init
+      document.addEventListener("DOMContentLoaded", function() {
+        Promise.resolve()
+          .then(() => window.__dfLoad.ensureJQ())
+          .then(() => window.__dfLoad.ensureDearFlip())
+          .then(initFlip)
+          .catch(function(err){ console && console.error("DearFlip failed to load:", err); });
+      });
+    })();
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "DearFlip – PDF Flipbook",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "url",
+      "id": "pdf_url",
+      "label": "PDF URL",
+      "info": "Upload your PDF in Admin → Content → Files, then paste the URL here."
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "min": 360,
+      "max": 1200,
+      "step": 20,
+      "unit": "px",
+      "label": "Flipbook height",
+      "default": 600
+    },
+    {
+      "type": "radio",
+      "id": "page_mode",
+      "label": "Page mode",
+      "default": "double",
+      "options": [
+        { "value": "single", "label": "Single page" },
+        { "value": "double", "label": "Double page (spread)" }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "autohide",
+      "label": "Auto-hide toolbar",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Background / page color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "toolbar",
+      "label": "Toolbar color",
+      "default": "#111827"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "min": 0,
+      "max": 24,
+      "step": 1,
+      "label": "Corner radius",
+      "default": 12
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    { "name": "PDF Flipbook (DearFlip)" }
+  ]
+}
+{% endschema %}

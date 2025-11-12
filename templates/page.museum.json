@@ -231,8 +231,8 @@
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "custom_id": "default-id",
-        "image": "shopify://shop_images/7C994F3E-3624-4134-86B6-56551B533CD8.jpg",
-        "video": "shopify://files/videos/RhysWhitehouse_HairPowder_V1.mp4",
+        "image": "shopify://shop_images/SHAVING_SKUTTLE.jpg",
+        "video": "shopify://files/videos/MuseumMugs_V2_1.mp4",
         "height": "adapt",
         "desktop_image_width": "screenWidth",
         "layout": "text_first",

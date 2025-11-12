@@ -4260,6 +4260,23 @@ slider-component.page-width {
   transform: none !important;
 }
 
+:root {
+  --ou-sb-width: 14px; /* total rail width */
+  --ou-sb-padding: 6px; /* rail inset from container edge */
+  --ou-sb-track-bg: #0f172a14; /* track background */
+  --ou-sb-track-radius: 999px;
+  --ou-sb-thumb-bg: #0f172a; /* thumb colour */
+  --ou-sb-thumb-radius: 999px;
+  --ou-sb-thumb-min: 34px; /* minimum thumb size */
+  --ou-sb-icon-color: #fff;
+  --ou-sb-thumb-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+[data-template="blog.captains-journal"] {
+  /* Reserve space so content doesn't sit under our custom rail */
+  /* ====== Custom scrollbar ====== */
+  /* Hide the custom rail entirely when not needed */
+}
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(2) {
   margin: auto !important;
   margin: 0px 10px;
@@ -4406,10 +4423,18 @@ slider-component.page-width {
 }
 [data-template="blog.captains-journal"] .multirow {
   padding: 40px 20px 20px 20px !important;
+  position: relative;
+}
+[data-template="blog.captains-journal"] .multirow__inner::-webkit-scrollbar {
+  display: none;
 }
 [data-template="blog.captains-journal"] .multirow__inner {
   aspect-ratio: 16/9;
-  overflow-y: scroll;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  /* Hide native scrollbar (keeps scrolling enabled) */
+  scrollbar-width: none;
   overflow-x: hidden;
   padding-top: 0px !important;
   max-width: 1240px;
@@ -4433,6 +4458,52 @@ slider-component.page-width {
   width: 100%;
   aspect-ratio: 1/2;
   height: auto !important;
+}
+[data-template="blog.captains-journal"] .multirow__inner {
+  padding-right: calc(var(--ou-sb-width) + var(--ou-sb-padding) * 2) !important;
+}
+[data-template="blog.captains-journal"] .ou-scrollbar {
+  position: absolute;
+  top: calc(var(--ou-sb-padding) + 40px);
+  bottom: calc(var(--ou-sb-padding) + 20px);
+  right: calc(var(--ou-sb-padding) + 20px);
+  width: var(--ou-sb-width);
+  display: grid;
+  align-items: stretch;
+  pointer-events: none; /* let track/thumb opt-in clicks */
+}
+[data-template="blog.captains-journal"] .ou-scrollbar__track {
+  position: relative;
+  width: 100%;
+  border-radius: var(--ou-sb-track-radius);
+  background: var(--cream);
+  pointer-events: auto; /* clickable for page jumps */
+}
+[data-template="blog.captains-journal"] .ou-scrollbar__thumb {
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: 0; /* JS updates this */
+  height: 20px; /* JS will adjust height */
+  margin: 0;
+  display: grid;
+  place-items: center;
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  touch-action: none; /* needed for pointer events dragging */
+  color: var(--ou-sb-icon-color);
+}
+[data-template="blog.captains-journal"] .ou-scrollbar__thumb:active {
+  cursor: grabbing;
+}
+[data-template="blog.captains-journal"] .ou-scrollbar__icon {
+  width: 12px;
+  height: 12px;
+}
+[data-template="blog.captains-journal"] .ou-scrollbar.is-hidden {
+  display: none;
 }
 
 .footerTitle {
@@ -5497,6 +5568,17 @@ product-recommendations {
 }
 [data-template="page.museum"] main .shopify-section:nth-of-type(5) > div {
   padding: 0 20px;
+}
+[data-template="page.museum"] main .shopify-section:nth-of-type(5) h3:before {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0px auto 20px auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/vectorstock_60439613.png?v=1762968371);
 }
 [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__media {
   width: calc(100% - 400px) !important;
@@ -7673,4 +7755,13 @@ body.added .product-form__submit .addedbutton {
 .article-template__back a {
   text-decoration: none !important;
   display: inline-flex !important;
+}
+
+#ftheader {
+  padding-top: 40px;
+}
+#ftheader h2 {
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
 }

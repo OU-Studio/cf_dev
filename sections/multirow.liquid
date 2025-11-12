@@ -43,7 +43,7 @@
 -%}
 
 <div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }}">
-  <div class="multirow__inner page-width">
+  <div class="multirow__inner page-width" id="scrollArea">
     {%- for block in section.blocks -%}
       <div
         class="image-with-text isolate{{ borders_class }}{{ corners_class }}{{ padding_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -105,7 +105,132 @@
       </div>
     {%- endfor -%}
   </div>
+   <div class="ou-scrollbar" id="ouScrollbar" aria-hidden="true">
+    <div class="ou-scrollbar__track" id="ouTrack">
+      <div class="ou-scrollbar__thumb" id="ouThumb" draggable="false" title="Scroll">
+        <!-- Icon (SVG) -->
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 141.73 42.52">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st032 {
+        fill: #8f0000;
+      }
+    </style>
+  </defs>
+  <path id="moustache" class="st032" d="M138.41,4.06c-.43-.56-.93-1.05-1.48-1.47-1.47-1.33-3.51-2.02-5.62-1.7-2.24.33-4.06,1.72-5.05,3.58-.29.49-.52,1.01-.68,1.55-.58,2.01-.14,4.03,1.18,5.67,1.46,2.01,3.95,3.15,6.57,2.76,1.3-.19,2.46-.74,3.4-1.53-.27,2.22-1.03,4.29-2.32,6.32-4.31,5.52-9.5,8.87-15,9.7-8.64,1.29-15.98-3.71-19.42-9.25-7.42-11.94-13.07-12.29-17.79-11.68-4.79.96-8.93,3.81-11.38,7.81-2.45-4.01-6.59-6.85-11.38-7.81-4.72-.61-10.37-.26-17.79,11.68-3.44,5.54-10.78,10.54-19.42,9.25-5.5-.82-10.69-4.18-15-9.7-1.29-2.03-2.05-4.1-2.32-6.32.94.79,2.1,1.34,3.4,1.53,2.62.39,5.11-.75,6.57-2.76,1.32-1.64,1.76-3.66,1.18-5.67-.16-.54-.39-1.06-.68-1.55-.98-1.86-2.81-3.24-5.05-3.58-2.12-.32-4.15.37-5.62,1.7-.55.42-1.05.91-1.48,1.47-1.72,2.22-2.36,5.36-1.91,9.31.43,3.82,1.62,6.59,3.55,10.1,6.38,9.51,16.22,15.31,29.22,17.26h0c12.91,1.93,24.16-.78,24.27-.81,1.66-.41,9.47-3.24,12.46-8.77,2.99,5.52,10.8,8.36,12.46,8.77.11.03,11.36,2.74,24.27.81h0c13.01-1.95,22.84-7.75,29.22-17.26,1.92-3.51,3.12-6.29,3.55-10.1.45-3.96-.2-7.09-1.91-9.31Z"/>
+</svg>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+ (() => {
+  const area  = document.getElementById('scrollArea');
+  const rail  = document.getElementById('ouScrollbar');
+  const track = document.getElementById('ouTrack');
+  const thumb = document.getElementById('ouThumb');
+
+  let dragging = false;
+  let dragStartY = 0;
+  let startScrollTop = 0;
+  let activePointerId = null;
+
+  const update = () => {
+    const scrollHeight = area.scrollHeight;
+    const clientHeight = area.clientHeight;
+    const scrollTop    = area.scrollTop;
+    const trackHeight  = track.clientHeight;
+
+    if (scrollHeight <= clientHeight + 1) {
+      rail.classList.add('is-hidden');
+      return;
+    } else {
+      rail.classList.remove('is-hidden');
+    }
+
+    const css = getComputedStyle(document.documentElement);
+    const minThumb = parseFloat(css.getPropertyValue('--ou-sb-thumb-min')) || 34;
+
+    const ratio = clientHeight / scrollHeight;
+    const thumbHeight = Math.max(minThumb, Math.max(20, trackHeight * ratio));
+    thumb.style.height = `${thumbHeight}px`;
+
+    const maxThumbTop = trackHeight - thumbHeight;
+    const scrollRatio = scrollTop / (scrollHeight - clientHeight);
+    thumb.style.top = `${maxThumbTop * scrollRatio}px`;
+  };
+
+  area.addEventListener('scroll', update, { passive: true });
+
+  // Click the track to jump (ignore clicks on thumb or its children)
+  track.addEventListener('pointerdown', (e) => {
+    if (thumb.contains(e.target)) return;
+    const rect = track.getBoundingClientRect();
+    const clickY = e.clientY - rect.top;
+    const thumbH = thumb.offsetHeight;
+    const targetTop = Math.min(Math.max(clickY - thumbH / 2, 0), rect.height - thumbH);
+    const ratio = targetTop / (rect.height - thumbH);
+    area.scrollTop = ratio * (area.scrollHeight - area.clientHeight);
+  });
+
+  // Dragging
+  const onPointerMove = (e) => {
+    if (!dragging || e.pointerId !== activePointerId) return;
+    e.preventDefault(); // avoid text selection / scroll hijack
+    const rect = track.getBoundingClientRect();
+    const thumbH = thumb.offsetHeight;
+    const delta = e.clientY - dragStartY;
+
+    const maxContentScroll = area.scrollHeight - area.clientHeight;
+    const maxThumbTop = rect.height - thumbH;
+
+    const startThumbTop = (startScrollTop / maxContentScroll) * maxThumbTop;
+    let newThumbTop = Math.min(Math.max(startThumbTop + delta, 0), maxThumbTop);
+
+    const ratio = (newThumbTop / maxThumbTop) || 0;
+    area.scrollTop = ratio * maxContentScroll;
+  };
+
+  const endDrag = () => {
+    if (activePointerId !== null) {
+      try { thumb.releasePointerCapture(activePointerId); } catch {}
+    }
+    dragging = false;
+    activePointerId = null;
+    document.removeEventListener('pointermove', onPointerMove);
+    document.removeEventListener('pointerup', endDrag);
+    document.removeEventListener('pointercancel', endDrag);
+  };
+
+  thumb.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    dragging = true;
+    activePointerId = e.pointerId;
+    thumb.setPointerCapture(activePointerId); // <<< key fix
+    dragStartY = e.clientY;
+    startScrollTop = area.scrollTop;
+
+    document.addEventListener('pointermove', onPointerMove, { passive: false });
+    document.addEventListener('pointerup', endDrag);
+    document.addEventListener('pointercancel', endDrag);
+  });
+
+  const ro = new ResizeObserver(update);
+  ro.observe(area);
+  ro.observe(track);
+
+  const mo = new MutationObserver(update);
+  mo.observe(area, { childList: true, subtree: true, characterData: true });
+
+  window.addEventListener('load', update);
+  window.addEventListener('resize', update);
+  update();
+})();
+
+
+</script>
 
 {% schema %}
 {
