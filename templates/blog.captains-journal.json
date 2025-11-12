@@ -61,11 +61,452 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_Fip7jY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fHecwy": {
+          "type": "heading",
+          "settings": {
+            "heading": "THE EARLY ADVENTURES",
+            "heading_size": "h1",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fHecwy"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "custom_id": "earlyyears",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_kJMnUX": {
+      "type": "multirow",
+      "blocks": {
+        "row_anDfTx": {
+          "type": "row",
+          "name": "1",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_tahMUk": {
+          "type": "row",
+          "name": "2",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal2.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_AecT3Y": {
+          "type": "row",
+          "name": "3",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal3.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_R4LDXE": {
+          "type": "row",
+          "name": "4",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal4.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_mameK3": {
+          "type": "row",
+          "name": "5",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal5.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_VBNcke": {
+          "type": "row",
+          "name": "6",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal6.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_fTaCib": {
+          "type": "row",
+          "name": "7",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal7.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_gQpzUd": {
+          "type": "row",
+          "name": "8",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal8.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kN9kQB": {
+          "type": "row",
+          "name": "9",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal9.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_DYfG94": {
+          "type": "row",
+          "name": "10",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal10.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_4rN7aP": {
+          "type": "row",
+          "name": "11",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal11.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_4C4Lwm": {
+          "type": "row",
+          "name": "12",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal12.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_bcRaQU": {
+          "type": "row",
+          "name": "13",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal13.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_VBBJXY": {
+          "type": "row",
+          "name": "14",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal14.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_qrNjGL": {
+          "type": "row",
+          "name": "15",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal15.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_4pMW3X": {
+          "type": "row",
+          "name": "16",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal16.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_8hGLAc": {
+          "type": "row",
+          "name": "17",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal17.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_xjYmkT": {
+          "type": "row",
+          "name": "18",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal18.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Pqk7wb": {
+          "type": "row",
+          "name": "19",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal19.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_QjidtT": {
+          "type": "row",
+          "name": "20",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal20.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_xhheWj": {
+          "type": "row",
+          "name": "21",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal21.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_fNYjhw": {
+          "type": "row",
+          "name": "22",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal22.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_ndYjg6": {
+          "type": "row",
+          "name": "23",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal23.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_BQbaqM": {
+          "type": "row",
+          "name": "24",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal24.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_xHk8LM": {
+          "type": "row",
+          "name": "25",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal25.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_jVCrch": {
+          "type": "row",
+          "name": "26",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal26.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_njRtWT": {
+          "type": "row",
+          "name": "27",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal27.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Nzth4F": {
+          "type": "row",
+          "name": "28",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal28.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_8QrgMd": {
+          "type": "row",
+          "name": "29",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal29.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_XVWzr7": {
+          "type": "row",
+          "name": "30",
+          "settings": {
+            "image": "shopify://shop_images/1600x3200px_original_journal30.jpg",
+            "caption": "",
+            "heading": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_anDfTx",
+        "row_tahMUk",
+        "row_AecT3Y",
+        "row_R4LDXE",
+        "row_mameK3",
+        "row_VBNcke",
+        "row_fTaCib",
+        "row_gQpzUd",
+        "row_kN9kQB",
+        "row_DYfG94",
+        "row_4rN7aP",
+        "row_4C4Lwm",
+        "row_bcRaQU",
+        "row_VBBJXY",
+        "row_qrNjGL",
+        "row_4pMW3X",
+        "row_8hGLAc",
+        "row_xjYmkT",
+        "row_Pqk7wb",
+        "row_QjidtT",
+        "row_xhheWj",
+        "row_fNYjhw",
+        "row_ndYjg6",
+        "row_BQbaqM",
+        "row_xHk8LM",
+        "row_jVCrch",
+        "row_njRtWT",
+        "row_Nzth4F",
+        "row_8QrgMd",
+        "row_XVWzr7"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "large",
+        "image_layout": "align-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_H8nVrT",
     "rich_text_CcxErA",
-    "main"
+    "main",
+    "rich_text_Fip7jY",
+    "multirow_kJMnUX"
   ]
 }

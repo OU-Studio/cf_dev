@@ -18,7 +18,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/1920x1754px_404.gif",
+        "image": "shopify://shop_images/404.gif",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "image_behavior": "none",

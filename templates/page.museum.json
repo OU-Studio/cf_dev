@@ -206,6 +206,47 @@
         "show_text_below": true
       }
     },
+    "image_with_text_video_f43F4c": {
+      "type": "image-with-text-video",
+      "blocks": {
+        "heading_3dqbxP": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Mug Collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_UrYaDm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3dqbxP",
+        "text_UrYaDm"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "custom_id": "default-id",
+        "image": "shopify://shop_images/7C994F3E-3624-4134-86B6-56551B533CD8.jpg",
+        "video": "shopify://files/videos/RhysWhitehouse_HairPowder_V1.mp4",
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collapsible_content_KhztKf": {
       "type": "collapsible-content",
       "blocks": {
@@ -297,6 +338,7 @@
     "custom_liquid_XJ8Q9b",
     "image_with_text_rCrziY",
     "image_banner_i6zKbN",
+    "image_with_text_video_f43F4c",
     "collapsible_content_KhztKf",
     "custom_liquid_dnBPFX",
     "main"

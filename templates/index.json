@@ -254,7 +254,7 @@
       "name": "Featured product",
       "settings": {
         "title": "NEW RELEASE",
-        "product": "expedition-reserve-hair-powder",
+        "product": "captain-fawcetts-expedition-reserve-body-wash",
         "show_breadcrumbs": false,
         "color_scheme": "",
         "padding_top": 36,
@@ -396,7 +396,6 @@
         "heading_bdyrUA",
         "emperaheading_a3T4rm"
       ],
-      "disabled": true,
       "settings": {
         "custom_id": "default-id",
         "desktop_content_position": "center",
@@ -405,109 +404,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "featured_collection_WVE9JA": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "collection": "frontpage",
-        "products_to_show": 4,
-        "title": "INSTAGRAM",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn_6UfGi4": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_CmfPjt": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
-            "title": "",
-            "subtitle": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_wYTjtP": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
-            "title": "",
-            "subtitle": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_CTkAMf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
-            "title": "",
-            "subtitle": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_rEcmXm": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
-            "title": "",
-            "subtitle": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_CmfPjt",
-        "column_wYTjtP",
-        "column_CTkAMf",
-        "column_rEcmXm"
-      ],
-      "disabled": true,
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "custom_id": "IGPLACEHOLDER",
-        "title": "INSTAGRAM",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
@@ -520,8 +416,6 @@
     "featured_product_Jkqz8U",
     "collection_list_KgFHVp",
     "reviews_mRy6dP",
-    "rich_text_KTQMC8",
-    "featured_collection_WVE9JA",
-    "multicolumn_6UfGi4"
+    "rich_text_KTQMC8"
   ]
 }

@@ -208,78 +208,74 @@
     </script>
   </div>
 
-  <!-- Load jQuery + Slick if needed, then init -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-  <script>
-    (function(){
-      function initSlick(){
-        if (!window.jQuery || !jQuery.fn || !jQuery.fn.slick) return;
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
-        var $for = jQuery('.cf-slider-for');
-        var $nav = jQuery('.cf-slider-nav');
+<script>
+(function(){
+  function initSlick(){
+    if (!window.jQuery || !jQuery.fn || !jQuery.fn.slick) return;
 
-        if ($for.data('slick-initialized')) return;
+    var $for  = jQuery('.cf-slider-for');
+    var nav   = document.querySelector('.cf-slider-nav');
+    if (!$for.length || !nav) return;
 
-        $for.on('init', function(){ $for.attr('data-slick-initialized', 'true'); });
+    if ($for.data('slick-initialized')) return;
+    $for.on('init', function(){ $for.attr('data-slick-initialized','true'); });
 
-        $for.slick({
-          arrows: true,
-          asNavFor: '.cf-slider-nav',
-          adaptiveHeight: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false
-        });
+    // Main only
+    $for.slick({
+      arrows: true,
+      adaptiveHeight: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: false
+    });
 
-        $nav.slick({
-          asNavFor: '.cf-slider-for',
-          slidesToShow: Math.min(6, {{ product.images.size | default: 6 }}),
-          slidesToScroll: 1,
-          focusOnSelect: true,
-          infinite: false,
-          variableWidth: false
-        });
+    // Thumbs: click -> go to that slide
+    var thumbs = Array.from(nav.querySelectorAll('.thumb'));
+    thumbs.forEach(function(thumb, i){
+      thumb.addEventListener('click', function(){
+        $for.slick('slickGoTo', i);
+      });
+    });
 
-        // Qty buttons
-        document.querySelectorAll('.cf-qty').forEach(function(box){
-          var input = box.querySelector('input[type="number"]');
-          var minus = box.querySelector('.cf-qty-minus');
-          var plus  = box.querySelector('.cf-qty-plus');
-          function clamp(val){
-            var min = parseInt(input.min || '1',10);
-            var max = input.max ? parseInt(input.max,10) : null;
-            val = Math.max(min, val);
-            if (max) val = Math.min(max, val);
-            return val;
-          }
-          minus.addEventListener('click', function(){
-            var step = parseInt(input.step || '1',10);
-            input.value = clamp(parseInt(input.value || '1',10) - step);
-            input.dispatchEvent(new Event('change', {bubbles:true}));
-          });
-          plus.addEventListener('click', function(){
-            var step = parseInt(input.step || '1',10);
-            input.value = clamp(parseInt(input.value || '1',10) + step);
-            input.dispatchEvent(new Event('change', {bubbles:true}));
-          });
-        });
-      }
+    function setActive(i){
+      thumbs.forEach(function(t, idx){
+        t.classList.toggle('is-active', idx === i);
+      });
+      // keep active visible without jerky jumps
+      if (thumbs[i]) thumbs[i].scrollIntoView({block:'nearest', inline:'center', behavior:'smooth'});
+    }
 
-      function loadScript(src, cb){
-        var s=document.createElement('script'); s.src=src; s.defer=true; s.onload=cb; document.head.appendChild(s);
-      }
+    // Sync active on init + change
+    $for.on('init afterChange', function(e, slick, current){
+      var i = e.type === 'init' ? slick.currentSlide : current;
+      setActive(i);
+    });
 
-      function ensureSlick(){
-        if (window.jQuery && jQuery.fn && jQuery.fn.slick){ initSlick(); return; }
-        var afterJQ = function(){ loadScript('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', initSlick); };
-        if (!window.jQuery){ loadScript('https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js', afterJQ); }
-        else { afterJQ(); }
-      }
+    // If Slick fired init before we wired the handler:
+    if ($for.hasClass('slick-initialized')){
+      var i = $for.slick('slickCurrentSlide');
+      setActive(i);
+    }
+  }
 
-      if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', ensureSlick); }
-      else { ensureSlick(); }
-    })();
-  </script>
+  function loadScript(src, cb){
+    var s=document.createElement('script'); s.src=src; s.defer=true; s.onload=cb; document.head.appendChild(s);
+  }
+  function ensureSlick(){
+    if (window.jQuery && jQuery.fn && jQuery.fn.slick){ initSlick(); return; }
+    var afterJQ = function(){ loadScript('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', initSlick); };
+    if (!window.jQuery){ loadScript('https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js', afterJQ); }
+    else { afterJQ(); }
+  }
+  if (document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', ensureSlick); }
+  else { ensureSlick(); }
+})();
+</script>
+
+
+
 </product-info>
 
 <script>
