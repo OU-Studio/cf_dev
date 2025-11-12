@@ -7203,13 +7203,13 @@ cart-items .title--primary {
 .shuffle .shuff:nth-of-type(4) {
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_2.png?v=1762803697);
 }
-.shuffle .shuff:nth-of-type(3) {
+.shuffle .shuff:nth-of-type(2) {
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_3.png?v=1762803697);
 }
 .shuffle .shuff:nth-of-type(5) {
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_4.png?v=1762803697);
 }
-.shuffle .shuff:nth-of-type(2) {
+.shuffle .shuff:nth-of-type(5) {
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/shuffle_5.png?v=1762803697);
 }
 
