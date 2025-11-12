@@ -9074,3 +9074,100 @@ align-items: center;
     letter-spacing: 0.03em !important;
   }
 }
+
+/* Toolbar + buttons */
+/* === DearFlip Toolbar Custom === */
+.df-ui-wrapper.df-ui-controls {
+  display: flex;
+  gap: 10px !important;              /* space between buttons */
+  background: none !important;      /* remove toolbar bg if needed */
+  border: none !important;
+}
+
+.df-ui-wrapper{
+  box-shadow: none !important;
+}
+
+/* All buttons */
+.df-ui-btn {
+  background: var(--red) !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+  border: none !important;
+  min-width: 34px;
+  height: auto !important;;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 14px !important;
+  transition: background 0.2s ease;
+  width: auto !important;
+  display: none !important;
+  padding: 5px 30px !important;
+  border-radius: 8px !important;
+  &.df-ui-prev, &.df-ui-next{
+    display: flex !important;
+  }
+  span{
+    display: block !important;
+    color: var(--cream) !important;
+        font-family: norwester !important;
+        text-transform: uppercase;
+  }
+}
+
+.pdfbox{
+padding: 40px 20px !important;
+}
+
+
+
+._df_book{
+background-color: var(--cream) !important;
+max-width: 1000px !important;;
+margin: auto !important;
+> .df-ui-next, > .df-ui-prev{
+  display: none !important;
+}
+}
+
+/* Hover & active */
+.df-ui-btn:hover,
+.df-ui-btn:focus {
+  background: #b30000 !important;  /* darker red on hover */
+}
+
+/* Disabled buttons */
+.df-ui-btn.disabled {
+  opacity: 0.4 !important;
+  pointer-events: none;
+}
+
+/* Label inside (page count etc.) */
+.df-ui-btn span,
+.df-ui-btn label,
+.df-ui-btn input {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+/* Text input (page number field) */
+.df-ui-btn input {
+  background: transparent !important;
+  border: none !important;
+  text-align: center;
+  width: 28px;
+}
+
+/* "More" dropdown container inherits spacing */
+.df-ui-btn.df-ui-more .more-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Inside "more" dropdown */
+.df-ui-btn.df-ui-more .df-ui-btn {
+  background: var(--red) !important;
+  color: #fff !important;
+}
