@@ -405,6 +405,79 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "multicolumn_6UfGi4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CmfPjt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
+            "title": "",
+            "subtitle": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wYTjtP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
+            "title": "",
+            "subtitle": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CTkAMf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
+            "title": "",
+            "subtitle": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rEcmXm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Barberism_Portrait_square.jpg",
+            "title": "",
+            "subtitle": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CmfPjt",
+        "column_wYTjtP",
+        "column_CTkAMf",
+        "column_rEcmXm"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "custom_id": "default-id",
+        "title": "INSTAGRAM",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -416,6 +489,7 @@
     "featured_product_Jkqz8U",
     "collection_list_KgFHVp",
     "reviews_mRy6dP",
-    "rich_text_KTQMC8"
+    "rich_text_KTQMC8",
+    "multicolumn_6UfGi4"
   ]
 }
