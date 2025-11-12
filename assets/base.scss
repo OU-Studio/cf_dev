@@ -9171,3 +9171,23 @@ margin: auto !important;
   background: var(--red) !important;
   color: #fff !important;
 }
+
+[data-template="page.ft_01"]{
+
+
+  main .shopify-section:nth-of-type(1) .banner .media:before {
+    padding-bottom: 25% !important
+  }
+
+  main .shopify-section:nth-of-type(1) .banner .media {
+    height: 100% !important;
+  }
+
+  main .shopify-section:nth-of-type(1) .banner {
+    display: block !important;
+
+    &:before {
+      display: none !important
+    }
+  }
+}

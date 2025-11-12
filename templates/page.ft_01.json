@@ -17,6 +17,23 @@
         "padding_bottom": 28
       }
     },
+    "image_banner_RtFHNN": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Fawcett_Times_masthead_4d944e1b-c6ee-49d4-9c8c-3636c19cf33e.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
     "rich_text_4gxw7k": {
       "type": "rich-text",
       "blocks": {
@@ -55,6 +72,7 @@
   },
   "order": [
     "main",
+    "image_banner_RtFHNN",
     "rich_text_4gxw7k",
     "pdf_d66eLT"
   ]
