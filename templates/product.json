@@ -115,6 +115,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
+        "custom_id": "default-id",
         "title": "Fragrance Splashes",
         "heading_size": "h1",
         "image_width": "full",
@@ -131,42 +132,27 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_eFP37H": {
-      "type": "image-with-text",
+    "image_with_text_video_yyiLGK": {
+      "type": "image-with-text-video",
       "blocks": {
-        "heading_htTNrX": {
-          "type": "heading",
-          "settings": {
-            "heading": "How To Wax Your Moustache",
-            "heading_size": "h2"
-          }
-        },
-        "text_atXhke": {
+        "text_8Q44jy": {
           "type": "text",
           "settings": {
             "text": "<p>{{ product.metafields.custom.how_to_apply | metafield_tag }}</p>",
             "text_style": "body"
           }
-        },
-        "button_Rj9i9K": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "/",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
-        "heading_htTNrX",
-        "text_atXhke",
-        "button_Rj9i9K"
+        "text_8Q44jy"
       ],
-      "name": "How To Apply",
+      "name": "How to apply",
       "settings": {
-        "image": "shopify://shop_images/Moustache_Wax2.jpg",
+        "custom_id": "default-id",
+        "image": "{{ product.metafields.custom.product_video_thumbnail.value }}",
+        "video": "{{ product.metafields.custom.how_to_video.value }}",
         "height": "adapt",
-        "desktop_image_width": "screenWidth",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
         "content_layout": "no-overlap",
@@ -202,7 +188,7 @@
     "main",
     "collapsible_content_i3mWai",
     "multicolumn_y4t4A9",
-    "image_with_text_eFP37H",
+    "image_with_text_video_yyiLGK",
     "related-products"
   ]
 }

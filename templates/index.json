@@ -131,7 +131,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "frontpage",
+        "collection": "beard-balm",
         "products_to_show": 4,
         "title": "Selling Like Hot Cakes!",
         "heading_size": "h2",
@@ -254,7 +254,7 @@
       "name": "Featured product",
       "settings": {
         "title": "NEW RELEASE",
-        "product": "bianco-classico-moustache-wax",
+        "product": "captain-fawcetts-expedition-reserve-body-wash",
         "show_breadcrumbs": false,
         "color_scheme": "",
         "padding_top": 36,

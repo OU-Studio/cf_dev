@@ -4931,7 +4931,32 @@ body.itemadded .cf-product .cf-form-row:after {
 [data-template=product] #MainContent .shopify-section:nth-of-type(4) > div {
   padding: 0px 20px;
 }
-[data-template=product] #MainContent .shopify-section:nth-of-type(4) h3:before {
+[data-template=product] #MainContent .shopify-section:nth-of-type(4) .image-with-text__media {
+  width: 100% !important;
+  position: relative;
+  padding-bottom: calc((100% - 400px) * 0.5625) !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(4) .image-with-text__media img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(4) .image-with-text__media img, [data-template=product] #MainContent .shopify-section:nth-of-type(4) .image-with-text__media video {
+  position: absolute;
+  inset: 0;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(4) p {
+  color: var(--red) !important;
+  font-family: garamond-premier-pro-display !important;
+  font-size: 30px !important;
+  line-height: 1.2em !important;
+  letter-spacing: 0.05em !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  font-feature-settings: "swsh" on !important;
+}
+[data-template=product] #MainContent .shopify-section:nth-of-type(4) .rte:before {
   content: "";
   display: block;
   width: 180px;

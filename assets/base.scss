@@ -5955,7 +5955,33 @@ body.itemadded .cf-product .cf-form-row:after {
         padding: 0px 20px;
       }
 
-      h3:before {
+      .image-with-text__media{
+        width: 100% !important;
+        position: relative;
+        padding-bottom: calc((100% - 400px) * 0.5625) !important;
+        img{
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+        }
+        img, video{
+          position: absolute;
+          inset: 0;
+        }
+      }
+
+      p{
+        color: var(--red) !important;
+        font-family: garamond-premier-pro-display !important;
+    font-size: 30px !important;
+    line-height: 1.2em !important;
+    letter-spacing: .05em !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    font-feature-settings: "swsh" on !important;
+      }
+
+      .rte:before {
         content: '';
         display: block;
         width: 180px;
