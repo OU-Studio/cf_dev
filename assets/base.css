@@ -4265,7 +4265,7 @@ slider-component.page-width {
 }
 
 :root {
-  --ou-sb-width: 4px; /* total rail width */
+  --ou-sb-width: 14px; /* total rail width */
   --ou-sb-padding: 6px; /* rail inset from container edge */
   --ou-sb-track-bg: #0f172a14; /* track background */
   --ou-sb-track-radius: 999px;
