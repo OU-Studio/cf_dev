@@ -4426,7 +4426,7 @@ slider-component.page-width {
   font-style: normal !important;
 }
 [data-template="blog.captains-journal"] .multirow {
-  padding: 40px 40px 40px 40px !important;
+  padding: 40px 40px 80px 40px !important;
   position: relative;
 }
 [data-template="blog.captains-journal"] .multirow__inner::-webkit-scrollbar {
@@ -4437,7 +4437,7 @@ slider-component.page-width {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   position: relative;
-  filter: drop-shadow(5px 7px 15px #000000);
+  filter: drop-shadow(5px 25px 15px rgba(0, 0, 0, 0.4));
   /* Hide native scrollbar (keeps scrolling enabled) */
   scrollbar-width: none;
   overflow-x: hidden;
@@ -4470,7 +4470,7 @@ slider-component.page-width {
 [data-template="blog.captains-journal"] .ou-scrollbar {
   position: absolute;
   top: calc(var(--ou-sb-padding) + 34px);
-  bottom: calc(var(--ou-sb-padding) + 34px);
+  bottom: calc(var(--ou-sb-padding) + 74px);
   right: calc(var(--ou-sb-padding) + 46px);
   width: var(--ou-sb-width);
   display: grid;
