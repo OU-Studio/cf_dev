@@ -23,6 +23,16 @@
         "show_line_separator": false
       }
     },
+    "custom_liquid_7ndf6Q": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"mobileABanner\">Home to a Simply Delectable Range of First Class Gentleman’s Grooming Requisites.</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -47,6 +57,7 @@
   },
   "order": [
     "announcement-bar",
+    "custom_liquid_7ndf6Q",
     "header"
   ]
 }

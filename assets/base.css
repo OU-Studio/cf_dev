@@ -43,7 +43,7 @@ h3 {
 }
 @media all and (max-width: 900px) {
   h3 {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
   }
 }
 
@@ -758,7 +758,7 @@ body.itemadded .featured-product .product__info-container:after {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0px;
+  gap: 6px;
 }
 .footerBottom .footerLinks a {
   text-align: center;
@@ -1604,6 +1604,11 @@ product-info {
   justify-items: center;
   /* centers items in their cells */
 }
+@media all and (max-width: 1024px) {
+  .collection .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .collection .grid__item {
   width: 100%;
@@ -1644,7 +1649,7 @@ product-info {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-bottom: 58.0323112106%;
+  padding-bottom: 57.9852579853%;
 }
 
 .collection-list__item .card__content {
@@ -1689,6 +1694,7 @@ product-info {
 .card__heading {
   max-width: 320px;
   margin: auto;
+  text-align: center;
 }
 .card__heading a {
   text-decoration: none;
@@ -1821,37 +1827,31 @@ product-info {
   margin: 10px 0px 10px 0px !important;
 }
 
-.collection-list-view-all {
-  display: flex;
-  padding: 4px !important;
-  border: none !important;
-  position: relative;
-  align-items: center;
-  max-width: 360px;
-  width: calc(100% - 40px);
+.collection-list-view-all .button {
   margin: auto;
-}
-.collection-list-view-all .spacer {
-  display: block;
+  display: flex;
   width: 100%;
-  padding-bottom: 22.8813352529%;
-}
-.collection-list-view-all .buttonBorder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.collection-list-view-all a {
+  max-width: 230px;
+  padding: 10px 20px !important;
+  position: relative !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  border-radius: 8px !important;
+  background-color: var(--red) !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none !important;
   line-height: 1em !important;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  color: var(--black) !important;
-  white-space: nowrap;
+  font-size: 18px !important;
+  color: var(--cream) !important;
+  letter-spacing: 0.025em !important;
+  position: relative !important;
+  top: initial !important;
+  left: initial !important;
+  transform: none !important;
+  color: var(--white) !important;
 }
 
 .featured_page .card__media {
@@ -1970,7 +1970,7 @@ blockquote {
 .reviews {
   display: flex;
   align-items: center;
-  margin: 0px 10px;
+  margin: 0px 0px;
 }
 .reviews .slideshow-container {
   max-width: none !important;
@@ -1979,11 +1979,21 @@ blockquote {
   margin: 0px !important;
   flex-grow: 1;
 }
+@media all and (max-width: 1024px) {
+  .reviews .slideshow-container {
+    width: 100% !important;
+  }
+}
 .reviews > img {
   width: calc((100% - 20px) / 3 - 0px);
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1/1;
+}
+@media all and (max-width: 1024px) {
+  .reviews > img {
+    display: none !important;
+  }
 }
 .reviews .slick-list {
   width: 100% !important;
@@ -4698,6 +4708,12 @@ slider-component.page-width {
   /* or use aspect-ratio if you prefer */
   overflow: hidden;
 }
+@media all and (max-width: 1024px) {
+  .flipbook-slick {
+    width: 340px;
+    height: 170px;
+  }
+}
 
 .flipbook-slick img {
   display: block;
@@ -4716,6 +4732,13 @@ slider-component.page-width {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+}
+@media all and (max-width: 1024px) {
+  .footerTop {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 10px 30px !important;
+  }
 }
 
 .title,
@@ -4795,6 +4818,12 @@ slider-component.page-width {
 .cf-product .cf-grid {
   padding: 20px;
   background-color: var(--cream);
+}
+@media all and (max-width: 1024px) {
+  .cf-product .cf-grid {
+    display: flex !important;
+    flex-direction: column;
+  }
 }
 .cf-product .cf-title {
   font-size: 30px !important;
@@ -5326,7 +5355,7 @@ body .section-header.shopify-section {
 }
 
 .ou-review:nth-of-type(4) .ou-review__meta:before {
-  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_08fb0bb8-04d0-4f58-80e2-c2e53fe11ab9.png?v=1761149273);
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/ace2.png?v=1763040458);
 }
 
 .ou-review__stars {
@@ -7581,6 +7610,11 @@ body.added .product-form__submit .addedbutton {
   background-position: center;
   width: 25%;
 }
+@media all and (max-width: 1024px) {
+  #MainContent .reviewImageOne {
+    display: none !important;
+  }
+}
 
 #MainContent .reviewImageTwo {
   padding-top: 25% !important;
@@ -7588,6 +7622,11 @@ body.added .product-form__submit .addedbutton {
   background-size: cover;
   background-position: center;
   width: 25%;
+}
+@media all and (max-width: 1024px) {
+  #MainContent .reviewImageTwo {
+    display: none !important;
+  }
 }
 
 [data-slide="1"] .reviewImageOne {
@@ -7940,4 +7979,24 @@ body.added .product-form__submit .addedbutton {
 }
 .mobile-panel[aria-label="Signature Series"] li:nth-of-type(7) a {
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Scapicchio_688x1004px_1.jpg?v=1760034185);
+}
+
+.mobileABanner {
+  display: none !important;
+}
+@media all and (max-width: 1024px) {
+  .mobileABanner {
+    display: block !important;
+    text-align: center;
+    padding: 5px 10px;
+    font-family: norwester !important;
+    letter-spacing: 0.025em !important;
+    color: var(--cream);
+    background-color: var(--black);
+    letter-spacing: 0.05em !important;
+    font-weight: 400 !important;
+    font-feature-settings: "swsh" on !important;
+    font-family: garamond-premier-pro-display !important;
+    font-style: italic !important;
+  }
 }
