@@ -5161,7 +5161,7 @@ slider-component.page-width {
 }
 
 :root {
-  --ou-sb-width: 14px;             /* total rail width */
+  --ou-sb-width: 4px;             /* total rail width */
   --ou-sb-padding: 6px;            /* rail inset from container edge */
   --ou-sb-track-bg: #0f172a14;     /* track background */
   --ou-sb-track-radius: 999px;
@@ -5350,7 +5350,7 @@ slider-component.page-width {
     }
   }
   .multirow{
-    padding: 40px 20px 20px 20px !important;
+    padding: 40px 40px 40px 40px !important;
   position: relative;
   }
   .multirow__inner::-webkit-scrollbar { display: none; } 
@@ -5359,6 +5359,7 @@ slider-component.page-width {
      overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   position: relative;
+  filter: drop-shadow(5px 7px 15px #000000);
 
   /* Hide native scrollbar (keeps scrolling enabled) */
   scrollbar-width: none;    
@@ -5392,9 +5393,9 @@ slider-component.page-width {
 /* ====== Custom scrollbar ====== */
 .ou-scrollbar {
   position: absolute;
-  top: calc(var(--ou-sb-padding) + 40px);
-  bottom: calc(var(--ou-sb-padding) + 20px);
-  right: calc(var(--ou-sb-padding) + 20px);
+  top: calc(var(--ou-sb-padding) + 34px);
+  bottom: calc(var(--ou-sb-padding) + 34px);
+  right: calc(var(--ou-sb-padding) + 46px);
   width: var(--ou-sb-width);
   display: grid;
   align-items: stretch;
@@ -5404,7 +5405,7 @@ slider-component.page-width {
 .ou-scrollbar__track {
   position: relative;
   width: 100%;
-  border-radius: var(--ou-sb-track-radius);
+  border-radius: 0px;
   background: var(--cream);
   pointer-events: auto;            /* clickable for page jumps */
 }
