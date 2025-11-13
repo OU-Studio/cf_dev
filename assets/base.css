@@ -2290,6 +2290,11 @@ slider-component.page-width {
 [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
+}
 [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
   height: auto;
@@ -2564,6 +2569,11 @@ slider-component.page-width {
 }
 [data-template="page.maharajah"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.maharajah"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
 }
 [data-template="page.maharajah"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
@@ -2844,6 +2854,11 @@ slider-component.page-width {
 [data-template="page.nebula"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.nebula"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
+}
 [data-template="page.nebula"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
   height: auto;
@@ -3118,6 +3133,11 @@ slider-component.page-width {
 }
 [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
 }
 [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
@@ -3397,6 +3417,11 @@ slider-component.page-width {
 }
 [data-template="page.barberism"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.barberism"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
 }
 [data-template="page.barberism"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
@@ -3679,6 +3704,11 @@ slider-component.page-width {
 [data-template="page.triumphant"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.triumphant"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
+}
 [data-template="page.triumphant"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
   height: auto;
@@ -3958,6 +3988,11 @@ slider-component.page-width {
 [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
+}
 [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
   height: auto;
@@ -4232,6 +4267,11 @@ slider-component.page-width {
 }
 [data-template="page.scapicchio"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.scapicchio"] main .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
 }
 [data-template="page.scapicchio"] main .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
@@ -5526,6 +5566,11 @@ body.itemadded .cf-product .cf-form-row:after {
 }
 [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+  }
 }
 @media all and (max-width: 1024px) {
   [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p {
