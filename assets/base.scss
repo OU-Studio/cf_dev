@@ -8800,8 +8800,11 @@ gap: 20px;
 position: relative;
 align-items: flex-start;
 overflow: visible !important;
+max-width: 1000px;
+padding: 20px 60px;
+margin: auto;
 section:first-of-type{
-  width: 25%;
+  width: 33%;
   position: sticky;
   margin: 0px !important;
   top: 0px;
@@ -8821,7 +8824,7 @@ section:first-of-type{
   }
 }
 section:last-of-type{
-  width: 75%;
+  width: 64%;
   margin-top: 10px !important;
   header{
     display: none !important;

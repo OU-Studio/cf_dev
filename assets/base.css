@@ -7510,9 +7510,12 @@ cart-items .title--primary {
   position: relative;
   align-items: flex-start;
   overflow: visible !important;
+  max-width: 1000px;
+  padding: 20px 60px;
+  margin: auto;
 }
 [data-template="article.captains-journal"] #MainContent section:first-of-type {
-  width: 25%;
+  width: 33%;
   position: sticky;
   margin: 0px !important;
   top: 0px;
@@ -7532,7 +7535,7 @@ cart-items .title--primary {
   aspect-ratio: 1/1 !important;
 }
 [data-template="article.captains-journal"] #MainContent section:last-of-type {
-  width: 75%;
+  width: 64%;
   margin-top: 10px !important;
 }
 [data-template="article.captains-journal"] #MainContent section:last-of-type header {
