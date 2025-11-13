@@ -8199,7 +8199,7 @@ body.added .product-form__submit .addedbutton {
   }
   .shopify-section-group-footer-group.custom .custom-image-links {
     gap: 40px !important;
-    flex-direction: column !important;
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 .footerMiddle {
