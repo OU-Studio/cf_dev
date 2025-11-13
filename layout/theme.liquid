@@ -445,6 +445,7 @@ document.addEventListener('click', (e) => {
   document.addEventListener('shopify:section:load', (e) => {
     initBlogLoadMore(e.target);
   });
+
 })();
 
 
@@ -818,6 +819,43 @@ document.addEventListener('click', (e) => {
   }
 })();
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Only run this behaviour on touch devices
+  var isTouch = window.matchMedia('(hover: none)').matches || 'ontouchstart' in window;
+  if (!isTouch) return;
+
+  let activeCard = null; // track which card is flipped
+
+  document.querySelectorAll('.flip-card').forEach(function(card) {
+    card.addEventListener('click', function(e) {
+
+      // If clicking a different card, reset the previous one
+      if (activeCard && activeCard !== card) {
+        activeCard.classList.remove('is-flipped');
+        activeCard = null;
+      }
+
+      const isFlipped = card.classList.contains('is-flipped');
+
+      if (!isFlipped) {
+        // First tap on this card → flip it
+        e.preventDefault();
+        card.classList.add('is-flipped');
+        activeCard = card;
+      } else {
+        // Second tap → follow the link
+        e.preventDefault();
+        window.location.href = card.getAttribute('href');
+      }
+
+    });
+  });
+});
+</script>
+
+
 
   </body>
 </html>

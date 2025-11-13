@@ -522,11 +522,6 @@ body.itemadded .featured-product .product__info-container:after {
   max-width: 1240px !important;
   background-color: transparent !important;
 }
-@media all and (max-width: 900px) {
-  .shopify-section-group-footer-group.custom {
-    display: none !important;
-  }
-}
 
 .footerTop {
   padding: 10px;
@@ -4639,6 +4634,11 @@ slider-component.page-width {
   max-width: none !important;
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .flip-card:hover .flip-inner {
+    transform: none;
+  }
+}
 .flip-card {
   perspective: 1000px;
   display: block;
@@ -8189,4 +8189,15 @@ body.added .product-form__submit .addedbutton {
   .featured-cf {
     padding: 0px !important;
   }
+  .shopify-section-group-footer-group.custom .footerCardWrapper {
+    overflow-x: scroll;
+    padding: 0px 20px;
+  }
+  .shopify-section-group-footer-group.custom .custom-image-links {
+    gap: 30px !important;
+    width: 200%;
+  }
+}
+.footerMiddle {
+  display: none !important;
 }

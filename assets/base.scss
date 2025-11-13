@@ -614,14 +614,11 @@ body.itemadded .featured-product .product__info-container {
   max-width: 1240px !important;
   background-color: transparent !important;
 
-  @media all and (max-width: 900px) {
-    display: none !important;
-  }
 }
 
 .footerTop {
   padding: 10px;
-  background-color: var(--cream);
+  background-color: var(--cream); 
   margin: 0px auto !important;
   max-width: 1240px;
   position: relative;
@@ -630,7 +627,7 @@ body.itemadded .featured-product .product__info-container {
     padding-right: 500px;
     padding: 20px 40px;
 
-    .footerPlane {
+    .footerPlane { 
       max-width: 400px;
     }
 
@@ -5579,6 +5576,12 @@ slider-component.page-width {
   max-width: none !important;
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .flip-card:hover .flip-inner {
+    transform: none;
+  }
+}
+
 .flip-card {
   perspective: 1000px;
   display: block;
@@ -9574,4 +9577,19 @@ body.added .product-form__submit {
   .featured-cf{
     padding: 0px !important;
   }
+
+  .shopify-section-group-footer-group.custom{
+    .footerCardWrapper{
+      overflow-x: scroll;
+      padding: 0px 20px;
+    }
+    .custom-image-links{
+      gap: 30px !important; 
+      width: 200%
+    }
+  }
+}
+
+.footerMiddle{
+  display: none !important;
 }
