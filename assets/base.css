@@ -1059,6 +1059,11 @@ main {
 .shopify-section:not(:first-of-type) {
   margin-top: 30px !important;
 }
+@media all and (max-width: 1024px) {
+  .shopify-section:not(:first-of-type) {
+    margin-top: 20px !important;
+  }
+}
 .shopify-section.full-bleed {
   max-width: none;
 }
@@ -2207,6 +2212,12 @@ slider-component.page-width {
   padding: 0px !important;
   width: 100% !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
+}
 [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
   padding: 0px !important;
@@ -2428,6 +2439,12 @@ slider-component.page-width {
   padding: 0px !important;
   width: 100% !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.maharajah"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
+}
 [data-template="page.maharajah"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
   padding: 0px !important;
@@ -2646,6 +2663,12 @@ slider-component.page-width {
   list-style-type: none;
   padding: 0px !important;
   width: 100% !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.nebula"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
 }
 [data-template="page.nebula"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
@@ -2867,6 +2890,12 @@ slider-component.page-width {
   list-style-type: none;
   padding: 0px !important;
   width: 100% !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
 }
 [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
@@ -3095,6 +3124,12 @@ slider-component.page-width {
   padding: 0px !important;
   width: 100% !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.barberism"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
+}
 [data-template="page.barberism"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
   padding: 0px !important;
@@ -3316,6 +3351,12 @@ slider-component.page-width {
   padding: 0px !important;
   width: 100% !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.triumphant"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
+}
 [data-template="page.triumphant"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
   padding: 0px !important;
@@ -3534,6 +3575,12 @@ slider-component.page-width {
   list-style-type: none;
   padding: 0px !important;
   width: 100% !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
 }
 [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
@@ -3755,6 +3802,12 @@ slider-component.page-width {
   list-style-type: none;
   padding: 0px !important;
   width: 100% !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.scapicchio"] main .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
 }
 [data-template="page.scapicchio"] main .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
@@ -4930,6 +4983,11 @@ slider-component.page-width {
   bottom: -10px;
   right: 20px;
 }
+@media all and (max-width: 1024px) {
+  .cf-product .cf-form-row:before {
+    right: 5px !important;
+  }
+}
 .cf-product .cf-form-row:after {
   content: "";
   display: block;
@@ -4942,6 +5000,11 @@ slider-component.page-width {
   position: absolute;
   bottom: -10px;
   right: 20px;
+}
+@media all and (max-width: 1024px) {
+  .cf-product .cf-form-row:after {
+    right: 5px !important;
+  }
 }
 .cf-product .cf-ph {
   background-size: contain;
@@ -5006,6 +5069,12 @@ body.itemadded .cf-product .cf-form-row:after {
   list-style-type: none;
   padding: 0px !important;
   width: 100% !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list {
+    width: 80% !important;
+    margin-right: 20% !important;
+  }
 }
 [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
   margin: 0px auto !important;
@@ -5221,6 +5290,7 @@ body .section-header.shopify-section {
 @media all and (max-width: 1024px) {
   #MainContent .collapsible-content-wrapper-narrow {
     margin: 20px 0px !important;
+    padding: 10px !important;
   }
 }
 #MainContent .collapsible-content-wrapper-narrow h3 {
@@ -5245,6 +5315,11 @@ body .section-header.shopify-section {
   padding: 20px !important;
   border-top: solid 1px var(--black);
   cursor: pointer;
+}
+@media all and (max-width: 1024px) {
+  #MainContent .collapsible-content-wrapper-narrow summary {
+    padding: 20px 10px !important;
+  }
 }
 #MainContent .collapsible-content-wrapper-narrow .accordion__content {
   padding: 20px !important;
@@ -5319,12 +5394,22 @@ body .section-header.shopify-section {
   display: flex;
   gap: 20px;
 }
+@media all and (max-width: 1024px) {
+  .ou-reviews {
+    width: 290% !important;
+  }
+}
 .ou-reviews .ou-review {
   flex-grow: 1;
   background-color: var(--offwhite);
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
+}
+@media all and (max-width: 1024px) {
+  .ou-reviews .ou-review {
+    width: 25% !important;
+  }
 }
 
 .ou-review__stars {
@@ -8054,4 +8139,10 @@ body.added .product-form__submit .addedbutton {
 
 .header__nav-item[tabindex="10"] {
   display: none !important;
+}
+
+.mobile-panel .divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--black);
 }

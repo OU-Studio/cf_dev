@@ -201,6 +201,16 @@
       </li>
     {%- endfor -%}
   </ul>
+            {% assign submenu = linklists['top-menu-submenu'] %}
+            <div class="divider"></div>
+
+<ul class="mobile-list mobile-list--sections">
+  {% for link in submenu.links %}
+    <li class="mobile-section">
+        <a class="mobile-link" href="{{ link.url }}">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 </section>
 
 
@@ -360,7 +370,7 @@ color: var(--red);
       color: var(--red) !important;
   
 font-variant: all-small-caps !important;
-    font-size: 24px !important;
+    font-size: 26px !important;
     letter-spacing: 0.05em !important;
     color: var(--black);
     margin: 0px 0px 10px 0px;
@@ -480,7 +490,7 @@ flex-wrap: wrap;
 .mobile-nav[hidden] { display: none !important; }
 .mobile-nav {
   position: fixed; inset: 0; z-index: 2000;
-  top: 155px;
+  top: 156px;
 }
 .mobile-nav__overlay {
   position: absolute; inset: 0; background: rgba(0,0,0,.3);
@@ -513,7 +523,7 @@ flex-wrap: wrap;
 font-style: normal !important;
     font-variant: all-small-caps !important;
     letter-spacing: 0.03em !important;
-    font-size: 24px !important;
+    font-size: 26px !important;
     appearance: none;
     border: none !important;
     background: none;;
@@ -531,7 +541,7 @@ font-size: 16px;
   position: relative; height: 100%; overflow: hidden;
 }
 .mobile-nav__rail > .mobile-panel {
-  position: absolute; inset: 0; width: 100vw; padding: 20px 20px; overflow-y: auto; box-sizing: border-box;
+  position: absolute; inset: 0; width: 100vw; padding: 0px; overflow-y: auto; box-sizing: border-box;
   transform: translateX(100%); transition: transform .35s ease;
   display: block;
 }
@@ -541,12 +551,12 @@ font-size: 16px;
 .mobile-panel.is-right  { transform: translateX(100%); }
 
 /* Lists */
-.mobile-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 20px; }
+.mobile-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 15px; padding: 20px;}
 .mobile-link,
 .mobile-link.has-children {
   width: 100%; display: flex; align-items: center; justify-content: space-between;
   padding: 0px; border: 1px solid var(--black); border-radius: 10px; background: white; text-decoration: none; color: var(--black);
-  font-size: 24px;
+  font-size: 26px;
 font-family: "garamond-premier-pro-display" !important;
 font-style: normal !important;
     font-variant: all-small-caps !important;
@@ -557,8 +567,8 @@ font-style: normal !important;
 }
 .mobile-link:hover { color: var(--red); border-color: var(--red); }
 
-.mobile-list--sections { gap: 20px; }
-.mobile-section__title { margin: 0 0 5px 0; font-size: 24px !important; font-weight: 400; font-style: normal !important;
+.mobile-list--sections { gap: 15px; }
+.mobile-section__title { margin: 0 0 5px 0; font-size: 26px !important; font-weight: 400; font-style: normal !important;
     font-variant: all-small-caps !important;
     letter-spacing: 0.03em !important;}
 .mobile-section__title a { text-decoration: none; color: var(--black); }
@@ -579,7 +589,7 @@ font-style: normal !important;
 
 .mobile-section__title{
 font-family: "garamond-premier-pro-display" !important;
-font-size: 24px;
+font-size: 26px;
 font-style: italic;
     font-feature-settings: 'swsh' on;
     font-weight:400;
@@ -603,7 +613,7 @@ padding: 0px;
   /* three equal columns */
   .header__hamburger,
   .header__logo,
-  .header__actions {
+  .header__actions{
     flex: 0 0 33.333%;
   }
 
