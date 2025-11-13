@@ -24,7 +24,7 @@ h2 {
   font-feature-settings: 'swsh' on !important;
 
   @media all and (max-width: 900px) {
-    font-size: 2.4rem !important;
+    font-size: 2.1rem !important;
   }
 }
 
@@ -2411,6 +2411,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -2421,11 +2424,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -2472,12 +2484,18 @@ slider-component.page-width {
         h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -2494,6 +2512,10 @@ slider-component.page-width {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -2504,6 +2526,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -2535,6 +2560,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -2583,6 +2611,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -2655,7 +2686,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -2670,6 +2701,14 @@ slider-component.page-width {
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
     }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
+    }
+
+
   }
 
 
@@ -2686,6 +2725,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -2697,11 +2739,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -2745,15 +2796,21 @@ slider-component.page-width {
           z-index: 3;
         }
 
-        h2 {
+       h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -2781,6 +2838,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -2812,6 +2872,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -2860,6 +2923,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -2932,7 +2998,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -2946,6 +3012,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -2964,6 +3036,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -2974,11 +3049,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -3022,15 +3106,21 @@ slider-component.page-width {
           z-index: 3;
         }
 
-        h2 {
+       h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -3047,6 +3137,10 @@ slider-component.page-width {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -3057,6 +3151,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -3088,6 +3185,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -3136,6 +3236,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -3208,7 +3311,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -3222,6 +3325,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -3241,6 +3350,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -3252,11 +3364,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -3300,15 +3421,21 @@ slider-component.page-width {
           z-index: 3;
         }
 
-        h2 {
+       h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -3336,6 +3463,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -3367,6 +3497,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -3415,6 +3548,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -3487,7 +3623,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -3501,6 +3637,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -3520,6 +3662,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -3530,11 +3675,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -3581,14 +3735,8 @@ slider-component.page-width {
         h2 {
           font-style: initial !important;
           font-size: 6rem !important;
-
-          strong {
-            font-weight: initial !important;
-            font-size: 0.4em;
-            vertical-align: super;
-            line-height: 0;
-            transform: translateY(-0.7em);
-            display: inline-block;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
           }
         }
 
@@ -3596,6 +3744,9 @@ slider-component.page-width {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -3612,6 +3763,10 @@ slider-component.page-width {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -3622,6 +3777,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -3653,6 +3811,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -3701,6 +3862,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -3773,7 +3937,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -3787,6 +3951,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -3805,6 +3975,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -3816,11 +3989,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -3864,15 +4046,21 @@ slider-component.page-width {
           z-index: 3;
         }
 
-        h2 {
+       h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -3890,6 +4078,10 @@ slider-component.page-width {
       padding: 100px;
       gap: 100px;
       flex-direction: row-reverse;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -3900,6 +4092,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -3931,6 +4126,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -3979,6 +4177,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -4051,7 +4252,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -4065,6 +4266,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -4082,6 +4289,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -4092,11 +4302,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -4140,15 +4359,21 @@ slider-component.page-width {
           z-index: 3;
         }
 
-        h2 {
+       h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -4165,6 +4390,10 @@ slider-component.page-width {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -4175,6 +4404,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -4206,6 +4438,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -4254,6 +4489,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -4326,7 +4564,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -4340,6 +4578,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -4358,6 +4602,9 @@ slider-component.page-width {
   main .shopify-section:nth-of-type(1) {
     .banner .media:before {
       padding-bottom: 33vw !important;
+      @media all and (max-width: 1024px){
+      padding-bottom: 50vw !important;
+      }
     }
 
     .banner {
@@ -4369,11 +4616,20 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
+      @media all and (max-width: 1024px){
+        flex-direction: column;
+        > div{
+          width: 100% !important;
+        }
+      }
 
       .banner__content {
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        @media all and (max-width: 1024px){
+          padding: 60px 0px !important;
+          }
 
         &:before {
           content: '';
@@ -4417,15 +4673,21 @@ slider-component.page-width {
           z-index: 3;
         }
 
-        h2 {
+       h2 {
           font-style: initial !important;
           font-size: 6rem !important;
+          @media all and (max-width: 1024px){
+            font-size: 3rem !important;
+          }
         }
 
         p {
           font-size: 4rem !important;
           font-style: italic !important;
           font-feature-settings: 'swsh' on;
+          @media all and (max-width: 1024px){
+            font-size: 2.2rem !important;
+          }
         }
       }
     }
@@ -4453,6 +4715,9 @@ slider-component.page-width {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -4484,6 +4749,9 @@ slider-component.page-width {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -4532,6 +4800,9 @@ slider-component.page-width {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
           }
         }
       }
@@ -4604,7 +4875,7 @@ slider-component.page-width {
   .shopify-section:nth-of-type(6) {
     margin: 0px auto;
 
-    >div {
+   >div {
       padding: 0px 20px;
     }
 
@@ -4618,6 +4889,12 @@ slider-component.page-width {
       background-repeat: no-repeat;
       background-position: center;
       background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Artboard_1_7e6d7c64-a65b-49ae-a5c0-631f64c478aa.png?v=1760690096);
+    }
+
+    @media all and (max-width: 1024px){
+      .image-with-text__text-item{
+        display: none !important;
+      }
     }
   }
 
@@ -6736,6 +7013,10 @@ product-recommendations {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -6746,6 +7027,9 @@ product-recommendations {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -6777,6 +7061,9 @@ product-recommendations {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -7775,6 +8062,10 @@ cart-drawer {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -7785,6 +8076,9 @@ cart-drawer {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -7825,6 +8119,9 @@ cart-drawer {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -7873,6 +8170,9 @@ cart-drawer {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
 
             &:nth-of-type(3) {
               margin-top: 10px !important;
@@ -8059,6 +8359,10 @@ cart-drawer {
       display: flex;
       padding: 100px;
       gap: 100px;
+      @media all and (max-width: 1024px){
+      padding: 40px;
+      gap: 40px;
+      }
 
       &:before,
       &:after {
@@ -8069,6 +8373,9 @@ cart-drawer {
         position: relative !important;
         width: 50% !important;
         height: auto !important;
+        @media all and (max-width: 1024px){
+ width: 100% !important;
+        }
       }
 
       .banner__media {
@@ -8109,6 +8416,9 @@ cart-drawer {
         background-color: var(--cream);
         padding: 60px !important;
         box-sizing: border-box;
+        @media all and (max-width: 1024px){
+        padding: 20px !important;
+        }
 
         &:before {
           content: '';
@@ -8157,6 +8467,9 @@ cart-drawer {
         .banner__text:nth-of-type(2) {
           p {
             font-size: 24px !important;
+        @media all and (max-width: 1024px){
+       font-size: 20px !important;
+        }
 
             &:nth-of-type(3) {
               margin-top: 10px !important;
@@ -9594,4 +9907,8 @@ body.added .product-form__submit {
 
 .footerMiddle{
   display: none !important;
+}
+
+.banner__content::before{
+padding: 0px !important;
 }
