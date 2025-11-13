@@ -9290,6 +9290,10 @@ margin: auto !important;
     }
 }
 
+.section-sections--25468764225914__custom_liquid_7ndf6Q-padding{
+  border-bottom: solid 1px #000000;
+}
+
 .mobileABanner{
   display: none !important;
   @media all and (max-width: 1024px){
@@ -9298,12 +9302,14 @@ margin: auto !important;
     padding: 5px 10px;
         font-family: norwester !important;
         letter-spacing: .025em !important;
-        color: var(--cream);
-        background-color: var(--black);
+        color: var(--black);
+        //background-color: var(--black);
         letter-spacing: .05em !important;
     font-weight: 400 !important;
     font-feature-settings: "swsh" on !important;
         font-family: garamond-premier-pro-display !important;
         font-style: italic !important;
+        max-width: 300px;
+        margin: auto;
   }
 }
