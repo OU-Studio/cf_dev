@@ -335,6 +335,11 @@ a:-webkit-any-link {
 [data-template=collection] .breadcrumb {
   margin-top: 20px;
 }
+@media all and (max-width: 1024px) {
+  [data-template=collection] .breadcrumb {
+    padding-left: 20px !important;
+  }
+}
 
 .collection--empty * {
   text-align: center !important;
@@ -8190,12 +8195,11 @@ body.added .product-form__submit .addedbutton {
     padding: 0px !important;
   }
   .shopify-section-group-footer-group.custom .footerCardWrapper {
-    overflow-x: scroll;
     padding: 0px 20px;
   }
   .shopify-section-group-footer-group.custom .custom-image-links {
-    gap: 30px !important;
-    width: 200%;
+    gap: 40px !important;
+    flex-direction: column !important;
   }
 }
 .footerMiddle {

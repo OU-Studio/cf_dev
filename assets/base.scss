@@ -372,6 +372,9 @@ a:-webkit-any-link {
 [data-template="collection"] {
   .breadcrumb {
     margin-top: 20px;
+    @media all and (max-width: 1024px){
+      padding-left: 20px !important;
+    }
   }
 }
 
@@ -9580,12 +9583,11 @@ body.added .product-form__submit {
 
   .shopify-section-group-footer-group.custom{
     .footerCardWrapper{
-      overflow-x: scroll;
       padding: 0px 20px;
     }
     .custom-image-links{
-      gap: 30px !important; 
-      width: 200%
+      gap: 40px !important; 
+      flex-direction: column !important;
     }
   }
 }
