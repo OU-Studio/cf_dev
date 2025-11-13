@@ -1802,7 +1802,7 @@ product-info {
   display: none;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1px) {
   .collection-list-view-all {
     display: none !important;
   }
@@ -1810,9 +1810,6 @@ product-info {
 @media (max-width: 900px) {
   .collection-list-wrapper ul {
     grid-template-columns: repeat(2, 1fr) !important;
-  }
-  .collection-list-wrapper .grid__item {
-    display: none !important;
   }
   .collection-list-wrapper .grid__item:nth-of-type(1) {
     display: block !important;
@@ -4806,6 +4803,11 @@ slider-component.page-width {
   margin: 10px 0px;
   color: var(--red);
 }
+@media all and (max-width: 1024px) {
+  .cf-product .cf-breadcrumbs {
+    margin: 10px 20px !important;
+  }
+}
 .cf-product .cf-breadcrumbs a {
   font-size: 16px !important;
   color: var(--black) !important;
@@ -5063,6 +5065,14 @@ body.itemadded .cf-product .cf-form-row:after {
   margin: auto !important;
 }
 
+.collapsible-content__header {
+  display: none !important;
+}
+
+.accordion {
+  margin-top: 0px !important;
+}
+
 [data-template=product] #MainContent .shopify-section:nth-of-type(4) {
   margin: 0 auto;
 }
@@ -5084,6 +5094,17 @@ body.itemadded .cf-product .cf-form-row:after {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media all and (max-width: 1024px) {
+  [data-template=product] #MainContent .shopify-section:nth-of-type(4) .image-with-text__media {
+    width: 100% !important;
+    padding-bottom: 56.25% !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  [data-template=product] #MainContent .shopify-section:nth-of-type(4) .image-with-text__text-item {
+    display: none !important;
+  }
 }
 [data-template=product] #MainContent .shopify-section:nth-of-type(4) p {
   color: var(--red) !important;
@@ -7934,6 +7955,18 @@ body.added .product-form__submit .addedbutton {
   display: none !important;
 }
 
+.mobile-panel[aria-label="Signature Series"]:before {
+  content: "SIGNATURE SERIES";
+  display: block;
+  width: 100%;
+  font-style: normal !important;
+  font-variant: all-small-caps !important;
+  letter-spacing: 0.03em !important;
+  color: var(--black);
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 20px;
+}
 .mobile-panel[aria-label="Signature Series"] ul {
   grid-template-columns: repeat(2, 1fr) !important; /* 2 equal columns */
   grid-template-rows: repeat(4, auto) !important; /* 4 rows, height auto */
@@ -8001,7 +8034,19 @@ body.added .product-form__submit .addedbutton {
     font-feature-settings: "swsh" on !important;
     font-family: garamond-premier-pro-display !important;
     font-style: italic !important;
-    max-width: 300px;
+    border-bottom: solid 1px #000000;
     margin: auto;
   }
+}
+
+.header__nav-item[tabindex="8"] {
+  display: none !important;
+}
+
+.header__nav-item[tabindex="9"] {
+  display: none !important;
+}
+
+.header__nav-item[tabindex="10"] {
+  display: none !important;
 }
