@@ -5218,6 +5218,11 @@ body .section-header.shopify-section {
   background-color: var(--cream);
   max-width: none !important;
 }
+@media all and (max-width: 1024px) {
+  #MainContent .collapsible-content-wrapper-narrow {
+    margin: 20px 0px !important;
+  }
+}
 #MainContent .collapsible-content-wrapper-narrow h3 {
   font-style: initial !important;
   text-decoration: none !important;

@@ -6230,6 +6230,9 @@ body .section-header.shopify-section {
   padding: 20px !important;
   background-color: var(--cream);
   max-width: none !important;
+  @media all and (max-width: 1024px){
+  margin: 20px 0px !important;
+  }
 
   h3 {
     font-style: initial !important;
