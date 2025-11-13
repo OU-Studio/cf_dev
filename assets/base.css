@@ -788,12 +788,16 @@ body.itemadded .featured-product .product__info-container:after {
   padding-top: 0px !important;
 }
 
+@media all and (max-width: 1024px) {
+  .announcement-bar-section {
+    display: none !important;
+  }
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--black);
-  padding: 0px 10px;
 }
 .header .header__inline-menu {
   display: none;
@@ -5941,11 +5945,12 @@ cart-drawer.drawer {
 .cart-item__details {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
 }
 
 .cart-item__name {
   text-decoration: none !important;
+  margin-bottom: 10px !important;
 }
 
 /* Details */
@@ -7332,6 +7337,18 @@ cart-remove-button .button {
   padding-bottom: 0px !important;
 }
 
+.cart-item__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: top;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.drawer__inner {
+  padding: 0px 10px !important;
+}
+
 cart-items {
   padding: 0px !important;
 }
@@ -7875,4 +7892,51 @@ body.added .product-form__submit .addedbutton {
 }
 [data-template="page.ft_01"] main .shopify-section:nth-of-type(1) .banner:before {
   display: none !important;
+}
+
+.mobile-panel[aria-label="Signature Series"] ul {
+  grid-template-columns: repeat(2, 1fr) !important; /* 2 equal columns */
+  grid-template-rows: repeat(4, auto) !important; /* 4 rows, height auto */
+  gap: 10px !important;
+}
+.mobile-panel[aria-label="Signature Series"] p {
+  margin: 0px !important;
+}
+.mobile-panel[aria-label="Signature Series"] a {
+  font-size: 0px !important;
+  display: flex;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mobile-panel[aria-label="Signature Series"] a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-top: 146% !important;
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(5) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Maharajah_688x1004px_251847c9-1ba5-44c9-af19-9f0eb774b448.jpg?v=1759563664);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(6) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Nebula_688x1004px.jpg?v=1759563664);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(3) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Booze_and_Baccy_688x1004px_6e48fa1f-3fa2-4bac-8a66-fe2c23a46c6d.jpg?v=1759563664);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(1) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Alessandro_Manfredini_688x1004px_0fb601d1-641b-45b3-a2e8-c05af519c346.jpg?v=1759563664);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(2) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Barberism_688x1004px.jpg?v=1759563664);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(8) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Triumphant_688x1004px_4b063392-926e-46a2-a999-8e05cce31099.jpg?v=1759563663);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(4) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Expedition_Reserve_688x1004px2.jpg?v=1762802803);
+}
+.mobile-panel[aria-label="Signature Series"] li:nth-of-type(7) a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/Scapicchio_688x1004px_1.jpg?v=1760034185);
 }
