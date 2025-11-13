@@ -5072,8 +5072,8 @@ body.itemadded .cf-product .cf-form-row:after {
 }
 @media all and (max-width: 1024px) {
   [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list {
-    width: 80% !important;
-    margin-right: 20% !important;
+    width: 70% !important;
+    margin-right: 30% !important;
   }
 }
 [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .multicolumn-card__image-wrapper {
@@ -5098,6 +5098,12 @@ body.itemadded .cf-product .cf-form-row:after {
 }
 [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p {
   font-size: 24px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li p {
+    font-size: 20px !important;
+    line-height: 1.2em !important;
+  }
 }
 [data-template=product] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list img {
   width: 100%;
@@ -8145,4 +8151,13 @@ body.added .product-form__submit .addedbutton {
   width: 100%;
   height: 1px;
   background-color: var(--black);
+}
+
+@media all and (max-width: 1024px) {
+  .cf-rows {
+    gap: 20px !important;
+  }
+  .cf-grid {
+    gap: 20px !important;
+  }
 }

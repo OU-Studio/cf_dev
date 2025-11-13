@@ -6042,8 +6042,8 @@ body.itemadded .cf-product .cf-form-row:after {
       width: 100% !important;
 
     @media all and (max-width: 1024px){
-      width: 80% !important;
-      margin-right: 20% !important
+      width: 70% !important;
+      margin-right: 30% !important
     }
 
       .multicolumn-card__image-wrapper {
@@ -6072,6 +6072,10 @@ body.itemadded .cf-product .cf-form-row:after {
 
         p {
           font-size: 24px !important;
+          @media all and (max-width: 1024px){
+          font-size: 20px !important;
+          line-height: 1.2em !important;
+          }
         }
 
       }
@@ -9429,3 +9433,16 @@ margin: auto !important;
   height: 1px;
   background-color: var(--black);  
 }
+
+
+
+
+    @media all and (max-width: 1024px){
+      .cf-rows{
+  gap: 20px !important;
+}
+.cf-grid{
+  gap: 20px !important;
+}
+    }
+
