@@ -7995,7 +7995,7 @@ body.added .product-form__submit .addedbutton {
     padding: 5px 10px;
     font-family: norwester !important;
     letter-spacing: 0.025em !important;
-    color: var(--red);
+    color: var(--black);
     letter-spacing: 0.05em !important;
     font-weight: 400 !important;
     font-feature-settings: "swsh" on !important;
