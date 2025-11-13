@@ -133,7 +133,7 @@
       "settings": {
         "collection": "beard-balm",
         "products_to_show": 4,
-        "title": "Selling Like Hot Cakes!",
+        "title": "Flying off the shelves!",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -253,7 +253,7 @@
       "type": "featured-product",
       "name": "Featured product",
       "settings": {
-        "title": "NEW RELEASE",
+        "title": "New from Captain Fawcett - be first to partake!",
         "product": "captain-fawcetts-expedition-reserve-body-wash",
         "show_breadcrumbs": false,
         "color_scheme": "",

@@ -40,7 +40,7 @@
         "text_KnKEJQ": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett is delighted to make available to his skilled tonsorial artist chums his rather splendid range of simply ‘First Class Gentlemen’s Grooming Requisite’s’ here you will find everything you could possibly need to equip your esteemed Barbershop… Moustache Waxes, Beard Oils, Beard Balms, Hair Pomades, Hair Tonics, Sea Salt Sprays, Pre Shave Oil, Shaving Creams & Soaps, Razors, Post Shave Balm, Mirrors, Capes, Towels, Brushes & Combs, Eau de Parfum and Cologne et al…</p><h2>Captain Fawcett</h2>"
+            "text": "<h2><em>Breaking stories from the razor’s edge…</em></h2><p>If you’re looking for sugar and lace, you’ve taken a wrong turn. This is <em>The Fawcett Times</em>, where the truth’s got a five o’clock shadow and headlines cut close to the bone. From smoky clubs to back street barbers, we spill the tea, chase the legends and polish the facts till they gleam. Sensational style, scandalous scents and exposés from the farthest corners of the grooming frontier - it’s all here: hirsute, heady and hot off the press. So light up, lean in and keep your wits about you… this ain’t your grandma’s gossip column.</p>"
           }
         }
       },
@@ -77,7 +77,7 @@
           "settings": {
             "title": "Issue No.10",
             "subtitle": "Spring 2025",
-            "text": "<p>Some content here</p><p>Some content here</p><p>Some content here</p><p>Some content here</p><p>Some content here</p>",
+            "text": "<p>Seduction Queen’s Grooming Rituals Exposed! </p><p>The Captain & the Prince: A Right Royal Close Shave! </p><p>Motorcycle Mayhem - BarbersRide posse on the loose! </p><p>Sid Sottung Spills his Skills from the Barber’s Chair! </p><p>The Great Expedition Rides Home!</p><p>Meet the Coolest Quiff this side of Nashville! </p>",
             "link_label": "READ ISSUE No. 10",
             "link": "shopify://pages/fawcett-times"
           }

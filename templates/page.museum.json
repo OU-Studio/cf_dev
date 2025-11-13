@@ -81,7 +81,7 @@
         "text_ThgUJr": {
           "type": "text",
           "settings": {
-            "text": "In advance of your hoped for esteemed personal visit to HQ in King’s Lynn, Norfolk, England, Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium. For thanks to the wonders of 21st century technology, this wonderous collection of Mantiques is now open to all.",
+            "text": "Ladies and gentlemen, scholars and seekers of splendour! Step right up to <em>Captain Fawcett’s Marvellous Barbershop Museum, </em>a veritable emporium of the extraordinary! Behold the world’s most distinguished collection of barbering curiosities, housed within the Captain’s headquarters in historic King’s Lynn, Norfolk, England. Discover four centuries of tonsorial treasures: a magnificent mélange of mantiques, curios and craftsmanship. See where whiskers made history, a sight to behold, a tale to be told! Prepare your eyes for astonishment!",
             "text_style": "body"
           }
         }
@@ -129,7 +129,7 @@
         "text_wnPmF3": {
           "type": "text",
           "settings": {
-            "text": "<p>Captain Fawcett invites you to stroll virtually and at your leisure through his world renowned ‘Marvellous Barbershop Museum’, his personal homage to tonsorial art, housed in the rather splendid Emporium.</p>",
+            "text": "<p>Roll up, roll up! Thanks to the miracles of modern science, explore the Captain’s world-famous museum from the comfort of your own parlour! A world of wonders awaits in glorious Virtual Reality! Don’t be shy, don’t be slow…there are marvels inside you’ll never know! No appointment required!</p>",
             "text_style": "body"
           }
         }
@@ -266,7 +266,7 @@
             "heading": "Opening Times",
             "icon": "check_mark",
             "row_content_liquid": "",
-            "row_content": "",
+            "row_content": "<p>Captain Fawcett’s Marvellous Barbershop Museum is open <strong>Monday to Friday, 10:00–17:00</strong>. Private visits, special occasions, cream teas and tours with the Right Hand Man may be arranged by appointment. Should His Majesty require a visit, the Captain will, of course, endeavour to oblige.</p><p><em>To ensure curiosity is satisfied, advance booking is highly recommended.</em></p>",
             "page": ""
           }
         },
@@ -276,7 +276,7 @@
             "heading": "Directions",
             "icon": "check_mark",
             "row_content_liquid": "",
-            "row_content": "",
+            "row_content": "<p>Find the Captain’s Emporium & Museum at:<br/><strong>Friesian Way, King’s Lynn, Norfolk PE30 4JQ, United Kingdom.</strong></p><p>On the edge of historic King’s Lynn, Norfolk, the Captain’s headquarters is a mere stone’s throw from the 21st century…yet a world apart in wonder!</p><p><strong>What3Words - ///arrow.towers.filled</strong></p>",
             "page": ""
           }
         },
@@ -286,7 +286,37 @@
             "heading": "Accessibility",
             "icon": "check_mark",
             "row_content_liquid": "",
-            "row_content": "",
+            "row_content": "<p>Please note the Museum is located upon the mezzanine level of Captain Fawcett’s working headquarters and access is via staircase only. Regrettably, there is no lift.</p><p>However, fear not! The Virtual Museum is free to all, open day and night, visible from every corner of the globe, no passport required. Huzzah!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QeGhXN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Parking",
+            "icon": "check_mark",
+            "row_content_liquid": "",
+            "row_content": "<p>There is limited parking on site but plenty of free street parking for those arriving by motorcar, motorcycle, Penny Farthing or pony & trap. Pogo sticks, stilts and skateboards may be accommodated inside HQ.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9FMUUg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Refreshments",
+            "icon": "check_mark",
+            "row_content_liquid": "",
+            "row_content": "<p>Tea and coffee is, of course, readily available. Should you wish to arrange a cream tea, Victoria sponge or sandwiches for a special occasion, do contact the crew at HQ to discuss your wishes or, indeed, wildest dreams.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_TLhEL4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Filming and Photo Shoots",
+            "icon": "check_mark",
+            "row_content_liquid": "",
+            "row_content": "<p>Captain Fawcett’s Emporium and Marvellous Barbershop Museum offer a one-of-a-kind backdrop for film, photography, television and editorial shoots. An authentic treasure trove of barbering artefacts, dating back over four centuries the location houses period tableux, antique barber chairs, cabinets of elixirs, plus tonsorial antiques and collectibles. HQ as a whole is a living set, brimming with character, texture and eccentricity, ideal for period detail, documentary, advertising, fashion and creative campaigns alike.</p><p>Situated in King’s Lynn, Norfolk, the Captain’s Emporium is within easy reach by road or rail, with ample on-site parking and ground-level loading access for equipment and crew.</p><p>To discuss your project or arrange a recce, please get in touch with the Captain’s crew via the <a href=\"/pages/contact\" title=\"Contact\">Contact page.</a></p>",
             "page": ""
           }
         }
@@ -295,7 +325,10 @@
         "collapsible_row_bFrWrW",
         "collapsible_row_UngV43",
         "collapsible_row_WfCRYW",
-        "collapsible_row_h8fhN8"
+        "collapsible_row_h8fhN8",
+        "collapsible_row_QeGhXN",
+        "collapsible_row_9FMUUg",
+        "collapsible_row_TLhEL4"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
