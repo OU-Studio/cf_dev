@@ -8756,11 +8756,11 @@ body.added .product-form__submit .addedbutton {
 
 /* The fixed clone */
 .section-header-fixed {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   right: 0; /* or width: 100vw; if you prefer */
-  z-index: 999;
+  z-index: 999 !important;
   display: none; /* hidden by default */
   box-sizing: border-box;
 }
