@@ -12,34 +12,10 @@
     "banner_slideshow_BkbBe7": {
       "type": "banner-slideshow",
       "blocks": {
-        "slide_B6zTU4": {
+        "slide_CMVCHM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Fawcett_Times_Free_with_Orders.jpg",
-            "quote": "",
-            "name": ""
-          }
-        },
-        "slide_X8Pqxj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Bianco_Classico_Winner.jpg",
-            "quote": "",
-            "name": ""
-          }
-        },
-        "slide_AGRjaU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Hair-Powder.jpg",
-            "quote": "",
-            "name": ""
-          }
-        },
-        "slide_iNGtLM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Pomades.jpg",
+            "image": "shopify://shop_images/Expedition-Reserve-New-Products-desktop.jpg",
             "quote": "",
             "name": ""
           }
@@ -52,10 +28,18 @@
             "name": ""
           }
         },
-        "slide_CMVCHM": {
+        "slide_iNGtLM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Expedition-Reserve-New-Products-desktop.jpg",
+            "image": "shopify://shop_images/Pomades.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
+        "slide_X8Pqxj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Bianco_Classico_Winner.jpg",
             "quote": "",
             "name": ""
           }
@@ -70,12 +54,10 @@
         }
       },
       "block_order": [
-        "slide_B6zTU4",
-        "slide_X8Pqxj",
-        "slide_AGRjaU",
-        "slide_iNGtLM",
-        "slide_Yk7cCE",
         "slide_CMVCHM",
+        "slide_Yk7cCE",
+        "slide_iNGtLM",
+        "slide_X8Pqxj",
         "slide_KXWpVR"
       ],
       "name": "Banner Slideshow",
