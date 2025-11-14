@@ -9399,7 +9399,7 @@ cart-items .title--primary {
     width: 33%;
     position: sticky;
     margin: 0px !important;
-    top: 0px;
+    top: 120px;
 
     .image-with-text__grid .image-with-text__text-item {
       box-sizing: border-box;
@@ -9417,6 +9417,10 @@ cart-items .title--primary {
 
     .image-with-text__grid .image-with-text__media-item img {
       aspect-ratio: 1 / 1 !important;
+    }
+    h3{
+      color: var(--black) !important;
+      font-style: normal !important;
     }
   }
 

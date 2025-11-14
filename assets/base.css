@@ -8251,7 +8251,7 @@ cart-items .title--primary {
   width: 33%;
   position: sticky;
   margin: 0px !important;
-  top: 0px;
+  top: 120px;
 }
 [data-template="article.captains-journal"] #MainContent section:first-of-type .image-with-text__grid .image-with-text__text-item {
   box-sizing: border-box;
@@ -8266,6 +8266,10 @@ cart-items .title--primary {
 }
 [data-template="article.captains-journal"] #MainContent section:first-of-type .image-with-text__grid .image-with-text__media-item img {
   aspect-ratio: 1/1 !important;
+}
+[data-template="article.captains-journal"] #MainContent section:first-of-type h3 {
+  color: var(--black) !important;
+  font-style: normal !important;
 }
 [data-template="article.captains-journal"] #MainContent section:last-of-type {
   width: 64%;
