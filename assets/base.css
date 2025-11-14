@@ -8753,12 +8753,21 @@ body.added .product-form__submit .addedbutton {
 .section-header {
   box-sizing: border-box;
 }
-.section-header.is-sticky {
-  position: fixed !important;
+
+/* The fixed clone */
+.section-header-fixed {
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; /* or width: 100vw; if you prefer */
   z-index: 999;
+  display: none; /* hidden by default */
+  box-sizing: border-box;
+}
+
+/* When it should be visible */
+.section-header-fixed.is-visible {
+  display: block;
 }
 
 html {

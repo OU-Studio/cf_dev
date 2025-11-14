@@ -855,34 +855,43 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const header2 = document.querySelector('.section-header');
+
 if (header2) {
+  // Use inner child for nicer trigger if there's padding
   const inner = header2.firstElementChild || header2;
+  const triggerY = inner.getBoundingClientRect().top + window.scrollY;
 
-  // Trigger when the inner padded content hits the top
-  const headerTrigger =
-    inner.getBoundingClientRect().top + window.scrollY;
+  // Clone the header for the fixed version
+  const fixedHeader = header2.cloneNode(true);
+  fixedHeader.classList.add('section-header-fixed');
+  fixedHeader.setAttribute('aria-hidden', 'true'); // optional
 
-  const placeholder = document.createElement('div');
-  placeholder.style.height = header2.offsetHeight + 'px';
+  document.body.appendChild(fixedHeader);
 
-  let isSticky = false;
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  function updateHeader(scrollY) {
+    const shouldShow = scrollY >= triggerY;
+    fixedHeader.classList.toggle('is-visible', shouldShow);
+  }
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY >= headerTrigger) {
-      if (!isSticky) {
-        header2.parentNode.insertBefore(placeholder, header2);
-        header2.classList.add('is-sticky');
-        isSticky = true;
-      }
-    } else {
-      if (isSticky) {
-        placeholder.remove();
-        header2.classList.remove('is-sticky');
-        isSticky = false;
-      }
+    lastScrollY = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateHeader(lastScrollY);
+        ticking = false;
+      });
+      ticking = true;
     }
   });
+
+  // Run once on load in case you land mid-page
+  updateHeader(window.scrollY);
 }
+
 
 
 </script>
