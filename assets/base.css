@@ -1976,7 +1976,8 @@ blockquote {
   text-align: center;
   font-variant: all-small-caps !important;
   font-style: normal !important;
-  margin-top: 0px !important;
+  margin-top: 20px !important;
+  margin-bottom: 40px !important;
 }
 
 .reviews {
@@ -2153,6 +2154,11 @@ slider-component.page-width {
 }
 [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
 }
 [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
@@ -2442,6 +2448,11 @@ slider-component.page-width {
 [data-template="page.maharajah"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.maharajah"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
+}
 [data-template="page.maharajah"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
 }
@@ -2723,6 +2734,11 @@ slider-component.page-width {
 }
 [data-template="page.nebula"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.nebula"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
 }
 [data-template="page.nebula"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
@@ -3012,6 +3028,11 @@ slider-component.page-width {
 [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
+}
 [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
 }
@@ -3293,6 +3314,11 @@ slider-component.page-width {
 }
 [data-template="page.barberism"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.barberism"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
 }
 [data-template="page.barberism"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
@@ -3582,6 +3608,11 @@ slider-component.page-width {
 [data-template="page.triumphant"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.triumphant"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
+}
 [data-template="page.triumphant"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
 }
@@ -3870,6 +3901,11 @@ slider-component.page-width {
 [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
+}
 [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
 }
@@ -4157,6 +4193,11 @@ slider-component.page-width {
 }
 [data-template="page.scapicchio"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.scapicchio"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
 }
 [data-template="page.scapicchio"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
@@ -5073,10 +5114,10 @@ slider-component.page-width {
 [data-template="article.captains-journal"] .article-template__title {
   display: none !important;
 }
-[data-template="article.captains-journal"] h2 {
+[data-template="article.captains-journal"] main h2 {
   margin-bottom: 0px !important;
 }
-[data-template="article.captains-journal"] .button {
+[data-template="article.captains-journal"] main .button {
   display: flex;
   width: 100%;
   padding: 10px 20px !important;
@@ -5090,7 +5131,7 @@ slider-component.page-width {
      -moz-appearance: none;
           appearance: none;
 }
-[data-template="article.captains-journal"] .button span {
+[data-template="article.captains-journal"] main .button span {
   line-height: 1em !important;
   font-size: 18px !important;
   color: var(--cream) !important;
@@ -6127,6 +6168,11 @@ product-recommendations {
 [data-template="page.museum"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.museum"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
+}
 [data-template="page.museum"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
 }
@@ -6926,8 +6972,8 @@ cart-drawer .drawer__footer {
 .header__cart-count {
   position: absolute !important;
   left: initial !important;
-  right: 20px !important;
-  top: -20px !important;
+  right: 17px !important;
+  top: -15px !important;
   font-size: 15px !important;
   padding: 0px !important;
   width: 25px;
@@ -7089,6 +7135,11 @@ cart-drawer .drawer__footer {
 }
 [data-template="page.contact"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
 }
 [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
@@ -7355,6 +7406,11 @@ cart-drawer .drawer__footer {
 }
 [data-template="page.contact-wholesale"] main .shopify-section:nth-of-type(2) {
   margin-top: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact-wholesale"] main .shopify-section:nth-of-type(2) {
+    margin-top: 0px !important;
+  }
 }
 [data-template="page.contact-wholesale"] main .shopify-section:nth-of-type(2) .banner .media:before {
   padding-bottom: 100% !important;
@@ -8782,8 +8838,13 @@ body.added .product-form__submit .addedbutton {
   display: block;
 }
 
-html {
-  scrollbar-gutter: stable; /* prevents the 5px jump */
+.drawer__inner {
+  right: 15px !important;
+}
+@media all and (max-width: 1024px) {
+  .drawer__inner {
+    right: 0px !important;
+  }
 }
 
 .header-fixed .mobile-nav {

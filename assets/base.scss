@@ -2322,7 +2322,8 @@ blockquote {
   text-align: center;
       font-variant: all-small-caps !important;
       font-style: normal !important;
-      margin-top: 0px !important;
+      margin-top: 20px !important;
+      margin-bottom: 40px !important;
 }
 
 .reviews {
@@ -2516,6 +2517,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -2838,6 +2842,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -3155,6 +3162,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -3477,6 +3487,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -3795,6 +3808,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -4116,6 +4132,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -4436,6 +4455,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -4757,6 +4779,9 @@ slider-component.page-width {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -5870,11 +5895,11 @@ slider-component.page-width {
     display: none !important;
   }
 
-  h2 {
+  main h2 {
     margin-bottom: 0px !important;
   }
 
-  .button {
+  main .button {
     display: flex;
     width: 100%;
     padding: 10px 20px !important;
@@ -7074,6 +7099,9 @@ product-recommendations {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -7943,8 +7971,8 @@ cart-drawer {
 .header__cart-count {
   position: absolute !important;
   left: initial !important;
-  right: 20px !important;
-  top: -20px !important;
+  right: 17px !important;
+  top: -15px !important;
   font-size: 15px !important;
   padding: 0px !important;
   width: 25px;
@@ -8123,6 +8151,9 @@ cart-drawer {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -8420,6 +8451,9 @@ cart-drawer {
 
   main .shopify-section:nth-of-type(2) {
     margin-top: 15px !important;
+    @media all and (max-width: 1024px){
+      margin-top: 0px !important;
+    }
 
     .banner .media:before {
       padding-bottom: 100% !important;
@@ -10013,9 +10047,19 @@ padding: 0px !important;
   display: block;
 }
 
+@media all and (max-width: 1024px){
 html {
-  scrollbar-gutter: stable; /* prevents the 5px jump */
+  //scrollbar-gutter: stable; /* prevents the 5px jump */
 }
+}
+
+.drawer__inner{
+  right: 15px !important;
+  @media all and (max-width: 1024px){
+  right: 0px !important;
+  }
+}
+
 
 .header-fixed .mobile-nav{
 top: 100px !important;
