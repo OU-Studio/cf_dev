@@ -853,6 +853,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+const header = document.querySelector('.section-header');
+const placeholder = document.createElement('div');
+placeholder.style.height = header.offsetHeight + 'px';
+
+const headerTop = header.offsetTop;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= headerTop) {
+    if (!header.classList.contains('is-sticky')) {
+      header.parentNode.insertBefore(placeholder, header);
+      header.classList.add('is-sticky');
+    }
+  } else {
+    if (header.classList.contains('is-sticky')) {
+      placeholder.remove();
+      header.classList.remove('is-sticky');
+    }
+  }
+});
+
+
 </script>
 
 

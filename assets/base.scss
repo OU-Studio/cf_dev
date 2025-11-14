@@ -2311,8 +2311,11 @@ blockquote {
   background-color: var(--cream);
 }
 
-.reviews p {
-  font-size: 20px !important;
+.reviews h2 {
+  text-align: center;
+      font-variant: all-small-caps !important;
+      font-style: normal !important;
+      margin-top: 0px !important;
 }
 
 .reviews {
@@ -2412,7 +2415,7 @@ slider-component.page-width {
     .banner .media:before {
       padding-bottom: 33vw !important;
       @media all and (max-width: 1024px){
-      padding-bottom: 50vw !important;
+      padding-bottom: 50vw !important; 
       }
     }
 
@@ -2428,10 +2431,13 @@ slider-component.page-width {
         flex-direction: column;
         > div{
           width: 100% !important;
-        }
+          &.media{
+            display: none !important;
+          }
+        } 
       }
 
-      .banner__content {
+      .banner__content { 
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -2743,10 +2749,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -3057,10 +3066,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -3376,10 +3388,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -3691,10 +3706,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -4009,10 +4027,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -4326,10 +4347,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -4644,10 +4668,13 @@ slider-component.page-width {
         width: 50% !important;
         height: auto !important;
       }
-      @media all and (max-width: 1024px){
+       @media all and (max-width: 1024px){
         flex-direction: column;
         > div{
           width: 100% !important;
+          &.media{
+            display: none !important;
+          }
         }
       }
 
@@ -9947,4 +9974,18 @@ body.added .product-form__submit {
 
 .banner__content::before{
 padding: 0px !important;
+}
+
+.shopify-section-group-header-group.custom > div > div{
+  border: none !important;
+}
+
+.section-header{
+  &.is-sticky{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  }
 }

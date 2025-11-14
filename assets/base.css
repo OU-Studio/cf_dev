@@ -1965,8 +1965,11 @@ blockquote {
   background-color: var(--cream);
 }
 
-.reviews p {
-  font-size: 20px !important;
+.reviews h2 {
+  text-align: center;
+  font-variant: all-small-caps !important;
+  font-style: normal !important;
+  margin-top: 0px !important;
 }
 
 .reviews {
@@ -2068,6 +2071,9 @@ slider-component.page-width {
   }
   [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
+  }
+  [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
   }
 }
 [data-template="page.alessandro-manfredini"] main .shopify-section:nth-of-type(1) .banner .banner__content {
@@ -2354,6 +2360,9 @@ slider-component.page-width {
   [data-template="page.maharajah"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
   }
+  [data-template="page.maharajah"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
+  }
 }
 [data-template="page.maharajah"] main .shopify-section:nth-of-type(1) .banner .banner__content {
   display: flex;
@@ -2632,6 +2641,9 @@ slider-component.page-width {
   }
   [data-template="page.nebula"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
+  }
+  [data-template="page.nebula"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
   }
 }
 [data-template="page.nebula"] main .shopify-section:nth-of-type(1) .banner .banner__content {
@@ -2918,6 +2930,9 @@ slider-component.page-width {
   [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
   }
+  [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
+  }
 }
 [data-template="page.booze-baccy"] main .shopify-section:nth-of-type(1) .banner .banner__content {
   display: flex;
@@ -3196,6 +3211,9 @@ slider-component.page-width {
   }
   [data-template="page.barberism"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
+  }
+  [data-template="page.barberism"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
   }
 }
 [data-template="page.barberism"] main .shopify-section:nth-of-type(1) .banner .banner__content {
@@ -3482,6 +3500,9 @@ slider-component.page-width {
   [data-template="page.triumphant"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
   }
+  [data-template="page.triumphant"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
+  }
 }
 [data-template="page.triumphant"] main .shopify-section:nth-of-type(1) .banner .banner__content {
   display: flex;
@@ -3767,6 +3788,9 @@ slider-component.page-width {
   [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
   }
+  [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
+  }
 }
 [data-template="page.expedition-reserve"] main .shopify-section:nth-of-type(1) .banner .banner__content {
   display: flex;
@@ -4051,6 +4075,9 @@ slider-component.page-width {
   }
   [data-template="page.scapicchio"] main .shopify-section:nth-of-type(1) .banner > div {
     width: 100% !important;
+  }
+  [data-template="page.scapicchio"] main .shopify-section:nth-of-type(1) .banner > div.media {
+    display: none !important;
   }
 }
 [data-template="page.scapicchio"] main .shopify-section:nth-of-type(1) .banner .banner__content {
@@ -8717,4 +8744,16 @@ body.added .product-form__submit .addedbutton {
 
 .banner__content::before {
   padding: 0px !important;
+}
+
+.shopify-section-group-header-group.custom > div > div {
+  border: none !important;
+}
+
+.section-header.is-sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
