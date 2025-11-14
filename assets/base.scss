@@ -8828,7 +8828,9 @@ display: none !important;
       background-repeat: no-repeat;
       background-position: center top;
       padding-top: 300px;
+      @media all and (min-width: 1024px){
       margin-top: -40px !important;
+      }
 
       @media all and (max-width: 1024px){
         padding: 20px !important;

@@ -7780,7 +7780,11 @@ cart-drawer .drawer__footer {
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 300px;
-  margin-top: -40px !important;
+}
+@media all and (min-width: 1024px) {
+  [data-template="page.stockists"] main .ten.columns {
+    margin-top: -40px !important;
+  }
 }
 @media all and (max-width: 1024px) {
   [data-template="page.stockists"] main .ten.columns {
