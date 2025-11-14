@@ -157,7 +157,7 @@
       "type": "featured-product",
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "title": "",
+        "title": "The Nebula Range",
         "product": "bianco-classico-moustache-wax",
         "show_breadcrumbs": false,
         "color_scheme": "",
@@ -171,7 +171,7 @@
       "settings": {
         "collection": "alessandro",
         "products_to_show": 24,
-        "title": "The Alessandro Manfredini Range",
+        "title": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
