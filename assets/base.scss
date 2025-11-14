@@ -1292,10 +1292,9 @@ main {
       }
 
       &:before {
-        padding-bottom: 100% !important;
         background-color: #000000 !important;
 
-        @media all and (min-width: 901px) {
+        @media all and (min-width: 1024px) {
           padding-bottom: 40vw !important;
         }
       }
@@ -9177,6 +9176,8 @@ cart-remove-button .button {
 
 .drawer__inner {
   padding: 0px 10px !important;
+
+  max-width: 100vw !important
 }
 
 cart-items {
