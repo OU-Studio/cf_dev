@@ -8195,11 +8195,20 @@ cart-drawer {
       background-repeat: no-repeat;
       background-position: center top;
       padding-top: 210px;
+      @media all and (max-width: 1024px){
+        padding: 20px !important;
+        background: none !important
+      }
 
       h2 {
         font-style: normal !important;
         font-variant: all-small-caps !important;
         letter-spacing: 0.03em !important;
+
+      @media all and (max-width: 1024px){
+        padding: 0px !important;
+        margin: 0px !important;
+      }
       }
 
       #contact_form,
@@ -8207,6 +8216,9 @@ cart-drawer {
         justify-content: center !important;
         padding-bottom: 600px;
         align-items: center;
+      @media all and (max-width: 1024px){
+        padding: 0px !important;
+      }
       }
 
       form {
@@ -8367,7 +8379,9 @@ cart-drawer {
 
           img {
             object-fit: contain !important;
-
+            @media all and (max-width: 1024px){
+              position: relative !important;
+            }
           }
         }
       }
@@ -8496,10 +8510,20 @@ cart-drawer {
       background-position: center top;
       padding-top: 280px;
 
+      @media all and (max-width: 1024px){
+        padding: 20px !important;
+        background: none !important;
+      }
+
       h2 {
         font-style: normal !important;
         font-variant: all-small-caps !important;
         letter-spacing: 0.03em !important;
+
+      @media all and (max-width: 1024px){
+        padding: 0px !important;
+        margin: 0px !important;
+      }
       }
 
       #contact_form,
@@ -8507,6 +8531,10 @@ cart-drawer {
         justify-content: center !important;
         padding-bottom: 700px;
         align-items: center;
+
+      @media all and (max-width: 1024px){
+        padding: 0px !important;
+      }
       }
 
       form {
@@ -8667,6 +8695,9 @@ cart-drawer {
 
           img {
             object-fit: contain !important;
+            @media all and (max-width: 1024px){
+              position: relative !important;
+            }
 
           }
         }
@@ -8795,16 +8826,30 @@ cart-drawer {
       background-position: center top;
       padding-top: 300px;
 
+      @media all and (max-width: 1024px){
+        padding: 20px !important;
+        background: none !important;
+      }
+
       h2 {
         font-style: normal !important;
         font-variant: all-small-caps !important;
         letter-spacing: 0.03em !important;
+
+      @media all and (max-width: 1024px){
+        padding: 0px !important;
+        margin: 0px !important;
+      }
       }
 
       #stockist-form {
         justify-content: center !important;
         padding-bottom: 600px;
         align-items: center;
+
+      @media all and (max-width: 1024px){
+        padding: 0px !important;
+      }
       }
 
       form {

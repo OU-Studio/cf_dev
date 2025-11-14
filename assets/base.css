@@ -7189,16 +7189,34 @@ cart-drawer .drawer__footer {
   background-position: center top;
   padding-top: 210px;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.contact"] main .ten.columns {
+    padding: 20px !important;
+    background: none !important;
+  }
+}
 [data-template="page.contact"] main .ten.columns h2 {
   font-style: normal !important;
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact"] main .ten.columns h2 {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
 }
 [data-template="page.contact"] main .ten.columns #contact_form,
 [data-template="page.contact"] main .ten.columns #wholesale-form {
   justify-content: center !important;
   padding-bottom: 600px;
   align-items: center;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact"] main .ten.columns #contact_form,
+  [data-template="page.contact"] main .ten.columns #wholesale-form {
+    padding: 0px !important;
+  }
 }
 [data-template="page.contact"] main .ten.columns form {
   margin: auto;
@@ -7352,6 +7370,11 @@ cart-drawer .drawer__footer {
   -o-object-fit: contain !important;
      object-fit: contain !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(1) img {
+    position: relative !important;
+  }
+}
 [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner .banner__content {
   display: flex;
   flex-direction: column;
@@ -7460,16 +7483,34 @@ cart-drawer .drawer__footer {
   background-position: center top;
   padding-top: 280px;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.contact-wholesale"] main .ten.columns {
+    padding: 20px !important;
+    background: none !important;
+  }
+}
 [data-template="page.contact-wholesale"] main .ten.columns h2 {
   font-style: normal !important;
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact-wholesale"] main .ten.columns h2 {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
 }
 [data-template="page.contact-wholesale"] main .ten.columns #contact_form,
 [data-template="page.contact-wholesale"] main .ten.columns #wholesale-form {
   justify-content: center !important;
   padding-bottom: 700px;
   align-items: center;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact-wholesale"] main .ten.columns #contact_form,
+  [data-template="page.contact-wholesale"] main .ten.columns #wholesale-form {
+    padding: 0px !important;
+  }
 }
 [data-template="page.contact-wholesale"] main .ten.columns form {
   margin: auto;
@@ -7623,6 +7664,11 @@ cart-drawer .drawer__footer {
   -o-object-fit: contain !important;
      object-fit: contain !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.contact-wholesale"] main .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(1) img {
+    position: relative !important;
+  }
+}
 [data-template="page.contact-wholesale"] main .shopify-section:nth-of-type(2) .banner .banner__content {
   display: flex;
   flex-direction: column;
@@ -7730,15 +7776,32 @@ cart-drawer .drawer__footer {
   background-position: center top;
   padding-top: 300px;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.stockists"] main .ten.columns {
+    padding: 20px !important;
+    background: none !important;
+  }
+}
 [data-template="page.stockists"] main .ten.columns h2 {
   font-style: normal !important;
   font-variant: all-small-caps !important;
   letter-spacing: 0.03em !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.stockists"] main .ten.columns h2 {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+}
 [data-template="page.stockists"] main .ten.columns #stockist-form {
   justify-content: center !important;
   padding-bottom: 600px;
   align-items: center;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.stockists"] main .ten.columns #stockist-form {
+    padding: 0px !important;
+  }
 }
 [data-template="page.stockists"] main .ten.columns form {
   margin: auto;
