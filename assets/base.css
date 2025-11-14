@@ -4568,8 +4568,8 @@ slider-component.page-width {
 }
 [data-template="page.fawcett-times"] main .shopify-section:nth-of-type(2) h2 {
   font-size: 30px !important;
-  margin-bottom: 20px !important;
-  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-top: 0px !important;
 }
 [data-template="page.fawcett-times"] main .shopify-section:nth-of-type(2) * {
   text-align: center !important;
@@ -4635,6 +4635,7 @@ slider-component.page-width {
 @media all and (max-width: 1024px) {
   [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list {
     flex-direction: column;
+    gap: 0px;
   }
   [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list > li {
     width: 100% !important;
@@ -4734,14 +4735,11 @@ slider-component.page-width {
   color: var(--black);
   font-style: normal !important;
 }
-[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3:first-of-type {
-  margin-top: 10px !important;
-}
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte {
   margin-top: 20px !important;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .inline-richtext:first-of-type {
-  margin-top: 20px !important;
+  margin-top: 0px !important;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .inline-richtext:nth-of-type(2) {
   margin-top: 5px !important;
@@ -4772,6 +4770,7 @@ slider-component.page-width {
      -moz-appearance: none;
           appearance: none;
   text-align: center;
+  margin-bottom: 10px !important;
   line-height: 1em !important;
   font-size: 18px !important;
   color: var(--cream) !important;
@@ -4782,7 +4781,7 @@ slider-component.page-width {
   transform: none !important;
   color: var(--white) !important;
   font-family: empera !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list .link .svg-wrapper {
   display: none !important;
@@ -4799,6 +4798,9 @@ slider-component.page-width {
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) {
   padding: 0px 10px;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .title-wrapper-with-link {
+  margin-bottom: 5px !important;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) * {
   text-align: center;
@@ -4897,6 +4899,11 @@ slider-component.page-width {
 }
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(2) .rich-text {
   padding: 20px 0px 0px 0px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(2) .rich-text {
+    padding: 0px !important;
+  }
 }
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(2) p {
   font-size: 24px !important;
@@ -5154,6 +5161,7 @@ slider-component.page-width {
   text-align: center;
   font-variant: all-small-caps !important;
   font-style: normal !important;
+  margin-bottom: 10px !important;
 }
 
 [data-template="article.captains-journal"] main .page-width {
@@ -8743,6 +8751,11 @@ body.added .product-form__submit .addedbutton {
 .pdfbox {
   padding: 40px 20px !important;
 }
+@media all and (max-width: 1024px) {
+  .pdfbox {
+    padding: 10px 20px !important;
+  }
+}
 
 ._df_book {
   background-color: var(--cream) !important;
@@ -8990,4 +9003,32 @@ a.multicolumn-card__link-wrapper {
 
 .footerText {
   text-align: center;
+  max-width: 900px;
+  padding: 0px 10px;
+  margin: auto;
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
+}
+
+#home-intro p {
+  font-size: 24px !important;
+}
+
+.article-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-section .title {
+  margin: 10px 0px !important;
+  text-align: center !important;
+}
+
+.pagination-wrapper {
+  margin-top: 0px !important;
+  padding-bottom: 30px !important;
+}
+.pagination-wrapper ul {
+  margin: 0px !important;
 }

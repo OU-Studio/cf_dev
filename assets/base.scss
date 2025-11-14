@@ -5241,8 +5241,8 @@ slider-component.page-width {
 
     h2 {
       font-size: 30px !important;
-      margin-bottom: 20px !important;
-      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      margin-top: 0px !important;
     }
 
     margin: 0px 10px;
@@ -5324,6 +5324,7 @@ slider-component.page-width {
       width: 100%;
       @media all and (max-width: 1024px){
         flex-direction: column;
+      gap: 0px;
         > li{
           width: 100% !important;
         }
@@ -5441,9 +5442,6 @@ slider-component.page-width {
           font-style: var(--garamond-large-style);
           color: var(--black);
           font-style: normal !important;
-          &:first-of-type{
-      margin-top: 10px !important;
-          }
         }
 
         .rte {
@@ -5451,7 +5449,7 @@ slider-component.page-width {
         }
 
         .inline-richtext:first-of-type {
-          margin-top: 20px !important;
+          margin-top: 0px !important;
         }
 
         .inline-richtext:nth-of-type(2) {
@@ -5485,6 +5483,7 @@ slider-component.page-width {
         background-color: var(--red) !important;
         appearance: none;
         text-align: center;
+        margin-bottom: 10px !important;
 
         .svg-wrapper {
           display: none !important
@@ -5500,7 +5499,7 @@ slider-component.page-width {
         transform: none !important;
         color: var(--white) !important;
         font-family: empera !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 10px !important;
       }
 
       img {
@@ -5517,6 +5516,10 @@ slider-component.page-width {
 
   #MainContent .shopify-section:nth-of-type(4) {
     padding: 0px 10px;
+
+    .title-wrapper-with-link{
+margin-bottom: 5px !important;
+    }
 
     * {
       text-align: center;
@@ -5621,6 +5624,9 @@ slider-component.page-width {
 
     .rich-text {
       padding: 20px 0px 0px 0px !important;
+      @media all and (max-width: 1024px){
+padding: 0px !important
+      }
     }
 
     p {
@@ -5926,6 +5932,7 @@ display: none !important;
   text-align: center;
   font-variant: all-small-caps !important;
   font-style: normal !important;
+  margin-bottom: 10px !important;
 }
 
 
@@ -9901,6 +9908,9 @@ body.added .product-form__submit {
 
 .pdfbox {
   padding: 40px 20px !important;
+  @media all and (max-width: 1024px){
+  padding: 10px 20px !important;
+  }
 }
 
 
@@ -10190,4 +10200,32 @@ a.multicolumn-card__link-wrapper{
 
 .footerText{
   text-align: center;
+  max-width: 900px;
+  padding: 0px 10px;
+  margin: auto;
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
+}
+
+#home-intro p{
+  font-size: 24px !important;
+}
+
+.article-template{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-section .title{
+  margin: 10px 0px !important; 
+  text-align: center !important;
+}
+
+.pagination-wrapper{
+  margin-top: 0px !important;
+  padding-bottom: 30px !important;
+  ul{
+    margin: 0px !important;
+  }
 }
