@@ -4624,20 +4624,26 @@ slider-component.page-width {
   text-align: center;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-auto-rows: 1fr;
-  /* equal row heights in each group */
-  grid-auto-flow: row dense;
-  /* backfill neatly */
+  display: flex;
   gap: 12px;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list {
+    flex-direction: column;
+  }
+  [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list > li {
+    width: 100% !important;
+  }
+}
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li {
   list-style: none;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li:first-of-type .multicolumn-card__info {
+  display: none !important;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li > div {
   width: 100%;
@@ -4800,6 +4806,11 @@ slider-component.page-width {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(4) .multicolumn-list li {
   list-style: none;
@@ -8885,4 +8896,8 @@ body.added .product-form__submit .addedbutton {
 
 .article-card__excerpt {
   text-align: center !important;
+}
+
+a.multicolumn-card__link-wrapper {
+  text-decoration: none !important;
 }

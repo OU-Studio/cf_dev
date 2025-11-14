@@ -57,96 +57,119 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          {%- assign empty_column = '' -%}
-          {%- if block.settings.image == blank
-            and block.settings.title == blank
-            and block.settings.text == blank
-            and block.settings.link_label == blank
-          -%}
-            {%- assign empty_column = ' multicolumn-list__item--empty' -%}
-          {%- endif -%}
+  {%- assign empty_column = '' -%}
+  {%- if block.settings.image == blank
+    and block.settings.title == blank
+    and block.settings.text == blank
+    and block.settings.link_label == blank
+  -%}
+    {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+  {%- endif -%}
 
-          <li
-            id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {{ block.shopify_attributes }}
-            {% if settings.animations_reveal_on_scroll %}
-              data-cascade
-              style="--animation-order: {{ forloop.index }};"
+  {%- assign card_link = block.settings.link -%}
+{%- if block.settings.link_label == blank -%}
+  {%- assign has_link_label = false -%}
+{%- else -%}
+  {%- assign has_link_label = true -%}
+{%- endif -%}
+
+
+  <li
+    id="Slide-{{ section.id }}-{{ forloop.index }}"
+    class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {{ block.shopify_attributes }}
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+      style="--animation-order: {{ forloop.index }};"
+    {% endif %}
+  >
+    {%- comment -%}
+      If there is a link but no link_label, wrap the entire card in an <a>
+      so the whole LI area is clickable.
+    {%- endcomment -%}
+    {%- if card_link != blank and has_link_label == false -%}
+      <a href="{{ card_link }}" class="multicolumn-card__link-wrapper">
+    {%- endif -%}
+
+    <div class="multicolumn-card content-container">
+      {%- if block.settings.image != blank -%}
+        {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+          {% assign spaced_image = true %}
+        {% endif %}
+        <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+          <div
+            class="media media--transparent media--{{ section.settings.image_ratio }}"
+            {% if section.settings.image_ratio == 'adapt' %}
+              style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
             {% endif %}
           >
-            <div class="multicolumn-card content-container">
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div
-                    class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
-                  >
-                    {%- liquid
-                      assign number_of_columns = section.settings.columns_desktop
-                      assign number_of_columns_mobile = section.settings.columns_mobile
-                      assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
-                      if section.settings.image_width == 'half'
-                        assign image_width = 0.5
-                      elsif section.settings.image_width == 'third'
-                        assign image_width = 0.33
-                      else
-                        assign image_width = 1
-                      endif
-                    -%}
-                    {% capture sizes %}
-                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
-                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
-                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
-                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
-                    {% endcapture %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 3200
-                      | image_tag:
-                        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                        sizes: sizes,
-                        class: 'multicolumn-card__image'
-                    }}
-                  </div>
-                </div>
-              {%- endif -%}
-              <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
-                {%- endif -%}
-                {%- if block.settings.subtitle != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.subtitle }}</h3>
-                {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-                {%- if block.settings.link_label != blank -%}
-                  <a
-                    class="link animate-arrow"
-                    {% if block.settings.link == blank %}
-                      role="link" aria-disabled="true"
-                    {% else %}
-                      href="{{ block.settings.link }}"
-                    {% endif %}
-                  >
-                    {{- block.settings.link_label | escape -}}
-                    <span class="svg-wrapper"
-                      ><span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span></span
-                    >
-                  </a>
-                {%- endif -%}
-              </div>
-            </div>
-          </li>
-        {%- endfor -%}
+            {%- liquid
+              assign number_of_columns = section.settings.columns_desktop
+              assign number_of_columns_mobile = section.settings.columns_mobile
+              assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+              assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+              assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+              if section.settings.image_width == 'half'
+                assign image_width = 0.5
+              elsif section.settings.image_width == 'third'
+                assign image_width = 0.33
+              else
+                assign image_width = 1
+              endif
+            -%}
+            {% capture sizes %}
+              (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
+              (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
+              (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
+              calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
+            {% endcapture %}
+            {{
+              block.settings.image
+              | image_url: width: 3200
+              | image_tag:
+                widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                sizes: sizes,
+                class: 'multicolumn-card__image'
+            }}
+          </div>
+        </div>
+      {%- endif -%}
+
+      <div class="multicolumn-card__info">
+        {%- if block.settings.title != blank -%}
+          <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+        {%- endif -%}
+        {%- if block.settings.subtitle != blank -%}
+          <h3 class="inline-richtext">{{ block.settings.subtitle }}</h3>
+        {%- endif -%}
+        {%- if block.settings.text != blank -%}
+          <div class="rte">{{ block.settings.text }}</div>
+        {%- endif -%}
+
+        {%- if has_link_label -%}
+          <a
+            class="link animate-arrow"
+            {% if card_link == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ card_link }}"
+            {% endif %}
+          >
+            {{- block.settings.link_label | escape -}}
+            <span class="svg-wrapper">
+              <span class="icon-wrap">&nbsp;{{ 'icon-arrow.svg' | inline_asset_content }}</span>
+            </span>
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if card_link != blank and has_link_label == false -%}
+      </a>
+    {%- endif -%}
+  </li>
+{%- endfor -%}
+
       </ul>
 
       {%- if show_mobile_slider -%}
@@ -217,6 +240,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID",
+      "default": "default-id"
+    },
     {
       "type": "inline_richtext",
       "id": "title",

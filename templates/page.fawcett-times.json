@@ -223,7 +223,7 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "custom_id": "default-id",
-        "title": "",
+        "title": "PREVIOUS EDITIONS",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
