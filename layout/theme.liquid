@@ -854,22 +854,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const header = document.querySelector('.section-header');
+const header2 = document.querySelector('.section-header');
 const placeholder = document.createElement('div');
-placeholder.style.height = header.offsetHeight + 'px';
+placeholder.style.height = header2.offsetHeight + 'px';
 
-const headerTop = header.offsetTop;
+const headerTop = header2.offsetTop;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= headerTop) {
-    if (!header.classList.contains('is-sticky')) {
-      header.parentNode.insertBefore(placeholder, header);
-      header.classList.add('is-sticky');
+    if (!header2.classList.contains('is-sticky')) {
+      header2.parentNode.insertBefore(placeholder, header2);
+      header2.classList.add('is-sticky');
     }
   } else {
-    if (header.classList.contains('is-sticky')) {
+    if (header2.classList.contains('is-sticky')) {
       placeholder.remove();
-      header.classList.remove('is-sticky');
+      header2.classList.remove('is-sticky');
     }
   }
 });
