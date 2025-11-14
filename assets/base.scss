@@ -9641,9 +9641,23 @@ body.added .product-form__submit {
 }
 
 [data-template="404"] {
-  #MainContent {
+  #MainContent section:first-of-type{
+    margin-top: 0px !important;
+    @media all and (max-width: 1024px){
+      display: none;
+    }
     .media:before {
-      padding-bottom: 100% !important
+      padding-bottom: 56.25% !important
+    }
+  }
+  #MainContent section:last-of-type{
+    margin-top: 0px !important;
+    display: none;
+    @media all and (max-width: 1024px){
+      display: block;
+    }
+    .media:before {
+      padding-bottom: 177.777777778% !important
     }
   }
 }

@@ -8488,8 +8488,28 @@ body.added .product-form__submit .addedbutton {
   margin-top: 40px !important;
 }
 
-[data-template="404"] #MainContent .media:before {
-  padding-bottom: 100% !important;
+[data-template="404"] #MainContent section:first-of-type {
+  margin-top: 0px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="404"] #MainContent section:first-of-type {
+    display: none;
+  }
+}
+[data-template="404"] #MainContent section:first-of-type .media:before {
+  padding-bottom: 56.25% !important;
+}
+[data-template="404"] #MainContent section:last-of-type {
+  margin-top: 0px !important;
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  [data-template="404"] #MainContent section:last-of-type {
+    display: block;
+  }
+}
+[data-template="404"] #MainContent section:last-of-type .media:before {
+  padding-bottom: 177.777777778% !important;
 }
 
 .centerme {
