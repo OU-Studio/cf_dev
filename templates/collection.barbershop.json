@@ -100,18 +100,42 @@
         "padding_bottom": 36
       }
     },
-    "video_iG7L6i": {
-      "type": "video",
-      "name": "t:sections.video.presets.name",
+    "image_with_text_video_wJ7Vew": {
+      "type": "image-with-text-video",
+      "blocks": {
+        "heading_Ny3cbE": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_VT9NwC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Some content here</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ny3cbE",
+        "text_VT9NwC"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "heading": "CAPTAIN FAWCETT's EDUCATIONAL PROGRAMME",
-        "heading_size": "h1",
-        "enable_video_looping": false,
+        "custom_id": "default-id",
+        "image": "shopify://shop_images/Education_Roadshow_Barbershop.jpg",
         "video": "shopify://files/videos/MuseumMugs_V2_1.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "cover_image": "shopify://shop_images/7C994F3E-3624-4134-86B6-56551B533CD8.jpg",
-        "description": "",
-        "full_width": true,
+        "height": "adapt",
+        "desktop_image_width": "screenWidth",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -123,6 +147,6 @@
     "image_banner_tyjFcD",
     "rich_text_aFTbLc",
     "product-grid",
-    "video_iG7L6i"
+    "image_with_text_video_wJ7Vew"
   ]
 }
