@@ -5695,6 +5695,9 @@ slider-component.page-width {
   main>section:nth-of-type(1) {
     padding: 20px 200px;
     background-color: var(--offwhite) !important;
+    @media all and (max-width: 1024px){
+      padding: 20px 20px 0px 20px  !important;
+    }
   }
 
   main .shopify-section:nth-of-type(1) .banner .media:before {
@@ -5714,6 +5717,18 @@ slider-component.page-width {
     }
   }
 
+  main .shopify-section:nth-of-type(4) {
+@media all and (max-width: 1024px){
+display: none !important;
+}
+  }
+
+  main .shopify-section:last-of-type{
+@media all and (max-width: 1024px){
+display: none !important;
+}
+  }
+
   main .shopify-section:nth-of-type(3) {
     .title--primary {
       display: none !important;
@@ -5727,7 +5742,12 @@ slider-component.page-width {
       padding: 0 !important;
       margin: 0 10px;
       justify-items: center;
-
+      @media all and (max-width: 1024px){
+      grid-template-columns: repeat(2, 1fr);
+      }
+      @media all and (max-width: 600px){
+      grid-template-columns: repeat(1, 1fr);
+      }
       /* centers grid items in their cells */
       .article {
         grid-column: span 1 !important
@@ -9453,12 +9473,27 @@ cart-items .title--primary {
   padding: 20px 60px;
   margin: auto;
 
+  @media all and (max-width: 1024px){
+  padding: 10px 5px;
+  flex-direction: column;
+  gap: 0px !important;
+  > *{
+    width: 100% !important;
+    position: relative !important;
+    top: initial !important;
+  }
+  }
+
   section:first-of-type {
     width: 33%;
     position: sticky;
     margin: 0px !important;
     top: 120px;
-
+@media all and (max-width: 1024px){
+> div{
+  padding: 0px !important;
+}
+}
     .image-with-text__grid .image-with-text__text-item {
       box-sizing: border-box;
       margin: 0px !important;

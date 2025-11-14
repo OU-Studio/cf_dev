@@ -4954,6 +4954,11 @@ slider-component.page-width {
   padding: 20px 200px;
   background-color: var(--offwhite) !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="blog.captains-journal"] main > section:nth-of-type(1) {
+    padding: 20px 20px 0px 20px !important;
+  }
+}
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(1) .banner .media:before {
   padding-bottom: 26.8% !important;
   background-color: var(--offwhite) !important;
@@ -4967,6 +4972,16 @@ slider-component.page-width {
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(1) .banner:before {
   display: none !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(4) {
+    display: none !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  [data-template="blog.captains-journal"] main .shopify-section:last-of-type {
+    display: none !important;
+  }
+}
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(3) .title--primary {
   display: none !important;
 }
@@ -4979,6 +4994,16 @@ slider-component.page-width {
   margin: 0 10px;
   justify-items: center;
   /* centers grid items in their cells */
+}
+@media all and (max-width: 1024px) {
+  [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(3) .blog-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (max-width: 600px) {
+  [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(3) .blog-articles {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 [data-template="blog.captains-journal"] main .shopify-section:nth-of-type(3) .blog-articles .article {
   grid-column: span 1 !important;
@@ -8326,11 +8351,28 @@ cart-items .title--primary {
   padding: 20px 60px;
   margin: auto;
 }
+@media all and (max-width: 1024px) {
+  [data-template="article.captains-journal"] #MainContent {
+    padding: 10px 5px;
+    flex-direction: column;
+    gap: 0px !important;
+  }
+  [data-template="article.captains-journal"] #MainContent > * {
+    width: 100% !important;
+    position: relative !important;
+    top: initial !important;
+  }
+}
 [data-template="article.captains-journal"] #MainContent section:first-of-type {
   width: 33%;
   position: sticky;
   margin: 0px !important;
   top: 120px;
+}
+@media all and (max-width: 1024px) {
+  [data-template="article.captains-journal"] #MainContent section:first-of-type > div {
+    padding: 0px !important;
+  }
 }
 [data-template="article.captains-journal"] #MainContent section:first-of-type .image-with-text__grid .image-with-text__text-item {
   box-sizing: border-box;
