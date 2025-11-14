@@ -9981,6 +9981,7 @@ padding: 0px !important;
 }
 
 .section-header{
+  box-sizing: border-box;
   &.is-sticky{
   position: fixed !important;
   top: 0;
@@ -9988,4 +9989,8 @@ padding: 0px !important;
   right: 0;
   z-index: 999;
   }
+}
+
+html {
+  scrollbar-gutter: stable; /* prevents the 5px jump */
 }

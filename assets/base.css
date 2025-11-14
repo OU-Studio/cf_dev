@@ -8750,10 +8750,17 @@ body.added .product-form__submit .addedbutton {
   border: none !important;
 }
 
+.section-header {
+  box-sizing: border-box;
+}
 .section-header.is-sticky {
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+html {
+  scrollbar-gutter: stable; /* prevents the 5px jump */
 }
