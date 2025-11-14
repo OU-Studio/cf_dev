@@ -10304,7 +10304,7 @@ html {
 }
 }
 
-.drawer__inner{
+cart-drawer.active .drawer__inner{
   right: 15px !important;
   @media all and (max-width: 1024px){
   right: 0px !important;

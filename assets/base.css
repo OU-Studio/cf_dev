@@ -9123,11 +9123,11 @@ body.added .product-form__submit .addedbutton {
   display: block;
 }
 
-.drawer__inner {
+cart-drawer.active .drawer__inner {
   right: 15px !important;
 }
 @media all and (max-width: 1024px) {
-  .drawer__inner {
+  cart-drawer.active .drawer__inner {
     right: 0px !important;
   }
 }
