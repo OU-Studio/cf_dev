@@ -10003,3 +10003,19 @@ padding: 0px !important;
 html {
   scrollbar-gutter: stable; /* prevents the 5px jump */
 }
+
+.header-fixed .mobile-nav{
+top: 100px !important;
+}
+
+.announcement-bar-section{
+  margin-top: 0px !important;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--black);
+}

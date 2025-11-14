@@ -864,33 +864,41 @@ if (header2) {
   const inner = header2.firstElementChild || header2;
   const triggerY = inner.getBoundingClientRect().top + window.scrollY;
 
-  // Find the original hamburger toggle inside the normal header
+  // Original hamburger
   const originalToggle = header2.querySelector(TOGGLE_SELECTOR);
 
-  // Clone the header for the fixed version
+  // Clone header
   const fixedHeader = header2.cloneNode(true);
   fixedHeader.classList.add('section-header-fixed');
-  fixedHeader.setAttribute('aria-hidden', 'true'); // optional
+  fixedHeader.setAttribute('aria-hidden', 'true');
 
   document.body.appendChild(fixedHeader);
 
-  // Find the cloned hamburger button inside the fixed header
+  // Cloned hamburger
   const clonedToggle = fixedHeader.querySelector(TOGGLE_SELECTOR);
 
-  // Wire cloned hamburger to trigger the original one
+  // Link cloned click → original click
   if (originalToggle && clonedToggle) {
     clonedToggle.addEventListener('click', (e) => {
       e.preventDefault();
-      originalToggle.click(); // reuse theme's existing JS
+      originalToggle.click();
     });
   }
 
   let lastScrollY = window.scrollY;
   let ticking = false;
+  let isVisible = false;
 
   function updateHeader(scrollY) {
     const shouldShow = scrollY >= triggerY;
-    fixedHeader.classList.toggle('is-visible', shouldShow);
+
+    if (shouldShow !== isVisible) {
+      isVisible = shouldShow;
+      fixedHeader.classList.toggle('is-visible', shouldShow);
+
+      // 🔥 Add/remove body class
+      document.body.classList.toggle('header-fixed', shouldShow);
+    }
   }
 
   window.addEventListener('scroll', () => {
@@ -905,9 +913,10 @@ if (header2) {
     }
   });
 
-  // Run once on load
+  // Run on load
   updateHeader(window.scrollY);
 }
+
 
 
 
