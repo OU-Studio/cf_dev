@@ -12,15 +12,6 @@
     "banner_slideshow_BkbBe7": {
       "type": "banner-slideshow",
       "blocks": {
-        "slide_GcaYfB": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Home-Page-Letterbox.jpg",
-            "quote": "",
-            "name": ""
-          }
-        },
         "slide_B6zTU4": {
           "type": "slide",
           "settings": {
@@ -37,29 +28,55 @@
             "name": ""
           }
         },
-        "slide_QYcwGg": {
+        "slide_AGRjaU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/EDC_NEW.jpg",
+            "image": "shopify://shop_images/Hair-Powder.jpg",
             "quote": "",
             "name": ""
           }
         },
-        "slide_URAeKX": {
+        "slide_iNGtLM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/USA_Store_Open.jpg",
+            "image": "shopify://shop_images/Pomades.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
+        "slide_Yk7cCE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/CF-New-EDP-Original.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
+        "slide_CMVCHM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Expedition-Reserve-New-Products-desktop.jpg",
+            "quote": "",
+            "name": ""
+          }
+        },
+        "slide_KXWpVR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/EDP-Collection.jpg",
             "quote": "",
             "name": ""
           }
         }
       },
       "block_order": [
-        "slide_GcaYfB",
         "slide_B6zTU4",
         "slide_X8Pqxj",
-        "slide_QYcwGg",
-        "slide_URAeKX"
+        "slide_AGRjaU",
+        "slide_iNGtLM",
+        "slide_Yk7cCE",
+        "slide_CMVCHM",
+        "slide_KXWpVR"
       ],
       "name": "Banner Slideshow",
       "settings": {
