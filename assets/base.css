@@ -7775,6 +7775,7 @@ cart-drawer .drawer__footer {
   background-repeat: no-repeat;
   background-position: center top;
   padding-top: 300px;
+  margin-top: -40px !important;
 }
 @media all and (max-width: 1024px) {
   [data-template="page.stockists"] main .ten.columns {
@@ -7897,7 +7898,7 @@ cart-drawer .drawer__footer {
   font-family: empera !important;
 }
 [data-template="page.stockists"] #MainContent .shopify-section:nth-of-type(2) {
-  margin-top: 0px;
+  margin-top: 0px !important;
 }
 [data-template="page.stockists"] #MainContent .shopify-section:nth-of-type(1) {
   margin-top: 40px;
