@@ -6,6 +6,10 @@ a:active {
   color: var(--black);
 }
 
+select, select:link, select:visited, select:hover, select:active{
+  color: var(--black);
+}
+
 h1 {
   font-family: "garamond-premier-pro-display" !important;
   font-size: 3.8rem !important;
@@ -2322,14 +2326,21 @@ blockquote {
   text-align: center;
       font-variant: all-small-caps !important;
       font-style: normal !important;
-      margin-top: 20px !important;
-      margin-bottom: 40px !important;
+      margin-top: 10px !important;
+      margin-bottom: 30px !important;
+}
+
+.section.section:not(.full-bleed){
+  .reviews {
+padding: 20px 0px;
+  }
 }
 
 .reviews {
   display: flex;
   align-items: center;
   margin: 0px 0px;
+  
 
   .slideshow-container {
     max-width: none !important;
