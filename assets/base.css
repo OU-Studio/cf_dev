@@ -1,4 +1,12 @@
 @charset "UTF-8";
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--black);
+}
+
 h1 {
   font-family: "garamond-premier-pro-display" !important;
   font-size: 3.8rem !important;
@@ -8780,12 +8788,4 @@ html {
 
 .announcement-bar-section {
   margin-top: 0px !important;
-}
-
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: var(--black);
 }
