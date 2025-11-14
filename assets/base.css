@@ -6162,6 +6162,14 @@ product-recommendations {
   width: 50% !important;
   height: auto !important;
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.museum"] main .shopify-section:nth-of-type(1) .banner > div {
+    width: 100% !important;
+  }
+  [data-template="page.museum"] main .shopify-section:nth-of-type(1) .banner > div:first-of-type {
+    display: none !important;
+  }
+}
 [data-template="page.museum"] main .shopify-section:nth-of-type(1) .banner .banner__content {
   display: flex;
   flex-direction: column;
@@ -6328,9 +6336,29 @@ product-recommendations {
   background-position: center;
   background-image: url(https://cdn.shopify.com/s/files/1/0907/4104/7674/files/museum_virtual_visit_icon_ee985f6e-b56b-4d37-95ac-8940f33b82ec.gif?v=1762512212);
 }
+@media all and (max-width: 1024px) {
+  [data-template="page.museum"] main .shopify-section:nth-of-type(4) .image-with-text__grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  [data-template="page.museum"] main .shopify-section:nth-of-type(4) .image-with-text__grid > div {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0px !important;
+    padding: 0px 20px 20px 20px !important;
+  }
+}
 [data-template="page.museum"] main .custom-image-links {
   max-width: 1240px !important;
   gap: 30px !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.museum"] main .custom-image-links {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 10px;
+    box-sizing: border-box;
+    gap: 20px !important;
+  }
 }
 [data-template="page.museum"] main .shopify-section:nth-of-type(5) {
   margin: 0 auto;
@@ -6365,6 +6393,18 @@ product-recommendations {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__grid {
+    display: flex;
+    flex-direction: column;
+  }
+  [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__grid > div {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0px !important;
+    padding: 0px 20px 20px 20px !important;
+  }
 }
 
 .liquidTitle {
