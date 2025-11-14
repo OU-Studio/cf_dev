@@ -71,15 +71,7 @@
         "text_XmxdJn": {
           "type": "text",
           "settings": {
-            "text": "<h6>Captain Fawcett’s collaboration with The Jodhpur Company has resulted in a most outstanding Signature Series fragrance. Conjuring up India’s princely opulence, ‘Maharajah’ is a magnificent evocation of ancient majesty tailored to suit the modern gentleman. All Hail the Hirsute.</h6>"
-          }
-        },
-        "heading_NkyXYB": {
-          "type": "heading",
-          "settings": {
-            "heading": "The Jodhpur Company",
-            "heading_size": "h2",
-            "alignment": "center"
+            "text": "<p>In 1905, the intrepid explorer and keen student of the natural world, Captain Peabody Fawcett R.N. (Ret’d) vanished, seemingly without trace… until, a century later, a battered trunk surfaced at a house clearance in England…</p><p>Inside lay an exquisite dressing case, containing tonics, salves and balms, together with several ribbon-bound journals. Amid tales of hardship and wonders seen were meticulously noted the precise formulae for Captain Fawcett’s own grooming requisites, including his renowned Moustache Wax, proof that, come what may, he remained intent upon “Keeping a Stiff Upper Lip, Regardless”.</p><p>Faithfully recreated for the modern age, these signature botanical blends are once again available to gentlemen of wit and style. Prepare yourself, for each day the adventure begins anew…</p>"
           }
         },
         "button_8cA664": {
@@ -96,7 +88,6 @@
       },
       "block_order": [
         "text_XmxdJn",
-        "heading_NkyXYB",
         "button_8cA664"
       ],
       "name": "t:sections.rich-text.presets.name",
