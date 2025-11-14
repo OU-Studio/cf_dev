@@ -4569,6 +4569,7 @@ slider-component.page-width {
 [data-template="page.fawcett-times"] main .shopify-section:nth-of-type(2) h2 {
   font-size: 30px !important;
   margin-bottom: 20px !important;
+  margin-top: 10px !important;
 }
 [data-template="page.fawcett-times"] main .shopify-section:nth-of-type(2) * {
   text-align: center !important;
@@ -4732,6 +4733,9 @@ slider-component.page-width {
   font-style: var(--garamond-large-style);
   color: var(--black);
   font-style: normal !important;
+}
+[data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li h3:first-of-type {
+  margin-top: 10px !important;
 }
 [data-template="page.fawcett-times"] #MainContent .shopify-section:nth-of-type(3) .multicolumn-list li .rte {
   margin-top: 20px !important;
