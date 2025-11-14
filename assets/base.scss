@@ -8335,8 +8335,8 @@ cart-drawer {
       padding: 100px;
       gap: 100px;
       @media all and (max-width: 1024px){
-      padding: 40px;
-      gap: 40px;
+      padding: 20px;
+      gap: 0px;
       }
 
       &:before,
@@ -8369,6 +8369,9 @@ cart-drawer {
           &:before {
             display: none !important;
           }
+           @media all and (max-width: 1024px){
+display: none !important;
+           }
         }
 
         &:nth-of-type(1) {

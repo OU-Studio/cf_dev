@@ -7329,8 +7329,8 @@ cart-drawer .drawer__footer {
 }
 @media all and (max-width: 1024px) {
   [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner {
-    padding: 40px;
-    gap: 40px;
+    padding: 20px;
+    gap: 0px;
   }
 }
 [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner:before, [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner:after {
@@ -7359,6 +7359,11 @@ cart-drawer .drawer__footer {
 }
 [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(2):before {
   display: none !important;
+}
+@media all and (max-width: 1024px) {
+  [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(2) {
+    display: none !important;
+  }
 }
 [data-template="page.contact"] main .shopify-section:nth-of-type(2) .banner .banner__media:nth-of-type(1) {
   z-index: 4;
