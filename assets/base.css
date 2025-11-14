@@ -6353,7 +6353,10 @@ product-recommendations {
     width: 100% !important;
     box-sizing: border-box;
     margin: 0px !important;
-    padding: 0px 20px 20px 20px !important;
+    padding: 0px !important;
+  }
+  [data-template="page.museum"] main .shopify-section:nth-of-type(4) .image-with-text__grid > div.image-with-text__text-item {
+    padding: 20px !important;
   }
 }
 [data-template="page.museum"] main .custom-image-links {
@@ -6405,13 +6408,19 @@ product-recommendations {
 @media all and (max-width: 1024px) {
   [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__grid > div {
     width: 100% !important;
     box-sizing: border-box;
     margin: 0px !important;
-    padding: 0px 20px 20px 20px !important;
+    padding-bottom: 0% !important;
+  }
+  [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__grid > div.image-with-text__media {
+    padding-bottom: 56.25% !important;
+  }
+  [data-template="page.museum"] main .shopify-section:nth-of-type(5) .image-with-text__grid > div.image-with-text__text-item {
+    padding: 20px !important;
   }
 }
 

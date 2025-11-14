@@ -7292,7 +7292,10 @@ product-recommendations {
           width: 100% !important;
           box-sizing: border-box;
           margin: 0px !important;;
-          padding: 0px 20px 20px 20px !important; 
+          padding: 0px !important; 
+          &.image-with-text__text-item{
+            padding: 20px !important;
+          }
         }
       }
     }
@@ -7348,12 +7351,18 @@ gap: 20px !important;
     .image-with-text__grid{
       @media all and (max-width: 1024px){
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         > div{
           width: 100% !important;
           box-sizing: border-box;
           margin: 0px !important;;
-          padding: 0px 20px 20px 20px !important; 
+          padding-bottom: 0% !important;
+          &.image-with-text__media{
+          padding-bottom: 56.25% !important;
+          }
+          &.image-with-text__text-item{
+            padding: 20px !important;
+          }
         }
       }
     }
