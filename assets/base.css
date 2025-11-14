@@ -8789,3 +8789,7 @@ html {
 .announcement-bar-section {
   margin-top: 0px !important;
 }
+
+.article-card__excerpt {
+  text-align: center !important;
+}
